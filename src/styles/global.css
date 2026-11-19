@@ -1,0 +1,153 @@
+/* ------------------------------------------------------------------
+   Vertigo — tokens do Elementor Kit (post-48) + base do tema
+   ------------------------------------------------------------------ */
+@font-face { font-family: "Google Sans"; font-weight: 400; font-display: swap; src: url("/theme/fonts/GoogleSans-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Google Sans"; font-weight: 500; font-display: swap; src: url("/theme/fonts/GoogleSans-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Google Sans"; font-weight: 600; font-display: swap; src: url("/theme/fonts/GoogleSans-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Google Sans"; font-weight: 700; font-display: swap; src: url("/theme/fonts/GoogleSans-Bold.woff2") format("woff2"); }
+
+:root {
+  /* cores globais do kit */
+  --vt-blue: #076cfe;          /* d49ac81 / ec3c7a7 */
+  --vt-blue-soft: #6796f5;     /* botões HubSpot */
+  --vt-navy: #0c1557;          /* 332724a */
+  --vt-navy-2: #0c1551;        /* 3ee16e7 */
+  --vt-ink: #101820;           /* 044b931 — seções escuras */
+  --vt-ink-2: #222d3b;         /* c94d9ab */
+  --vt-black: #030303;
+  --vt-text: #232323;          /* primary */
+  --vt-muted: #90a4ae;
+  --vt-line: #e0e0e0;          /* cfa1f76 — seções cinza */
+  --vt-surface: #f3f5f8;       /* 7fbea4f */
+  --vt-white: #ffffff;
+  --vt-white-60: #ffffff99;
+
+  --vt-font: "Google Sans", "Product Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --vt-container: 1280px;
+  --vt-gutter: 16px;
+  --vt-header-h: 112px;
+  --vt-radius-pill: 999px;
+  --vt-radius-card: 120px;     /* cantos "asa" dos cards */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--vt-white);
+  color: var(--vt-text);
+  font-family: var(--vt-font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img, svg, video, iframe { max-width: 100%; }
+img { height: auto; display: block; }
+a { color: var(--vt-blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; font-weight: 600; line-height: 1.2; letter-spacing: -0.5px; }
+p { margin: 0 0 1em; }
+
+.container {
+  width: 100%;
+  max-width: calc(var(--vt-container) + 2 * var(--vt-gutter));
+  margin: 0 auto;
+  padding: 0 var(--vt-gutter);
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- tipografia utilitária (tokens do kit) ---------- */
+.t-display { font-size: clamp(40px, 5vw, 64px); font-weight: 700; line-height: 1.1; letter-spacing: -1px; }
+.t-h1 { font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height: 1.1; letter-spacing: -1px; }
+.t-h2 { font-size: clamp(28px, 3vw, 36px); font-weight: 600; line-height: 1.2; letter-spacing: -1px; }
+.t-h3 { font-size: clamp(22px, 2.2vw, 28px); font-weight: 600; line-height: 1.3; }
+.t-section { /* "NOSSAS SOLUÇÕES", "CLIENTES"… */
+  font-size: clamp(36px, 4.4vw, 48px); font-weight: 700; text-transform: uppercase;
+  line-height: 1; letter-spacing: -1px; color: var(--vt-blue); text-align: center; margin: 0 0 16px;
+}
+
+/* ---------- botões ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 24px; border-radius: var(--vt-radius-pill); border: 1px solid transparent;
+  font: 500 16px/1 var(--vt-font); cursor: pointer; text-decoration: none !important;
+  transition: transform .2s ease, background-color .2s ease, color .2s ease;
+}
+.btn:hover { transform: translateY(-3px); } /* e-animation-float */
+.btn-primary { background: var(--vt-blue); color: var(--vt-white); }
+.btn-primary:hover { background: #0558d0; }
+.btn-light { background: var(--vt-white); color: var(--vt-navy); border-color: var(--vt-navy); }
+.btn-sm { padding: 10px 24px; font-size: 14px; }
+
+/* chip com contorno ("TECH TIER", "BLOG", "FEEDBACKS") */
+.chip {
+  display: inline-block; padding: 6px 8px; border: 1px solid currentColor; border-radius: 4px;
+  font-size: 14px; font-weight: 500; text-transform: uppercase; line-height: 1.2;
+}
+.chip-blue { color: var(--vt-blue); padding: 6px 16px; }
+
+/* ---------- seções ---------- */
+.section { padding: 96px 0; }
+.section-dark { background: var(--vt-ink); color: var(--vt-white); }
+.section-gray { background: var(--vt-line); }
+.section-light { background: var(--vt-surface); }
+.section-blue { background: var(--vt-blue); color: var(--vt-white); }
+.section-lead { text-align: center; max-width: 1180px; margin: 0 auto 48px; font-size: 18px; }
+
+@media (max-width: 767px) {
+  :root { --vt-header-h: 88px; }
+  .section { padding: 64px 0; }
+}
+
+/* ---------- conteúdo Markdown (posts e páginas) ---------- */
+.prose { font-size: 16px; line-height: 1.5; color: var(--vt-text); }
+.prose > * + * { margin-top: 0; }
+.prose h1 { font-size: clamp(32px, 3.4vw, 42px); margin: 0 0 .6em; }
+.prose h2 { font-size: clamp(26px, 2.6vw, 34px); margin: 1.2em 0 .5em; }
+.prose h3 { font-size: 22px; font-weight: 500; margin: 1.2em 0 .5em; }
+.prose h4, .prose h5, .prose h6 { font-size: 18px; margin: 1.2em 0 .5em; }
+.prose img { margin: 24px auto; border-radius: 4px; }
+/* ícones SVG vindos de widgets Elementor (icon-box) ficam em tamanho de ícone */
+.prose img[src$=".svg"] { width: 72px; margin: 32px 0 12px; border-radius: 0; }
+.prose ul, .prose ol { padding-left: 1.4em; margin: 0 0 1em; }
+.prose li { margin: .3em 0; }
+.prose blockquote { margin: 1.2em 0; padding: 0 40px; font-weight: 600; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.5em 0; display: block; overflow-x: auto; }
+.prose th, .prose td { border: 1px solid var(--vt-line); padding: 8px 12px; text-align: left; }
+.prose pre { background: var(--vt-ink); color: #e6edf3; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 14px; }
+.prose code { font-size: .9em; }
+.prose iframe { width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0; }
+.prose a { text-decoration: underline; }
+
+/* ---------- HubSpot forms (tema escuro do site) ---------- */
+.hs-dark .hs-form label { color: var(--vt-white); font: 500 14px/1.4 var(--vt-font); }
+.hs-form .hs-form-field { margin-bottom: 18px; }
+.hs-form .hs-form-required { color: #f2545b; }
+.hs-embed .hs-form input:not([type=checkbox]):not([type=radio]):not([type=submit]),
+.hs-embed .hs-form select, .hs-embed .hs-form textarea {
+  /* !important: o embed do HubSpot injeta CSS próprio mais específico */
+  width: 100% !important; padding: 8px 16px !important; border: 1px solid #cbd6e2 !important; border-radius: 16px !important;
+  background: var(--vt-surface) !important; font: 400 16px/1.4 var(--vt-font) !important; color: var(--vt-text) !important;
+}
+.hs-embed .hs-form input:not([type=checkbox]):not([type=radio]):not([type=submit]), .hs-embed .hs-form select { min-height: 40px !important; }
+.hs-form .input { margin-right: 0 !important; }
+.hs-form .hs-fieldtype-intl-phone { display: flex; gap: 10px; }
+.hs-form .hs-fieldtype-intl-phone select { width: 32% !important; flex: none; }
+.hs-form .hs-fieldtype-intl-phone input { flex: 1; }
+/* newsletter (rodapé/sidebar): campos retos, como no original */
+.hs-embed.hs-square .hs-form input:not([type=checkbox]):not([type=radio]):not([type=submit]), .hs-embed.hs-square .hs-form .hs-button { border-radius: 3px !important; }
+.hs-square .hs-form .hs-button { font-size: 13px; padding: 12px 24px; }
+.hs-form fieldset { max-width: none !important; }
+.hs-embed .hs-form .hs-button {
+  background: var(--vt-blue-soft); color: var(--vt-white); border: 0; border-radius: 16px;
+  padding: 12px 24px; font: 600 16px/1 var(--vt-font); cursor: pointer;
+}
+.hs-form .hs-error-msgs { list-style: none; padding: 0; margin: 4px 0 0; color: #f2545b; font-size: 13px; }
+.hs-form .legal-consent-container, .hs-dark .hs-richtext { color: var(--vt-white); font-size: 13px; }
+.hs-form ul.inputs-list { list-style: none; padding: 0; margin: 0; }

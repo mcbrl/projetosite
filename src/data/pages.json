@@ -1,0 +1,69 @@
+{
+  "/ai-journey/": {
+    "heroImage": "/theme/bg/Abstract-corporate-tech-.jpg"
+  },
+  "/carreiras/": {
+    "heroImage": "/theme/bg/vertigo-carreiras-hero-img.jpeg"
+  },
+  "/parceiros/": {
+    "heroImage": "/theme/bg/vertigo-parcerias-hero-new.jpeg"
+  },
+  "/strategy-tier-ai-strategy-operations/": {
+    "heroImage": "/theme/bg/IA-em-ambientes-regulados.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/materiais/": {
+    "heroImage": "/theme/bg/materiais-cases-e-ebooks-1.jpg"
+  },
+  "/politica-de-privacidade/": {},
+  "/tech-tier-api-integration/": {
+    "heroImage": "/theme/bg/api-integration.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/tech-tier-data-intelligence-ai/": {
+    "heroImage": "/theme/bg/AI-StrategyOperations.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/tech-tier-platform-engineering/": {
+    "heroImage": "/theme/bg/platform-engeneering.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/business-tier-business-digital-acceleration/": {
+    "heroImage": "/theme/bg/business-digital-aceleration.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/business-tier-governo-judiciario/": {
+    "heroImage": "/theme/bg/governmentjustice.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/business-tier-servicos-financeiros-seguradoras/": {
+    "heroImage": "/theme/bg/fsi.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/strategy-tier-go-to-cloud/": {
+    "heroImage": "/theme/bg/vertigo-go-cloud.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/strategy-tier-technology-strategy/": {
+    "heroImage": "/theme/bg/technology-strategy-1.jpg",
+    "hubspotForm": "b0b4484a-d610-41de-a886-4f18b3d57d3b"
+  },
+  "/ouvidoria/": {},
+  "/canal-de-denuncias/": {},
+  "/blog/": {
+    "heroImage": "/theme/bg/portais-dxp-para-setor-financeiro.png"
+  },
+  "/solucoes/": {
+    "heroImage": "/theme/bg/Solucoes.jpg"
+  },
+  "/contato/": {
+    "heroImage": "/theme/bg/contato.jpg",
+    "hubspotForm": "2a8fba74-efe6-4f77-a262-9363161fb257"
+  },
+  "/sobre/": {
+    "heroImage": "/theme/bg/Seguranca_para_APIs_BLOG_IMAGEM_DESTAQUE.png"
+  },
+  "/": {
+    "heroImage": "/theme/bg/vertigo-hero-home.jpg"
+  }
+}

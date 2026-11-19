@@ -1,0 +1,270 @@
+<title>Mapa do Site Vertigo</title>
+<style>
+/* Layout: faixa de marca no topo, árvore de navegação, depois explorador (filtros + lista) com painel de detalhe lateral */
+@font-face{font-family:"Product Sans";src:url("fonts/ProductSans-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Product Sans";src:url("fonts/ProductSans-Medium.ttf") format("truetype");font-weight:500;font-display:swap}
+@font-face{font-family:"Product Sans";src:url("fonts/ProductSans-Bold.ttf") format("truetype");font-weight:700;font-display:swap}
+:root{
+  --bg:#f4f6f7; --surface:#ffffff; --fg:#101820; --fg2:#4d5a62; --fg3:#6e7e87;
+  --line:#dde3e7; --accent:#076cfe; --accent-soft:#e6f0ff; --deep:#0c1557;
+  --warn:#b8741a; --warn-bg:#fdf1dc; --bad:#c9353a; --bad-bg:#fbe7e8; --ok:#138a57; --ok-bg:#e5f7ee;
+  --k-pages:#076cfe; --k-blog:#0c1557; --k-cases:#90a4ae;
+  --grad:linear-gradient(135deg,#101820 0%,#0c1557 28%,#076cfe 62%,#90a4ae 88%,#e0e0e0 100%);
+  --sans:"Product Sans","Helvetica Neue",Arial,system-ui,sans-serif;
+  --mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b1117; --surface:#131c24; --fg:#e8edf0; --fg2:#b0bac1; --fg3:#8a99a2;
+  --line:#26323c; --accent:#4a8dfe; --accent-soft:#122447; --deep:#85b3ff;
+  --warn:#f2a93b; --warn-bg:#3a2a10; --bad:#f07479; --bad-bg:#3b1a1c; --ok:#4fd197; --ok-bg:#0f3324;
+  --k-pages:#4a8dfe; --k-blog:#85b3ff; --k-cases:#b0bac1; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0b1117; --surface:#131c24; --fg:#e8edf0; --fg2:#b0bac1; --fg3:#8a99a2;
+  --line:#26323c; --accent:#4a8dfe; --accent-soft:#122447; --deep:#85b3ff;
+  --warn:#f2a93b; --warn-bg:#3a2a10; --bad:#f07479; --bad-bg:#3b1a1c; --ok:#4fd197; --ok-bg:#0f3324;
+  --k-pages:#4a8dfe; --k-blog:#85b3ff; --k-cases:#b0bac1; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:400 15px/1.5 var(--sans);padding-inline:16px;padding-block:0 64px}
+a{color:var(--accent)}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header.hero{margin-inline:-16px;background:var(--grad);color:#fff;padding:40px 16px 32px}
+.hero-in{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+h1{font:700 clamp(32px,5vw,52px)/1.05 var(--sans);margin:0;text-wrap:balance}
+.hero p{margin:0;max-width:62ch;opacity:.9}
+.stats{display:flex;flex-wrap:wrap;gap:12px}
+.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:10px;padding:10px 16px;min-width:130px}
+.stat b{display:block;font:700 26px/1.1 var(--sans);font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;opacity:.85}
+h2{font:700 24px/1.2 var(--sans);margin:0 0 4px;text-wrap:balance}
+.sub{color:var(--fg2);margin:0 0 16px;max-width:70ch}
+/* árvore de navegação */
+.nav-tree{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.node{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.node.wide{grid-column:span 2}
+@media (max-width:560px){.node.wide{grid-column:auto}}
+.node h3{font:500 16px/1.3 var(--sans);margin:0;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.node .path{font:12px/1.3 var(--mono);color:var(--fg3);word-break:break-all}
+.kids{list-style:none;margin:0;padding:0 0 0 12px;border-left:2px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.kids .grp{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--fg3);margin-top:6px}
+.lnk{all:unset;cursor:pointer;color:var(--fg);border-radius:4px;padding:1px 4px;margin-left:-4px;font-size:14px}
+.lnk:hover{background:var(--accent-soft);color:var(--accent)}
+.lnk:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.zone{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg3);margin:20px 0 8px}
+/* explorador */
+.explorer{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:20px;align-items:start}
+@media (max-width:920px){.explorer{grid-template-columns:minmax(0,1fr)}}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+input[type=search],select{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+input[type=search]{flex:1 1 240px;min-width:0}
+select{max-width:100%}
+.chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--fg2);border-radius:999px;padding:5px 12px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
+.d-pages{background:var(--k-pages)}.d-blog{background:var(--k-blog)}.d-cases{background:var(--k-cases)}
+.years{display:flex;align-items:flex-end;gap:4px;height:92px;padding:0 0 18px;position:relative;margin-bottom:8px;overflow-x:auto}
+.yb{all:unset;cursor:pointer;flex:1 0 34px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
+.yb i{display:block;width:100%;background:var(--accent);opacity:.35;border-radius:3px 3px 0 0;min-height:2px}
+.yb[aria-pressed=true] i,.yb:hover i{opacity:1}
+.yb em{font-style:normal;font-size:11px;color:var(--fg3);position:absolute;bottom:-17px;font-variant-numeric:tabular-nums}
+.yb small{font-size:10px;color:var(--fg2);font-variant-numeric:tabular-nums}
+.count{font-size:13px;color:var(--fg3);margin:0 0 8px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.grp-h{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);font:500 13px/1 var(--sans);color:var(--fg2);padding:10px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;z-index:1}
+.row{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:10px minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);width:100%}
+.row:hover{background:var(--accent-soft)}
+.row[aria-current=true]{background:var(--accent-soft);box-shadow:inset 3px 0 0 var(--accent)}
+.row .tt{min-width:0}
+.row .tt b{font-weight:500;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .tt span{font:12px var(--mono);color:var(--fg3);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flags{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.pill{font-size:11px;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.p-bad{background:var(--bad-bg);color:var(--bad)}.p-warn{background:var(--warn-bg);color:var(--warn)}.p-ok{background:var(--ok-bg);color:var(--ok)}
+.p-mut{background:var(--bg);color:var(--fg3);border:1px solid var(--line)}
+.more{all:unset;cursor:pointer;display:block;text-align:center;padding:12px;color:var(--accent);font-weight:500}
+/* detalhe */
+aside.detail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+aside.detail h3{font:700 20px/1.25 var(--sans);margin:0;text-wrap:balance}
+dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 14px;margin:0;font-size:14px}
+dt{color:var(--fg3)}dd{margin:0;min-width:0;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+code{font:12px var(--mono);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:1px 5px;overflow-wrap:anywhere}
+.note{border-radius:8px;padding:10px 12px;font-size:13px}
+.empty{color:var(--fg3);font-size:14px}
+.btn{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:8px;padding:6px 10px;cursor:pointer}
+@media (prefers-reduced-motion:no-preference){.row,.chip,.lnk{transition:background .12s}}
+</style>
+
+<header class="hero"><div class="hero-in">
+  <div class="eyebrow">vertigo.com.br · snapshot de 28/09/2026 · migração WordPress → Astro</div>
+  <h1>Mapa do Site Vertigo</h1>
+  <p>Todas as URLs clonadas do site atual, organizadas como o visitante navega. Clique em qualquer item para ver os metadados, o arquivo Markdown gerado e o que precisa de atenção na migração.</p>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<div class="wrap">
+  <section>
+    <h2>Estrutura de navegação</h2>
+    <p class="sub">Menu principal e rodapé do site atual. Os tiers de Soluções são agrupadores sem página própria (link <code>#</code> no menu).</p>
+    <div class="zone">Menu principal</div>
+    <div class="nav-tree" id="navMain"></div>
+    <div class="zone">Rodapé e páginas institucionais</div>
+    <div class="nav-tree" id="navFoot"></div>
+  </section>
+
+  <section>
+    <h2>Explorador de conteúdo</h2>
+    <p class="sub">Busque por título ou URL, filtre por tipo, categoria e ano de publicação.</p>
+    <div class="explorer">
+      <div style="min-width:0">
+        <div class="controls">
+          <label for="q" hidden>Buscar</label>
+          <input id="q" type="search" placeholder="Buscar título ou URL…" autocomplete="off">
+          <label for="cat" hidden>Categoria</label>
+          <select id="cat"><option value="">Todas as categorias</option></select>
+          <label for="grp" hidden>Agrupar</label>
+          <select id="grp"><option value="k">Agrupar por tipo</option><option value="y">Agrupar por ano</option><option value="c">Agrupar por categoria</option></select>
+        </div>
+        <div class="controls" id="chips"></div>
+        <div class="years" id="years" aria-label="Posts por ano"></div>
+        <p class="count" id="count"></p>
+        <div class="list" id="list"></div>
+      </div>
+      <aside class="detail" id="detail" aria-live="polite"><p class="empty">Selecione um item na lista ou na estrutura de navegação.</p></aside>
+    </div>
+  </section>
+</div>
+
+<script>
+const DATA = /*DATA*/[];
+const KIND = {pages:"Página",blog:"Post",cases:"Case"};
+const NOTES = {
+  "/sobre/":["warn","A página no ar tem texto placeholder de template (lorem ipsum / “Printa 3D Printing”). Reescrever antes de migrar."],
+  "/blog/":["mut","Listagem dinâmica: gerar no Astro a partir da coleção blog."],
+  "/materiais/":["mut","Listagem dinâmica de cases e ebooks: gerar a partir da coleção cases."],
+  "/cases/devsecops-nativo-como-trazer-mais-seguranca-de-aplicacoes-para-dentro-do-idp/":["warn","Não tem card em /materiais/; ficou sem descrição e sem link externo."],
+  "/cases/fraudes-compliance-e-interoperabilidade-os-maiores-desafios-para-o-mercado-de-fsi/":["warn","O texto do card no site atual descreve o case de DevSecOps/IDP, não este."],
+  "/contato/":["mut","Tem formulário. Os campos estão em raw-html/contato.html."],
+  "/ouvidoria/":["mut","Tem formulário. Os campos estão em raw-html/ouvidoria.html."],
+  "/canal-de-denuncias/":["mut","Tem formulário. Os campos estão em raw-html/canal-de-denuncias.html."],
+};
+const byPath = Object.fromEntries(DATA.map(d=>[d.p,d]));
+const $ = s=>document.querySelector(s);
+const esc = s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmtDate = s=>s?s.split("-").reverse().join("/"):"—";
+
+// estatísticas
+(()=>{
+  const n=k=>DATA.filter(d=>d.k===k).length;
+  const imgs=DATA.reduce((a,d)=>a+d.i,0), broken=DATA.reduce((a,d)=>a+d.b,0);
+  $("#stats").innerHTML=[[n("pages"),"páginas"],[n("blog"),"posts do blog"],[n("cases"),"cases"],[imgs,"imagens no conteúdo"],[broken,"imagens quebradas no original"]]
+    .map(([v,l])=>`<div class="stat"><b>${v.toLocaleString("pt-BR")}</b><span>${l}</span></div>`).join("");
+})();
+
+// árvore de navegação
+const L = p=>{const d=byPath[p];return `<li><button class="lnk" data-p="${esc(p)}">${esc(d?d.t:p)}</button></li>`};
+const node=(title,path,kids="",wide=false,extra="")=>`<div class="node${wide?" wide":""}"><h3>${path?`<button class="lnk" data-p="${esc(path)}">${esc(title)}</button>`:esc(title)}${extra}</h3>${path?`<div class="path">${esc(path)}</div>`:""}${kids?`<ul class="kids">${kids}</ul>`:""}</div>`;
+const tiers=[["Strategy Tier",["/strategy-tier-technology-strategy/","/strategy-tier-ai-strategy-operations/","/strategy-tier-go-to-cloud/"]],
+  ["Business Tier",["/business-tier-servicos-financeiros-seguradoras/","/business-tier-governo-judiciario/","/business-tier-business-digital-acceleration/"]],
+  ["Tech Tier",["/tech-tier-platform-engineering/","/tech-tier-data-intelligence-ai/","/tech-tier-api-integration/"]]];
+const cases=DATA.filter(d=>d.k==="cases");
+const nBlog=DATA.filter(d=>d.k==="blog").length;
+$("#navMain").innerHTML=[
+  node("Home","/"),
+  node("AI Journey","/ai-journey/"),
+  node("Nossas Soluções","/solucoes/",tiers.map(([t,ps])=>`<li class="grp">${t}</li>`+ps.map(L).join("")).join(""),true),
+  node("Parceiros","/parceiros/"),
+  node("Carreiras","/carreiras/"),
+  node("Materiais","/materiais/",`<li class="grp">Cases e ebooks · /cases/…</li>`+cases.map(c=>L(c.p)).join(""),true),
+  node("Blog","/blog/",`<li><button class="lnk" data-filter="blog">Ver os ${nBlog} posts no explorador ↓</button></li>`),
+  node("Converse com um Consultor","/contato/",`<li class="grp">Botão de destaque do menu</li>`),
+].join("");
+$("#navFoot").innerHTML=["/contato/","/ouvidoria/","/canal-de-denuncias/","/politica-de-privacidade/"].map(p=>node(byPath[p]?.t||p,p)).join("");
+
+// filtros
+const state={q:"",kinds:new Set(["pages","blog","cases"]),cat:"",year:"",grp:"k",broken:false,sel:null,limit:{}};
+try{const g=localStorage.getItem("vtg-map-grp");if(g)state.grp=g}catch(e){}
+$("#grp").value=state.grp;
+const cats={};DATA.forEach(d=>d.c.forEach(c=>cats[c]=(cats[c]||0)+1));
+$("#cat").innerHTML+=Object.entries(cats).sort((a,b)=>b[1]-a[1]).map(([c,n])=>`<option value="${esc(c)}">${esc(c)} (${n})</option>`).join("");
+function chips(){
+  $("#chips").innerHTML=["pages","blog","cases"].map(k=>`<button class="chip" data-kind="${k}" aria-pressed="${state.kinds.has(k)}"><span class="dot d-${k}"></span>${KIND[k]}s</button>`).join("")
+   +`<button class="chip" id="brk" aria-pressed="${state.broken}">Só com imagens quebradas</button>`;
+}
+function years(){
+  const ys={};DATA.filter(d=>d.k==="blog").forEach(d=>{const y=d.d.slice(0,4);ys[y]=(ys[y]||0)+1});
+  const max=Math.max(...Object.values(ys));
+  $("#years").innerHTML=Object.keys(ys).sort().map(y=>`<button class="yb" data-y="${y}" aria-pressed="${state.year===y}" title="${ys[y]} posts em ${y}"><small>${ys[y]}</small><i style="height:${Math.round(ys[y]/max*58)}px"></i><em>${y}</em></button>`).join("");
+}
+function filtered(){
+  const q=state.q.trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu,"");
+  return DATA.filter(d=>state.kinds.has(d.k)
+    &&(!state.cat||d.c.includes(state.cat))
+    &&(!state.year||d.d.startsWith(state.year))
+    &&(!state.broken||d.b>0)
+    &&(!q||(d.t+" "+d.p).toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu,"").includes(q)));
+}
+function flags(d){
+  const f=[];
+  if(d.b) f.push(`<span class="pill p-bad">${d.b} img quebrada${d.b>1?"s":""}</span>`);
+  if(NOTES[d.p]) f.push(`<span class="pill p-${NOTES[d.p][0]==="warn"?"warn":"mut"}">atenção</span>`);
+  if(d.k==="blog") f.push(`<span class="pill p-mut">${d.d.slice(0,4)}</span>`);
+  return f.join("");
+}
+function render(){
+  const rows=filtered();
+  $("#count").textContent=`${rows.length} de ${DATA.length} URLs`;
+  const groups={};
+  rows.forEach(d=>{
+    const keys=state.grp==="k"?[KIND[d.k]+"s"]:state.grp==="y"?[d.k==="blog"?d.d.slice(0,4):KIND[d.k]+"s"]:(d.c.length?d.c:[KIND[d.k]+"s sem categoria"]);
+    keys.forEach(k=>(groups[k]=groups[k]||[]).push(d));
+  });
+  let order=Object.keys(groups);
+  if(state.grp==="y") order.sort((a,b)=>b.localeCompare(a));
+  else if(state.grp==="c") order.sort((a,b)=>groups[b].length-groups[a].length);
+  else order=["Páginas","Cases","Posts"].filter(k=>groups[k]);
+  $("#list").innerHTML=order.map(g=>{
+    const items=groups[g].slice().sort((a,b)=>b.d.localeCompare(a.d)), lim=state.limit[g]||60;
+    return `<div class="grp-h"><span>${esc(g)}</span><span>${items.length}</span></div>`+
+      items.slice(0,lim).map(d=>`<button class="row" data-p="${esc(d.p)}" aria-current="${state.sel===d.p}"><span class="dot d-${d.k}"></span><span class="tt"><b>${esc(d.t)}</b><span>${esc(d.p)}</span></span><span class="flags">${flags(d)}</span></button>`).join("")+
+      (items.length>lim?`<button class="more" data-more="${esc(g)}">Mostrar mais ${items.length-lim}</button>`:"");
+  }).join("")||`<p class="empty" style="padding:16px">Nenhuma URL com esses filtros. Limpe a busca ou reative um tipo.</p>`;
+}
+function show(p){
+  const d=byPath[p]; if(!d) return;
+  state.sel=p;
+  const n=NOTES[p];
+  $("#detail").innerHTML=`
+    <div class="flags" style="justify-content:flex-start"><span class="pill p-mut"><span class="dot d-${d.k}"></span> ${KIND[d.k]}</span>${d.b?`<span class="pill p-bad">${d.b} de ${d.i} imagens quebradas</span>`:d.i?`<span class="pill p-ok">${d.i} imagens OK</span>`:""}</div>
+    <h3>${esc(d.t)}</h3>
+    <dl>
+      <dt>URL</dt><dd><a href="https://vertigo.com.br${esc(d.p)}" target="_blank" rel="noopener">${esc(d.p)}</a></dd>
+      <dt>Arquivo</dt><dd><code>${esc(d.f)}</code></dd>
+      <dt>Publicado</dt><dd>${fmtDate(d.d)}</dd>
+      <dt>Atualizado</dt><dd>${fmtDate(d.m)}</dd>
+      ${d.c.length?`<dt>Categorias</dt><dd>${d.c.map(esc).join(", ")}</dd>`:""}
+      ${d.tg?`<dt>Tags</dt><dd>${d.tg}</dd>`:""}
+      <dt>Palavras</dt><dd>${d.w.toLocaleString("pt-BR")}</dd>
+      <dt>Origem</dt><dd>${d.s==="rest"?"API REST (HTML Gutenberg)":"HTML renderizado (Elementor)"}</dd>
+      <dt>Imagem destaque</dt><dd>${d.fi?"Sim":"Não"}</dd>
+      <dt>Meta description</dt><dd>${d.sd?"Sim":"Ausente"}</dd>
+      ${d.x?`<dt>Link externo</dt><dd><a href="${esc(d.x)}" target="_blank" rel="noopener">materiais.vertigo.com.br</a></dd>`:""}
+    </dl>
+    ${n?`<div class="note p-${n[0]==="warn"?"warn":"mut"}">${esc(n[1])}</div>`:""}
+    <div><button class="btn" id="copy">Copiar caminho do arquivo</button></div>`;
+  document.querySelectorAll(".row").forEach(r=>r.setAttribute("aria-current",r.dataset.p===p));
+  $("#copy").onclick=e=>{navigator.clipboard?.writeText(d.f).then(()=>e.target.textContent="Copiado",()=>e.target.textContent=d.f).catch(()=>{})};
+}
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button"); if(!t) return;
+  if(t.dataset.p){show(t.dataset.p); if(window.innerWidth<=920 && !t.classList.contains("row")) $("#detail").scrollIntoView({behavior:"smooth",block:"start"}); else if(window.innerWidth<=920) $("#detail").scrollIntoView({behavior:"smooth"});}
+  else if(t.dataset.kind){const k=t.dataset.kind;state.kinds.has(k)&&state.kinds.size>1?state.kinds.delete(k):state.kinds.add(k);chips();render()}
+  else if(t.id==="brk"){state.broken=!state.broken;chips();render()}
+  else if(t.dataset.y){state.year=state.year===t.dataset.y?"":t.dataset.y;if(state.year)state.kinds=new Set(["blog"]);chips();years();render()}
+  else if(t.dataset.more){state.limit[t.dataset.more]=1e9;render()}
+  else if(t.dataset.filter){state.kinds=new Set([t.dataset.filter]);chips();render();$("#q").scrollIntoView({behavior:"smooth",block:"center"})}
+});
+$("#q").addEventListener("input",e=>{state.q=e.target.value;render()});
+$("#cat").addEventListener("change",e=>{state.cat=e.target.value;render()});
+$("#grp").addEventListener("change",e=>{state.grp=e.target.value;try{localStorage.setItem("vtg-map-grp",state.grp)}catch(_){ }render()});
+chips();years();render();show("/");
+</script>

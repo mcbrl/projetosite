@@ -1,0 +1,2718 @@
+[
+  {
+    "url": "https://vertigo.com.br/ai-journey/",
+    "path": "/ai-journey/",
+    "type": "pages",
+    "file": "src/content/pages/ai-journey.md",
+    "wpId": 169741
+  },
+  {
+    "url": "https://vertigo.com.br/carreiras/",
+    "path": "/carreiras/",
+    "type": "pages",
+    "file": "src/content/pages/carreiras.md",
+    "wpId": 169349
+  },
+  {
+    "url": "https://vertigo.com.br/parceiros/",
+    "path": "/parceiros/",
+    "type": "pages",
+    "file": "src/content/pages/parceiros.md",
+    "wpId": 169267
+  },
+  {
+    "url": "https://vertigo.com.br/strategy-tier-ai-strategy-operations/",
+    "path": "/strategy-tier-ai-strategy-operations/",
+    "type": "pages",
+    "file": "src/content/pages/strategy-tier-ai-strategy-operations.md",
+    "wpId": 168379
+  },
+  {
+    "url": "https://vertigo.com.br/materiais/",
+    "path": "/materiais/",
+    "type": "pages",
+    "file": "src/content/pages/materiais.md",
+    "wpId": 167406
+  },
+  {
+    "url": "https://vertigo.com.br/politica-de-privacidade/",
+    "path": "/politica-de-privacidade/",
+    "type": "pages",
+    "file": "src/content/pages/politica-de-privacidade.md",
+    "wpId": 167294
+  },
+  {
+    "url": "https://vertigo.com.br/tech-tier-api-integration/",
+    "path": "/tech-tier-api-integration/",
+    "type": "pages",
+    "file": "src/content/pages/tech-tier-api-integration.md",
+    "wpId": 167251
+  },
+  {
+    "url": "https://vertigo.com.br/tech-tier-data-intelligence-ai/",
+    "path": "/tech-tier-data-intelligence-ai/",
+    "type": "pages",
+    "file": "src/content/pages/tech-tier-data-intelligence-ai.md",
+    "wpId": 167243
+  },
+  {
+    "url": "https://vertigo.com.br/tech-tier-platform-engineering/",
+    "path": "/tech-tier-platform-engineering/",
+    "type": "pages",
+    "file": "src/content/pages/tech-tier-platform-engineering.md",
+    "wpId": 167235
+  },
+  {
+    "url": "https://vertigo.com.br/business-tier-business-digital-acceleration/",
+    "path": "/business-tier-business-digital-acceleration/",
+    "type": "pages",
+    "file": "src/content/pages/business-tier-business-digital-acceleration.md",
+    "wpId": 167227
+  },
+  {
+    "url": "https://vertigo.com.br/business-tier-governo-judiciario/",
+    "path": "/business-tier-governo-judiciario/",
+    "type": "pages",
+    "file": "src/content/pages/business-tier-governo-judiciario.md",
+    "wpId": 167216
+  },
+  {
+    "url": "https://vertigo.com.br/business-tier-servicos-financeiros-seguradoras/",
+    "path": "/business-tier-servicos-financeiros-seguradoras/",
+    "type": "pages",
+    "file": "src/content/pages/business-tier-servicos-financeiros-seguradoras.md",
+    "wpId": 167211
+  },
+  {
+    "url": "https://vertigo.com.br/strategy-tier-go-to-cloud/",
+    "path": "/strategy-tier-go-to-cloud/",
+    "type": "pages",
+    "file": "src/content/pages/strategy-tier-go-to-cloud.md",
+    "wpId": 167191
+  },
+  {
+    "url": "https://vertigo.com.br/strategy-tier-technology-strategy/",
+    "path": "/strategy-tier-technology-strategy/",
+    "type": "pages",
+    "file": "src/content/pages/strategy-tier-technology-strategy.md",
+    "wpId": 167170
+  },
+  {
+    "url": "https://vertigo.com.br/ouvidoria/",
+    "path": "/ouvidoria/",
+    "type": "pages",
+    "file": "src/content/pages/ouvidoria.md",
+    "wpId": 167152
+  },
+  {
+    "url": "https://vertigo.com.br/canal-de-denuncias/",
+    "path": "/canal-de-denuncias/",
+    "type": "pages",
+    "file": "src/content/pages/canal-de-denuncias.md",
+    "wpId": 167145
+  },
+  {
+    "url": "https://vertigo.com.br/blog/",
+    "path": "/blog/",
+    "type": "pages",
+    "file": "src/content/pages/blog.md",
+    "wpId": 166578
+  },
+  {
+    "url": "https://vertigo.com.br/solucoes/",
+    "path": "/solucoes/",
+    "type": "pages",
+    "file": "src/content/pages/solucoes.md",
+    "wpId": 83
+  },
+  {
+    "url": "https://vertigo.com.br/contato/",
+    "path": "/contato/",
+    "type": "pages",
+    "file": "src/content/pages/contato.md",
+    "wpId": 76
+  },
+  {
+    "url": "https://vertigo.com.br/sobre/",
+    "path": "/sobre/",
+    "type": "pages",
+    "file": "src/content/pages/sobre.md",
+    "wpId": 70
+  },
+  {
+    "url": "https://vertigo.com.br/",
+    "path": "/",
+    "type": "pages",
+    "file": "src/content/pages/index.md",
+    "wpId": 65
+  },
+  {
+    "url": "https://vertigo.com.br/cases/api-management-platform-comparison-veecode-vs-competitors/",
+    "path": "/cases/api-management-platform-comparison-veecode-vs-competitors/",
+    "type": "cases",
+    "file": "src/content/cases/api-management-platform-comparison-veecode-vs-competitors.md",
+    "wpId": 167344
+  },
+  {
+    "url": "https://vertigo.com.br/cases/como-a-vertigo-tecnologia-ajudou-a-cnp-seguradora-a-escalar-sua-operacao-digital-no-setor-de-seguros/",
+    "path": "/cases/como-a-vertigo-tecnologia-ajudou-a-cnp-seguradora-a-escalar-sua-operacao-digital-no-setor-de-seguros/",
+    "type": "cases",
+    "file": "src/content/cases/como-a-vertigo-tecnologia-ajudou-a-cnp-seguradora-a-escalar-sua-operacao-digital-no-setor-de-seguros.md",
+    "wpId": 167342
+  },
+  {
+    "url": "https://vertigo.com.br/cases/api-management-and-security-transformation-using-open-source-tools/",
+    "path": "/cases/api-management-and-security-transformation-using-open-source-tools/",
+    "type": "cases",
+    "file": "src/content/cases/api-management-and-security-transformation-using-open-source-tools.md",
+    "wpId": 167340
+  },
+  {
+    "url": "https://vertigo.com.br/cases/implementando-projetos-de-ia-em-ambientes-altamente-regulamentados/",
+    "path": "/cases/implementando-projetos-de-ia-em-ambientes-altamente-regulamentados/",
+    "type": "cases",
+    "file": "src/content/cases/implementando-projetos-de-ia-em-ambientes-altamente-regulamentados.md",
+    "wpId": 167338
+  },
+  {
+    "url": "https://vertigo.com.br/cases/fraudes-compliance-e-interoperabilidade-os-maiores-desafios-para-o-mercado-de-fsi/",
+    "path": "/cases/fraudes-compliance-e-interoperabilidade-os-maiores-desafios-para-o-mercado-de-fsi/",
+    "type": "cases",
+    "file": "src/content/cases/fraudes-compliance-e-interoperabilidade-os-maiores-desafios-para-o-mercado-de-fsi.md",
+    "wpId": 167317
+  },
+  {
+    "url": "https://vertigo.com.br/cases/como-instituicoes-financeiras-podem-ganhar-eficiencia-com-apiops-e-devsecops/",
+    "path": "/cases/como-instituicoes-financeiras-podem-ganhar-eficiencia-com-apiops-e-devsecops/",
+    "type": "cases",
+    "file": "src/content/cases/como-instituicoes-financeiras-podem-ganhar-eficiencia-com-apiops-e-devsecops.md",
+    "wpId": 167316
+  },
+  {
+    "url": "https://vertigo.com.br/cases/devsecops-nativo-como-trazer-mais-seguranca-de-aplicacoes-para-dentro-do-idp/",
+    "path": "/cases/devsecops-nativo-como-trazer-mais-seguranca-de-aplicacoes-para-dentro-do-idp/",
+    "type": "cases",
+    "file": "src/content/cases/devsecops-nativo-como-trazer-mais-seguranca-de-aplicacoes-para-dentro-do-idp.md",
+    "wpId": 167315
+  },
+  {
+    "url": "https://vertigo.com.br/ia-conversacional-em-seguradoras-chatbot-vs-agente-autonomo/",
+    "path": "/ia-conversacional-em-seguradoras-chatbot-vs-agente-autonomo/",
+    "type": "posts",
+    "file": "src/content/blog/ia-conversacional-em-seguradoras-chatbot-vs-agente-autonomo.md",
+    "wpId": 170038
+  },
+  {
+    "url": "https://vertigo.com.br/relatorio-transparencia-igualdade-salarial-2-semestre-2026/",
+    "path": "/relatorio-transparencia-igualdade-salarial-2-semestre-2026/",
+    "type": "posts",
+    "file": "src/content/blog/relatorio-transparencia-igualdade-salarial-2-semestre-2026.md",
+    "wpId": 169976
+  },
+  {
+    "url": "https://vertigo.com.br/open-insurance-agentes-de-ia-dados-regulatorios/",
+    "path": "/open-insurance-agentes-de-ia-dados-regulatorios/",
+    "type": "posts",
+    "file": "src/content/blog/open-insurance-agentes-de-ia-dados-regulatorios.md",
+    "wpId": 169937
+  },
+  {
+    "url": "https://vertigo.com.br/team-topologies-na-pratica-o-operating-model-que-sustenta-a-adocao-de-ia/",
+    "path": "/team-topologies-na-pratica-o-operating-model-que-sustenta-a-adocao-de-ia/",
+    "type": "posts",
+    "file": "src/content/blog/team-topologies-na-pratica-o-operating-model-que-sustenta-a-adocao-de-ia.md",
+    "wpId": 169926
+  },
+  {
+    "url": "https://vertigo.com.br/team-topologies-o-pre-requisito-esquecido-para-escalar-ia/",
+    "path": "/team-topologies-o-pre-requisito-esquecido-para-escalar-ia/",
+    "type": "posts",
+    "file": "src/content/blog/team-topologies-o-pre-requisito-esquecido-para-escalar-ia.md",
+    "wpId": 169922
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-completa-27-anos-e-coloca-ia-em-producao-com-governanca/",
+    "path": "/vertigo-completa-27-anos-e-coloca-ia-em-producao-com-governanca/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-completa-27-anos-e-coloca-ia-em-producao-com-governanca.md",
+    "wpId": 169909
+  },
+  {
+    "url": "https://vertigo.com.br/governanca-de-agentes-de-ia-e-reducao-de-equipes/",
+    "path": "/governanca-de-agentes-de-ia-e-reducao-de-equipes/",
+    "type": "posts",
+    "file": "src/content/blog/governanca-de-agentes-de-ia-e-reducao-de-equipes.md",
+    "wpId": 169903
+  },
+  {
+    "url": "https://vertigo.com.br/o-custo-invisivel-da-ia-sem-governanca-o-que-cfos-e-ctos-precisam-medir/",
+    "path": "/o-custo-invisivel-da-ia-sem-governanca-o-que-cfos-e-ctos-precisam-medir/",
+    "type": "posts",
+    "file": "src/content/blog/o-custo-invisivel-da-ia-sem-governanca-o-que-cfos-e-ctos-precisam-medir.md",
+    "wpId": 169899
+  },
+  {
+    "url": "https://vertigo.com.br/agentes-de-ia-na-regulacao-de-sinistros-como-reduzir-o-tempo-de-analise-e-o-custo-operacional/",
+    "path": "/agentes-de-ia-na-regulacao-de-sinistros-como-reduzir-o-tempo-de-analise-e-o-custo-operacional/",
+    "type": "posts",
+    "file": "src/content/blog/agentes-de-ia-na-regulacao-de-sinistros-como-reduzir-o-tempo-de-analise-e-o-custo-operacional.md",
+    "wpId": 169866
+  },
+  {
+    "url": "https://vertigo.com.br/diagnostico-de-maturidade-em-ia-vertigo/",
+    "path": "/diagnostico-de-maturidade-em-ia-vertigo/",
+    "type": "posts",
+    "file": "src/content/blog/diagnostico-de-maturidade-em-ia-vertigo.md",
+    "wpId": 169735
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-ingressa-no-claude-partner-network-da-anthropic/",
+    "path": "/vertigo-ingressa-no-claude-partner-network-da-anthropic/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-ingressa-no-claude-partner-network-da-anthropic.md",
+    "wpId": 169724
+  },
+  {
+    "url": "https://vertigo.com.br/do-api-gateway-ao-ai-gateway-a-evolucao-que-o-setor-financeiro-nao-pode-ignorar/",
+    "path": "/do-api-gateway-ao-ai-gateway-a-evolucao-que-o-setor-financeiro-nao-pode-ignorar/",
+    "type": "posts",
+    "file": "src/content/blog/do-api-gateway-ao-ai-gateway-a-evolucao-que-o-setor-financeiro-nao-pode-ignorar.md",
+    "wpId": 169668
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-um-mcp-gateway-e-como-ele-viabiliza-agentes-de-ia-em-escala/",
+    "path": "/o-que-e-um-mcp-gateway-e-como-ele-viabiliza-agentes-de-ia-em-escala/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-um-mcp-gateway-e-como-ele-viabiliza-agentes-de-ia-em-escala.md",
+    "wpId": 169665
+  },
+  {
+    "url": "https://vertigo.com.br/modernizacao-tecnologica-no-setor-financeiro/",
+    "path": "/modernizacao-tecnologica-no-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/modernizacao-tecnologica-no-setor-financeiro.md",
+    "wpId": 169662
+  },
+  {
+    "url": "https://vertigo.com.br/setor-financeiro-em-2026-ia-open-finance-baas-e-as-tendencias/",
+    "path": "/setor-financeiro-em-2026-ia-open-finance-baas-e-as-tendencias/",
+    "type": "posts",
+    "file": "src/content/blog/setor-financeiro-em-2026-ia-open-finance-baas-e-as-tendencias.md",
+    "wpId": 169659
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-o-setor-financeiro-ainda-depende-de-planilhas/",
+    "path": "/por-que-o-setor-financeiro-ainda-depende-de-planilhas/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-o-setor-financeiro-ainda-depende-de-planilhas.md",
+    "wpId": 169656
+  },
+  {
+    "url": "https://vertigo.com.br/contas-a-pagar-e-receber-7-gargalos-que-drenam-o-setor-financeiro-brasileiro/",
+    "path": "/contas-a-pagar-e-receber-7-gargalos-que-drenam-o-setor-financeiro-brasileiro/",
+    "type": "posts",
+    "file": "src/content/blog/contas-a-pagar-e-receber-7-gargalos-que-drenam-o-setor-financeiro-brasileiro.md",
+    "wpId": 169632
+  },
+  {
+    "url": "https://vertigo.com.br/10-maiores-dores-do-setor-financeiro-como-a-tecnologia-resolve/",
+    "path": "/10-maiores-dores-do-setor-financeiro-como-a-tecnologia-resolve/",
+    "type": "posts",
+    "file": "src/content/blog/10-maiores-dores-do-setor-financeiro-como-a-tecnologia-resolve.md",
+    "wpId": 169617
+  },
+  {
+    "url": "https://vertigo.com.br/plataforma-white-label-seguros-quando-faz-sentido/",
+    "path": "/plataforma-white-label-seguros-quando-faz-sentido/",
+    "type": "posts",
+    "file": "src/content/blog/plataforma-white-label-seguros-quando-faz-sentido.md",
+    "wpId": 169611
+  },
+  {
+    "url": "https://vertigo.com.br/5-problemas-setor-de-seguros-como-plataforma-white-label-pode-resolver/",
+    "path": "/5-problemas-setor-de-seguros-como-plataforma-white-label-pode-resolver/",
+    "type": "posts",
+    "file": "src/content/blog/5-problemas-setor-de-seguros-como-plataforma-white-label-pode-resolver.md",
+    "wpId": 169443
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-e-reconhecida-como-parceiro-do-ano-da-liferay-em-marketing-excellence/",
+    "path": "/vertigo-e-reconhecida-como-parceiro-do-ano-da-liferay-em-marketing-excellence/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-e-reconhecida-como-parceiro-do-ano-da-liferay-em-marketing-excellence.md",
+    "wpId": 169288
+  },
+  {
+    "url": "https://vertigo.com.br/5-gargalos-operacionais-seguradoras-brasileiras-custam-milhoes/",
+    "path": "/5-gargalos-operacionais-seguradoras-brasileiras-custam-milhoes/",
+    "type": "posts",
+    "file": "src/content/blog/5-gargalos-operacionais-seguradoras-brasileiras-custam-milhoes.md",
+    "wpId": 169249
+  },
+  {
+    "url": "https://vertigo.com.br/5-dores-do-setor-de-seguros-consultoria-especializada-reduz-custos/",
+    "path": "/5-dores-do-setor-de-seguros-consultoria-especializada-reduz-custos/",
+    "type": "posts",
+    "file": "src/content/blog/5-dores-do-setor-de-seguros-consultoria-especializada-reduz-custos.md",
+    "wpId": 168967
+  },
+  {
+    "url": "https://vertigo.com.br/agentes-ia-seguradoras-team-topologies/",
+    "path": "/agentes-ia-seguradoras-team-topologies/",
+    "type": "posts",
+    "file": "src/content/blog/agentes-ia-seguradoras-team-topologies.md",
+    "wpId": 168777
+  },
+  {
+    "url": "https://vertigo.com.br/o-futuro-dos-seguros-ia-e-apis-para-acelerar-sinistros-e-reduzir-riscos/",
+    "path": "/o-futuro-dos-seguros-ia-e-apis-para-acelerar-sinistros-e-reduzir-riscos/",
+    "type": "posts",
+    "file": "src/content/blog/o-futuro-dos-seguros-ia-e-apis-para-acelerar-sinistros-e-reduzir-riscos.md",
+    "wpId": 166221
+  },
+  {
+    "url": "https://vertigo.com.br/ia-em-ambientes-regulados-como-apis-garantem-inovacao-sem-comprometer-a-conformidade/",
+    "path": "/ia-em-ambientes-regulados-como-apis-garantem-inovacao-sem-comprometer-a-conformidade/",
+    "type": "posts",
+    "file": "src/content/blog/ia-em-ambientes-regulados-como-apis-garantem-inovacao-sem-comprometer-a-conformidade.md",
+    "wpId": 166208
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-tecnologia-divulga-relatorio-de-transparencia-e-igualdade-salarial-entre-homens-e-mulheres/",
+    "path": "/vertigo-tecnologia-divulga-relatorio-de-transparencia-e-igualdade-salarial-entre-homens-e-mulheres/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-tecnologia-divulga-relatorio-de-transparencia-e-igualdade-salarial-entre-homens-e-mulheres.md",
+    "wpId": 166204
+  },
+  {
+    "url": "https://vertigo.com.br/platform-engineering-e-grafos-no-setor-de-seguros-e-financeiro/",
+    "path": "/platform-engineering-e-grafos-no-setor-de-seguros-e-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/platform-engineering-e-grafos-no-setor-de-seguros-e-financeiro.md",
+    "wpId": 166180
+  },
+  {
+    "url": "https://vertigo.com.br/apis-setor-de-seguros-e-financeiro-inovacao-com-a-vertigo-tecnologia/",
+    "path": "/apis-setor-de-seguros-e-financeiro-inovacao-com-a-vertigo-tecnologia/",
+    "type": "posts",
+    "file": "src/content/blog/apis-setor-de-seguros-e-financeiro-inovacao-com-a-vertigo-tecnologia.md",
+    "wpId": 166176
+  },
+  {
+    "url": "https://vertigo.com.br/riscos-e-complexidade-no-setor-financeiro-e-de-seguros/",
+    "path": "/riscos-e-complexidade-no-setor-financeiro-e-de-seguros/",
+    "type": "posts",
+    "file": "src/content/blog/riscos-e-complexidade-no-setor-financeiro-e-de-seguros.md",
+    "wpId": 166172
+  },
+  {
+    "url": "https://vertigo.com.br/como-uma-plataforma-dxp-resolve-desafios-do-setor-financeiro/",
+    "path": "/como-uma-plataforma-dxp-resolve-desafios-do-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/como-uma-plataforma-dxp-resolve-desafios-do-setor-financeiro.md",
+    "wpId": 166146
+  },
+  {
+    "url": "https://vertigo.com.br/desafios-do-setor-financeiro-como-a-vertigo-tecnologia-pode-ajudar/",
+    "path": "/desafios-do-setor-financeiro-como-a-vertigo-tecnologia-pode-ajudar/",
+    "type": "posts",
+    "file": "src/content/blog/desafios-do-setor-financeiro-como-a-vertigo-tecnologia-pode-ajudar.md",
+    "wpId": 166139
+  },
+  {
+    "url": "https://vertigo.com.br/como-escolher-consultoria-cloud-personalizada/",
+    "path": "/como-escolher-consultoria-cloud-personalizada/",
+    "type": "posts",
+    "file": "src/content/blog/como-escolher-consultoria-cloud-personalizada.md",
+    "wpId": 166131
+  },
+  {
+    "url": "https://vertigo.com.br/setor-publico-mais-eficiente-com-ia-e-apis-kong-gateway/",
+    "path": "/setor-publico-mais-eficiente-com-ia-e-apis-kong-gateway/",
+    "type": "posts",
+    "file": "src/content/blog/setor-publico-mais-eficiente-com-ia-e-apis-kong-gateway.md",
+    "wpId": 166085
+  },
+  {
+    "url": "https://vertigo.com.br/papel-das-apis-abertas-no-open-finance-veja-os-riscos-e-oportunidades/",
+    "path": "/papel-das-apis-abertas-no-open-finance-veja-os-riscos-e-oportunidades/",
+    "type": "posts",
+    "file": "src/content/blog/papel-das-apis-abertas-no-open-finance-veja-os-riscos-e-oportunidades.md",
+    "wpId": 166074
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-dxp-no-setor-de-seguros/",
+    "path": "/liferay-dxp-no-setor-de-seguros/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-dxp-no-setor-de-seguros.md",
+    "wpId": 166066
+  },
+  {
+    "url": "https://vertigo.com.br/kong-inc-e-o-setor-de-seguros-o-papel-das-apis/",
+    "path": "/kong-inc-e-o-setor-de-seguros-o-papel-das-apis/",
+    "type": "posts",
+    "file": "src/content/blog/kong-inc-e-o-setor-de-seguros-o-papel-das-apis.md",
+    "wpId": 165898
+  },
+  {
+    "url": "https://vertigo.com.br/sustentacao-kong-api-como-garantir-seguranca-e-performance-no-setor-financeiro/",
+    "path": "/sustentacao-kong-api-como-garantir-seguranca-e-performance-no-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/sustentacao-kong-api-como-garantir-seguranca-e-performance-no-setor-financeiro.md",
+    "wpId": 165852
+  },
+  {
+    "url": "https://vertigo.com.br/suporte-kong-gateway-aplicando-api-management-no-mercado-financeiro/",
+    "path": "/suporte-kong-gateway-aplicando-api-management-no-mercado-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/suporte-kong-gateway-aplicando-api-management-no-mercado-financeiro.md",
+    "wpId": 165817
+  },
+  {
+    "url": "https://vertigo.com.br/solucionando-dores-do-setor-publico-com-liferay-dxp/",
+    "path": "/solucionando-dores-do-setor-publico-com-liferay-dxp/",
+    "type": "posts",
+    "file": "src/content/blog/solucionando-dores-do-setor-publico-com-liferay-dxp.md",
+    "wpId": 165813
+  },
+  {
+    "url": "https://vertigo.com.br/apis-publicas-vs-privadas-no-setor-financeiro-qual-e-a-melhor-escolha/",
+    "path": "/apis-publicas-vs-privadas-no-setor-financeiro-qual-e-a-melhor-escolha/",
+    "type": "posts",
+    "file": "src/content/blog/apis-publicas-vs-privadas-no-setor-financeiro-qual-e-a-melhor-escolha.md",
+    "wpId": 165793
+  },
+  {
+    "url": "https://vertigo.com.br/tendencias-tecnologicas-ate-2030/",
+    "path": "/tendencias-tecnologicas-ate-2030/",
+    "type": "posts",
+    "file": "src/content/blog/tendencias-tecnologicas-ate-2030.md",
+    "wpId": 165789
+  },
+  {
+    "url": "https://vertigo.com.br/gustavo-paiva-assume-como-diretor-financeiro-e-de-governanca-da-vertigo-tecnologia/",
+    "path": "/gustavo-paiva-assume-como-diretor-financeiro-e-de-governanca-da-vertigo-tecnologia/",
+    "type": "posts",
+    "file": "src/content/blog/gustavo-paiva-assume-como-diretor-financeiro-e-de-governanca-da-vertigo-tecnologia.md",
+    "wpId": 165730
+  },
+  {
+    "url": "https://vertigo.com.br/inteligencia-artificial-na-analise-de-credito-como-impulsiona-o-setor-financeiro/",
+    "path": "/inteligencia-artificial-na-analise-de-credito-como-impulsiona-o-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/inteligencia-artificial-na-analise-de-credito-como-impulsiona-o-setor-financeiro.md",
+    "wpId": 165689
+  },
+  {
+    "url": "https://vertigo.com.br/workflows-bancarios-e-platform-engineering-no-setor-financeiro/",
+    "path": "/workflows-bancarios-e-platform-engineering-no-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/workflows-bancarios-e-platform-engineering-no-setor-financeiro.md",
+    "wpId": 165685
+  },
+  {
+    "url": "https://vertigo.com.br/como-o-ipaas-otimiza-a-integracao-de-sistemas-bancarios/",
+    "path": "/como-o-ipaas-otimiza-a-integracao-de-sistemas-bancarios/",
+    "type": "posts",
+    "file": "src/content/blog/como-o-ipaas-otimiza-a-integracao-de-sistemas-bancarios.md",
+    "wpId": 165672
+  },
+  {
+    "url": "https://vertigo.com.br/platform-engineering-5-vantagens-para-o-setor-de-seguros/",
+    "path": "/platform-engineering-5-vantagens-para-o-setor-de-seguros/",
+    "type": "posts",
+    "file": "src/content/blog/platform-engineering-5-vantagens-para-o-setor-de-seguros.md",
+    "wpId": 165642
+  },
+  {
+    "url": "https://vertigo.com.br/automacao-de-processos-no-setor-publico-o-impacto-do-devops-na-modernizacao-de-governos/",
+    "path": "/automacao-de-processos-no-setor-publico-o-impacto-do-devops-na-modernizacao-de-governos/",
+    "type": "posts",
+    "file": "src/content/blog/automacao-de-processos-no-setor-publico-o-impacto-do-devops-na-modernizacao-de-governos.md",
+    "wpId": 165629
+  },
+  {
+    "url": "https://vertigo.com.br/governanca-de-dados-setor-publico-com-neo4j/",
+    "path": "/governanca-de-dados-setor-publico-com-neo4j/",
+    "type": "posts",
+    "file": "src/content/blog/governanca-de-dados-setor-publico-com-neo4j.md",
+    "wpId": 165607
+  },
+  {
+    "url": "https://vertigo.com.br/4-passos-para-modernizar-portais-no-setor-publico-com-liferay-dxp/",
+    "path": "/4-passos-para-modernizar-portais-no-setor-publico-com-liferay-dxp/",
+    "type": "posts",
+    "file": "src/content/blog/4-passos-para-modernizar-portais-no-setor-publico-com-liferay-dxp.md",
+    "wpId": 165574
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-sao-apis-financeiras-5-dicas-de-seguranca-digital/",
+    "path": "/o-que-sao-apis-financeiras-5-dicas-de-seguranca-digital/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-sao-apis-financeiras-5-dicas-de-seguranca-digital.md",
+    "wpId": 165442
+  },
+  {
+    "url": "https://vertigo.com.br/ebook-migrando-kong-open-source-oss-para-kong-enterprise-api-gateway/",
+    "path": "/ebook-migrando-kong-open-source-oss-para-kong-enterprise-api-gateway/",
+    "type": "posts",
+    "file": "src/content/blog/ebook-migrando-kong-open-source-oss-para-kong-enterprise-api-gateway.md",
+    "wpId": 165242
+  },
+  {
+    "url": "https://vertigo.com.br/ebook-infraestrutura-de-api-esb-versus-gateway-de-api/",
+    "path": "/ebook-infraestrutura-de-api-esb-versus-gateway-de-api/",
+    "type": "posts",
+    "file": "src/content/blog/ebook-infraestrutura-de-api-esb-versus-gateway-de-api.md",
+    "wpId": 165113
+  },
+  {
+    "url": "https://vertigo.com.br/material-liferay-dxp-7-casos-de-uso-comuns/",
+    "path": "/material-liferay-dxp-7-casos-de-uso-comuns/",
+    "type": "posts",
+    "file": "src/content/blog/material-liferay-dxp-7-casos-de-uso-comuns.md",
+    "wpId": 164402
+  },
+  {
+    "url": "https://vertigo.com.br/liferaydxp-10-motivos-para-utilizar/",
+    "path": "/liferaydxp-10-motivos-para-utilizar/",
+    "type": "posts",
+    "file": "src/content/blog/liferaydxp-10-motivos-para-utilizar.md",
+    "wpId": 164323
+  },
+  {
+    "url": "https://vertigo.com.br/jornada-para-nuvem-com-veecode-platform-e-kong-gateway/",
+    "path": "/jornada-para-nuvem-com-veecode-platform-e-kong-gateway/",
+    "type": "posts",
+    "file": "src/content/blog/jornada-para-nuvem-com-veecode-platform-e-kong-gateway.md",
+    "wpId": 163496
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-tecnologia-e-digibee-juntas-na-febraban-tech-2024/",
+    "path": "/vertigo-tecnologia-e-digibee-juntas-na-febraban-tech-2024/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-tecnologia-e-digibee-juntas-na-febraban-tech-2024.md",
+    "wpId": 163488
+  },
+  {
+    "url": "https://vertigo.com.br/6-passos-para-a-migracao-para-a-nuvem-no-setor-financeiro/",
+    "path": "/6-passos-para-a-migracao-para-a-nuvem-no-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/6-passos-para-a-migracao-para-a-nuvem-no-setor-financeiro.md",
+    "wpId": 163478
+  },
+  {
+    "url": "https://vertigo.com.br/5-perguntas-para-fazer-ao-seu-gateway-de-api/",
+    "path": "/5-perguntas-para-fazer-ao-seu-gateway-de-api/",
+    "type": "posts",
+    "file": "src/content/blog/5-perguntas-para-fazer-ao-seu-gateway-de-api.md",
+    "wpId": 163467
+  },
+  {
+    "url": "https://vertigo.com.br/infografico-diferenciando-api-gateway-de-service-mesh/",
+    "path": "/infografico-diferenciando-api-gateway-de-service-mesh/",
+    "type": "posts",
+    "file": "src/content/blog/infografico-diferenciando-api-gateway-de-service-mesh.md",
+    "wpId": 163458
+  },
+  {
+    "url": "https://vertigo.com.br/kong-gateway-6-dicas-para-melhorar-performance-da-api/",
+    "path": "/kong-gateway-6-dicas-para-melhorar-performance-da-api/",
+    "type": "posts",
+    "file": "src/content/blog/kong-gateway-6-dicas-para-melhorar-performance-da-api.md",
+    "wpId": 163433
+  },
+  {
+    "url": "https://vertigo.com.br/relatorio-de-transparencia-e-igualdade-salarial-entre-homens-e-mulheres/",
+    "path": "/relatorio-de-transparencia-e-igualdade-salarial-entre-homens-e-mulheres/",
+    "type": "posts",
+    "file": "src/content/blog/relatorio-de-transparencia-e-igualdade-salarial-entre-homens-e-mulheres.md",
+    "wpId": 163427
+  },
+  {
+    "url": "https://vertigo.com.br/ipaas-digibee-5-desafios-na-integracao-de-sistemas/",
+    "path": "/ipaas-digibee-5-desafios-na-integracao-de-sistemas/",
+    "type": "posts",
+    "file": "src/content/blog/ipaas-digibee-5-desafios-na-integracao-de-sistemas.md",
+    "wpId": 163376
+  },
+  {
+    "url": "https://vertigo.com.br/seguranca-digital-neo4j-banco-de-dados-em-grafos/",
+    "path": "/seguranca-digital-neo4j-banco-de-dados-em-grafos/",
+    "type": "posts",
+    "file": "src/content/blog/seguranca-digital-neo4j-banco-de-dados-em-grafos.md",
+    "wpId": 163367
+  },
+  {
+    "url": "https://vertigo.com.br/5-beneficios-do-ipaas-digibee/",
+    "path": "/5-beneficios-do-ipaas-digibee/",
+    "type": "posts",
+    "file": "src/content/blog/5-beneficios-do-ipaas-digibee.md",
+    "wpId": 163343
+  },
+  {
+    "url": "https://vertigo.com.br/como-a-ia-pode-otimizar-o-devops/",
+    "path": "/como-a-ia-pode-otimizar-o-devops/",
+    "type": "posts",
+    "file": "src/content/blog/como-a-ia-pode-otimizar-o-devops.md",
+    "wpId": 163314
+  },
+  {
+    "url": "https://vertigo.com.br/porque-utilizar-uma-platform-engineering/",
+    "path": "/porque-utilizar-uma-platform-engineering/",
+    "type": "posts",
+    "file": "src/content/blog/porque-utilizar-uma-platform-engineering.md",
+    "wpId": 163300
+  },
+  {
+    "url": "https://vertigo.com.br/banco-de-dados-grafos-setor-financeiro/",
+    "path": "/banco-de-dados-grafos-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/banco-de-dados-grafos-setor-financeiro.md",
+    "wpId": 163284
+  },
+  {
+    "url": "https://vertigo.com.br/banco-de-dados-em-grafos-5-vantagens-sobre-o-relacional/",
+    "path": "/banco-de-dados-em-grafos-5-vantagens-sobre-o-relacional/",
+    "type": "posts",
+    "file": "src/content/blog/banco-de-dados-em-grafos-5-vantagens-sobre-o-relacional.md",
+    "wpId": 163279
+  },
+  {
+    "url": "https://vertigo.com.br/gartner-principais-tendencias-tecnologia-2024/",
+    "path": "/gartner-principais-tendencias-tecnologia-2024/",
+    "type": "posts",
+    "file": "src/content/blog/gartner-principais-tendencias-tecnologia-2024.md",
+    "wpId": 163270
+  },
+  {
+    "url": "https://vertigo.com.br/nova-genai-stack-para-desenvolvedores/",
+    "path": "/nova-genai-stack-para-desenvolvedores/",
+    "type": "posts",
+    "file": "src/content/blog/nova-genai-stack-para-desenvolvedores.md",
+    "wpId": 163241
+  },
+  {
+    "url": "https://vertigo.com.br/banco-de-dados-em-grafos-o-que-e-e-quais-as-vantagens-para-seu-negocio/",
+    "path": "/banco-de-dados-em-grafos-o-que-e-e-quais-as-vantagens-para-seu-negocio/",
+    "type": "posts",
+    "file": "src/content/blog/banco-de-dados-em-grafos-o-que-e-e-quais-as-vantagens-para-seu-negocio.md",
+    "wpId": 163235
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-tecnologia-e-neo4j-anunciam-parceria-estrategica-em-analise-de-dados/",
+    "path": "/vertigo-tecnologia-e-neo4j-anunciam-parceria-estrategica-em-analise-de-dados/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-tecnologia-e-neo4j-anunciam-parceria-estrategica-em-analise-de-dados.md",
+    "wpId": 163200
+  },
+  {
+    "url": "https://vertigo.com.br/chatbots-como-podem-melhorar-o-desempenho-do-time-de-ti/",
+    "path": "/chatbots-como-podem-melhorar-o-desempenho-do-time-de-ti/",
+    "type": "posts",
+    "file": "src/content/blog/chatbots-como-podem-melhorar-o-desempenho-do-time-de-ti.md",
+    "wpId": 163090
+  },
+  {
+    "url": "https://vertigo.com.br/kubernetes-ingress-confira-as-melhores-praticas-de-uso/",
+    "path": "/kubernetes-ingress-confira-as-melhores-praticas-de-uso/",
+    "type": "posts",
+    "file": "src/content/blog/kubernetes-ingress-confira-as-melhores-praticas-de-uso.md",
+    "wpId": 162853
+  },
+  {
+    "url": "https://vertigo.com.br/migracao-para-nuvem-aws-principais-dicas-para-o-sucesso/",
+    "path": "/migracao-para-nuvem-aws-principais-dicas-para-o-sucesso/",
+    "type": "posts",
+    "file": "src/content/blog/migracao-para-nuvem-aws-principais-dicas-para-o-sucesso.md",
+    "wpId": 162442
+  },
+  {
+    "url": "https://vertigo.com.br/sistemas-legados-e-nuvem-estrategias-para-otimizacao-de-recursos/",
+    "path": "/sistemas-legados-e-nuvem-estrategias-para-otimizacao-de-recursos/",
+    "type": "posts",
+    "file": "src/content/blog/sistemas-legados-e-nuvem-estrategias-para-otimizacao-de-recursos.md",
+    "wpId": 162427
+  },
+  {
+    "url": "https://vertigo.com.br/custo-elevado-de-operacoes-otimizacao-de-despesas-e-recursos-na-nuvem/",
+    "path": "/custo-elevado-de-operacoes-otimizacao-de-despesas-e-recursos-na-nuvem/",
+    "type": "posts",
+    "file": "src/content/blog/custo-elevado-de-operacoes-otimizacao-de-despesas-e-recursos-na-nuvem.md",
+    "wpId": 162423
+  },
+  {
+    "url": "https://vertigo.com.br/migracao-para-a-nuvem-como-tornar-a-sua-empresa-uma-referencia-em-inovacao-e-eficiencia/",
+    "path": "/migracao-para-a-nuvem-como-tornar-a-sua-empresa-uma-referencia-em-inovacao-e-eficiencia/",
+    "type": "posts",
+    "file": "src/content/blog/migracao-para-a-nuvem-como-tornar-a-sua-empresa-uma-referencia-em-inovacao-e-eficiencia.md",
+    "wpId": 162419
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-dxp-7-4-tudo-sobre-a-plataforma-de-experiencia-digital/",
+    "path": "/liferay-dxp-7-4-tudo-sobre-a-plataforma-de-experiencia-digital/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-dxp-7-4-tudo-sobre-a-plataforma-de-experiencia-digital.md",
+    "wpId": 162410
+  },
+  {
+    "url": "https://vertigo.com.br/24-anos-de-vertigo-tecnologia/",
+    "path": "/24-anos-de-vertigo-tecnologia/",
+    "type": "posts",
+    "file": "src/content/blog/24-anos-de-vertigo-tecnologia.md",
+    "wpId": 162367
+  },
+  {
+    "url": "https://vertigo.com.br/terraform-cloud-integrar-pipelines-cicd/",
+    "path": "/terraform-cloud-integrar-pipelines-cicd/",
+    "type": "posts",
+    "file": "src/content/blog/terraform-cloud-integrar-pipelines-cicd.md",
+    "wpId": 162352
+  },
+  {
+    "url": "https://vertigo.com.br/kong-domine-apis-com-o-gigante-do-api-gateway/",
+    "path": "/kong-domine-apis-com-o-gigante-do-api-gateway/",
+    "type": "posts",
+    "file": "src/content/blog/kong-domine-apis-com-o-gigante-do-api-gateway.md",
+    "wpId": 162345
+  },
+  {
+    "url": "https://vertigo.com.br/terraform-cloud-por-que-usar/",
+    "path": "/terraform-cloud-por-que-usar/",
+    "type": "posts",
+    "file": "src/content/blog/terraform-cloud-por-que-usar.md",
+    "wpId": 162124
+  },
+  {
+    "url": "https://vertigo.com.br/como-implementar-self-healing-no-kubernetes/",
+    "path": "/como-implementar-self-healing-no-kubernetes/",
+    "type": "posts",
+    "file": "src/content/blog/como-implementar-self-healing-no-kubernetes.md",
+    "wpId": 162106
+  },
+  {
+    "url": "https://vertigo.com.br/automatizando-o-gerenciamento-de-ambientes-kubernetes-usuarios-ferramentas-e-namespaces-no-eks-da-aws-com-terraform-parte-3/",
+    "path": "/automatizando-o-gerenciamento-de-ambientes-kubernetes-usuarios-ferramentas-e-namespaces-no-eks-da-aws-com-terraform-parte-3/",
+    "type": "posts",
+    "file": "src/content/blog/automatizando-o-gerenciamento-de-ambientes-kubernetes-usuarios-ferramentas-e-namespaces-no-eks-da-aws-com-terraform-parte-3.md",
+    "wpId": 162094
+  },
+  {
+    "url": "https://vertigo.com.br/como-agilizar-a-criacao-e-destruicao-de-recursos-gerenciados-pelo-terraform-atraves-de-targets/",
+    "path": "/como-agilizar-a-criacao-e-destruicao-de-recursos-gerenciados-pelo-terraform-atraves-de-targets/",
+    "type": "posts",
+    "file": "src/content/blog/como-agilizar-a-criacao-e-destruicao-de-recursos-gerenciados-pelo-terraform-atraves-de-targets.md",
+    "wpId": 162077
+  },
+  {
+    "url": "https://vertigo.com.br/implementando-microsservicos-com-kubernetes-criando-testando-e-compartilhando-helm-charts-parte-2/",
+    "path": "/implementando-microsservicos-com-kubernetes-criando-testando-e-compartilhando-helm-charts-parte-2/",
+    "type": "posts",
+    "file": "src/content/blog/implementando-microsservicos-com-kubernetes-criando-testando-e-compartilhando-helm-charts-parte-2.md",
+    "wpId": 162069
+  },
+  {
+    "url": "https://vertigo.com.br/de-manifestos-a-helm-charts-entendendo-as-vantagens-para-microsservicos-kubernetes-parte-1/",
+    "path": "/de-manifestos-a-helm-charts-entendendo-as-vantagens-para-microsservicos-kubernetes-parte-1/",
+    "type": "posts",
+    "file": "src/content/blog/de-manifestos-a-helm-charts-entendendo-as-vantagens-para-microsservicos-kubernetes-parte-1.md",
+    "wpId": 162059
+  },
+  {
+    "url": "https://vertigo.com.br/kubernetes_hpa_memoria/",
+    "path": "/kubernetes_hpa_memoria/",
+    "type": "posts",
+    "file": "src/content/blog/kubernetes_hpa_memoria.md",
+    "wpId": 162048
+  },
+  {
+    "url": "https://vertigo.com.br/como-utilizar-metricas-personalizadas-no-horizontal-pod-autoscaler-hpa-do-kubernetes/",
+    "path": "/como-utilizar-metricas-personalizadas-no-horizontal-pod-autoscaler-hpa-do-kubernetes/",
+    "type": "posts",
+    "file": "src/content/blog/como-utilizar-metricas-personalizadas-no-horizontal-pod-autoscaler-hpa-do-kubernetes.md",
+    "wpId": 162035
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops-desafios-comuns/",
+    "path": "/devsecops-desafios-comuns/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops-desafios-comuns.md",
+    "wpId": 162031
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-dxp-seo/",
+    "path": "/liferay-dxp-seo/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-dxp-seo.md",
+    "wpId": 161975
+  },
+  {
+    "url": "https://vertigo.com.br/como-manter-o-ambiente-seguro-entre-sistemas-legados-e-novas-aplicacoes/",
+    "path": "/como-manter-o-ambiente-seguro-entre-sistemas-legados-e-novas-aplicacoes/",
+    "type": "posts",
+    "file": "src/content/blog/como-manter-o-ambiente-seguro-entre-sistemas-legados-e-novas-aplicacoes.md",
+    "wpId": 161952
+  },
+  {
+    "url": "https://vertigo.com.br/ataques-ciberneticos-como-reduzir-os-danos-antes-de-afetar-toda-a-operacao/",
+    "path": "/ataques-ciberneticos-como-reduzir-os-danos-antes-de-afetar-toda-a-operacao/",
+    "type": "posts",
+    "file": "src/content/blog/ataques-ciberneticos-como-reduzir-os-danos-antes-de-afetar-toda-a-operacao.md",
+    "wpId": 161948
+  },
+  {
+    "url": "https://vertigo.com.br/vazamento-de-informacoes-sigilosas-impactos-no-aumento-de-custos-para-a-empresa/",
+    "path": "/vazamento-de-informacoes-sigilosas-impactos-no-aumento-de-custos-para-a-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/vazamento-de-informacoes-sigilosas-impactos-no-aumento-de-custos-para-a-empresa.md",
+    "wpId": 161944
+  },
+  {
+    "url": "https://vertigo.com.br/como-utilizar-iac-para-configurar-um-ambiente-zero-trust-com-comunicacao-mtls/",
+    "path": "/como-utilizar-iac-para-configurar-um-ambiente-zero-trust-com-comunicacao-mtls/",
+    "type": "posts",
+    "file": "src/content/blog/como-utilizar-iac-para-configurar-um-ambiente-zero-trust-com-comunicacao-mtls.md",
+    "wpId": 161740
+  },
+  {
+    "url": "https://vertigo.com.br/platform-engineering-e-a-sua-relacao-com-o-devops-saiba-como-implementar/",
+    "path": "/platform-engineering-e-a-sua-relacao-com-o-devops-saiba-como-implementar/",
+    "type": "posts",
+    "file": "src/content/blog/platform-engineering-e-a-sua-relacao-com-o-devops-saiba-como-implementar.md",
+    "wpId": 161734
+  },
+  {
+    "url": "https://vertigo.com.br/5-razoes-para-o-uso-de-chatbots-em-fintechs/",
+    "path": "/5-razoes-para-o-uso-de-chatbots-em-fintechs/",
+    "type": "posts",
+    "file": "src/content/blog/5-razoes-para-o-uso-de-chatbots-em-fintechs.md",
+    "wpId": 161722
+  },
+  {
+    "url": "https://vertigo.com.br/governanca-de-apis-como-garantir-gerenciamento-alta-disponibilidade-e-reducao-de-custos-dos-seus-servicos/",
+    "path": "/governanca-de-apis-como-garantir-gerenciamento-alta-disponibilidade-e-reducao-de-custos-dos-seus-servicos/",
+    "type": "posts",
+    "file": "src/content/blog/governanca-de-apis-como-garantir-gerenciamento-alta-disponibilidade-e-reducao-de-custos-dos-seus-servicos.md",
+    "wpId": 161718
+  },
+  {
+    "url": "https://vertigo.com.br/como-reduzir-a-alta-demanda-computacional-com-gateways-de-api/",
+    "path": "/como-reduzir-a-alta-demanda-computacional-com-gateways-de-api/",
+    "type": "posts",
+    "file": "src/content/blog/como-reduzir-a-alta-demanda-computacional-com-gateways-de-api.md",
+    "wpId": 161713
+  },
+  {
+    "url": "https://vertigo.com.br/barreiras-a-inovacao-impactos-da-alta-complexidade-no-gerenciamento-de-apis/",
+    "path": "/barreiras-a-inovacao-impactos-da-alta-complexidade-no-gerenciamento-de-apis/",
+    "type": "posts",
+    "file": "src/content/blog/barreiras-a-inovacao-impactos-da-alta-complexidade-no-gerenciamento-de-apis.md",
+    "wpId": 161709
+  },
+  {
+    "url": "https://vertigo.com.br/veecode-platform/",
+    "path": "/veecode-platform/",
+    "type": "posts",
+    "file": "src/content/blog/veecode-platform.md",
+    "wpId": 161693
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-realiza-a-primeira-edicao-do-sales-kickoff/",
+    "path": "/vertigo-realiza-a-primeira-edicao-do-sales-kickoff/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-realiza-a-primeira-edicao-do-sales-kickoff.md",
+    "wpId": 161688
+  },
+  {
+    "url": "https://vertigo.com.br/seguranca-zero-trust-em-uma-estrategia-devsecops/",
+    "path": "/seguranca-zero-trust-em-uma-estrategia-devsecops/",
+    "type": "posts",
+    "file": "src/content/blog/seguranca-zero-trust-em-uma-estrategia-devsecops.md",
+    "wpId": 161660
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops-no-desenvolvimento-de-apis-4-dicas-de-seguranca-digital-para-sua-aplicacao/",
+    "path": "/devsecops-no-desenvolvimento-de-apis-4-dicas-de-seguranca-digital-para-sua-aplicacao/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops-no-desenvolvimento-de-apis-4-dicas-de-seguranca-digital-para-sua-aplicacao.md",
+    "wpId": 161641
+  },
+  {
+    "url": "https://vertigo.com.br/5-linguagens-de-programacao-para-devops/",
+    "path": "/5-linguagens-de-programacao-para-devops/",
+    "type": "posts",
+    "file": "src/content/blog/5-linguagens-de-programacao-para-devops.md",
+    "wpId": 161626
+  },
+  {
+    "url": "https://vertigo.com.br/seguranca-de-apis-confira-as-top-10-falhas-de-seguranca-do-owasp/",
+    "path": "/seguranca-de-apis-confira-as-top-10-falhas-de-seguranca-do-owasp/",
+    "type": "posts",
+    "file": "src/content/blog/seguranca-de-apis-confira-as-top-10-falhas-de-seguranca-do-owasp.md",
+    "wpId": 161515
+  },
+  {
+    "url": "https://vertigo.com.br/a-evolucao-das-apis-a-jornada-de-rpc-a-soap-e-xml/",
+    "path": "/a-evolucao-das-apis-a-jornada-de-rpc-a-soap-e-xml/",
+    "type": "posts",
+    "file": "src/content/blog/a-evolucao-das-apis-a-jornada-de-rpc-a-soap-e-xml.md",
+    "wpId": 161504
+  },
+  {
+    "url": "https://vertigo.com.br/computacao-em-nuvem-4-motivos-para-investir-na-cloud-computing-em-2023/",
+    "path": "/computacao-em-nuvem-4-motivos-para-investir-na-cloud-computing-em-2023/",
+    "type": "posts",
+    "file": "src/content/blog/computacao-em-nuvem-4-motivos-para-investir-na-cloud-computing-em-2023.md",
+    "wpId": 161091
+  },
+  {
+    "url": "https://vertigo.com.br/gartner-revela-5-principais-tendencias-de-tecnologia-para-2023-confira/",
+    "path": "/gartner-revela-5-principais-tendencias-de-tecnologia-para-2023-confira/",
+    "type": "posts",
+    "file": "src/content/blog/gartner-revela-5-principais-tendencias-de-tecnologia-para-2023-confira.md",
+    "wpId": 160875
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops-como-orgaos-publicos-podem-proteger-suas-infraestruturas-na-nuvem/",
+    "path": "/devsecops-como-orgaos-publicos-podem-proteger-suas-infraestruturas-na-nuvem/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops-como-orgaos-publicos-podem-proteger-suas-infraestruturas-na-nuvem.md",
+    "wpId": 160866
+  },
+  {
+    "url": "https://vertigo.com.br/debito-tecnologico-entenda-por-que-gera-dificuldade-em-inovacao/",
+    "path": "/debito-tecnologico-entenda-por-que-gera-dificuldade-em-inovacao/",
+    "type": "posts",
+    "file": "src/content/blog/debito-tecnologico-entenda-por-que-gera-dificuldade-em-inovacao.md",
+    "wpId": 160844
+  },
+  {
+    "url": "https://vertigo.com.br/computacao-em-nuvem-as-5-tendencias-para-empresas/",
+    "path": "/computacao-em-nuvem-as-5-tendencias-para-empresas/",
+    "type": "posts",
+    "file": "src/content/blog/computacao-em-nuvem-as-5-tendencias-para-empresas.md",
+    "wpId": 160836
+  },
+  {
+    "url": "https://vertigo.com.br/seguranca-digital-4-dicas-para-aumentar-a-protecao-em-orgaos-publicos/",
+    "path": "/seguranca-digital-4-dicas-para-aumentar-a-protecao-em-orgaos-publicos/",
+    "type": "posts",
+    "file": "src/content/blog/seguranca-digital-4-dicas-para-aumentar-a-protecao-em-orgaos-publicos.md",
+    "wpId": 160796
+  },
+  {
+    "url": "https://vertigo.com.br/aws-no-brasil-solucao-em-nuvem-otimiza-infraestrutura-e-expande-a-mobilidade/",
+    "path": "/aws-no-brasil-solucao-em-nuvem-otimiza-infraestrutura-e-expande-a-mobilidade/",
+    "type": "posts",
+    "file": "src/content/blog/aws-no-brasil-solucao-em-nuvem-otimiza-infraestrutura-e-expande-a-mobilidade.md",
+    "wpId": 160777
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-tecnologia-celebra-aniversario-de-23-anos/",
+    "path": "/vertigo-tecnologia-celebra-aniversario-de-23-anos/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-tecnologia-celebra-aniversario-de-23-anos.md",
+    "wpId": 160656
+  },
+  {
+    "url": "https://vertigo.com.br/cloud-computing-5-dicas-para-aumentar-a-seguranca-no-ambiente-aws/",
+    "path": "/cloud-computing-5-dicas-para-aumentar-a-seguranca-no-ambiente-aws/",
+    "type": "posts",
+    "file": "src/content/blog/cloud-computing-5-dicas-para-aumentar-a-seguranca-no-ambiente-aws.md",
+    "wpId": 160652
+  },
+  {
+    "url": "https://vertigo.com.br/cloud-computing-5-motivos-para-utilizar-aws-na-sua-empresa/",
+    "path": "/cloud-computing-5-motivos-para-utilizar-aws-na-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/cloud-computing-5-motivos-para-utilizar-aws-na-sua-empresa.md",
+    "wpId": 160615
+  },
+  {
+    "url": "https://vertigo.com.br/seguranca-digital-ministerio-da-economia-lanca-guia-sobre-privacidade-de-dados/",
+    "path": "/seguranca-digital-ministerio-da-economia-lanca-guia-sobre-privacidade-de-dados/",
+    "type": "posts",
+    "file": "src/content/blog/seguranca-digital-ministerio-da-economia-lanca-guia-sobre-privacidade-de-dados.md",
+    "wpId": 160594
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-realiza-primeira-edicao-do-evento-cloud-native-experience-em-sao-paulo/",
+    "path": "/vertigo-realiza-primeira-edicao-do-evento-cloud-native-experience-em-sao-paulo/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-realiza-primeira-edicao-do-evento-cloud-native-experience-em-sao-paulo.md",
+    "wpId": 160546
+  },
+  {
+    "url": "https://vertigo.com.br/apis-no-setor-financeiro-veja-5-motivos-para-utilizar/",
+    "path": "/apis-no-setor-financeiro-veja-5-motivos-para-utilizar/",
+    "type": "posts",
+    "file": "src/content/blog/apis-no-setor-financeiro-veja-5-motivos-para-utilizar.md",
+    "wpId": 160540
+  },
+  {
+    "url": "https://vertigo.com.br/integracao-de-apis-criando-conectividade-no-setor-industrial/",
+    "path": "/integracao-de-apis-criando-conectividade-no-setor-industrial/",
+    "type": "posts",
+    "file": "src/content/blog/integracao-de-apis-criando-conectividade-no-setor-industrial.md",
+    "wpId": 160520
+  },
+  {
+    "url": "https://vertigo.com.br/cloud-native-sessions-conectividade-na-gestao-de-apis-e-o-tema-do-segundo-encontro/",
+    "path": "/cloud-native-sessions-conectividade-na-gestao-de-apis-e-o-tema-do-segundo-encontro/",
+    "type": "posts",
+    "file": "src/content/blog/cloud-native-sessions-conectividade-na-gestao-de-apis-e-o-tema-do-segundo-encontro.md",
+    "wpId": 160507
+  },
+  {
+    "url": "https://vertigo.com.br/infraestrutura-de-ti-na-nuvem-por-que-devo-automatizar/",
+    "path": "/infraestrutura-de-ti-na-nuvem-por-que-devo-automatizar/",
+    "type": "posts",
+    "file": "src/content/blog/infraestrutura-de-ti-na-nuvem-por-que-devo-automatizar.md",
+    "wpId": 160502
+  },
+  {
+    "url": "https://vertigo.com.br/primeira-edicao-do-cloud-native-sessions-e-um-sucesso/",
+    "path": "/primeira-edicao-do-cloud-native-sessions-e-um-sucesso/",
+    "type": "posts",
+    "file": "src/content/blog/primeira-edicao-do-cloud-native-sessions-e-um-sucesso.md",
+    "wpId": 160485
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-apoia-a-campanha-de-combate-a-pobreza-menstrual-da-pg/",
+    "path": "/vertigo-apoia-a-campanha-de-combate-a-pobreza-menstrual-da-pg/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-apoia-a-campanha-de-combate-a-pobreza-menstrual-da-pg.md",
+    "wpId": 160441
+  },
+  {
+    "url": "https://vertigo.com.br/terraform-tenha-sua-infraestrutura-cloud-automatizada-em-forma-de-codigo/",
+    "path": "/terraform-tenha-sua-infraestrutura-cloud-automatizada-em-forma-de-codigo/",
+    "type": "posts",
+    "file": "src/content/blog/terraform-tenha-sua-infraestrutura-cloud-automatizada-em-forma-de-codigo.md",
+    "wpId": 160435
+  },
+  {
+    "url": "https://vertigo.com.br/estrategia-de-seguranca-digital-3-erros-mais-comuns-que-comprometem-a-seguranca-dos-dados/",
+    "path": "/estrategia-de-seguranca-digital-3-erros-mais-comuns-que-comprometem-a-seguranca-dos-dados/",
+    "type": "posts",
+    "file": "src/content/blog/estrategia-de-seguranca-digital-3-erros-mais-comuns-que-comprometem-a-seguranca-dos-dados.md",
+    "wpId": 160364
+  },
+  {
+    "url": "https://vertigo.com.br/chatbots-sua-empresa-ja-utiliza-confira-5-segmentos-beneficiados/",
+    "path": "/chatbots-sua-empresa-ja-utiliza-confira-5-segmentos-beneficiados/",
+    "type": "posts",
+    "file": "src/content/blog/chatbots-sua-empresa-ja-utiliza-confira-5-segmentos-beneficiados.md",
+    "wpId": 160205
+  },
+  {
+    "url": "https://vertigo.com.br/ferramentas-devops-5-dicas-para-voce-utilizar-em-2022/",
+    "path": "/ferramentas-devops-5-dicas-para-voce-utilizar-em-2022/",
+    "type": "posts",
+    "file": "src/content/blog/ferramentas-devops-5-dicas-para-voce-utilizar-em-2022.md",
+    "wpId": 158925
+  },
+  {
+    "url": "https://vertigo.com.br/dia-internacional-da-mulher-conheca-a-trajetoria-e-a-superacao-de-colaboradoras-da-vertigo/",
+    "path": "/dia-internacional-da-mulher-conheca-a-trajetoria-e-a-superacao-de-colaboradoras-da-vertigo/",
+    "type": "posts",
+    "file": "src/content/blog/dia-internacional-da-mulher-conheca-a-trajetoria-e-a-superacao-de-colaboradoras-da-vertigo.md",
+    "wpId": 158857
+  },
+  {
+    "url": "https://vertigo.com.br/devops-no-setor-financeiro-oportunidade-para-tornar-o-mercado-competitivo/",
+    "path": "/devops-no-setor-financeiro-oportunidade-para-tornar-o-mercado-competitivo/",
+    "type": "posts",
+    "file": "src/content/blog/devops-no-setor-financeiro-oportunidade-para-tornar-o-mercado-competitivo.md",
+    "wpId": 158063
+  },
+  {
+    "url": "https://vertigo.com.br/solucoes-cloud-native-para-o-setor-financeiro-os-desafios-da-seguranca-digital/",
+    "path": "/solucoes-cloud-native-para-o-setor-financeiro-os-desafios-da-seguranca-digital/",
+    "type": "posts",
+    "file": "src/content/blog/solucoes-cloud-native-para-o-setor-financeiro-os-desafios-da-seguranca-digital.md",
+    "wpId": 157954
+  },
+  {
+    "url": "https://vertigo.com.br/chatbots-impulsione-o-seu-negocio-com-atendimento-humanizado/",
+    "path": "/chatbots-impulsione-o-seu-negocio-com-atendimento-humanizado/",
+    "type": "posts",
+    "file": "src/content/blog/chatbots-impulsione-o-seu-negocio-com-atendimento-humanizado.md",
+    "wpId": 157948
+  },
+  {
+    "url": "https://vertigo.com.br/vinicius-siani-e-o-novo-socio-da-vertigo-tecnologia/",
+    "path": "/vinicius-siani-e-o-novo-socio-da-vertigo-tecnologia/",
+    "type": "posts",
+    "file": "src/content/blog/vinicius-siani-e-o-novo-socio-da-vertigo-tecnologia.md",
+    "wpId": 157934
+  },
+  {
+    "url": "https://vertigo.com.br/a-importancia-da-seguranca-digital-e-da-privacidade-de-dados/",
+    "path": "/a-importancia-da-seguranca-digital-e-da-privacidade-de-dados/",
+    "type": "posts",
+    "file": "src/content/blog/a-importancia-da-seguranca-digital-e-da-privacidade-de-dados.md",
+    "wpId": 157927
+  },
+  {
+    "url": "https://vertigo.com.br/cloud-native-voce-sabe-a-diferenca-entre-os-tipos-de-nuvens/",
+    "path": "/cloud-native-voce-sabe-a-diferenca-entre-os-tipos-de-nuvens/",
+    "type": "posts",
+    "file": "src/content/blog/cloud-native-voce-sabe-a-diferenca-entre-os-tipos-de-nuvens.md",
+    "wpId": 157913
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-gartner-revela-tendencias-de-tecnologia-estrategica-para-2022/",
+    "path": "/transformacao-digital-gartner-revela-tendencias-de-tecnologia-estrategica-para-2022/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-gartner-revela-tendencias-de-tecnologia-estrategica-para-2022.md",
+    "wpId": 157906
+  },
+  {
+    "url": "https://vertigo.com.br/impulsione-seu-negocio-5-dicas-para-atender-clientes-via-chatbots/",
+    "path": "/impulsione-seu-negocio-5-dicas-para-atender-clientes-via-chatbots/",
+    "type": "posts",
+    "file": "src/content/blog/impulsione-seu-negocio-5-dicas-para-atender-clientes-via-chatbots.md",
+    "wpId": 157897
+  },
+  {
+    "url": "https://vertigo.com.br/chatops-otimizando-o-devops-via-chatbots/",
+    "path": "/chatops-otimizando-o-devops-via-chatbots/",
+    "type": "posts",
+    "file": "src/content/blog/chatops-otimizando-o-devops-via-chatbots.md",
+    "wpId": 157889
+  },
+  {
+    "url": "https://vertigo.com.br/setor-de-utilities-transformacao-digital-atraves-da-inteligencia-artificial/",
+    "path": "/setor-de-utilities-transformacao-digital-atraves-da-inteligencia-artificial/",
+    "type": "posts",
+    "file": "src/content/blog/setor-de-utilities-transformacao-digital-atraves-da-inteligencia-artificial.md",
+    "wpId": 157874
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-necessario-para-implementar-um-chatbot-confira/",
+    "path": "/o-que-e-necessario-para-implementar-um-chatbot-confira/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-necessario-para-implementar-um-chatbot-confira.md",
+    "wpId": 157865
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-no-setor-de-seguros-e-o-uso-de-chatbots/",
+    "path": "/transformacao-digital-no-setor-de-seguros-e-o-uso-de-chatbots/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-no-setor-de-seguros-e-o-uso-de-chatbots.md",
+    "wpId": 157860
+  },
+  {
+    "url": "https://vertigo.com.br/como-chatbots-podem-otimizar-suas-vendas/",
+    "path": "/como-chatbots-podem-otimizar-suas-vendas/",
+    "type": "posts",
+    "file": "src/content/blog/como-chatbots-podem-otimizar-suas-vendas.md",
+    "wpId": 157843
+  },
+  {
+    "url": "https://vertigo.com.br/aplicando-a-transformacao-digital-via-cloud-computing-e-devops/",
+    "path": "/aplicando-a-transformacao-digital-via-cloud-computing-e-devops/",
+    "type": "posts",
+    "file": "src/content/blog/aplicando-a-transformacao-digital-via-cloud-computing-e-devops.md",
+    "wpId": 157820
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-no-setor-de-higiene-e-beleza-oportunidades-de-sucesso/",
+    "path": "/transformacao-digital-no-setor-de-higiene-e-beleza-oportunidades-de-sucesso/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-no-setor-de-higiene-e-beleza-oportunidades-de-sucesso.md",
+    "wpId": 157798
+  },
+  {
+    "url": "https://vertigo.com.br/apis-de-mensageria-grandes-aliadas-para-sua-estrategia-omnichannel/",
+    "path": "/apis-de-mensageria-grandes-aliadas-para-sua-estrategia-omnichannel/",
+    "type": "posts",
+    "file": "src/content/blog/apis-de-mensageria-grandes-aliadas-para-sua-estrategia-omnichannel.md",
+    "wpId": 157794
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops-5-passos-para-implementar/",
+    "path": "/devsecops-5-passos-para-implementar/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops-5-passos-para-implementar.md",
+    "wpId": 157748
+  },
+  {
+    "url": "https://vertigo.com.br/nova-parceria-vertigo-agora-e-take-blip-partner/",
+    "path": "/nova-parceria-vertigo-agora-e-take-blip-partner/",
+    "type": "posts",
+    "file": "src/content/blog/nova-parceria-vertigo-agora-e-take-blip-partner.md",
+    "wpId": 157680
+  },
+  {
+    "url": "https://vertigo.com.br/devops-sua-empresa-esta-preparada-para-implementar/",
+    "path": "/devops-sua-empresa-esta-preparada-para-implementar/",
+    "type": "posts",
+    "file": "src/content/blog/devops-sua-empresa-esta-preparada-para-implementar.md",
+    "wpId": 157572
+  },
+  {
+    "url": "https://vertigo.com.br/solucoes-kubernetes-com-a-mirantis/",
+    "path": "/solucoes-kubernetes-com-a-mirantis/",
+    "type": "posts",
+    "file": "src/content/blog/solucoes-kubernetes-com-a-mirantis.md",
+    "wpId": 157549
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-promove-evento-digital-para-seguradoras-em-parceira-com-a-liferay/",
+    "path": "/vertigo-promove-evento-digital-para-seguradoras-em-parceira-com-a-liferay/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-promove-evento-digital-para-seguradoras-em-parceira-com-a-liferay.md",
+    "wpId": 157456
+  },
+  {
+    "url": "https://vertigo.com.br/estrategia-transformacao-digital-pos-pandemia/",
+    "path": "/estrategia-transformacao-digital-pos-pandemia/",
+    "type": "posts",
+    "file": "src/content/blog/estrategia-transformacao-digital-pos-pandemia.md",
+    "wpId": 157450
+  },
+  {
+    "url": "https://vertigo.com.br/flux-o-operador-gitops-para-kubernetes/",
+    "path": "/flux-o-operador-gitops-para-kubernetes/",
+    "type": "posts",
+    "file": "src/content/blog/flux-o-operador-gitops-para-kubernetes.md",
+    "wpId": 157423
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-no-setor-publico-processos-digitais-serao-obrigatorios/",
+    "path": "/transformacao-digital-no-setor-publico-processos-digitais-serao-obrigatorios/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-no-setor-publico-processos-digitais-serao-obrigatorios.md",
+    "wpId": 157334
+  },
+  {
+    "url": "https://vertigo.com.br/dxp-cms-ou-portal-qual-a-melhor-ferramenta-para-criar-jornadas-digitais-impactantes/",
+    "path": "/dxp-cms-ou-portal-qual-a-melhor-ferramenta-para-criar-jornadas-digitais-impactantes/",
+    "type": "posts",
+    "file": "src/content/blog/dxp-cms-ou-portal-qual-a-melhor-ferramenta-para-criar-jornadas-digitais-impactantes.md",
+    "wpId": 157322
+  },
+  {
+    "url": "https://vertigo.com.br/a-vertigo-tecnologia-foi-patrocinadora-oficial-do-kong-summit-2021/",
+    "path": "/a-vertigo-tecnologia-foi-patrocinadora-oficial-do-kong-summit-2021/",
+    "type": "posts",
+    "file": "src/content/blog/a-vertigo-tecnologia-foi-patrocinadora-oficial-do-kong-summit-2021.md",
+    "wpId": 157316
+  },
+  {
+    "url": "https://vertigo.com.br/aplicando-a-observabilidade-no-kubernetes/",
+    "path": "/aplicando-a-observabilidade-no-kubernetes/",
+    "type": "posts",
+    "file": "src/content/blog/aplicando-a-observabilidade-no-kubernetes.md",
+    "wpId": 157307
+  },
+  {
+    "url": "https://vertigo.com.br/containerizacao-6-erros-comuns-de-seguranca/",
+    "path": "/containerizacao-6-erros-comuns-de-seguranca/",
+    "type": "posts",
+    "file": "src/content/blog/containerizacao-6-erros-comuns-de-seguranca.md",
+    "wpId": 157299
+  },
+  {
+    "url": "https://vertigo.com.br/containerizacao-a-importancia-do-gerenciamento-de-containers/",
+    "path": "/containerizacao-a-importancia-do-gerenciamento-de-containers/",
+    "type": "posts",
+    "file": "src/content/blog/containerizacao-a-importancia-do-gerenciamento-de-containers.md",
+    "wpId": 157276
+  },
+  {
+    "url": "https://vertigo.com.br/kubernetes-6-principais-componentes-da-sua-arquitetura/",
+    "path": "/kubernetes-6-principais-componentes-da-sua-arquitetura/",
+    "type": "posts",
+    "file": "src/content/blog/kubernetes-6-principais-componentes-da-sua-arquitetura.md",
+    "wpId": 157267
+  },
+  {
+    "url": "https://vertigo.com.br/devops-e-kubernetes-uma-dupla-eficiente-e-complementar/",
+    "path": "/devops-e-kubernetes-uma-dupla-eficiente-e-complementar/",
+    "type": "posts",
+    "file": "src/content/blog/devops-e-kubernetes-uma-dupla-eficiente-e-complementar.md",
+    "wpId": 157230
+  },
+  {
+    "url": "https://vertigo.com.br/kubernetes-ganha-mais-forca-ainda-com-o-5g/",
+    "path": "/kubernetes-ganha-mais-forca-ainda-com-o-5g/",
+    "type": "posts",
+    "file": "src/content/blog/kubernetes-ganha-mais-forca-ainda-com-o-5g.md",
+    "wpId": 157223
+  },
+  {
+    "url": "https://vertigo.com.br/acessibilidade-digital-melhores-praticas/",
+    "path": "/acessibilidade-digital-melhores-praticas/",
+    "type": "posts",
+    "file": "src/content/blog/acessibilidade-digital-melhores-praticas.md",
+    "wpId": 157190
+  },
+  {
+    "url": "https://vertigo.com.br/fabio-flister-assume-cargo-de-diretor-financeiro-na-vertigo-tecnologia/",
+    "path": "/fabio-flister-assume-cargo-de-diretor-financeiro-na-vertigo-tecnologia/",
+    "type": "posts",
+    "file": "src/content/blog/fabio-flister-assume-cargo-de-diretor-financeiro-na-vertigo-tecnologia.md",
+    "wpId": 157184
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops-protecao-contra-ransomware/",
+    "path": "/devsecops-protecao-contra-ransomware/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops-protecao-contra-ransomware.md",
+    "wpId": 157176
+  },
+  {
+    "url": "https://vertigo.com.br/cloud-native-6-principais-erros-ao-migrar-sua-infraestrutura-para-nuvem/",
+    "path": "/cloud-native-6-principais-erros-ao-migrar-sua-infraestrutura-para-nuvem/",
+    "type": "posts",
+    "file": "src/content/blog/cloud-native-6-principais-erros-ao-migrar-sua-infraestrutura-para-nuvem.md",
+    "wpId": 157163
+  },
+  {
+    "url": "https://vertigo.com.br/gitops-da-automacao-a-integracao-continua/",
+    "path": "/gitops-da-automacao-a-integracao-continua/",
+    "type": "posts",
+    "file": "src/content/blog/gitops-da-automacao-a-integracao-continua.md",
+    "wpId": 157142
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-um-pipeline-de-ci-cd-entenda/",
+    "path": "/o-que-e-um-pipeline-de-ci-cd-entenda/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-um-pipeline-de-ci-cd-entenda.md",
+    "wpId": 157058
+  },
+  {
+    "url": "https://vertigo.com.br/a-transformacao-digital-no-setor-de-utilities/",
+    "path": "/a-transformacao-digital-no-setor-de-utilities/",
+    "type": "posts",
+    "file": "src/content/blog/a-transformacao-digital-no-setor-de-utilities.md",
+    "wpId": 157021
+  },
+  {
+    "url": "https://vertigo.com.br/kubernetes-por-que-se-tornou-tao-popular/",
+    "path": "/kubernetes-por-que-se-tornou-tao-popular/",
+    "type": "posts",
+    "file": "src/content/blog/kubernetes-por-que-se-tornou-tao-popular.md",
+    "wpId": 156997
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-no-setor-publico-governo-federal-anuncia-novas-diretrizes-para-gestao-de-compras-publicas/",
+    "path": "/transformacao-digital-no-setor-publico-governo-federal-anuncia-novas-diretrizes-para-gestao-de-compras-publicas/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-no-setor-publico-governo-federal-anuncia-novas-diretrizes-para-gestao-de-compras-publicas.md",
+    "wpId": 156990
+  },
+  {
+    "url": "https://vertigo.com.br/o-papel-das-apis-no-processo-de-transformacao-digital-da-sociedade/",
+    "path": "/o-papel-das-apis-no-processo-de-transformacao-digital-da-sociedade/",
+    "type": "posts",
+    "file": "src/content/blog/o-papel-das-apis-no-processo-de-transformacao-digital-da-sociedade.md",
+    "wpId": 156851
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-tecnologia-aniversario-de-22-anos/",
+    "path": "/vertigo-tecnologia-aniversario-de-22-anos/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-tecnologia-aniversario-de-22-anos.md",
+    "wpId": 156770
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-no-setor-publico/",
+    "path": "/transformacao-digital-no-setor-publico/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-no-setor-publico.md",
+    "wpId": 156144
+  },
+  {
+    "url": "https://vertigo.com.br/evento-liferay-vision-promove-debate-sobre-relacoes-digitais-mais-humanas/",
+    "path": "/evento-liferay-vision-promove-debate-sobre-relacoes-digitais-mais-humanas/",
+    "type": "posts",
+    "file": "src/content/blog/evento-liferay-vision-promove-debate-sobre-relacoes-digitais-mais-humanas.md",
+    "wpId": 155987
+  },
+  {
+    "url": "https://vertigo.com.br/novo-site-vertigo/",
+    "path": "/novo-site-vertigo/",
+    "type": "posts",
+    "file": "src/content/blog/novo-site-vertigo.md",
+    "wpId": 155850
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-apresenta-novo-cto-recem-criada-area-de-produtos/",
+    "path": "/vertigo-apresenta-novo-cto-recem-criada-area-de-produtos/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-apresenta-novo-cto-recem-criada-area-de-produtos.md",
+    "wpId": 5526
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-e-preciso-aperfeicoar-a-seguranca-da-tecnologia/",
+    "path": "/por-que-e-preciso-aperfeicoar-a-seguranca-da-tecnologia/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-e-preciso-aperfeicoar-a-seguranca-da-tecnologia.md",
+    "wpId": 5522
+  },
+  {
+    "url": "https://vertigo.com.br/descubra-como-melhorar-qualidade-de-seu-deploy-com-gitops/",
+    "path": "/descubra-como-melhorar-qualidade-de-seu-deploy-com-gitops/",
+    "type": "posts",
+    "file": "src/content/blog/descubra-como-melhorar-qualidade-de-seu-deploy-com-gitops.md",
+    "wpId": 5517
+  },
+  {
+    "url": "https://vertigo.com.br/descubra-a-diferenca-entre-devops-devsecops-netops/",
+    "path": "/descubra-a-diferenca-entre-devops-devsecops-netops/",
+    "type": "posts",
+    "file": "src/content/blog/descubra-a-diferenca-entre-devops-devsecops-netops.md",
+    "wpId": 5509
+  },
+  {
+    "url": "https://vertigo.com.br/as-seis-melhores-praticas-de-cloud-native-para-lideres-de-ti/",
+    "path": "/as-seis-melhores-praticas-de-cloud-native-para-lideres-de-ti/",
+    "type": "posts",
+    "file": "src/content/blog/as-seis-melhores-praticas-de-cloud-native-para-lideres-de-ti.md",
+    "wpId": 5505
+  },
+  {
+    "url": "https://vertigo.com.br/principais-consideracoes-ao-avaliar-uma-plataforma-kubernetes-para-sua-empresa/",
+    "path": "/principais-consideracoes-ao-avaliar-uma-plataforma-kubernetes-para-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/principais-consideracoes-ao-avaliar-uma-plataforma-kubernetes-para-sua-empresa.md",
+    "wpId": 5499
+  },
+  {
+    "url": "https://vertigo.com.br/estrategias-de-sucesso-para-superar-desafios-em-e-commerce/",
+    "path": "/estrategias-de-sucesso-para-superar-desafios-em-e-commerce/",
+    "type": "posts",
+    "file": "src/content/blog/estrategias-de-sucesso-para-superar-desafios-em-e-commerce.md",
+    "wpId": 5495
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-instituicoes-publicas-precisam-de-transformacao-digital/",
+    "path": "/por-que-instituicoes-publicas-precisam-de-transformacao-digital/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-instituicoes-publicas-precisam-de-transformacao-digital.md",
+    "wpId": 5490
+  },
+  {
+    "url": "https://vertigo.com.br/seguranca-da-informacao-desafios-no-setor-publico/",
+    "path": "/seguranca-da-informacao-desafios-no-setor-publico/",
+    "type": "posts",
+    "file": "src/content/blog/seguranca-da-informacao-desafios-no-setor-publico.md",
+    "wpId": 5485
+  },
+  {
+    "url": "https://vertigo.com.br/as-principais-tendencias-na-industria-de-tecnologia-para-2021/",
+    "path": "/as-principais-tendencias-na-industria-de-tecnologia-para-2021/",
+    "type": "posts",
+    "file": "src/content/blog/as-principais-tendencias-na-industria-de-tecnologia-para-2021.md",
+    "wpId": 5481
+  },
+  {
+    "url": "https://vertigo.com.br/melhores-praticas-para-uso-de-api-restful/",
+    "path": "/melhores-praticas-para-uso-de-api-restful/",
+    "type": "posts",
+    "file": "src/content/blog/melhores-praticas-para-uso-de-api-restful.md",
+    "wpId": 5478
+  },
+  {
+    "url": "https://vertigo.com.br/beneficios-da-nuvem-hibrida-para-o-setor-financeiro/",
+    "path": "/beneficios-da-nuvem-hibrida-para-o-setor-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/beneficios-da-nuvem-hibrida-para-o-setor-financeiro.md",
+    "wpId": 5474
+  },
+  {
+    "url": "https://vertigo.com.br/como-gitops-oferece-alta-velocidade-para-kubernetes/",
+    "path": "/como-gitops-oferece-alta-velocidade-para-kubernetes/",
+    "type": "posts",
+    "file": "src/content/blog/como-gitops-oferece-alta-velocidade-para-kubernetes.md",
+    "wpId": 5471
+  },
+  {
+    "url": "https://vertigo.com.br/como-kubernetes-pode-reduzir-complexidade-da-nuvem/",
+    "path": "/como-kubernetes-pode-reduzir-complexidade-da-nuvem/",
+    "type": "posts",
+    "file": "src/content/blog/como-kubernetes-pode-reduzir-complexidade-da-nuvem.md",
+    "wpId": 5463
+  },
+  {
+    "url": "https://vertigo.com.br/quais-sao-os-desafios-de-seguranca-da-nuvem-para-2021/",
+    "path": "/quais-sao-os-desafios-de-seguranca-da-nuvem-para-2021/",
+    "type": "posts",
+    "file": "src/content/blog/quais-sao-os-desafios-de-seguranca-da-nuvem-para-2021.md",
+    "wpId": 5460
+  },
+  {
+    "url": "https://vertigo.com.br/automatizando-kubernetes-com-gitops/",
+    "path": "/automatizando-kubernetes-com-gitops/",
+    "type": "posts",
+    "file": "src/content/blog/automatizando-kubernetes-com-gitops.md",
+    "wpId": 5422
+  },
+  {
+    "url": "https://vertigo.com.br/evitando-antipadroes-em-serverless-com-a-observabilidade/",
+    "path": "/evitando-antipadroes-em-serverless-com-a-observabilidade/",
+    "type": "posts",
+    "file": "src/content/blog/evitando-antipadroes-em-serverless-com-a-observabilidade.md",
+    "wpId": 5441
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-sua-atitude-multicloud-revela-sobre-sua-empresa/",
+    "path": "/o-que-sua-atitude-multicloud-revela-sobre-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-sua-atitude-multicloud-revela-sobre-sua-empresa.md",
+    "wpId": 5436
+  },
+  {
+    "url": "https://vertigo.com.br/as-principais-etapas-para-automatizar-gerenciamento-de-releases-de-software/",
+    "path": "/as-principais-etapas-para-automatizar-gerenciamento-de-releases-de-software/",
+    "type": "posts",
+    "file": "src/content/blog/as-principais-etapas-para-automatizar-gerenciamento-de-releases-de-software.md",
+    "wpId": 5406
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-api-gateway-e-service-mesh-sao-padroes-complementares/",
+    "path": "/por-que-api-gateway-e-service-mesh-sao-padroes-complementares/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-api-gateway-e-service-mesh-sao-padroes-complementares.md",
+    "wpId": 5389
+  },
+  {
+    "url": "https://vertigo.com.br/praticas-recomendadas-para-proteger-microsservicos-em-escala/",
+    "path": "/praticas-recomendadas-para-proteger-microsservicos-em-escala/",
+    "type": "posts",
+    "file": "src/content/blog/praticas-recomendadas-para-proteger-microsservicos-em-escala.md",
+    "wpId": 5386
+  },
+  {
+    "url": "https://vertigo.com.br/melhorando-entregas-de-aplicacoes-cloud-native-com-weave-kubernetes-platform/",
+    "path": "/melhorando-entregas-de-aplicacoes-cloud-native-com-weave-kubernetes-platform/",
+    "type": "posts",
+    "file": "src/content/blog/melhorando-entregas-de-aplicacoes-cloud-native-com-weave-kubernetes-platform.md",
+    "wpId": 5381
+  },
+  {
+    "url": "https://vertigo.com.br/as-melhores-praticas-de-seguranca-para-o-uso-de-api/",
+    "path": "/as-melhores-praticas-de-seguranca-para-o-uso-de-api/",
+    "type": "posts",
+    "file": "src/content/blog/as-melhores-praticas-de-seguranca-para-o-uso-de-api.md",
+    "wpId": 5377
+  },
+  {
+    "url": "https://vertigo.com.br/3-maneiras-de-superar-gargalos-do-cloud-com-devsecops/",
+    "path": "/3-maneiras-de-superar-gargalos-do-cloud-com-devsecops/",
+    "type": "posts",
+    "file": "src/content/blog/3-maneiras-de-superar-gargalos-do-cloud-com-devsecops.md",
+    "wpId": 5374
+  },
+  {
+    "url": "https://vertigo.com.br/integracao-continua-e-os-desafios-de-custos-na-nuvem/",
+    "path": "/integracao-continua-e-os-desafios-de-custos-na-nuvem/",
+    "type": "posts",
+    "file": "src/content/blog/integracao-continua-e-os-desafios-de-custos-na-nuvem.md",
+    "wpId": 5371
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-premiada-no-liferay-partner-of-the-year-latam-2019-2020/",
+    "path": "/vertigo-premiada-no-liferay-partner-of-the-year-latam-2019-2020/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-premiada-no-liferay-partner-of-the-year-latam-2019-2020.md",
+    "wpId": 5365
+  },
+  {
+    "url": "https://vertigo.com.br/a-importancia-da-seguranca-de-conteineres-e-microsservicos-para-seguradoras/",
+    "path": "/a-importancia-da-seguranca-de-conteineres-e-microsservicos-para-seguradoras/",
+    "type": "posts",
+    "file": "src/content/blog/a-importancia-da-seguranca-de-conteineres-e-microsservicos-para-seguradoras.md",
+    "wpId": 5351
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-tecnologia-e-a-primeira-a-receber-o-selo-dxp-cloud-specialized-partner-na-latam/",
+    "path": "/vertigo-tecnologia-e-a-primeira-a-receber-o-selo-dxp-cloud-specialized-partner-na-latam/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-tecnologia-e-a-primeira-a-receber-o-selo-dxp-cloud-specialized-partner-na-latam.md",
+    "wpId": 5348
+  },
+  {
+    "url": "https://vertigo.com.br/infraestrutura-como-codigo-vantagem-competitiva-no-varejo/",
+    "path": "/infraestrutura-como-codigo-vantagem-competitiva-no-varejo/",
+    "type": "posts",
+    "file": "src/content/blog/infraestrutura-como-codigo-vantagem-competitiva-no-varejo.md",
+    "wpId": 5259
+  },
+  {
+    "url": "https://vertigo.com.br/transforme-sua-ti-corporativa-em-uma-facilitadora-de-inovacao-com-cloud-native/",
+    "path": "/transforme-sua-ti-corporativa-em-uma-facilitadora-de-inovacao-com-cloud-native/",
+    "type": "posts",
+    "file": "src/content/blog/transforme-sua-ti-corporativa-em-uma-facilitadora-de-inovacao-com-cloud-native.md",
+    "wpId": 5254
+  },
+  {
+    "url": "https://vertigo.com.br/a-transformacao-digital-e-sua-contribuicao-para-o-mercado-de-bens-de-consumo/",
+    "path": "/a-transformacao-digital-e-sua-contribuicao-para-o-mercado-de-bens-de-consumo/",
+    "type": "posts",
+    "file": "src/content/blog/a-transformacao-digital-e-sua-contribuicao-para-o-mercado-de-bens-de-consumo.md",
+    "wpId": 5250
+  },
+  {
+    "url": "https://vertigo.com.br/multicloud-enfrentando-o-desafio-de-gerenciamento-de-varias-nuvens/",
+    "path": "/multicloud-enfrentando-o-desafio-de-gerenciamento-de-varias-nuvens/",
+    "type": "posts",
+    "file": "src/content/blog/multicloud-enfrentando-o-desafio-de-gerenciamento-de-varias-nuvens.md",
+    "wpId": 5221
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-a-observabilidade-e-o-futuro-do-monitoramento-de-sistemas/",
+    "path": "/por-que-a-observabilidade-e-o-futuro-do-monitoramento-de-sistemas/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-a-observabilidade-e-o-futuro-do-monitoramento-de-sistemas.md",
+    "wpId": 5224
+  },
+  {
+    "url": "https://vertigo.com.br/grpc-ou-rest-qual-utilizar/",
+    "path": "/grpc-ou-rest-qual-utilizar/",
+    "type": "posts",
+    "file": "src/content/blog/grpc-ou-rest-qual-utilizar.md",
+    "wpId": 5195
+  },
+  {
+    "url": "https://vertigo.com.br/como-garantir-que-os-seus-microsservicos-estao-funcionando-corretamente/",
+    "path": "/como-garantir-que-os-seus-microsservicos-estao-funcionando-corretamente/",
+    "type": "posts",
+    "file": "src/content/blog/como-garantir-que-os-seus-microsservicos-estao-funcionando-corretamente.md",
+    "wpId": 5190
+  },
+  {
+    "url": "https://vertigo.com.br/6-etapas-para-a-transformacao-digital-em-servicos-financeiros/",
+    "path": "/6-etapas-para-a-transformacao-digital-em-servicos-financeiros/",
+    "type": "posts",
+    "file": "src/content/blog/6-etapas-para-a-transformacao-digital-em-servicos-financeiros.md",
+    "wpId": 5175
+  },
+  {
+    "url": "https://vertigo.com.br/ti-tradicional-ti-moderna-as-principais-mudancas-em-relacao-as-entregas-continuas/",
+    "path": "/ti-tradicional-ti-moderna-as-principais-mudancas-em-relacao-as-entregas-continuas/",
+    "type": "posts",
+    "file": "src/content/blog/ti-tradicional-ti-moderna-as-principais-mudancas-em-relacao-as-entregas-continuas.md",
+    "wpId": 5162
+  },
+  {
+    "url": "https://vertigo.com.br/conheca-os-6-pilares-para-construir-aplicativos-cloud-native/",
+    "path": "/conheca-os-6-pilares-para-construir-aplicativos-cloud-native/",
+    "type": "posts",
+    "file": "src/content/blog/conheca-os-6-pilares-para-construir-aplicativos-cloud-native.md",
+    "wpId": 5137
+  },
+  {
+    "url": "https://vertigo.com.br/a-observabilidade-no-processo-de-evolucao-dos-novos-negocios/",
+    "path": "/a-observabilidade-no-processo-de-evolucao-dos-novos-negocios/",
+    "type": "posts",
+    "file": "src/content/blog/a-observabilidade-no-processo-de-evolucao-dos-novos-negocios.md",
+    "wpId": 5128
+  },
+  {
+    "url": "https://vertigo.com.br/ti-tradicional-pode-ser-um-inimigo-da-transformacao-digital/",
+    "path": "/ti-tradicional-pode-ser-um-inimigo-da-transformacao-digital/",
+    "type": "posts",
+    "file": "src/content/blog/ti-tradicional-pode-ser-um-inimigo-da-transformacao-digital.md",
+    "wpId": 5115
+  },
+  {
+    "url": "https://vertigo.com.br/como-a-cultura-devsecops-pode-auxiliar-no-processo-de-adaptacao-a-lgpd/",
+    "path": "/como-a-cultura-devsecops-pode-auxiliar-no-processo-de-adaptacao-a-lgpd/",
+    "type": "posts",
+    "file": "src/content/blog/como-a-cultura-devsecops-pode-auxiliar-no-processo-de-adaptacao-a-lgpd.md",
+    "wpId": 5107
+  },
+  {
+    "url": "https://vertigo.com.br/como-a-transformacao-digital-contribui-para-o-open-banking/",
+    "path": "/como-a-transformacao-digital-contribui-para-o-open-banking/",
+    "type": "posts",
+    "file": "src/content/blog/como-a-transformacao-digital-contribui-para-o-open-banking.md",
+    "wpId": 5104
+  },
+  {
+    "url": "https://vertigo.com.br/microsservicos-10-novos-desafios-em-relacao-a-seguranca/",
+    "path": "/microsservicos-10-novos-desafios-em-relacao-a-seguranca/",
+    "type": "posts",
+    "file": "src/content/blog/microsservicos-10-novos-desafios-em-relacao-a-seguranca.md",
+    "wpId": 5010
+  },
+  {
+    "url": "https://vertigo.com.br/beneficios-da-adocao-da-cultura-devops-em-tempos-de-crise/",
+    "path": "/beneficios-da-adocao-da-cultura-devops-em-tempos-de-crise/",
+    "type": "posts",
+    "file": "src/content/blog/beneficios-da-adocao-da-cultura-devops-em-tempos-de-crise.md",
+    "wpId": 4987
+  },
+  {
+    "url": "https://vertigo.com.br/disponibilidade-geral-da-kong-enterprise-2020-a-plataforma-que-controla-o-ciclo-de-vida-completo-do-servico/",
+    "path": "/disponibilidade-geral-da-kong-enterprise-2020-a-plataforma-que-controla-o-ciclo-de-vida-completo-do-servico/",
+    "type": "posts",
+    "file": "src/content/blog/disponibilidade-geral-da-kong-enterprise-2020-a-plataforma-que-controla-o-ciclo-de-vida-completo-do-servico.md",
+    "wpId": 4820
+  },
+  {
+    "url": "https://vertigo.com.br/como-o-devops-pode-ajudar-na-aceleracao-da-transformacao-digital-em-meio-a-pandemia-do-coronavirus/",
+    "path": "/como-o-devops-pode-ajudar-na-aceleracao-da-transformacao-digital-em-meio-a-pandemia-do-coronavirus/",
+    "type": "posts",
+    "file": "src/content/blog/como-o-devops-pode-ajudar-na-aceleracao-da-transformacao-digital-em-meio-a-pandemia-do-coronavirus.md",
+    "wpId": 4861
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops-e-seus-principais-indicadores-de-desempenho/",
+    "path": "/devsecops-e-seus-principais-indicadores-de-desempenho/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops-e-seus-principais-indicadores-de-desempenho.md",
+    "wpId": 4835
+  },
+  {
+    "url": "https://vertigo.com.br/como-iniciar-uma-transformacao-digital-sem-repetir-os-erros-do-passado/",
+    "path": "/como-iniciar-uma-transformacao-digital-sem-repetir-os-erros-do-passado/",
+    "type": "posts",
+    "file": "src/content/blog/como-iniciar-uma-transformacao-digital-sem-repetir-os-erros-do-passado.md",
+    "wpId": 4814
+  },
+  {
+    "url": "https://vertigo.com.br/as-vantagens-da-arquitetura-de-microsservicos/",
+    "path": "/as-vantagens-da-arquitetura-de-microsservicos/",
+    "type": "posts",
+    "file": "src/content/blog/as-vantagens-da-arquitetura-de-microsservicos.md",
+    "wpId": 4716
+  },
+  {
+    "url": "https://vertigo.com.br/devops-vs-itil4-vs-sre-acabe-com-suas-duvidas/",
+    "path": "/devops-vs-itil4-vs-sre-acabe-com-suas-duvidas/",
+    "type": "posts",
+    "file": "src/content/blog/devops-vs-itil4-vs-sre-acabe-com-suas-duvidas.md",
+    "wpId": 4599
+  },
+  {
+    "url": "https://vertigo.com.br/10-tendencias-do-devops-para-se-prestar-atencao-em-2020/",
+    "path": "/10-tendencias-do-devops-para-se-prestar-atencao-em-2020/",
+    "type": "posts",
+    "file": "src/content/blog/10-tendencias-do-devops-para-se-prestar-atencao-em-2020.md",
+    "wpId": 4585
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-kong-parceiras/",
+    "path": "/vertigo-kong-parceiras/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-kong-parceiras.md",
+    "wpId": 4683
+  },
+  {
+    "url": "https://vertigo.com.br/importancia-devops-mercado-financeiro/",
+    "path": "/importancia-devops-mercado-financeiro/",
+    "type": "posts",
+    "file": "src/content/blog/importancia-devops-mercado-financeiro.md",
+    "wpId": 4674
+  },
+  {
+    "url": "https://vertigo.com.br/porque-liferay-e-lider-no-quadrante-de-digital-experience-platforms-do-gartner/",
+    "path": "/porque-liferay-e-lider-no-quadrante-de-digital-experience-platforms-do-gartner/",
+    "type": "posts",
+    "file": "src/content/blog/porque-liferay-e-lider-no-quadrante-de-digital-experience-platforms-do-gartner.md",
+    "wpId": 2426
+  },
+  {
+    "url": "https://vertigo.com.br/integracao-entre-sistemas-modificando-a-abordagem-dos-negocios/",
+    "path": "/integracao-entre-sistemas-modificando-a-abordagem-dos-negocios/",
+    "type": "posts",
+    "file": "src/content/blog/integracao-entre-sistemas-modificando-a-abordagem-dos-negocios.md",
+    "wpId": 4463
+  },
+  {
+    "url": "https://vertigo.com.br/novo-modelo-operacional-de-ti-baseado-em-ativos-reutilizaveis/",
+    "path": "/novo-modelo-operacional-de-ti-baseado-em-ativos-reutilizaveis/",
+    "type": "posts",
+    "file": "src/content/blog/novo-modelo-operacional-de-ti-baseado-em-ativos-reutilizaveis.md",
+    "wpId": 4445
+  },
+  {
+    "url": "https://vertigo.com.br/gap-de-entrega-da-ti/",
+    "path": "/gap-de-entrega-da-ti/",
+    "type": "posts",
+    "file": "src/content/blog/gap-de-entrega-da-ti.md",
+    "wpId": 4419
+  },
+  {
+    "url": "https://vertigo.com.br/relatorio-de-benchmarks-mulesoft/",
+    "path": "/relatorio-de-benchmarks-mulesoft/",
+    "type": "posts",
+    "file": "src/content/blog/relatorio-de-benchmarks-mulesoft.md",
+    "wpId": 4394
+  },
+  {
+    "url": "https://vertigo.com.br/saiba-o-que-e-react/",
+    "path": "/saiba-o-que-e-react/",
+    "type": "posts",
+    "file": "src/content/blog/saiba-o-que-e-react.md",
+    "wpId": 4384
+  },
+  {
+    "url": "https://vertigo.com.br/como-fazer-api-uma-de-sucesso/",
+    "path": "/como-fazer-api-uma-de-sucesso/",
+    "type": "posts",
+    "file": "src/content/blog/como-fazer-api-uma-de-sucesso.md",
+    "wpId": 4365
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-real/",
+    "path": "/transformacao-digital-real/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-real.md",
+    "wpId": 4348
+  },
+  {
+    "url": "https://vertigo.com.br/mulesoft-lider-absoluto-no-gartner/",
+    "path": "/mulesoft-lider-absoluto-no-gartner/",
+    "type": "posts",
+    "file": "src/content/blog/mulesoft-lider-absoluto-no-gartner.md",
+    "wpId": 4335
+  },
+  {
+    "url": "https://vertigo.com.br/containers-vs-maquinas-virtuais/",
+    "path": "/containers-vs-maquinas-virtuais/",
+    "type": "posts",
+    "file": "src/content/blog/containers-vs-maquinas-virtuais.md",
+    "wpId": 4316
+  },
+  {
+    "url": "https://vertigo.com.br/mulesoft-tranformacao-digital/",
+    "path": "/mulesoft-tranformacao-digital/",
+    "type": "posts",
+    "file": "src/content/blog/mulesoft-tranformacao-digital.md",
+    "wpId": 4197
+  },
+  {
+    "url": "https://vertigo.com.br/a-mulher-na-ti/",
+    "path": "/a-mulher-na-ti/",
+    "type": "posts",
+    "file": "src/content/blog/a-mulher-na-ti.md",
+    "wpId": 4307
+  },
+  {
+    "url": "https://vertigo.com.br/anypoint-platform/",
+    "path": "/anypoint-platform/",
+    "type": "posts",
+    "file": "src/content/blog/anypoint-platform.md",
+    "wpId": 4001
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-voce-precisa-saber-sobre-saas/",
+    "path": "/o-que-voce-precisa-saber-sobre-saas/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-voce-precisa-saber-sobre-saas.md",
+    "wpId": 93
+  },
+  {
+    "url": "https://vertigo.com.br/quando-contratar-plataforma-de-experiencia-digital/",
+    "path": "/quando-contratar-plataforma-de-experiencia-digital/",
+    "type": "posts",
+    "file": "src/content/blog/quando-contratar-plataforma-de-experiencia-digital.md",
+    "wpId": 3955
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-sao-microsservicos/",
+    "path": "/o-que-sao-microsservicos/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-sao-microsservicos.md",
+    "wpId": 3856
+  },
+  {
+    "url": "https://vertigo.com.br/tudo-sobre-esb/",
+    "path": "/tudo-sobre-esb/",
+    "type": "posts",
+    "file": "src/content/blog/tudo-sobre-esb.md",
+    "wpId": 3815
+  },
+  {
+    "url": "https://vertigo.com.br/ferramentas-de-orquestracao-de-containers/",
+    "path": "/ferramentas-de-orquestracao-de-containers/",
+    "type": "posts",
+    "file": "src/content/blog/ferramentas-de-orquestracao-de-containers.md",
+    "wpId": 3800
+  },
+  {
+    "url": "https://vertigo.com.br/integracao-de-sistemas/",
+    "path": "/integracao-de-sistemas/",
+    "type": "posts",
+    "file": "src/content/blog/integracao-de-sistemas.md",
+    "wpId": 3741
+  },
+  {
+    "url": "https://vertigo.com.br/diferenca-entre-microsservicos-e-apis/",
+    "path": "/diferenca-entre-microsservicos-e-apis/",
+    "type": "posts",
+    "file": "src/content/blog/diferenca-entre-microsservicos-e-apis.md",
+    "wpId": 3694
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-ipaas/",
+    "path": "/o-que-e-ipaas/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-ipaas.md",
+    "wpId": 3648
+  },
+  {
+    "url": "https://vertigo.com.br/top-10-artigos-2018/",
+    "path": "/top-10-artigos-2018/",
+    "type": "posts",
+    "file": "src/content/blog/top-10-artigos-2018.md",
+    "wpId": 3603
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-uma-perspectiva/",
+    "path": "/liferay-uma-perspectiva/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-uma-perspectiva.md",
+    "wpId": 3540
+  },
+  {
+    "url": "https://vertigo.com.br/do-docker-enterprise-parte-3/",
+    "path": "/do-docker-enterprise-parte-3/",
+    "type": "posts",
+    "file": "src/content/blog/do-docker-enterprise-parte-3.md",
+    "wpId": 3369
+  },
+  {
+    "url": "https://vertigo.com.br/digitalocean-parte-ii/",
+    "path": "/digitalocean-parte-ii/",
+    "type": "posts",
+    "file": "src/content/blog/digitalocean-parte-ii.md",
+    "wpId": 3347
+  },
+  {
+    "url": "https://vertigo.com.br/digitalocean-parte-1/",
+    "path": "/digitalocean-parte-1/",
+    "type": "posts",
+    "file": "src/content/blog/digitalocean-parte-1.md",
+    "wpId": 3279
+  },
+  {
+    "url": "https://vertigo.com.br/black-friday-apm/",
+    "path": "/black-friday-apm/",
+    "type": "posts",
+    "file": "src/content/blog/black-friday-apm.md",
+    "wpId": 3248
+  },
+  {
+    "url": "https://vertigo.com.br/docker-anuncia-parceria-com-mulesoft/",
+    "path": "/docker-anuncia-parceria-com-mulesoft/",
+    "type": "posts",
+    "file": "src/content/blog/docker-anuncia-parceria-com-mulesoft.md",
+    "wpId": 3198
+  },
+  {
+    "url": "https://vertigo.com.br/mobile-first-5-coisas/",
+    "path": "/mobile-first-5-coisas/",
+    "type": "posts",
+    "file": "src/content/blog/mobile-first-5-coisas.md",
+    "wpId": 3149
+  },
+  {
+    "url": "https://vertigo.com.br/containers-platforms-forrester/",
+    "path": "/containers-platforms-forrester/",
+    "type": "posts",
+    "file": "src/content/blog/containers-platforms-forrester.md",
+    "wpId": 3099
+  },
+  {
+    "url": "https://vertigo.com.br/symposium-liferay-2018/",
+    "path": "/symposium-liferay-2018/",
+    "type": "posts",
+    "file": "src/content/blog/symposium-liferay-2018.md",
+    "wpId": 3083
+  },
+  {
+    "url": "https://vertigo.com.br/estrategia-de-container/",
+    "path": "/estrategia-de-container/",
+    "type": "posts",
+    "file": "src/content/blog/estrategia-de-container.md",
+    "wpId": 3057
+  },
+  {
+    "url": "https://vertigo.com.br/devsecops/",
+    "path": "/devsecops/",
+    "type": "posts",
+    "file": "src/content/blog/devsecops.md",
+    "wpId": 2992
+  },
+  {
+    "url": "https://vertigo.com.br/plataformas-de-experiencia-digital-dxps/",
+    "path": "/plataformas-de-experiencia-digital-dxps/",
+    "type": "posts",
+    "file": "src/content/blog/plataformas-de-experiencia-digital-dxps.md",
+    "wpId": 2976
+  },
+  {
+    "url": "https://vertigo.com.br/tutorial-docker-ee/",
+    "path": "/tutorial-docker-ee/",
+    "type": "posts",
+    "file": "src/content/blog/tutorial-docker-ee.md",
+    "wpId": 2932
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-as-empresas-mais-inovadoras-do-mundo-adotam-devops/",
+    "path": "/por-que-as-empresas-mais-inovadoras-do-mundo-adotam-devops/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-as-empresas-mais-inovadoras-do-mundo-adotam-devops.md",
+    "wpId": 2922
+  },
+  {
+    "url": "https://vertigo.com.br/o-futuro-das-apis-nos-negocios/",
+    "path": "/o-futuro-das-apis-nos-negocios/",
+    "type": "posts",
+    "file": "src/content/blog/o-futuro-das-apis-nos-negocios.md",
+    "wpId": 2881
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-conteinerizacao-de-aplicacao/",
+    "path": "/o-que-e-conteinerizacao-de-aplicacao/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-conteinerizacao-de-aplicacao.md",
+    "wpId": 2899
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-dxp-7-1/",
+    "path": "/liferay-dxp-7-1/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-dxp-7-1.md",
+    "wpId": 2853
+  },
+  {
+    "url": "https://vertigo.com.br/impacto-de-devops-para-os-resultados-da-sua-empresa/",
+    "path": "/impacto-de-devops-para-os-resultados-da-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/impacto-de-devops-para-os-resultados-da-sua-empresa.md",
+    "wpId": 2830
+  },
+  {
+    "url": "https://vertigo.com.br/mulesoft-on-premise-ou-cloudhub/",
+    "path": "/mulesoft-on-premise-ou-cloudhub/",
+    "type": "posts",
+    "file": "src/content/blog/mulesoft-on-premise-ou-cloudhub.md",
+    "wpId": 2375
+  },
+  {
+    "url": "https://vertigo.com.br/criando-sua-rede-ethereum-privada-com-docker/",
+    "path": "/criando-sua-rede-ethereum-privada-com-docker/",
+    "type": "posts",
+    "file": "src/content/blog/criando-sua-rede-ethereum-privada-com-docker.md",
+    "wpId": 2810
+  },
+  {
+    "url": "https://vertigo.com.br/conheca-serverless-baas-faas-e-conteiner/",
+    "path": "/conheca-serverless-baas-faas-e-conteiner/",
+    "type": "posts",
+    "file": "src/content/blog/conheca-serverless-baas-faas-e-conteiner.md",
+    "wpId": 2752
+  },
+  {
+    "url": "https://vertigo.com.br/os-segredos-do-sucesso-de-devops/",
+    "path": "/os-segredos-do-sucesso-de-devops/",
+    "type": "posts",
+    "file": "src/content/blog/os-segredos-do-sucesso-de-devops.md",
+    "wpId": 2710
+  },
+  {
+    "url": "https://vertigo.com.br/5-mudancas-necessarias-para-adotar-devops-na-sua-empresa/",
+    "path": "/5-mudancas-necessarias-para-adotar-devops-na-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/5-mudancas-necessarias-para-adotar-devops-na-sua-empresa.md",
+    "wpId": 2641
+  },
+  {
+    "url": "https://vertigo.com.br/como-utilizar-devops-para-aumentar-produtividade-do-seu-time-de-ti/",
+    "path": "/como-utilizar-devops-para-aumentar-produtividade-do-seu-time-de-ti/",
+    "type": "posts",
+    "file": "src/content/blog/como-utilizar-devops-para-aumentar-produtividade-do-seu-time-de-ti.md",
+    "wpId": 2607
+  },
+  {
+    "url": "https://vertigo.com.br/beneficios-de-ter-uma-esteira-de-entregas-continuas/",
+    "path": "/beneficios-de-ter-uma-esteira-de-entregas-continuas/",
+    "type": "posts",
+    "file": "src/content/blog/beneficios-de-ter-uma-esteira-de-entregas-continuas.md",
+    "wpId": 2580
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-docker/",
+    "path": "/o-que-e-docker/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-docker.md",
+    "wpId": 2424
+  },
+  {
+    "url": "https://vertigo.com.br/verdades-mitos-modernizacao-de-aplicacoes-com-conteiner/",
+    "path": "/verdades-mitos-modernizacao-de-aplicacoes-com-conteiner/",
+    "type": "posts",
+    "file": "src/content/blog/verdades-mitos-modernizacao-de-aplicacoes-com-conteiner.md",
+    "wpId": 2548
+  },
+  {
+    "url": "https://vertigo.com.br/mulesoft-lider-quadrante-api-lifecycle/",
+    "path": "/mulesoft-lider-quadrante-api-lifecycle/",
+    "type": "posts",
+    "file": "src/content/blog/mulesoft-lider-quadrante-api-lifecycle.md",
+    "wpId": 2234
+  },
+  {
+    "url": "https://vertigo.com.br/4-dicas-para-aumentar-o-engajamento-na-sua-api-2/",
+    "path": "/4-dicas-para-aumentar-o-engajamento-na-sua-api-2/",
+    "type": "posts",
+    "file": "src/content/blog/4-dicas-para-aumentar-o-engajamento-na-sua-api-2.md",
+    "wpId": 2418
+  },
+  {
+    "url": "https://vertigo.com.br/como-mensurar-analisar-customer-experience/",
+    "path": "/como-mensurar-analisar-customer-experience/",
+    "type": "posts",
+    "file": "src/content/blog/como-mensurar-analisar-customer-experience.md",
+    "wpId": 2427
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-faas-function-as-a-service-3/",
+    "path": "/o-que-e-faas-function-as-a-service-3/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-faas-function-as-a-service-3.md",
+    "wpId": 3103
+  },
+  {
+    "url": "https://vertigo.com.br/motivos-para-sua-empresa-nao-ter-um-data-center-proprio/",
+    "path": "/motivos-para-sua-empresa-nao-ter-um-data-center-proprio/",
+    "type": "posts",
+    "file": "src/content/blog/motivos-para-sua-empresa-nao-ter-um-data-center-proprio.md",
+    "wpId": 2425
+  },
+  {
+    "url": "https://vertigo.com.br/estrategia-de-monetizacao-das-apis-2/",
+    "path": "/estrategia-de-monetizacao-das-apis-2/",
+    "type": "posts",
+    "file": "src/content/blog/estrategia-de-monetizacao-das-apis-2.md",
+    "wpId": 2419
+  },
+  {
+    "url": "https://vertigo.com.br/como-escolher-aplicacao-de-monitoramento-de-performance-correta/",
+    "path": "/como-escolher-aplicacao-de-monitoramento-de-performance-correta/",
+    "type": "posts",
+    "file": "src/content/blog/como-escolher-aplicacao-de-monitoramento-de-performance-correta.md",
+    "wpId": 2423
+  },
+  {
+    "url": "https://vertigo.com.br/funcionalidades-liferay-dxp/",
+    "path": "/funcionalidades-liferay-dxp/",
+    "type": "posts",
+    "file": "src/content/blog/funcionalidades-liferay-dxp.md",
+    "wpId": 2422
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-blockchain-e-como-isso-ajuda-geracao-negocios/",
+    "path": "/o-que-e-blockchain-e-como-isso-ajuda-geracao-negocios/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-blockchain-e-como-isso-ajuda-geracao-negocios.md",
+    "wpId": 2421
+  },
+  {
+    "url": "https://vertigo.com.br/transformacao-digital-voce-esta-pronto/",
+    "path": "/transformacao-digital-voce-esta-pronto/",
+    "type": "posts",
+    "file": "src/content/blog/transformacao-digital-voce-esta-pronto.md",
+    "wpId": 2420
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-a-liferay-carioca-digital/",
+    "path": "/vertigo-a-liferay-carioca-digital/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-a-liferay-carioca-digital.md",
+    "wpId": 2093
+  },
+  {
+    "url": "https://vertigo.com.br/plataforma-digital-portal-intranet-mobile/",
+    "path": "/plataforma-digital-portal-intranet-mobile/",
+    "type": "posts",
+    "file": "src/content/blog/plataforma-digital-portal-intranet-mobile.md",
+    "wpId": 1591
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-devops/",
+    "path": "/o-que-e-devops/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-devops.md",
+    "wpId": 2071
+  },
+  {
+    "url": "https://vertigo.com.br/como-uma-estrategia-de-apis-pode-te-ajudar-trocar-de-erp/",
+    "path": "/como-uma-estrategia-de-apis-pode-te-ajudar-trocar-de-erp/",
+    "type": "posts",
+    "file": "src/content/blog/como-uma-estrategia-de-apis-pode-te-ajudar-trocar-de-erp.md",
+    "wpId": 2047
+  },
+  {
+    "url": "https://vertigo.com.br/5-principais-desafios-tecnologia-o-segundo-e-urgente/",
+    "path": "/5-principais-desafios-tecnologia-o-segundo-e-urgente/",
+    "type": "posts",
+    "file": "src/content/blog/5-principais-desafios-tecnologia-o-segundo-e-urgente.md",
+    "wpId": 900
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-liferay-platinum/",
+    "path": "/vertigo-liferay-platinum/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-liferay-platinum.md",
+    "wpId": 2031
+  },
+  {
+    "url": "https://vertigo.com.br/vertigo-celebra-aniversario-5-anos-docker/",
+    "path": "/vertigo-celebra-aniversario-5-anos-docker/",
+    "type": "posts",
+    "file": "src/content/blog/vertigo-celebra-aniversario-5-anos-docker.md",
+    "wpId": 2001
+  },
+  {
+    "url": "https://vertigo.com.br/salesforce-compra-mulesoft/",
+    "path": "/salesforce-compra-mulesoft/",
+    "type": "posts",
+    "file": "src/content/blog/salesforce-compra-mulesoft.md",
+    "wpId": 1982
+  },
+  {
+    "url": "https://vertigo.com.br/8-sites-para-encontrar-apis-ideal-para-voce/",
+    "path": "/8-sites-para-encontrar-apis-ideal-para-voce/",
+    "type": "posts",
+    "file": "src/content/blog/8-sites-para-encontrar-apis-ideal-para-voce.md",
+    "wpId": 1577
+  },
+  {
+    "url": "https://vertigo.com.br/como-apis-podem-ser-uteis-para-o-governo/",
+    "path": "/como-apis-podem-ser-uteis-para-o-governo/",
+    "type": "posts",
+    "file": "src/content/blog/como-apis-podem-ser-uteis-para-o-governo.md",
+    "wpId": 567
+  },
+  {
+    "url": "https://vertigo.com.br/api-publica-ou-privada-como-saber/",
+    "path": "/api-publica-ou-privada-como-saber/",
+    "type": "posts",
+    "file": "src/content/blog/api-publica-ou-privada-como-saber.md",
+    "wpId": 1570
+  },
+  {
+    "url": "https://vertigo.com.br/api-gateway-ou-api-management/",
+    "path": "/api-gateway-ou-api-management/",
+    "type": "posts",
+    "file": "src/content/blog/api-gateway-ou-api-management.md",
+    "wpId": 1586
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/",
+    "path": "/o-que-e-api-entenda-de-uma-maneira-simples/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-api-entenda-de-uma-maneira-simples.md",
+    "wpId": 155
+  },
+  {
+    "url": "https://vertigo.com.br/modernizando-aplicacoes-porque-devops-e-containers-sao-para-todos/",
+    "path": "/modernizando-aplicacoes-porque-devops-e-containers-sao-para-todos/",
+    "type": "posts",
+    "file": "src/content/blog/modernizando-aplicacoes-porque-devops-e-containers-sao-para-todos.md",
+    "wpId": 1719
+  },
+  {
+    "url": "https://vertigo.com.br/resumo-da-dockercon-2017-visao-de-um-consulting-partner-brasileiro/",
+    "path": "/resumo-da-dockercon-2017-visao-de-um-consulting-partner-brasileiro/",
+    "type": "posts",
+    "file": "src/content/blog/resumo-da-dockercon-2017-visao-de-um-consulting-partner-brasileiro.md",
+    "wpId": 1674
+  },
+  {
+    "url": "https://vertigo.com.br/docker-kubernetes-mesos-orquestracao-de-containers/",
+    "path": "/docker-kubernetes-mesos-orquestracao-de-containers/",
+    "type": "posts",
+    "file": "src/content/blog/docker-kubernetes-mesos-orquestracao-de-containers.md",
+    "wpId": 1596
+  },
+  {
+    "url": "https://vertigo.com.br/inovacao-em-massa-ou-transformacao-digital-de-palco/",
+    "path": "/inovacao-em-massa-ou-transformacao-digital-de-palco/",
+    "type": "posts",
+    "file": "src/content/blog/inovacao-em-massa-ou-transformacao-digital-de-palco.md",
+    "wpId": 1539
+  },
+  {
+    "url": "https://vertigo.com.br/mind-the-sec-2017/",
+    "path": "/mind-the-sec-2017/",
+    "type": "posts",
+    "file": "src/content/blog/mind-the-sec-2017.md",
+    "wpId": 1522
+  },
+  {
+    "url": "https://vertigo.com.br/o-valor-das-apis-para-o-varejo/",
+    "path": "/o-valor-das-apis-para-o-varejo/",
+    "type": "posts",
+    "file": "src/content/blog/o-valor-das-apis-para-o-varejo.md",
+    "wpId": 908
+  },
+  {
+    "url": "https://vertigo.com.br/personalizacao-monitoria-ecommerce/",
+    "path": "/personalizacao-monitoria-ecommerce/",
+    "type": "posts",
+    "file": "src/content/blog/personalizacao-monitoria-ecommerce.md",
+    "wpId": 1313
+  },
+  {
+    "url": "https://vertigo.com.br/3-problemas-gerados-pelo-aumento-de-trafego/",
+    "path": "/3-problemas-gerados-pelo-aumento-de-trafego/",
+    "type": "posts",
+    "file": "src/content/blog/3-problemas-gerados-pelo-aumento-de-trafego.md",
+    "wpId": 1301
+  },
+  {
+    "url": "https://vertigo.com.br/marketing-digital-tecnologia-da-informacao-customer-experience/",
+    "path": "/marketing-digital-tecnologia-da-informacao-customer-experience/",
+    "type": "posts",
+    "file": "src/content/blog/marketing-digital-tecnologia-da-informacao-customer-experience.md",
+    "wpId": 1279
+  },
+  {
+    "url": "https://vertigo.com.br/monitoria-da-experiencia-digital/",
+    "path": "/monitoria-da-experiencia-digital/",
+    "type": "posts",
+    "file": "src/content/blog/monitoria-da-experiencia-digital.md",
+    "wpId": 1257
+  },
+  {
+    "url": "https://vertigo.com.br/beacon-revolucionando-comercio-online/",
+    "path": "/beacon-revolucionando-comercio-online/",
+    "type": "posts",
+    "file": "src/content/blog/beacon-revolucionando-comercio-online.md",
+    "wpId": 1217
+  },
+  {
+    "url": "https://vertigo.com.br/dynatrace-liferay-gestao-performance-digital/",
+    "path": "/dynatrace-liferay-gestao-performance-digital/",
+    "type": "posts",
+    "file": "src/content/blog/dynatrace-liferay-gestao-performance-digital.md",
+    "wpId": 1157
+  },
+  {
+    "url": "https://vertigo.com.br/api-a-experiencia-do-desenvolvedor-e-importante/",
+    "path": "/api-a-experiencia-do-desenvolvedor-e-importante/",
+    "type": "posts",
+    "file": "src/content/blog/api-a-experiencia-do-desenvolvedor-e-importante.md",
+    "wpId": 1123
+  },
+  {
+    "url": "https://vertigo.com.br/relacao-entre-performance-de-aplicacoes-e-fidelidade-de-clientes/",
+    "path": "/relacao-entre-performance-de-aplicacoes-e-fidelidade-de-clientes/",
+    "type": "posts",
+    "file": "src/content/blog/relacao-entre-performance-de-aplicacoes-e-fidelidade-de-clientes.md",
+    "wpId": 1105
+  },
+  {
+    "url": "https://vertigo.com.br/analises-alem-do-google-analytics/",
+    "path": "/analises-alem-do-google-analytics/",
+    "type": "posts",
+    "file": "src/content/blog/analises-alem-do-google-analytics.md",
+    "wpId": 1080
+  },
+  {
+    "url": "https://vertigo.com.br/o-crescimento-do-uso-das-apis/",
+    "path": "/o-crescimento-do-uso-das-apis/",
+    "type": "posts",
+    "file": "src/content/blog/o-crescimento-do-uso-das-apis.md",
+    "wpId": 912
+  },
+  {
+    "url": "https://vertigo.com.br/vendas-no-e-commerce-seu-site-esta-preparado-para-picos-de-acesso/",
+    "path": "/vendas-no-e-commerce-seu-site-esta-preparado-para-picos-de-acesso/",
+    "type": "posts",
+    "file": "src/content/blog/vendas-no-e-commerce-seu-site-esta-preparado-para-picos-de-acesso.md",
+    "wpId": 910
+  },
+  {
+    "url": "https://vertigo.com.br/aumente-produtividade-da-sua-empresa-usando-intranet-de-forma-correta/",
+    "path": "/aumente-produtividade-da-sua-empresa-usando-intranet-de-forma-correta/",
+    "type": "posts",
+    "file": "src/content/blog/aumente-produtividade-da-sua-empresa-usando-intranet-de-forma-correta.md",
+    "wpId": 906
+  },
+  {
+    "url": "https://vertigo.com.br/trafego-online-robos-de-busca-metricas-digitais/",
+    "path": "/trafego-online-robos-de-busca-metricas-digitais/",
+    "type": "posts",
+    "file": "src/content/blog/trafego-online-robos-de-busca-metricas-digitais.md",
+    "wpId": 904
+  },
+  {
+    "url": "https://vertigo.com.br/7-passos-para-criar-uma-api-confiavel/",
+    "path": "/7-passos-para-criar-uma-api-confiavel/",
+    "type": "posts",
+    "file": "src/content/blog/7-passos-para-criar-uma-api-confiavel.md",
+    "wpId": 1588
+  },
+  {
+    "url": "https://vertigo.com.br/api-economy-como-usar-ti-de-forma-estrategica/",
+    "path": "/api-economy-como-usar-ti-de-forma-estrategica/",
+    "type": "posts",
+    "file": "src/content/blog/api-economy-como-usar-ti-de-forma-estrategica.md",
+    "wpId": 902
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-devo-monitorar-performance-online-do-meu-negocio/",
+    "path": "/por-que-devo-monitorar-performance-online-do-meu-negocio/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-devo-monitorar-performance-online-do-meu-negocio.md",
+    "wpId": 894
+  },
+  {
+    "url": "https://vertigo.com.br/seo-e-gestao-de-performance-por-que-devem-estar-sempre-unidas/",
+    "path": "/seo-e-gestao-de-performance-por-que-devem-estar-sempre-unidas/",
+    "type": "posts",
+    "file": "src/content/blog/seo-e-gestao-de-performance-por-que-devem-estar-sempre-unidas.md",
+    "wpId": 889
+  },
+  {
+    "url": "https://vertigo.com.br/6-motivos-para-comecar-a-monitorar-a-performance-de-suas-aplicacoes/",
+    "path": "/6-motivos-para-comecar-a-monitorar-a-performance-de-suas-aplicacoes/",
+    "type": "posts",
+    "file": "src/content/blog/6-motivos-para-comecar-a-monitorar-a-performance-de-suas-aplicacoes.md",
+    "wpId": 886
+  },
+  {
+    "url": "https://vertigo.com.br/estrategia-de-api-nao-e-estrategia-de-soa/",
+    "path": "/estrategia-de-api-nao-e-estrategia-de-soa/",
+    "type": "posts",
+    "file": "src/content/blog/estrategia-de-api-nao-e-estrategia-de-soa.md",
+    "wpId": 1590
+  },
+  {
+    "url": "https://vertigo.com.br/primeiro-a-api-e-depois-o-device/",
+    "path": "/primeiro-a-api-e-depois-o-device/",
+    "type": "posts",
+    "file": "src/content/blog/primeiro-a-api-e-depois-o-device.md",
+    "wpId": 1589
+  },
+  {
+    "url": "https://vertigo.com.br/o-governo-os-cidadaos-e-os-dados/",
+    "path": "/o-governo-os-cidadaos-e-os-dados/",
+    "type": "posts",
+    "file": "src/content/blog/o-governo-os-cidadaos-e-os-dados.md",
+    "wpId": 1587
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-e-smart-city/",
+    "path": "/o-que-e-smart-city/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-e-smart-city.md",
+    "wpId": 449
+  },
+  {
+    "url": "https://vertigo.com.br/iniciando-sua-estrategia-omnichannel/",
+    "path": "/iniciando-sua-estrategia-omnichannel/",
+    "type": "posts",
+    "file": "src/content/blog/iniciando-sua-estrategia-omnichannel.md",
+    "wpId": 1585
+  },
+  {
+    "url": "https://vertigo.com.br/10-exemplos-de-uso-da-plataforma-de-portal/",
+    "path": "/10-exemplos-de-uso-da-plataforma-de-portal/",
+    "type": "posts",
+    "file": "src/content/blog/10-exemplos-de-uso-da-plataforma-de-portal.md",
+    "wpId": 1584
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-voce-precisa-saber-sobre-estrategia-mobile/",
+    "path": "/o-que-voce-precisa-saber-sobre-estrategia-mobile/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-voce-precisa-saber-sobre-estrategia-mobile.md",
+    "wpId": 1583
+  },
+  {
+    "url": "https://vertigo.com.br/as-melhores-praticas-para-criacao-de-portal/",
+    "path": "/as-melhores-praticas-para-criacao-de-portal/",
+    "type": "posts",
+    "file": "src/content/blog/as-melhores-praticas-para-criacao-de-portal.md",
+    "wpId": 1582
+  },
+  {
+    "url": "https://vertigo.com.br/5-beneficios-da-virtualizacao-para-testar-sua-api/",
+    "path": "/5-beneficios-da-virtualizacao-para-testar-sua-api/",
+    "type": "posts",
+    "file": "src/content/blog/5-beneficios-da-virtualizacao-para-testar-sua-api.md",
+    "wpId": 1581
+  },
+  {
+    "url": "https://vertigo.com.br/por-que-voce-precisa-adotar-docker-agora-mesmo/",
+    "path": "/por-que-voce-precisa-adotar-docker-agora-mesmo/",
+    "type": "posts",
+    "file": "src/content/blog/por-que-voce-precisa-adotar-docker-agora-mesmo.md",
+    "wpId": 1580
+  },
+  {
+    "url": "https://vertigo.com.br/a-importancia-das-apis-para-o-marketing-digital/",
+    "path": "/a-importancia-das-apis-para-o-marketing-digital/",
+    "type": "posts",
+    "file": "src/content/blog/a-importancia-das-apis-para-o-marketing-digital.md",
+    "wpId": 1579
+  },
+  {
+    "url": "https://vertigo.com.br/5-acoes-para-aumentar-a-colaboracao-na-sua-empresa/",
+    "path": "/5-acoes-para-aumentar-a-colaboracao-na-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/5-acoes-para-aumentar-a-colaboracao-na-sua-empresa.md",
+    "wpId": 1578
+  },
+  {
+    "url": "https://vertigo.com.br/wso2-e-a-internet-das-coisas/",
+    "path": "/wso2-e-a-internet-das-coisas/",
+    "type": "posts",
+    "file": "src/content/blog/wso2-e-a-internet-das-coisas.md",
+    "wpId": 1576
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-como-ferramenta-de-portal/",
+    "path": "/liferay-como-ferramenta-de-portal/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-como-ferramenta-de-portal.md",
+    "wpId": 1574
+  },
+  {
+    "url": "https://vertigo.com.br/api-e-internet-das-coisas/",
+    "path": "/api-e-internet-das-coisas/",
+    "type": "posts",
+    "file": "src/content/blog/api-e-internet-das-coisas.md",
+    "wpId": 1575
+  },
+  {
+    "url": "https://vertigo.com.br/o-que-nao-pode-faltar-na-sua-intranet/",
+    "path": "/o-que-nao-pode-faltar-na-sua-intranet/",
+    "type": "posts",
+    "file": "src/content/blog/o-que-nao-pode-faltar-na-sua-intranet.md",
+    "wpId": 279
+  },
+  {
+    "url": "https://vertigo.com.br/criacao-de-portal-conheca-3-plataformas-open-source/",
+    "path": "/criacao-de-portal-conheca-3-plataformas-open-source/",
+    "type": "posts",
+    "file": "src/content/blog/criacao-de-portal-conheca-3-plataformas-open-source.md",
+    "wpId": 154172
+  },
+  {
+    "url": "https://vertigo.com.br/estrategia-de-monetizacao-das-apis/",
+    "path": "/estrategia-de-monetizacao-das-apis/",
+    "type": "posts",
+    "file": "src/content/blog/estrategia-de-monetizacao-das-apis.md",
+    "wpId": 1571
+  },
+  {
+    "url": "https://vertigo.com.br/api-interna-e-privada-conheca-5-beneficios/",
+    "path": "/api-interna-e-privada-conheca-5-beneficios/",
+    "type": "posts",
+    "file": "src/content/blog/api-interna-e-privada-conheca-5-beneficios.md",
+    "wpId": 1573
+  },
+  {
+    "url": "https://vertigo.com.br/portal-e-cms-qual-a-diferenca/",
+    "path": "/portal-e-cms-qual-a-diferenca/",
+    "type": "posts",
+    "file": "src/content/blog/portal-e-cms-qual-a-diferenca.md",
+    "wpId": 154171
+  },
+  {
+    "url": "https://vertigo.com.br/parte-1-a-economia-das-apis-ja-esta-aqui-voce-esta-pronto/",
+    "path": "/parte-1-a-economia-das-apis-ja-esta-aqui-voce-esta-pronto/",
+    "type": "posts",
+    "file": "src/content/blog/parte-1-a-economia-das-apis-ja-esta-aqui-voce-esta-pronto.md",
+    "wpId": 1572
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-lider-em-portais-horizontais-pelo-sexto-ano/",
+    "path": "/liferay-lider-em-portais-horizontais-pelo-sexto-ano/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-lider-em-portais-horizontais-pelo-sexto-ano.md",
+    "wpId": 1568
+  },
+  {
+    "url": "https://vertigo.com.br/solucoes-em-nuvem-4-razoes-para-adotar/",
+    "path": "/solucoes-em-nuvem-4-razoes-para-adotar/",
+    "type": "posts",
+    "file": "src/content/blog/solucoes-em-nuvem-4-razoes-para-adotar.md",
+    "wpId": 1569
+  },
+  {
+    "url": "https://vertigo.com.br/apis-publicas-privadas-e-entre-parceiros-qual-a-diferenca/",
+    "path": "/apis-publicas-privadas-e-entre-parceiros-qual-a-diferenca/",
+    "type": "posts",
+    "file": "src/content/blog/apis-publicas-privadas-e-entre-parceiros-qual-a-diferenca.md",
+    "wpId": 283
+  },
+  {
+    "url": "https://vertigo.com.br/ata-de-registro-de-preco-liferay/",
+    "path": "/ata-de-registro-de-preco-liferay/",
+    "type": "posts",
+    "file": "src/content/blog/ata-de-registro-de-preco-liferay.md",
+    "wpId": 566
+  },
+  {
+    "url": "https://vertigo.com.br/aumente-suas-vendas-usando-api/",
+    "path": "/aumente-suas-vendas-usando-api/",
+    "type": "posts",
+    "file": "src/content/blog/aumente-suas-vendas-usando-api.md",
+    "wpId": 154173
+  },
+  {
+    "url": "https://vertigo.com.br/entenda-o-que-e-uma-api/",
+    "path": "/entenda-o-que-e-uma-api/",
+    "type": "posts",
+    "file": "src/content/blog/entenda-o-que-e-uma-api.md",
+    "wpId": 108
+  },
+  {
+    "url": "https://vertigo.com.br/como-criar-a-visao-holistica-do-cliente/",
+    "path": "/como-criar-a-visao-holistica-do-cliente/",
+    "type": "posts",
+    "file": "src/content/blog/como-criar-a-visao-holistica-do-cliente.md",
+    "wpId": 96
+  },
+  {
+    "url": "https://vertigo.com.br/5-vantagens-de-usar-software-open-source/",
+    "path": "/5-vantagens-de-usar-software-open-source/",
+    "type": "posts",
+    "file": "src/content/blog/5-vantagens-de-usar-software-open-source.md",
+    "wpId": 166962
+  },
+  {
+    "url": "https://vertigo.com.br/liferay-ou-wordpress/",
+    "path": "/liferay-ou-wordpress/",
+    "type": "posts",
+    "file": "src/content/blog/liferay-ou-wordpress.md",
+    "wpId": 154164
+  },
+  {
+    "url": "https://vertigo.com.br/4-maneiras-de-organizar-as-informacoes-da-sua-empresa/",
+    "path": "/4-maneiras-de-organizar-as-informacoes-da-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/4-maneiras-de-organizar-as-informacoes-da-sua-empresa.md",
+    "wpId": 154163
+  },
+  {
+    "url": "https://vertigo.com.br/5-vantagens-de-utilizar-intranet-na-sua-empresa/",
+    "path": "/5-vantagens-de-utilizar-intranet-na-sua-empresa/",
+    "type": "posts",
+    "file": "src/content/blog/5-vantagens-de-utilizar-intranet-na-sua-empresa.md",
+    "wpId": 154162
+  },
+  {
+    "url": "https://vertigo.com.br/inauguracao-blog-vertigo/",
+    "path": "/inauguracao-blog-vertigo/",
+    "type": "posts",
+    "file": "src/content/blog/inauguracao-blog-vertigo.md",
+    "wpId": 565
+  }
+]

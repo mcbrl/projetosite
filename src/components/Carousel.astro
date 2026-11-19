@@ -1,0 +1,57 @@
+---
+// Carrossel leve (scroll-snap) no lugar do Swiper do Elementor.
+import Icon from "./Icon.astro";
+interface Props { perView?: number; perViewTablet?: number; perViewMobile?: number; gap?: number; autoplay?: number; label: string; tone?: "light" | "dark" }
+const { perView = 5, perViewTablet = 3, perViewMobile = 1, gap = 24, autoplay = 0, label, tone = "dark" } = Astro.props;
+---
+<div
+  class:list={["carousel", `tone-${tone}`]}
+  style={`--pv:${perView};--pvt:${perViewTablet};--pvm:${perViewMobile};--gap:${gap}px`}
+  data-carousel
+  data-autoplay={autoplay || undefined}
+  role="region"
+  aria-roledescription="carrossel"
+  aria-label={label}
+>
+  <button class="nav prev" type="button" aria-label="Anterior" data-prev><Icon name="chevron-left" size={22} /></button>
+  <div class="track" data-track tabindex="0"><slot /></div>
+  <button class="nav next" type="button" aria-label="Próximo" data-next><Icon name="chevron-right" size={22} /></button>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-carousel]").forEach((root) => {
+    const track = root.querySelector<HTMLElement>("[data-track]")!;
+    const step = () => (track.firstElementChild as HTMLElement | null)?.getBoundingClientRect().width ?? track.clientWidth;
+    const go = (dir: number) => {
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      if (dir > 0 && atEnd) track.scrollTo({ left: 0, behavior: "smooth" });
+      else if (dir < 0 && track.scrollLeft <= 4) track.scrollTo({ left: track.scrollWidth, behavior: "smooth" });
+      else track.scrollBy({ left: dir * (step() + parseFloat(getComputedStyle(track).columnGap || "0")), behavior: "smooth" });
+    };
+    root.querySelector("[data-prev]")!.addEventListener("click", () => go(-1));
+    root.querySelector("[data-next]")!.addEventListener("click", () => go(1));
+    const ms = Number(root.dataset.autoplay);
+    if (ms && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      let t = setInterval(() => go(1), ms);
+      root.addEventListener("pointerenter", () => clearInterval(t));
+      root.addEventListener("pointerleave", () => (t = setInterval(() => go(1), ms)));
+    }
+  });
+</script>
+
+<style>
+  .carousel { position: relative; padding: 0 48px; }
+  .track {
+    display: grid; grid-auto-flow: column; gap: var(--gap);
+    grid-auto-columns: calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain;
+  }
+  .track::-webkit-scrollbar { display: none; }
+  .track > :global(*) { scroll-snap-align: start; min-width: 0; }
+  .nav { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: 0; cursor: pointer; padding: 8px; }
+  .prev { left: 0; } .next { right: 0; }
+  .tone-dark .nav { color: var(--vt-white); }
+  .tone-light .nav { color: var(--vt-navy); }
+  @media (max-width: 1024px) { .track { grid-auto-columns: calc((100% - (var(--pvt) - 1) * var(--gap)) / var(--pvt)); } }
+  @media (max-width: 767px) { .carousel { padding: 0 36px; } .track { grid-auto-columns: calc((100% - (var(--pvm) - 1) * var(--gap)) / var(--pvm)); } }
+</style>

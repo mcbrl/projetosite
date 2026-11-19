@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import TierColumns from "../components/TierColumns.astro";
+import home from "../data/home.json";
+import { metaOf, pageAt } from "../lib/routes";
+
+const page = await pageAt("/solucoes/");
+---
+<BaseLayout title="Nossas Soluções" seo={page?.data.seo}>
+  <PageHero eyebrow="Nossas Soluções" title="Acelere o seu negócio" image={metaOf("/solucoes/").heroImage} />
+  {home.tiers.map((tier, i) => (
+    <section class:list={["section", { "section-dark": i % 2 === 1 }]}>
+      <div class="container">
+        <h2 class="tier-title">{tier.title}</h2>
+        <p class="tier-desc">{tier.description}</p>
+        <TierColumns columns={tier.columns} tone={i % 2 === 1 ? "dark" : "light"} />
+      </div>
+    </section>
+  ))}
+</BaseLayout>
+
+<style>
+  .tier-title { color: var(--vt-blue); font-size: clamp(32px, 3.4vw, 42px); margin-bottom: 24px; }
+  .tier-desc { font-size: 18px; margin-bottom: 24px; }
+</style>

@@ -1,0 +1,36 @@
+---
+import Carousel from "../Carousel.astro";
+import home from "../../data/home.json";
+---
+<section class="section depo">
+  <div class="container">
+    <div class="head">
+      <div>
+        <span class="chip chip-blue">Feedbacks</span>
+        <h2 class="t-h2">O que dizem sobre a Vertigo</h2>
+      </div>
+      <svg class="quote" viewBox="0 0 150 130" aria-hidden="true"><path fill="currentColor" d="M0 14C0 6 6 0 14 0h42c8 0 14 6 14 14v44c0 40-18 64-54 72-6 1-10-5-7-10 9-14 13-26 13-38H14C6 82 0 76 0 68V14zm80 0c0-8 6-14 14-14h42c8 0 14 6 14 14v44c0 40-18 64-54 72-6 1-10-5-7-10 9-14 13-26 13-38H94c-8 0-14-6-14-14V14z"/></svg>
+    </div>
+    <Carousel label="Depoimentos" tone="light" perView={2} perViewTablet={1} perViewMobile={1} gap={20}>
+      {home.depoimentos.map((d) => (
+        <figure class="card">
+          <blockquote>{d.quote}</blockquote>
+          <figcaption><strong>{d.name}</strong><em>{d.role}</em></figcaption>
+        </figure>
+      ))}
+    </Carousel>
+  </div>
+</section>
+<style>
+  .depo { background: #f7f7f7; padding: 40px 0 96px; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; }
+  .head h2 { color: var(--vt-blue); margin: 16px 0 0; }
+  .quote { width: 150px; color: var(--vt-blue); }
+  .depo :global(.carousel) { padding: 0; }
+  .depo :global(.carousel .nav) { margin: 0 -44px; }
+  .card { margin: 0; background: var(--vt-blue); color: var(--vt-white); padding: 32px 36px 24px; border-bottom-right-radius: var(--vt-radius-card); display: flex; flex-direction: column; justify-content: space-between; gap: 24px; min-height: 248px; }
+  blockquote { margin: 0; font-size: 16px; line-height: 1.5; }
+  strong { display: block; font-weight: 600; }
+  em { font-size: 13px; }
+  @media (max-width: 767px) { .quote { width: 72px; } .depo :global(.carousel .nav) { display: none; } }
+</style>

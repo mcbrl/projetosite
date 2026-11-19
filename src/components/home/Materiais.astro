@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import Carousel from "../Carousel.astro";
+import CaseCard from "../CaseCard.astro";
+import { isPublished } from "../../lib/routes";
+import { site } from "../../data/site";
+const items = (await getCollection("cases")).filter(isPublished).sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+---
+<section class="mat">
+  <div class="container">
+    <p class="eyebrow"><span class="chip chip-blue">Materiais</span></p>
+    <h2 class="t-h2">Aplicações práticas e resultados reais</h2>
+    <Carousel label="Materiais" tone="light" perView={3} perViewTablet={2} perViewMobile={1} gap={2}>
+      {items.map((item) => <CaseCard item={item} />)}
+    </Carousel>
+    <p class="cta"><a class="btn btn-primary" href={site.cta.href}>{site.cta.label}</a></p>
+  </div>
+</section>
+<style>
+  .mat { background: var(--vt-line); padding: 100px 0 60px; text-align: center; }
+  .eyebrow { margin: 0 0 20px; }
+  h2 { color: var(--vt-blue); margin-bottom: 32px; }
+  .mat :global(.carousel) { padding: 0; }
+  .mat :global(.carousel .nav) { margin: 0 -40px; }
+  .cta { margin: 48px 0 0; }
+  @media (max-width: 767px) { .mat :global(.carousel .nav) { margin: 0; } }
+</style>

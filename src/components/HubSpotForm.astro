@@ -1,0 +1,55 @@
+---
+import { hubspot } from "../data/site";
+// load: "visible" (ao entrar na tela), "eager" (imediato) ou "manual" (via window.vtRenderHsForm)
+interface Props { formId: string; dark?: boolean; square?: boolean; load?: "visible" | "eager" | "manual" }
+const { formId, dark = false, square = false, load = "visible" } = Astro.props;
+const id = `hs-${formId.slice(0, 8)}-${Math.random().toString(36).slice(2, 7)}`;
+---
+<div
+  class:list={["hs-embed", { "hs-dark": dark, "hs-square": square }]}
+  id={id}
+  data-hs-form={formId}
+  data-hs-portal={hubspot.portalId}
+  data-hs-region={hubspot.region}
+  data-hs-load={load}
+>
+  <noscript>Ative o JavaScript para ver o formulário.</noscript>
+</div>
+
+<script>
+  // Carrega o embed v2 do HubSpot uma vez e renderiza os formulários
+  // quando entram na viewport (evita custo em páginas com vários forms).
+  let loader: Promise<void> | undefined;
+  const loadHs = () =>
+    (loader ??= new Promise<void>((resolve) => {
+      if ((window as any).hbspt?.forms) return resolve();
+      const s = document.createElement("script");
+      s.src = "https://js.hsforms.net/forms/embed/v2.js";
+      s.async = true;
+      s.onload = () => resolve();
+      document.head.appendChild(s);
+    }));
+
+  const render = async (el: HTMLElement) => {
+    if (el.dataset.rendered) return;
+    el.dataset.rendered = "1";
+    await loadHs();
+    (window as any).hbspt.forms.create({
+      portalId: el.dataset.hsPortal,
+      region: el.dataset.hsRegion,
+      formId: el.dataset.hsForm,
+      target: `#${el.id}`,
+      css: "",
+    });
+  };
+
+  const io = new IntersectionObserver(
+    (entries) => entries.forEach((e) => e.isIntersecting && (io.unobserve(e.target), render(e.target as HTMLElement))),
+    { rootMargin: "400px" },
+  );
+  document.querySelectorAll<HTMLElement>("[data-hs-form]").forEach((el) => {
+    if (el.dataset.hsLoad === "visible") io.observe(el);
+    else if (el.dataset.hsLoad === "eager") render(el);
+  });
+  (window as any).vtRenderHsForm = render;
+</script>

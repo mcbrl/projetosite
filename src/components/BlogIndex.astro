@@ -1,0 +1,74 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "./PageHero.astro";
+import PostCard from "./PostCard.astro";
+import Pagination from "./Pagination.astro";
+import Icon from "./Icon.astro";
+import { metaOf, pageAt } from "../lib/routes";
+
+interface Props { posts: CollectionEntry<"blog">[]; current: number; last: number }
+const { posts, current, last } = Astro.props;
+const page = await pageAt("/blog/");
+const seo = current === 1 ? page?.data.seo : { ...page?.data.seo, title: `Blog - Página ${current} - Vertigo`, canonical: undefined };
+---
+<BaseLayout title="Blog" seo={seo}>
+  <PageHero eyebrow="Blog" title="Conteúdos exclusivos sobre inovação e tecnologia" image={metaOf("/blog/").heroImage} />
+  <section class="section">
+    <div class="container">
+      <form class="search" role="search" data-search>
+        <label class="sr-only" for="q">Buscar no blog</label>
+        <input id="q" name="q" type="search" placeholder="Buscar" autocomplete="off" />
+        <Icon name="search" size={18} />
+      </form>
+      <div class="grid" data-grid>
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+      <p class="empty" data-empty hidden>Nenhum artigo encontrado.</p>
+      <div data-pager><Pagination current={current} last={last} base="/blog/" /></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Busca client-side sobre /blog/busca.json (título + resumo + categorias)
+  type Hit = { t: string; u: string; e: string; c: string; i?: string };
+  const form = document.querySelector<HTMLFormElement>("[data-search]")!;
+  const input = form.querySelector("input")!;
+  const grid = document.querySelector<HTMLElement>("[data-grid]")!;
+  const pager = document.querySelector<HTMLElement>("[data-pager]")!;
+  const empty = document.querySelector<HTMLElement>("[data-empty]")!;
+  const original = grid.innerHTML;
+  let index: Hit[] | undefined;
+  const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]!);
+  const card = (h: Hit) => `<article class="card-lite"><a href="${h.u}">${h.i ? `<img src="${esc(h.i)}" alt="" loading="lazy">` : ""}<span>${esc(h.c)}</span><strong>${esc(h.t)}</strong></a></article>`;
+
+  const run = async () => {
+    const q = norm(input.value.trim());
+    if (!q) { grid.innerHTML = original; pager.hidden = false; empty.hidden = true; return; }
+    index ??= await fetch("/blog/busca.json").then((r) => r.json());
+    const terms = q.split(/\s+/);
+    const hits = index!.filter((h) => { const hay = norm(`${h.t} ${h.e} ${h.c}`); return terms.every((t) => hay.includes(t)); }).slice(0, 30);
+    grid.innerHTML = hits.map(card).join("");
+    pager.hidden = true;
+    empty.hidden = hits.length > 0;
+  };
+  let t: number;
+  input.addEventListener("input", () => { clearTimeout(t); t = window.setTimeout(run, 200); });
+  form.addEventListener("submit", (e) => { e.preventDefault(); run(); });
+</script>
+
+<style>
+  .search { position: relative; max-width: 470px; margin: 0 0 56px auto; }
+  .search input { width: 100%; padding: 12px 44px 12px 16px; border: 0; border-radius: 4px; background: var(--vt-surface); font: 400 15px var(--vt-font); }
+  .search :global(svg) { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--vt-muted); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .empty { text-align: center; color: var(--vt-muted); }
+  .grid :global(.card-lite a) { display: flex; flex-direction: column; gap: 10px; background: var(--vt-surface); color: var(--vt-black); height: 100%; padding-bottom: 24px; }
+  .grid :global(.card-lite img) { aspect-ratio: 400 / 245; object-fit: cover; width: 100%; }
+  .grid :global(.card-lite span) { padding: 0 24px; font-size: 14px; color: var(--vt-text); }
+  .grid :global(.card-lite strong) { padding: 0 24px; font-weight: 400; font-size: 20px; line-height: 1.25; }
+  @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 24px; } }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } .search { margin-left: 0; } }
+</style>

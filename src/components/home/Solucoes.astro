@@ -1,0 +1,63 @@
+---
+import TierColumns from "../TierColumns.astro";
+import Icon from "../Icon.astro";
+import home from "../../data/home.json";
+---
+<section class="head section-dark">
+  <h2 class="t-section">Nossas Soluções</h2>
+</section>
+<section class="tabs" data-tabs>
+  <div class="tablist" role="tablist" aria-label="Tiers de soluções">
+    {home.tiers.map((t, i) => (
+      <button role="tab" id={`tier-tab-${i}`} aria-controls={`tier-panel-${i}`} aria-selected={i === 0 ? "true" : "false"} tabindex={i === 0 ? 0 : -1}>
+        {t.title} <Icon name="chevron-down" size={16} />
+      </button>
+    ))}
+  </div>
+  <div class="panels">
+    <div class="container">
+      {home.tiers.map((t, i) => (
+        <div role="tabpanel" id={`tier-panel-${i}`} aria-labelledby={`tier-tab-${i}`} hidden={i !== 0}>
+          <p class="desc">{t.description}</p>
+          <TierColumns columns={t.columns} />
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>("[data-tabs]").forEach((root) => {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>("[role=tab]")];
+    const select = (idx: number) =>
+      tabs.forEach((t, i) => {
+        const on = i === idx;
+        t.setAttribute("aria-selected", String(on));
+        t.tabIndex = on ? 0 : -1;
+        root.querySelector<HTMLElement>(`#${t.getAttribute("aria-controls")}`)!.hidden = !on;
+        if (on) t.focus({ preventScroll: true });
+      });
+    tabs.forEach((t, i) => {
+      t.addEventListener("click", () => select(i));
+      t.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") select((i + 1) % tabs.length);
+        if (e.key === "ArrowLeft") select((i - 1 + tabs.length) % tabs.length);
+      });
+    });
+  });
+</script>
+<style>
+  .head { padding: 128px 0 124px; }
+  .head .t-section { margin: 0; }
+  .tablist { display: flex; justify-content: center; background: var(--vt-navy); }
+  [role=tab] { display: inline-flex; align-items: center; gap: 24px; padding: 24px 56px; border: 0; background: none; color: var(--vt-white); font: 400 22px var(--vt-font); cursor: pointer; }
+  [role=tab][aria-selected=true] { background: var(--vt-blue); }
+  [role=tab]:hover { background: rgb(7 108 254 / .5); }
+  .panels { background: var(--vt-line); padding: 40px 0 176px; }
+  .desc { font-size: 18px; margin: 0 0 20px; }
+  @media (max-width: 767px) {
+    .head { padding: 64px 0; }
+    .tablist { flex-direction: column; }
+    [role=tab] { justify-content: space-between; padding: 18px 24px; font-size: 18px; }
+    .panels { padding: 32px 0 64px; }
+  }
+</style>

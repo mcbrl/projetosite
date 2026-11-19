@@ -1,0 +1,29 @@
+---
+import home from "../../data/home.json";
+const ai = home.aiJourney;
+---
+<section class="ai">
+  <div class="container grid">
+    <div>
+      <h2 class="title">{ai.title}</h2>
+      <p class="sub">{ai.subtitle}</p>
+      {ai.logo && <img class="logo" src={ai.logo} alt="Claude" width="150" height="36" loading="lazy" />}
+      <p class="badge">{ai.badge}</p>
+      {ai.paragraphs.map((p) => <p>{p}</p>)}
+      <a class="btn btn-light" href={ai.href}>Saiba Mais</a>
+    </div>
+    {ai.image && <img class="shot" src={ai.image} alt="Diagnóstico de maturidade em IA" loading="lazy" width="627" height="518" />}
+  </div>
+</section>
+<style>
+  .ai { background: linear-gradient(140deg, var(--vt-navy) 0%, var(--vt-blue) 100%); color: var(--vt-white); padding: 60px 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding-left: 10px; }
+  .title { font-size: 48px; font-weight: 700; text-transform: uppercase; letter-spacing: -1px; margin: 0 0 4px; }
+  .sub { font-size: 22px; margin: 0 0 24px; }
+  .logo { width: 150px; filter: brightness(0) invert(1); margin-bottom: 8px; }
+  .badge { font-size: 15px; margin-bottom: 24px; }
+  p { font-size: 18px; }
+  .btn { margin-top: 12px; font-weight: 400; }
+  .shot { border-radius: 8px; width: 100%; box-shadow: 0 20px 60px rgb(0 0 0 / .3); }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .title { font-size: 34px; } }
+</style>

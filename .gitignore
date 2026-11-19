@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.venv/
+__pycache__/
+tools/.cache/
+.DS_Store
+.env

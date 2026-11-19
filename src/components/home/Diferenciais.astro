@@ -1,0 +1,22 @@
+---
+import home from "../../data/home.json";
+---
+<section class="dif">
+  <div class="container">
+    <h2 class="t-section">Nossos Diferenciais</h2>
+    <ul class="grid">
+      {home.diferenciais.map((d) => <li><h3>{d.title}</h3><p>{d.text}</p></li>)}
+    </ul>
+  </div>
+</section>
+<style>
+  .dif { background: var(--vt-blue); color: var(--vt-white); padding: 96px 0 112px; }
+  .t-section { color: var(--vt-navy); margin-bottom: 28px; }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); text-align: center; }
+  li { padding: 16px 20px; }
+  li + li { border-left: 1px solid var(--vt-navy); }
+  h3 { font-size: 20px; font-weight: 600; line-height: 1.3; letter-spacing: 0; margin: 0 0 24px; }
+  p { font-size: 15px; line-height: 1.6; margin: 0; }
+  @media (max-width: 1024px) { .grid { grid-template-columns: 1fr 1fr; } li:nth-child(3) { border-left: 0; } }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } li + li { border-left: 0; border-top: 1px solid var(--vt-navy); } }
+</style>

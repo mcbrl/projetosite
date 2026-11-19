@@ -1,0 +1,24 @@
+---
+// Os cases no WP não têm corpo: o conteúdo real é o material em materiais.vertigo.com.br.
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import { isPublished, pathOf, toParam } from "../../lib/routes";
+
+export async function getStaticPaths() {
+  return (await getCollection("cases")).filter(isPublished).map((entry) => ({
+    params: { slug: toParam(pathOf(entry)).replace(/^cases\//, "") },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<BaseLayout title={entry.data.title} seo={entry.data.seo}>
+  <PageHero eyebrow={entry.data.caseCategories.join(", ") || "Materiais"} title={entry.data.title} image={entry.data.featuredImage} />
+  <section class="section">
+    <div class="container prose" style="max-width: 900px">
+      <Content />
+    </div>
+  </section>
+</BaseLayout>

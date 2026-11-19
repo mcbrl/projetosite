@@ -1,0 +1,28 @@
+---
+// Seção com título + carrossel de logos (Clientes, Parceiros, Certificações)
+import Carousel from "../Carousel.astro";
+interface Props { title: string; lead?: string; logos: { src: string; alt: string }[]; tone?: "dark" | "light"; cta?: { label: string; href: string }; logoHeight?: number }
+const { title, lead, logos, tone = "dark", cta, logoHeight = 80 } = Astro.props;
+---
+<section class:list={["section", tone === "dark" ? "section-dark" : "light"]}>
+  <div class="container">
+    <h2 class="t-section">{title}</h2>
+    {lead && <p class="section-lead">{lead}</p>}
+    <Carousel label={title} tone={tone} perView={5} perViewTablet={3} perViewMobile={2} gap={40} autoplay={3500}>
+      {logos.map((l) => (
+        <div class="logo" style={`--h:${logoHeight}px`}><img src={l.src} alt={l.alt.replace(/^vertigo-cliente-/, "").replace(/-/g, " ")} loading="lazy" /></div>
+      ))}
+    </Carousel>
+    {cta && <p class="cta"><a class="btn btn-primary" href={cta.href}>{cta.label}</a></p>}
+  </div>
+</section>
+<style>
+  .section { padding: 88px 0 112px; }
+  .light { background: var(--vt-white); padding: 56px 0 72px; }
+  .section-lead { margin-bottom: 72px; }
+  .light .section-lead { font-size: 16px; margin-bottom: 32px; }
+  .logo { height: calc(var(--h) + 60px); display: grid; place-items: center; }
+  .logo img { max-height: var(--h); width: auto; max-width: 100%; object-fit: contain; }
+  .cta { text-align: center; margin: 40px 0 0; }
+  @media (max-width: 767px) { .section-lead { margin-bottom: 32px; } }
+</style>

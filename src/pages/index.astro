@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/home/Hero.astro";
+import Intro from "../components/home/Intro.astro";
+import Especialistas from "../components/home/Especialistas.astro";
+import Solucoes from "../components/home/Solucoes.astro";
+import LogoStrip from "../components/home/LogoStrip.astro";
+import Depoimentos from "../components/home/Depoimentos.astro";
+import AiJourney from "../components/home/AiJourney.astro";
+import VeeCode from "../components/home/VeeCode.astro";
+import Diferenciais from "../components/home/Diferenciais.astro";
+import Materiais from "../components/home/Materiais.astro";
+import Carreiras from "../components/home/Carreiras.astro";
+import home from "../data/home.json";
+import { pageAt } from "../lib/routes";
+
+// Home construída como componentes (o Markdown do Elementor perde tabs/carrosséis);
+// src/content/pages/index.md fornece apenas o SEO. Dados: src/data/home.json.
+const page = await pageAt("/");
+---
+<BaseLayout title="Home" seo={page?.data.seo}>
+  <Hero />
+  <Intro />
+  <Especialistas />
+  <Solucoes />
+  <LogoStrip title="Clientes" lead="Faça parte das organizações que estão acelerando seus negócios com a Vertigo." logos={home.clientes} />
+  <Depoimentos />
+  <LogoStrip
+    title="Parceiros"
+    lead="Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos."
+    logos={home.parceiros}
+    logoHeight={60}
+    cta={{ label: "Saiba mais", href: "/parceiros/" }}
+  />
+  <AiJourney />
+  <VeeCode />
+  <Diferenciais />
+  <Materiais />
+  <LogoStrip
+    title="Certificações"
+    lead="Nossas certificações refletem experiência técnica, conformidade com padrões de mercado e capacidade de atuar em ambientes complexos com segurança e escala."
+    logos={home.certificacoes}
+    tone="light"
+    logoHeight={150}
+  />
+  <Carreiras />
+</BaseLayout>

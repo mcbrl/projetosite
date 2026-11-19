@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+import BlogIndex from "../../components/BlogIndex.astro";
+import { PER_PAGE, sortPosts } from "../../lib/routes";
+
+const posts = sortPosts(await getCollection("blog"));
+---
+<BlogIndex posts={posts.slice(0, PER_PAGE)} current={1} last={Math.ceil(posts.length / PER_PAGE)} />

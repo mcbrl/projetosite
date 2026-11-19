@@ -1,0 +1,35 @@
+# Ambiente de desenvolvimento em Docker. Ver docker/README.md.
+name: site-vertigo
+
+services:
+  # astro dev com hot reload -> http://localhost:4322
+  dev:
+    build: { context: ., dockerfile: docker/Dockerfile, target: dev }
+    ports: ["${DEV_PORT:-4322}:4321"]
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules   # binários Linux, isolados do node_modules do macOS
+      - astro-cache:/app/.astro          # não disputa .astro/ com o dev server do host
+    # esconde do watcher (polling) pastas que o astro dev não usa; o host não é afetado
+    tmpfs: [/app/dist, /app/.venv, /app/raw-html, /app/tools/.cache]
+    environment:
+      ASTRO_TELEMETRY_DISABLED: "1"
+      # o bind mount do Docker Desktop (macOS) não entrega eventos de arquivo ao container
+      CHOKIDAR_USEPOLLING: ${DEV_POLLING:-1}
+      CHOKIDAR_INTERVAL: "500"
+
+  # build de produção servido por nginx, com os redirects do WP -> http://localhost:8081
+  preview:
+    profiles: [preview]
+    build: { context: ., dockerfile: docker/Dockerfile, target: preview }
+    ports: ["${PREVIEW_PORT:-8081}:8080"]
+
+  # docker compose run --rm tools python tools/extract_home.py
+  tools:
+    profiles: [tools]
+    build: { context: ., dockerfile: docker/tools.Dockerfile }
+    volumes: [".:/app"]
+
+volumes:
+  node_modules:
+  astro-cache:

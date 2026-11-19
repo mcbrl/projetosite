@@ -1,0 +1,38 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import HubSpotForm from "../components/HubSpotForm.astro";
+import Icon from "../components/Icon.astro";
+import { hubspot, site } from "../data/site";
+import { metaOf, pageAt } from "../lib/routes";
+
+const page = await pageAt("/contato/");
+---
+<BaseLayout title="Contato" seo={page?.data.seo}>
+  <PageHero eyebrow="Fale Conosco" title="Pronto para acelerar com a Vertigo?" image={metaOf("/contato/").heroImage} />
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 class="lead">Preencha o formulário para receber o contato de um de nossos especialistas.</h2>
+        <div class="social">
+          <span>Siga nas redes sociais:</span>
+          <ul>
+            {site.social.map((s) => <li><a href={s.href} target="_blank" rel="noopener" aria-label={s.name}><Icon name={s.icon} size={20} /></a></li>)}
+          </ul>
+        </div>
+      </div>
+      <div class="form-panel"><HubSpotForm formId={hubspot.forms.contato} dark load="eager" /></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .split { display: grid; grid-template-columns: 560px 1fr; gap: 80px; align-items: start; }
+  .lead { color: var(--vt-blue); font-size: 26px; font-weight: 600; line-height: 1.55; letter-spacing: 0; padding-bottom: 20px; border-bottom: 1px solid #999; margin-bottom: 20px; }
+  .social { display: flex; align-items: center; gap: 20px; font-size: 22px; flex-wrap: wrap; }
+  .social ul { display: flex; gap: 5px; list-style: none; margin: 0; padding: 0; }
+  .social a { width: 44px; height: 44px; border-radius: 50%; background: var(--vt-blue); color: var(--vt-white); display: grid; place-items: center; transition: transform .2s; }
+  .social a:hover { transform: translateY(-3px); }
+  .form-panel { background: var(--vt-ink); padding: 48px; border-radius: 4px; box-shadow: 0 10px 40px rgb(0 0 0 / .12); }
+  @media (max-width: 1024px) { .split { grid-template-columns: 1fr; gap: 40px; } .form-panel { padding: 32px 24px; } }
+</style>

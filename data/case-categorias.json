@@ -1,0 +1,20 @@
+[
+  {
+    "id": 409,
+    "name": "Cases",
+    "slug": "cases",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/categorias/cases/"
+  },
+  {
+    "id": 414,
+    "name": "Ebooks",
+    "slug": "ebooks",
+    "description": "",
+    "count": 6,
+    "parent": 0,
+    "link": "https://vertigo.com.br/categorias/ebooks/"
+  }
+]

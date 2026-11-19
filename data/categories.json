@@ -1,0 +1,434 @@
+[
+  {
+    "id": 44,
+    "name": "A Vertigo",
+    "slug": "a-vertigo",
+    "description": "",
+    "count": 33,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/a-vertigo/"
+  },
+  {
+    "id": 358,
+    "name": "Acessibilidade",
+    "slug": "acessibilidade",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/acessibilidade/"
+  },
+  {
+    "id": 422,
+    "name": "Agentes de IA",
+    "slug": "agentes-de-ia",
+    "description": "",
+    "count": 4,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/agentes-de-ia/"
+  },
+  {
+    "id": 377,
+    "name": "APIs",
+    "slug": "apis",
+    "description": "",
+    "count": 32,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/apis/"
+  },
+  {
+    "id": 380,
+    "name": "AWS",
+    "slug": "aws",
+    "description": "",
+    "count": 7,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/aws/"
+  },
+  {
+    "id": 395,
+    "name": "Banco de dados",
+    "slug": "banco-de-dados",
+    "description": "",
+    "count": 4,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/banco-de-dados/"
+  },
+  {
+    "id": 9,
+    "name": "Blog",
+    "slug": "blog",
+    "description": "",
+    "count": 68,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/blog/"
+  },
+  {
+    "id": 368,
+    "name": "Case",
+    "slug": "case",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/case/"
+  },
+  {
+    "id": 369,
+    "name": "Chatbot",
+    "slug": "chatbot",
+    "description": "",
+    "count": 10,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/chatbot/"
+  },
+  {
+    "id": 360,
+    "name": "Cloud Native",
+    "slug": "cloud-native",
+    "description": "",
+    "count": 24,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/cloud-native/"
+  },
+  {
+    "id": 361,
+    "name": "Containers",
+    "slug": "containers",
+    "description": "",
+    "count": 2,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/containers/"
+  },
+  {
+    "id": 340,
+    "name": "Desenvolvimento de software",
+    "slug": "desenvolvimento-de-software",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/desenvolvimento-de-software/"
+  },
+  {
+    "id": 10,
+    "name": "DevOps",
+    "slug": "devops",
+    "description": "",
+    "count": 65,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/devops/"
+  },
+  {
+    "id": 310,
+    "name": "Devsecops",
+    "slug": "devsecops",
+    "description": "",
+    "count": 20,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/devsecops/"
+  },
+  {
+    "id": 261,
+    "name": "DockerEE",
+    "slug": "dockeree",
+    "description": "",
+    "count": 6,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/dockeree/"
+  },
+  {
+    "id": 289,
+    "name": "Gartner",
+    "slug": "gartner",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/gartner/"
+  },
+  {
+    "id": 89,
+    "name": "Gestão de Performance Digital",
+    "slug": "gestao-de-performance-digital",
+    "description": "",
+    "count": 16,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/gestao-de-performance-digital/"
+  },
+  {
+    "id": 374,
+    "name": "hashicorp",
+    "slug": "hashicorp",
+    "description": "",
+    "count": 10,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/hashicorp/"
+  },
+  {
+    "id": 392,
+    "name": "IA",
+    "slug": "ia",
+    "description": "",
+    "count": 25,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/ia/"
+  },
+  {
+    "id": 376,
+    "name": "Infraestrutura",
+    "slug": "infraestrutura",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/infraestrutura/"
+  },
+  {
+    "id": 372,
+    "name": "Inteligencia Artificial",
+    "slug": "inteligencia-artificial",
+    "description": "",
+    "count": 6,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/inteligencia-artificial/"
+  },
+  {
+    "id": 400,
+    "name": "IpaaS",
+    "slug": "ipaas",
+    "description": "",
+    "count": 3,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/ipaas/"
+  },
+  {
+    "id": 309,
+    "name": "Kong",
+    "slug": "kong",
+    "description": "",
+    "count": 12,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/kong/"
+  },
+  {
+    "id": 357,
+    "name": "Kubernetes",
+    "slug": "kubernetes",
+    "description": "",
+    "count": 19,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/kubernetes/"
+  },
+  {
+    "id": 385,
+    "name": "Liferay",
+    "slug": "liferay",
+    "description": "",
+    "count": 9,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/liferay/"
+  },
+  {
+    "id": 364,
+    "name": "Mensageria",
+    "slug": "mensageria",
+    "description": "",
+    "count": 4,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/mensageria/"
+  },
+  {
+    "id": 276,
+    "name": "Microsserviços",
+    "slug": "microsservicos",
+    "description": "",
+    "count": 7,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/microsservicos/"
+  },
+  {
+    "id": 362,
+    "name": "Mirantis",
+    "slug": "mirantis",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/mirantis/"
+  },
+  {
+    "id": 28,
+    "name": "Mundo das APIs",
+    "slug": "mundo-das-apis",
+    "description": "",
+    "count": 46,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/mundo-das-apis/"
+  },
+  {
+    "id": 78,
+    "name": "Não categorizado",
+    "slug": "nao-categorizado",
+    "description": "",
+    "count": 5,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/nao-categorizado/"
+  },
+  {
+    "id": 394,
+    "name": "Neo4j",
+    "slug": "neo4j",
+    "description": "",
+    "count": 4,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/neo4j/"
+  },
+  {
+    "id": 47,
+    "name": "Novidades na TI",
+    "slug": "novidades-na-ti",
+    "description": "",
+    "count": 15,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/novidades-na-ti/"
+  },
+  {
+    "id": 381,
+    "name": "Nuvem",
+    "slug": "nuvem",
+    "description": "",
+    "count": 8,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/nuvem/"
+  },
+  {
+    "id": 312,
+    "name": "Observabilidade",
+    "slug": "observabilidade",
+    "description": "",
+    "count": 4,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/observabilidade/"
+  },
+  {
+    "id": 274,
+    "name": "Plataformas de integração",
+    "slug": "plataformas-de-integracao",
+    "description": "",
+    "count": 10,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/plataformas-de-integracao/"
+  },
+  {
+    "id": 21,
+    "name": "Plataformas Digitais",
+    "slug": "plataformas-digitais",
+    "description": "",
+    "count": 38,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/plataformas-digitais/"
+  },
+  {
+    "id": 397,
+    "name": "Platform Engineering",
+    "slug": "platform-engineering",
+    "description": "",
+    "count": 6,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/platform-engineering/"
+  },
+  {
+    "id": 378,
+    "name": "Segurança Digital",
+    "slug": "seguranca-digital",
+    "description": "",
+    "count": 5,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/seguranca-digital/"
+  },
+  {
+    "id": 419,
+    "name": "Setor de Seguros",
+    "slug": "setor-de-seguros",
+    "description": "",
+    "count": 8,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/setor-de-seguros/"
+  },
+  {
+    "id": 403,
+    "name": "setor financeiro",
+    "slug": "setor-financeiro",
+    "description": "",
+    "count": 16,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/setor-financeiro/"
+  },
+  {
+    "id": 383,
+    "name": "Setor Público",
+    "slug": "setor-publico",
+    "description": "",
+    "count": 4,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/setor-publico/"
+  },
+  {
+    "id": 366,
+    "name": "Take Blip",
+    "slug": "take-blip",
+    "description": "",
+    "count": 7,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/take-blip/"
+  },
+  {
+    "id": 417,
+    "name": "Team Topologies",
+    "slug": "team-topologies",
+    "description": "",
+    "count": 3,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/team-topologies/"
+  },
+  {
+    "id": 386,
+    "name": "Terraform",
+    "slug": "terraform",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/terraform/"
+  },
+  {
+    "id": 15,
+    "name": "Transformação Cloud Native",
+    "slug": "transformacao-cloud-native",
+    "description": "",
+    "count": 16,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/transformacao-cloud-native/"
+  },
+  {
+    "id": 308,
+    "name": "Transformação Digital",
+    "slug": "transformacao-digital",
+    "description": "",
+    "count": 17,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/transformacao-digital/"
+  },
+  {
+    "id": 373,
+    "name": "Trends",
+    "slug": "trends",
+    "description": "",
+    "count": 1,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/trends/"
+  },
+  {
+    "id": 1,
+    "name": "Uncategorized",
+    "slug": "uncategorized",
+    "description": "",
+    "count": 0,
+    "parent": 0,
+    "link": "https://vertigo.com.br/category/uncategorized/"
+  }
+]

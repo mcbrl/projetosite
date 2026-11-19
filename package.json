@@ -1,0 +1,17 @@
+{
+  "name": "site-vertigo",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:routes": "node tools/check-routes.mjs",
+    "extract": ".venv/bin/python tools/extract_home.py && .venv/bin/python tools/extract_pages.py"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.1",
+    "astro": "^7.3.5"
+  }
+}

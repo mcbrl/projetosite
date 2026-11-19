@@ -1,0 +1,31 @@
+---
+// 3 colunas de soluções de um tier (usado nas tabs da home e em /solucoes/)
+interface Column { title: string; items: string[]; href: string | null }
+interface Props { columns: Column[]; tone?: "light" | "dark" }
+const { columns, tone = "light" } = Astro.props;
+---
+<div class:list={["cols", `tone-${tone}`]}>
+  {columns.map((c) => (
+    <div class="col">
+      <h3>{c.title}</h3>
+      <ul>{c.items.map((i) => <li>{i}</li>)}</ul>
+      {c.href && <a class="btn btn-primary" href={c.href}>Saiba mais</a>}
+    </div>
+  ))}
+</div>
+
+<style>
+  .cols { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .col { padding: 0 30px 0 10px; display: flex; flex-direction: column; align-items: flex-start; }
+  .col + .col { border-left: 1px solid var(--vt-navy); padding-left: 30px; }
+  .tone-dark .col + .col { border-left-color: var(--vt-white-60); }
+  h3 { font-size: 24px; font-weight: 500; letter-spacing: 0; margin: 20px 0 16px; }
+  ul { list-style: none; padding: 0; margin: 0 0 24px; font-size: 16px; }
+  li::before { content: "• "; }
+  .btn { margin-top: auto; }
+  @media (max-width: 900px) {
+    .cols { grid-template-columns: 1fr; gap: 32px; }
+    .col + .col { border-left: 0; padding-left: 10px; border-top: 1px solid var(--vt-navy); padding-top: 16px; }
+    .tone-dark .col + .col { border-top-color: var(--vt-white-60); }
+  }
+</style>

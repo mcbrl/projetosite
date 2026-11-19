@@ -1,0 +1,3197 @@
+[
+  {
+    "id": 290,
+    "name": "4ps",
+    "slug": "4ps",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/4ps/"
+  },
+  {
+    "id": 300,
+    "name": "4ª Revolução Industrial",
+    "slug": "4a-revolucao-industrial",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/4a-revolucao-industrial/"
+  },
+  {
+    "id": 283,
+    "name": "a mulher no mundo TI",
+    "slug": "a-mulher-no-mundo-ti",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/a-mulher-no-mundo-ti/"
+  },
+  {
+    "id": 359,
+    "name": "Acessibilidade",
+    "slug": "acessibilidade",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/acessibilidade/"
+  },
+  {
+    "id": 13,
+    "name": "adotar devops",
+    "slug": "adotar-devops",
+    "description": "",
+    "count": 6,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/adotar-devops/"
+  },
+  {
+    "id": 423,
+    "name": "Agentes de IA",
+    "slug": "agentes-de-ia",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/agentes-de-ia/"
+  },
+  {
+    "id": 187,
+    "name": "AMP",
+    "slug": "amp",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/amp/"
+  },
+  {
+    "id": 292,
+    "name": "Anypoint",
+    "slug": "anypoint",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/anypoint/"
+  },
+  {
+    "id": 163,
+    "name": "Apache Mesos",
+    "slug": "apache-mesos",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apache-mesos/"
+  },
+  {
+    "id": 32,
+    "name": "API",
+    "slug": "api",
+    "description": "",
+    "count": 78,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api/"
+  },
+  {
+    "id": 135,
+    "name": "API B2W",
+    "slug": "api-b2w",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-b2w/"
+  },
+  {
+    "id": 136,
+    "name": "API Banco Original",
+    "slug": "api-banco-original",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-banco-original/"
+  },
+  {
+    "id": 137,
+    "name": "API Cnova",
+    "slug": "api-cnova",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-cnova/"
+  },
+  {
+    "id": 293,
+    "name": "API de sucesso",
+    "slug": "api-de-sucesso",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-de-sucesso/"
+  },
+  {
+    "id": 168,
+    "name": "API e Governo",
+    "slug": "api-e-governo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-e-governo/"
+  },
+  {
+    "id": 39,
+    "name": "API entre Parceiros",
+    "slug": "api-entre-parceiros",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-entre-parceiros/"
+  },
+  {
+    "id": 169,
+    "name": "API Federal",
+    "slug": "api-federal",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-federal/"
+  },
+  {
+    "id": 125,
+    "name": "API First",
+    "slug": "api-first",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-first/"
+  },
+  {
+    "id": 178,
+    "name": "API For That",
+    "slug": "api-for-that",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-for-that/"
+  },
+  {
+    "id": 162,
+    "name": "API Gateway",
+    "slug": "api-gateway",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-gateway/"
+  },
+  {
+    "id": 130,
+    "name": "API google",
+    "slug": "api-google",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-google/"
+  },
+  {
+    "id": 170,
+    "name": "API Governo Federal",
+    "slug": "api-governo-federal",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-governo-federal/"
+  },
+  {
+    "id": 179,
+    "name": "API Hound",
+    "slug": "api-hound",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-hound/"
+  },
+  {
+    "id": 180,
+    "name": "api ideal",
+    "slug": "api-ideal",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-ideal/"
+  },
+  {
+    "id": 40,
+    "name": "API Interna",
+    "slug": "api-interna",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-interna/"
+  },
+  {
+    "id": 210,
+    "name": "api lifecycle",
+    "slug": "api-lifecycle",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-lifecycle/"
+  },
+  {
+    "id": 41,
+    "name": "API Management",
+    "slug": "api-management",
+    "description": "",
+    "count": 16,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-management/"
+  },
+  {
+    "id": 97,
+    "name": "API Manager",
+    "slug": "api-manager",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-manager/"
+  },
+  {
+    "id": 63,
+    "name": "API mobile",
+    "slug": "api-mobile",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-mobile/"
+  },
+  {
+    "id": 59,
+    "name": "API Netflix",
+    "slug": "api-netflix",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-netflix/"
+  },
+  {
+    "id": 42,
+    "name": "API Privada",
+    "slug": "api-privada",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-privada/"
+  },
+  {
+    "id": 43,
+    "name": "API Pública",
+    "slug": "api-publica",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-publica/"
+  },
+  {
+    "id": 317,
+    "name": "API REST",
+    "slug": "api-rest",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-rest/"
+  },
+  {
+    "id": 345,
+    "name": "API RESTful",
+    "slug": "api-restful",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-restful/"
+  },
+  {
+    "id": 266,
+    "name": "API-led connectivity",
+    "slug": "api-led-connectivity",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/api-led-connectivity/"
+  },
+  {
+    "id": 241,
+    "name": "APIs",
+    "slug": "apis",
+    "description": "",
+    "count": 11,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apis/"
+  },
+  {
+    "id": 173,
+    "name": "apis internet banking",
+    "slug": "apis-internet-banking",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apis-internet-banking/"
+  },
+  {
+    "id": 242,
+    "name": "APIs nos negócios",
+    "slug": "apis-nos-negocios",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apis-nos-negocios/"
+  },
+  {
+    "id": 174,
+    "name": "APIs Privadas",
+    "slug": "apis-privadas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apis-privadas/"
+  },
+  {
+    "id": 175,
+    "name": "APIs públicas",
+    "slug": "apis-publicas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apis-publicas/"
+  },
+  {
+    "id": 181,
+    "name": "APIs.io",
+    "slug": "apis-io",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apis-io/"
+  },
+  {
+    "id": 206,
+    "name": "aplicação de monitoramento de performance",
+    "slug": "aplicacao-de-monitoramento-de-performance",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/aplicacao-de-monitoramento-de-performance/"
+  },
+  {
+    "id": 315,
+    "name": "Aplicativos",
+    "slug": "aplicativos",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/aplicativos/"
+  },
+  {
+    "id": 87,
+    "name": "apm",
+    "slug": "apm",
+    "description": "",
+    "count": 11,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apm/"
+  },
+  {
+    "id": 74,
+    "name": "Apps",
+    "slug": "apps",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/apps/"
+  },
+  {
+    "id": 275,
+    "name": "arquitetura de microsserviços",
+    "slug": "arquitetura-de-microsservicos",
+    "description": "",
+    "count": 9,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/arquitetura-de-microsservicos/"
+  },
+  {
+    "id": 50,
+    "name": "Ata de Registro de Preço",
+    "slug": "ata-de-registro-de-preco",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ata-de-registro-de-preco/"
+  },
+  {
+    "id": 51,
+    "name": "Ata de Registro de Preço Liferay",
+    "slug": "ata-de-registro-de-preco-liferay",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ata-de-registro-de-preco-liferay/"
+  },
+  {
+    "id": 52,
+    "name": "Ata Liferay",
+    "slug": "ata-liferay",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ata-liferay/"
+  },
+  {
+    "id": 302,
+    "name": "Ativos reutilizáveis",
+    "slug": "ativos-reutilizaveis",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ativos-reutilizaveis/"
+  },
+  {
+    "id": 346,
+    "name": "Automação",
+    "slug": "automacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/automacao/"
+  },
+  {
+    "id": 330,
+    "name": "Automatização",
+    "slug": "automatizacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/automatizacao/"
+  },
+  {
+    "id": 379,
+    "name": "AWS",
+    "slug": "aws",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/aws/"
+  },
+  {
+    "id": 182,
+    "name": "Azure Marketplace",
+    "slug": "azure-marketplace",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/azure-marketplace/"
+  },
+  {
+    "id": 75,
+    "name": "B2B",
+    "slug": "b2b",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/b2b/"
+  },
+  {
+    "id": 76,
+    "name": "B2C",
+    "slug": "b2c",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/b2c/"
+  },
+  {
+    "id": 138,
+    "name": "B2W",
+    "slug": "b2w",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/b2w/"
+  },
+  {
+    "id": 391,
+    "name": "banco de dados",
+    "slug": "banco-de-dados",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/banco-de-dados/"
+  },
+  {
+    "id": 389,
+    "name": "banco de dados em grafos",
+    "slug": "banco-de-dados-em-grafos",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/banco-de-dados-em-grafos/"
+  },
+  {
+    "id": 139,
+    "name": "Banco Original",
+    "slug": "banco-original",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/banco-original/"
+  },
+  {
+    "id": 390,
+    "name": "bando de dados",
+    "slug": "bando-de-dados",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/bando-de-dados/"
+  },
+  {
+    "id": 155,
+    "name": "beacons",
+    "slug": "beacons",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/beacons/"
+  },
+  {
+    "id": 246,
+    "name": "benefícios de devops",
+    "slug": "beneficios-de-devops",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/beneficios-de-devops/"
+  },
+  {
+    "id": 223,
+    "name": "benefícios pipeline devops",
+    "slug": "beneficios-pipeline-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/beneficios-pipeline-devops/"
+  },
+  {
+    "id": 146,
+    "name": "black friday",
+    "slug": "black-friday",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/black-friday/"
+  },
+  {
+    "id": 203,
+    "name": "blockchain",
+    "slug": "blockchain",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/blockchain/"
+  },
+  {
+    "id": 262,
+    "name": "blog da Vertigo; APIs",
+    "slug": "blog-da-vertigo-apis",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/blog-da-vertigo-apis/"
+  },
+  {
+    "id": 60,
+    "name": "BMW API",
+    "slug": "bmw-api",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/bmw-api/"
+  },
+  {
+    "id": 45,
+    "name": "BPM",
+    "slug": "bpm",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/bpm/"
+  },
+  {
+    "id": 99,
+    "name": "BPS",
+    "slug": "bps",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/bps/"
+  },
+  {
+    "id": 100,
+    "name": "Business Process Server",
+    "slug": "business-process-server",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/business-process-server/"
+  },
+  {
+    "id": 140,
+    "name": "Bw2 Markertplace",
+    "slug": "bw2-markertplace",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/bw2-markertplace/"
+  },
+  {
+    "id": 79,
+    "name": "Carioca Digital",
+    "slug": "carioca-digital",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/carioca-digital/"
+  },
+  {
+    "id": 370,
+    "name": "chatbot",
+    "slug": "chatbot",
+    "description": "",
+    "count": 10,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/chatbot/"
+  },
+  {
+    "id": 80,
+    "name": "Cidadão",
+    "slug": "cidadao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cidadao/"
+  },
+  {
+    "id": 81,
+    "name": "Cidade",
+    "slug": "cidade",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cidade/"
+  },
+  {
+    "id": 82,
+    "name": "Cidade Inteligente",
+    "slug": "cidade-inteligente",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cidade-inteligente/"
+  },
+  {
+    "id": 120,
+    "name": "cidades inteligentes",
+    "slug": "cidades-inteligentes",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cidades-inteligentes/"
+  },
+  {
+    "id": 25,
+    "name": "Cloud",
+    "slug": "cloud",
+    "description": "",
+    "count": 24,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cloud/"
+  },
+  {
+    "id": 58,
+    "name": "Cloud Computing",
+    "slug": "cloud-computing",
+    "description": "",
+    "count": 12,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cloud-computing/"
+  },
+  {
+    "id": 14,
+    "name": "Cloud Native",
+    "slug": "cloud-native",
+    "description": "",
+    "count": 42,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cloud-native/"
+  },
+  {
+    "id": 212,
+    "name": "cloudhub",
+    "slug": "cloudhub",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cloudhub/"
+  },
+  {
+    "id": 73,
+    "name": "CMS",
+    "slug": "cms",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cms/"
+  },
+  {
+    "id": 141,
+    "name": "Cnova",
+    "slug": "cnova",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cnova/"
+  },
+  {
+    "id": 142,
+    "name": "Cnova Markertplace",
+    "slug": "cnova-markertplace",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cnova-markertplace/"
+  },
+  {
+    "id": 306,
+    "name": "Código espaguete",
+    "slug": "codigo-espaguete",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/codigo-espaguete/"
+  },
+  {
+    "id": 106,
+    "name": "Colaboração. Liferay",
+    "slug": "colaboracao-liferay",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/colaboracao-liferay/"
+  },
+  {
+    "id": 226,
+    "name": "como devops pode me ajudar",
+    "slug": "como-devops-pode-me-ajudar",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/como-devops-pode-me-ajudar/"
+  },
+  {
+    "id": 68,
+    "name": "Comparativo",
+    "slug": "comparativo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/comparativo/"
+  },
+  {
+    "id": 17,
+    "name": "confiabilidade",
+    "slug": "confiabilidade",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/confiabilidade/"
+  },
+  {
+    "id": 111,
+    "name": "container",
+    "slug": "container",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/container/"
+  },
+  {
+    "id": 251,
+    "name": "container plataform",
+    "slug": "container-plataform",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/container-plataform/"
+  },
+  {
+    "id": 218,
+    "name": "contêiner",
+    "slug": "conteiner",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/conteiner/"
+  },
+  {
+    "id": 221,
+    "name": "conteineres docker",
+    "slug": "conteineres-docker",
+    "description": "",
+    "count": 8,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/conteineres-docker/"
+  },
+  {
+    "id": 219,
+    "name": "conteinerização",
+    "slug": "conteinerizacao",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/conteinerizacao/"
+  },
+  {
+    "id": 244,
+    "name": "conteinerização de aplicação",
+    "slug": "conteinerizacao-de-aplicacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/conteinerizacao-de-aplicacao/"
+  },
+  {
+    "id": 287,
+    "name": "Conteinerização de aplicações",
+    "slug": "conteinerizacao-de-aplicacoes",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/conteinerizacao-de-aplicacoes/"
+  },
+  {
+    "id": 356,
+    "name": "CTO",
+    "slug": "cto",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cto/"
+  },
+  {
+    "id": 291,
+    "name": "cultura de inovação",
+    "slug": "cultura-de-inovacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/cultura-de-inovacao/"
+  },
+  {
+    "id": 157,
+    "name": "Customer Experience",
+    "slug": "customer-experience",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/customer-experience/"
+  },
+  {
+    "id": 153,
+    "name": "dasboards",
+    "slug": "dasboards",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/dasboards/"
+  },
+  {
+    "id": 208,
+    "name": "data center",
+    "slug": "data-center",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/data-center/"
+  },
+  {
+    "id": 101,
+    "name": "Data Services Server",
+    "slug": "data-services-server",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/data-services-server/"
+  },
+  {
+    "id": 198,
+    "name": "definição de devops",
+    "slug": "definicao-de-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/definicao-de-devops/"
+  },
+  {
+    "id": 354,
+    "name": "Deploy",
+    "slug": "deploy",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/deploy/"
+  },
+  {
+    "id": 294,
+    "name": "Desenvolvedor",
+    "slug": "desenvolvedor",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/desenvolvedor/"
+  },
+  {
+    "id": 339,
+    "name": "desenvolvimento de software",
+    "slug": "desenvolvimento-de-software",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/desenvolvimento-de-software/"
+  },
+  {
+    "id": 295,
+    "name": "Developer",
+    "slug": "developer",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/developer/"
+  },
+  {
+    "id": 296,
+    "name": "Development",
+    "slug": "development",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/development/"
+  },
+  {
+    "id": 11,
+    "name": "DevOps",
+    "slug": "devops",
+    "description": "",
+    "count": 70,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/devops/"
+  },
+  {
+    "id": 249,
+    "name": "DevSecOps",
+    "slug": "devsecops",
+    "description": "",
+    "count": 25,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/devsecops/"
+  },
+  {
+    "id": 399,
+    "name": "Digibee",
+    "slug": "digibee",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/digibee/"
+  },
+  {
+    "id": 286,
+    "name": "Digital Experience Platforms",
+    "slug": "digital-experience-platforms",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/digital-experience-platforms/"
+  },
+  {
+    "id": 117,
+    "name": "Digital Plataform",
+    "slug": "digital-plataform",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/digital-plataform/"
+  },
+  {
+    "id": 115,
+    "name": "Digital Platform",
+    "slug": "digital-platform",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/digital-platform/"
+  },
+  {
+    "id": 347,
+    "name": "digital-ready",
+    "slug": "digital-ready",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/digital-ready/"
+  },
+  {
+    "id": 260,
+    "name": "DigitalOcean",
+    "slug": "digitalocean",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/digitalocean/"
+  },
+  {
+    "id": 112,
+    "name": "Docker",
+    "slug": "docker",
+    "description": "",
+    "count": 27,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker/"
+  },
+  {
+    "id": 234,
+    "name": "docker blockchain",
+    "slug": "docker-blockchain",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker-blockchain/"
+  },
+  {
+    "id": 235,
+    "name": "docker blockchain ethereum",
+    "slug": "docker-blockchain-ethereum",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker-blockchain-ethereum/"
+  },
+  {
+    "id": 113,
+    "name": "docker container",
+    "slug": "docker-container",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker-container/"
+  },
+  {
+    "id": 270,
+    "name": "Docker EE",
+    "slug": "docker-ee",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker-ee/"
+  },
+  {
+    "id": 236,
+    "name": "docker ethereum",
+    "slug": "docker-ethereum",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker-ethereum/"
+  },
+  {
+    "id": 271,
+    "name": "Docker Swarm",
+    "slug": "docker-swarm",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/docker-swarm/"
+  },
+  {
+    "id": 176,
+    "name": "Documentação API",
+    "slug": "documentacao-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/documentacao-api/"
+  },
+  {
+    "id": 202,
+    "name": "Documentação de API",
+    "slug": "documentacao-de-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/documentacao-de-api/"
+  },
+  {
+    "id": 69,
+    "name": "Drupal",
+    "slug": "drupal",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/drupal/"
+  },
+  {
+    "id": 102,
+    "name": "DSS",
+    "slug": "dss",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/dss/"
+  },
+  {
+    "id": 277,
+    "name": "DXP",
+    "slug": "dxp",
+    "description": "",
+    "count": 8,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/dxp/"
+  },
+  {
+    "id": 88,
+    "name": "dynatrace",
+    "slug": "dynatrace",
+    "description": "",
+    "count": 14,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/dynatrace/"
+  },
+  {
+    "id": 258,
+    "name": "e-commerce",
+    "slug": "e-commerce",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/e-commerce/"
+  },
+  {
+    "id": 64,
+    "name": "Economia das APIs",
+    "slug": "economia-das-apis",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/economia-das-apis/"
+  },
+  {
+    "id": 171,
+    "name": "Educação",
+    "slug": "educacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/educacao/"
+  },
+  {
+    "id": 247,
+    "name": "empresas que adotam devops",
+    "slug": "empresas-que-adotam-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/empresas-que-adotam-devops/"
+  },
+  {
+    "id": 103,
+    "name": "Enterprise Service Bus",
+    "slug": "enterprise-service-bus",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/enterprise-service-bus/"
+  },
+  {
+    "id": 104,
+    "name": "ESB",
+    "slug": "esb",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/esb/"
+  },
+  {
+    "id": 273,
+    "name": "ESB MuleSoft",
+    "slug": "esb-mulesoft",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/esb-mulesoft/"
+  },
+  {
+    "id": 303,
+    "name": "escala de inovação",
+    "slug": "escala-de-inovacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/escala-de-inovacao/"
+  },
+  {
+    "id": 122,
+    "name": "Escalabilidade",
+    "slug": "escalabilidade",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/escalabilidade/"
+  },
+  {
+    "id": 150,
+    "name": "escalabilidade da API",
+    "slug": "escalabilidade-da-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/escalabilidade-da-api/"
+  },
+  {
+    "id": 123,
+    "name": "Estável",
+    "slug": "estavel",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/estavel/"
+  },
+  {
+    "id": 224,
+    "name": "esteira de entregas contínuas",
+    "slug": "esteira-de-entregas-continuas",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/esteira-de-entregas-continuas/"
+  },
+  {
+    "id": 225,
+    "name": "esteira devops",
+    "slug": "esteira-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/esteira-devops/"
+  },
+  {
+    "id": 128,
+    "name": "Estratégia API",
+    "slug": "estrategia-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/estrategia-api/"
+  },
+  {
+    "id": 243,
+    "name": "estratégia de API",
+    "slug": "estrategia-de-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/estrategia-de-api/"
+  },
+  {
+    "id": 253,
+    "name": "Estratégia mobile",
+    "slug": "estrategia-mobile",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/estrategia-mobile/"
+  },
+  {
+    "id": 129,
+    "name": "Estratégia SOA",
+    "slug": "estrategia-soa",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/estrategia-soa/"
+  },
+  {
+    "id": 183,
+    "name": "Exicon",
+    "slug": "exicon",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/exicon/"
+  },
+  {
+    "id": 116,
+    "name": "Experiência Digital",
+    "slug": "experiencia-digital",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/experiencia-digital/"
+  },
+  {
+    "id": 158,
+    "name": "Experiência do Cliente",
+    "slug": "experiencia-do-cliente",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/experiencia-do-cliente/"
+  },
+  {
+    "id": 209,
+    "name": "Faas",
+    "slug": "faas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/faas/"
+  },
+  {
+    "id": 149,
+    "name": "Falhas na Aplicação",
+    "slug": "falhas-na-aplicacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/falhas-na-aplicacao/"
+  },
+  {
+    "id": 107,
+    "name": "Ferramenta Colaborativa",
+    "slug": "ferramenta-colaborativa",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ferramenta-colaborativa/"
+  },
+  {
+    "id": 272,
+    "name": "Ferramentas de orquestração de containers",
+    "slug": "ferramentas-de-orquestracao-de-containers",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ferramentas-de-orquestracao-de-containers/"
+  },
+  {
+    "id": 34,
+    "name": "Fluig",
+    "slug": "fluig",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/fluig/"
+  },
+  {
+    "id": 304,
+    "name": "franchising",
+    "slug": "franchising",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/franchising/"
+  },
+  {
+    "id": 267,
+    "name": "future-proof",
+    "slug": "future-proof",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/future-proof/"
+  },
+  {
+    "id": 301,
+    "name": "Gap de entrega da TI",
+    "slug": "gap-de-entrega-da-ti",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gap-de-entrega-da-ti/"
+  },
+  {
+    "id": 280,
+    "name": "Gartner",
+    "slug": "gartner",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gartner/"
+  },
+  {
+    "id": 54,
+    "name": "Gartnet",
+    "slug": "gartnet",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gartnet/"
+  },
+  {
+    "id": 93,
+    "name": "Gestão de Performance",
+    "slug": "gestao-de-performance",
+    "description": "",
+    "count": 8,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gestao-de-performance/"
+  },
+  {
+    "id": 91,
+    "name": "gestão de performance digital",
+    "slug": "gestao-de-performance-digital",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gestao-de-performance-digital/"
+  },
+  {
+    "id": 83,
+    "name": "gestor público",
+    "slug": "gestor-publico",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gestor-publico/"
+  },
+  {
+    "id": 334,
+    "name": "Git",
+    "slug": "git",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/git/"
+  },
+  {
+    "id": 335,
+    "name": "GitOps",
+    "slug": "gitops",
+    "description": "",
+    "count": 9,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/gitops/"
+  },
+  {
+    "id": 147,
+    "name": "Google Analytics",
+    "slug": "google-analytics",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/google-analytics/"
+  },
+  {
+    "id": 184,
+    "name": "Google APIs Discovery Service",
+    "slug": "google-apis-discovery-service",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/google-apis-discovery-service/"
+  },
+  {
+    "id": 387,
+    "name": "Grafos",
+    "slug": "grafos",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/grafos/"
+  },
+  {
+    "id": 318,
+    "name": "gRPC",
+    "slug": "grpc",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/grpc/"
+  },
+  {
+    "id": 325,
+    "name": "Hashicorp",
+    "slug": "hashicorp",
+    "description": "",
+    "count": 10,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/hashicorp/"
+  },
+  {
+    "id": 331,
+    "name": "https",
+    "slug": "https",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/https/"
+  },
+  {
+    "id": 393,
+    "name": "IA",
+    "slug": "ia",
+    "description": "",
+    "count": 24,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ia/"
+  },
+  {
+    "id": 98,
+    "name": "IBM",
+    "slug": "ibm",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ibm/"
+  },
+  {
+    "id": 228,
+    "name": "implementar devops",
+    "slug": "implementar-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/implementar-devops/"
+  },
+  {
+    "id": 84,
+    "name": "Infovia Digital",
+    "slug": "infovia-digital",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/infovia-digital/"
+  },
+  {
+    "id": 323,
+    "name": "Infraestrutura como código",
+    "slug": "infraestrutura-como-codigo",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/infraestrutura-como-codigo/"
+  },
+  {
+    "id": 26,
+    "name": "Integração",
+    "slug": "integracao",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracao/"
+  },
+  {
+    "id": 188,
+    "name": "Integração com portal",
+    "slug": "integracao-com-portal",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracao-com-portal/"
+  },
+  {
+    "id": 279,
+    "name": "Integração de API",
+    "slug": "integracao-de-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracao-de-api/"
+  },
+  {
+    "id": 156,
+    "name": "Integração de Sistema",
+    "slug": "integracao-de-sistema",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracao-de-sistema/"
+  },
+  {
+    "id": 33,
+    "name": "Integração de sistemas",
+    "slug": "integracao-de-sistemas",
+    "description": "",
+    "count": 10,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracao-de-sistemas/"
+  },
+  {
+    "id": 307,
+    "name": "Integração entre sistemas",
+    "slug": "integracao-entre-sistemas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracao-entre-sistemas/"
+  },
+  {
+    "id": 281,
+    "name": "Integrações",
+    "slug": "integracoes",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/integracoes/"
+  },
+  {
+    "id": 371,
+    "name": "inteligencia artificial",
+    "slug": "inteligencia-artificial",
+    "description": "",
+    "count": 6,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/inteligencia-artificial/"
+  },
+  {
+    "id": 126,
+    "name": "Internet das coisas",
+    "slug": "internet-das-coisas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/internet-das-coisas/"
+  },
+  {
+    "id": 18,
+    "name": "Interoperabilidade",
+    "slug": "interoperabilidade",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/interoperabilidade/"
+  },
+  {
+    "id": 35,
+    "name": "Intranet",
+    "slug": "intranet",
+    "description": "",
+    "count": 8,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/intranet/"
+  },
+  {
+    "id": 134,
+    "name": "Intranet corporativa",
+    "slug": "intranet-corporativa",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/intranet-corporativa/"
+  },
+  {
+    "id": 127,
+    "name": "Iot",
+    "slug": "iot",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/iot/"
+  },
+  {
+    "id": 263,
+    "name": "iPaaS",
+    "slug": "ipaas",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ipaas/"
+  },
+  {
+    "id": 70,
+    "name": "Joomla!",
+    "slug": "joomla",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/joomla/"
+  },
+  {
+    "id": 332,
+    "name": "Kong",
+    "slug": "kong",
+    "description": "",
+    "count": 17,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/kong/"
+  },
+  {
+    "id": 164,
+    "name": "Kubernetes",
+    "slug": "kubernetes",
+    "description": "",
+    "count": 26,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/kubernetes/"
+  },
+  {
+    "id": 321,
+    "name": "lgpd",
+    "slug": "lgpd",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/lgpd/"
+  },
+  {
+    "id": 36,
+    "name": "Liferay",
+    "slug": "liferay",
+    "description": "",
+    "count": 35,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay/"
+  },
+  {
+    "id": 154,
+    "name": "Liferay 7",
+    "slug": "liferay-7",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay-7/"
+  },
+  {
+    "id": 278,
+    "name": "Liferay 7.1",
+    "slug": "liferay-7-1",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay-7-1/"
+  },
+  {
+    "id": 190,
+    "name": "liferay dxp",
+    "slug": "liferay-dxp",
+    "description": "",
+    "count": 11,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay-dxp/"
+  },
+  {
+    "id": 239,
+    "name": "liferay dxp 7.1",
+    "slug": "liferay-dxp-7-1",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay-dxp-7-1/"
+  },
+  {
+    "id": 329,
+    "name": "Liferay Partner of the Year",
+    "slug": "liferay-partner-of-the-year",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay-partner-of-the-year/"
+  },
+  {
+    "id": 55,
+    "name": "Liferay Portal",
+    "slug": "liferay-portal",
+    "description": "",
+    "count": 8,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/liferay-portal/"
+  },
+  {
+    "id": 288,
+    "name": "Máquinas virtuais",
+    "slug": "maquinas-virtuais",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/maquinas-virtuais/"
+  },
+  {
+    "id": 165,
+    "name": "Marathon",
+    "slug": "marathon",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/marathon/"
+  },
+  {
+    "id": 159,
+    "name": "Marketing",
+    "slug": "marketing",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/marketing/"
+  },
+  {
+    "id": 108,
+    "name": "Marketing Digital",
+    "slug": "marketing-digital",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/marketing-digital/"
+  },
+  {
+    "id": 365,
+    "name": "Mensageria",
+    "slug": "mensageria",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mensageria/"
+  },
+  {
+    "id": 105,
+    "name": "Message Broker 3.0",
+    "slug": "message-broker-3-0",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/message-broker-3-0/"
+  },
+  {
+    "id": 264,
+    "name": "microservices",
+    "slug": "microservices",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/microservices/"
+  },
+  {
+    "id": 265,
+    "name": "microsserviços",
+    "slug": "microsservicos",
+    "description": "",
+    "count": 10,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/microsservicos/"
+  },
+  {
+    "id": 363,
+    "name": "Mirantis",
+    "slug": "mirantis",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mirantis/"
+  },
+  {
+    "id": 46,
+    "name": "Mobile",
+    "slug": "mobile",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mobile/"
+  },
+  {
+    "id": 268,
+    "name": "Mobile API",
+    "slug": "mobile-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mobile-api/"
+  },
+  {
+    "id": 254,
+    "name": "Mobile first",
+    "slug": "mobile-first",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mobile-first/"
+  },
+  {
+    "id": 255,
+    "name": "mobile strategy",
+    "slug": "mobile-strategy",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mobile-strategy/"
+  },
+  {
+    "id": 245,
+    "name": "modernização de aplicação",
+    "slug": "modernizacao-de-aplicacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/modernizacao-de-aplicacao/"
+  },
+  {
+    "id": 222,
+    "name": "modernização de aplicações",
+    "slug": "modernizacao-de-aplicacoes",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/modernizacao-de-aplicacoes/"
+  },
+  {
+    "id": 192,
+    "name": "modernizar legados",
+    "slug": "modernizar-legados",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/modernizar-legados/"
+  },
+  {
+    "id": 193,
+    "name": "modernizar sistemas legados",
+    "slug": "modernizar-sistemas-legados",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/modernizar-sistemas-legados/"
+  },
+  {
+    "id": 109,
+    "name": "Monetização",
+    "slug": "monetizacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monetizacao/"
+  },
+  {
+    "id": 94,
+    "name": "Monitar Aplicação",
+    "slug": "monitar-aplicacao",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monitar-aplicacao/"
+  },
+  {
+    "id": 92,
+    "name": "monitoramento das aplicações",
+    "slug": "monitoramento-das-aplicacoes",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monitoramento-das-aplicacoes/"
+  },
+  {
+    "id": 259,
+    "name": "Monitoramento de performance",
+    "slug": "monitoramento-de-performance",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monitoramento-de-performance/"
+  },
+  {
+    "id": 207,
+    "name": "monitoramento de sistema",
+    "slug": "monitoramento-de-sistema",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monitoramento-de-sistema/"
+  },
+  {
+    "id": 90,
+    "name": "Monitorar Aplicação",
+    "slug": "monitorar-aplicacao",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monitorar-aplicacao/"
+  },
+  {
+    "id": 95,
+    "name": "Monitorar Performance",
+    "slug": "monitorar-performance",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/monitorar-performance/"
+  },
+  {
+    "id": 248,
+    "name": "motivos para adotar devops",
+    "slug": "motivos-para-adotar-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/motivos-para-adotar-devops/"
+  },
+  {
+    "id": 167,
+    "name": "MTA",
+    "slug": "mta",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mta/"
+  },
+  {
+    "id": 237,
+    "name": "MTA Docker",
+    "slug": "mta-docker",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mta-docker/"
+  },
+  {
+    "id": 229,
+    "name": "mudanças para adotar devops",
+    "slug": "mudancas-para-adotar-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mudancas-para-adotar-devops/"
+  },
+  {
+    "id": 27,
+    "name": "Mulesoft",
+    "slug": "mulesoft",
+    "description": "",
+    "count": 34,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulesoft/"
+  },
+  {
+    "id": 211,
+    "name": "Mulesoft Anypoint platform",
+    "slug": "mulesoft-anypoint-platform",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulesoft-anypoint-platform/"
+  },
+  {
+    "id": 213,
+    "name": "mulesoft cloudhub",
+    "slug": "mulesoft-cloudhub",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulesoft-cloudhub/"
+  },
+  {
+    "id": 214,
+    "name": "mulesoft on-premise",
+    "slug": "mulesoft-on-premise",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulesoft-on-premise/"
+  },
+  {
+    "id": 215,
+    "name": "mulesoft runtime",
+    "slug": "mulesoft-runtime",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulesoft-runtime/"
+  },
+  {
+    "id": 284,
+    "name": "mulheres na TI",
+    "slug": "mulheres-na-ti",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulheres-na-ti/"
+  },
+  {
+    "id": 285,
+    "name": "mulheres na Vertigo",
+    "slug": "mulheres-na-vertigo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mulheres-na-vertigo/"
+  },
+  {
+    "id": 320,
+    "name": "multi cloud",
+    "slug": "multi-cloud",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/multi-cloud/"
+  },
+  {
+    "id": 322,
+    "name": "multicloud",
+    "slug": "multicloud",
+    "description": "",
+    "count": 6,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/multicloud/"
+  },
+  {
+    "id": 124,
+    "name": "Mundo das APIs",
+    "slug": "mundo-das-apis",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/mundo-das-apis/"
+  },
+  {
+    "id": 388,
+    "name": "Neo4j",
+    "slug": "neo4j",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/neo4j/"
+  },
+  {
+    "id": 353,
+    "name": "NetOps",
+    "slug": "netops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/netops/"
+  },
+  {
+    "id": 151,
+    "name": "Nordic API",
+    "slug": "nordic-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/nordic-api/"
+  },
+  {
+    "id": 250,
+    "name": "Novidades",
+    "slug": "novidades",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/novidades/"
+  },
+  {
+    "id": 305,
+    "name": "novo modelo operacional de TI",
+    "slug": "novo-modelo-operacional-de-ti",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/novo-modelo-operacional-de-ti/"
+  },
+  {
+    "id": 316,
+    "name": "Nuvem",
+    "slug": "nuvem",
+    "description": "",
+    "count": 13,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/nuvem/"
+  },
+  {
+    "id": 238,
+    "name": "O impacto de DevOps",
+    "slug": "o-impacto-de-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/o-impacto-de-devops/"
+  },
+  {
+    "id": 131,
+    "name": "o que apis",
+    "slug": "o-que-apis",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/o-que-apis/"
+  },
+  {
+    "id": 132,
+    "name": "o que é api",
+    "slug": "o-que-e-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/o-que-e-api/"
+  },
+  {
+    "id": 199,
+    "name": "o que é devops",
+    "slug": "o-que-e-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/o-que-e-devops/"
+  },
+  {
+    "id": 220,
+    "name": "o que é docker",
+    "slug": "o-que-e-docker",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/o-que-e-docker/"
+  },
+  {
+    "id": 133,
+    "name": "o que são apis?",
+    "slug": "o-que-sao-apis",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/o-que-sao-apis/"
+  },
+  {
+    "id": 313,
+    "name": "Observabilidade",
+    "slug": "observabilidade",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/observabilidade/"
+  },
+  {
+    "id": 160,
+    "name": "Omni Channel",
+    "slug": "omni-channel",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/omni-channel/"
+  },
+  {
+    "id": 119,
+    "name": "Omnichannel",
+    "slug": "omnichannel",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/omnichannel/"
+  },
+  {
+    "id": 404,
+    "name": "Open Finance",
+    "slug": "open-finance",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/open-finance/"
+  },
+  {
+    "id": 19,
+    "name": "open source",
+    "slug": "open-source",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/open-source/"
+  },
+  {
+    "id": 351,
+    "name": "OpenShift",
+    "slug": "openshift",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/openshift/"
+  },
+  {
+    "id": 77,
+    "name": "Oracle",
+    "slug": "oracle",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/oracle/"
+  },
+  {
+    "id": 66,
+    "name": "organizar informações.",
+    "slug": "organizar-informacoes",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/organizar-informacoes/"
+  },
+  {
+    "id": 166,
+    "name": "Orquestração de Containers",
+    "slug": "orquestracao-de-containers",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/orquestracao-de-containers/"
+  },
+  {
+    "id": 96,
+    "name": "performance",
+    "slug": "performance",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/performance/"
+  },
+  {
+    "id": 144,
+    "name": "Performance Digital",
+    "slug": "performance-digital",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/performance-digital/"
+  },
+  {
+    "id": 20,
+    "name": "personalização",
+    "slug": "personalizacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/personalizacao/"
+  },
+  {
+    "id": 61,
+    "name": "Philips API",
+    "slug": "philips-api",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/philips-api/"
+  },
+  {
+    "id": 67,
+    "name": "planilhas",
+    "slug": "planilhas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/planilhas/"
+  },
+  {
+    "id": 252,
+    "name": "plataforma de containers",
+    "slug": "plataforma-de-containers",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataforma-de-containers/"
+  },
+  {
+    "id": 205,
+    "name": "plataforma de experiencia digital",
+    "slug": "plataforma-de-experiencia-digital",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataforma-de-experiencia-digital/"
+  },
+  {
+    "id": 118,
+    "name": "Plataforma de Portal",
+    "slug": "plataforma-de-portal",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataforma-de-portal/"
+  },
+  {
+    "id": 37,
+    "name": "Plataforma Digital",
+    "slug": "plataforma-digital",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataforma-digital/"
+  },
+  {
+    "id": 38,
+    "name": "plataforma digital mobile friendly",
+    "slug": "plataforma-digital-mobile-friendly",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataforma-digital-mobile-friendly/"
+  },
+  {
+    "id": 240,
+    "name": "plataforma dxp",
+    "slug": "plataforma-dxp",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataforma-dxp/"
+  },
+  {
+    "id": 256,
+    "name": "Plataformas",
+    "slug": "plataformas",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataformas/"
+  },
+  {
+    "id": 282,
+    "name": "Plataformas de integração de sistemas",
+    "slug": "plataformas-de-integracao-de-sistemas",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataformas-de-integracao-de-sistemas/"
+  },
+  {
+    "id": 191,
+    "name": "plataformas digitais",
+    "slug": "plataformas-digitais",
+    "description": "",
+    "count": 10,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/plataformas-digitais/"
+  },
+  {
+    "id": 398,
+    "name": "Platform Engineering",
+    "slug": "platform-engineering",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/platform-engineering/"
+  },
+  {
+    "id": 48,
+    "name": "Portais",
+    "slug": "portais",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/portais/"
+  },
+  {
+    "id": 201,
+    "name": "portais inteligentes",
+    "slug": "portais-inteligentes",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/portais-inteligentes/"
+  },
+  {
+    "id": 71,
+    "name": "Portal",
+    "slug": "portal",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/portal/"
+  },
+  {
+    "id": 56,
+    "name": "Portal Horizontal",
+    "slug": "portal-horizontal",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/portal-horizontal/"
+  },
+  {
+    "id": 227,
+    "name": "prática devops",
+    "slug": "pratica-devops",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/pratica-devops/"
+  },
+  {
+    "id": 341,
+    "name": "produtos digitais",
+    "slug": "produtos-digitais",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/produtos-digitais/"
+  },
+  {
+    "id": 297,
+    "name": "Programador",
+    "slug": "programador",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/programador/"
+  },
+  {
+    "id": 185,
+    "name": "ProgrammableWeb",
+    "slug": "programmableweb",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/programmableweb/"
+  },
+  {
+    "id": 186,
+    "name": "PublicAPIs.com",
+    "slug": "publicapis-com",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/publicapis-com/"
+  },
+  {
+    "id": 110,
+    "name": "Publicidade Digital",
+    "slug": "publicidade-digital",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/publicidade-digital/"
+  },
+  {
+    "id": 57,
+    "name": "Quadrante Mágico",
+    "slug": "quadrante-magico",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/quadrante-magico/"
+  },
+  {
+    "id": 298,
+    "name": "React",
+    "slug": "react",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/react/"
+  },
+  {
+    "id": 53,
+    "name": "Registro de Preço Liferay",
+    "slug": "registro-de-preco-liferay",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/registro-de-preco-liferay/"
+  },
+  {
+    "id": 299,
+    "name": "relatório benchmark",
+    "slug": "relatorio-benchmark",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/relatorio-benchmark/"
+  },
+  {
+    "id": 319,
+    "name": "REST",
+    "slug": "rest",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/rest/"
+  },
+  {
+    "id": 216,
+    "name": "review mule cloudhub",
+    "slug": "review-mule-cloudhub",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/review-mule-cloudhub/"
+  },
+  {
+    "id": 217,
+    "name": "review mule on-premise",
+    "slug": "review-mule-on-premise",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/review-mule-on-premise/"
+  },
+  {
+    "id": 121,
+    "name": "Rio de Janeiro",
+    "slug": "rio-de-janeiro",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/rio-de-janeiro/"
+  },
+  {
+    "id": 65,
+    "name": "Saas",
+    "slug": "saas",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/saas/"
+  },
+  {
+    "id": 189,
+    "name": "Salesforce",
+    "slug": "salesforce",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/salesforce/"
+  },
+  {
+    "id": 194,
+    "name": "sap",
+    "slug": "sap",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/sap/"
+  },
+  {
+    "id": 195,
+    "name": "sap erp",
+    "slug": "sap-erp",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/sap-erp/"
+  },
+  {
+    "id": 230,
+    "name": "segredos do sucesso devops",
+    "slug": "segredos-do-sucesso-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/segredos-do-sucesso-devops/"
+  },
+  {
+    "id": 326,
+    "name": "seguradoras",
+    "slug": "seguradoras",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguradoras/"
+  },
+  {
+    "id": 333,
+    "name": "segurança",
+    "slug": "seguranca",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguranca/"
+  },
+  {
+    "id": 349,
+    "name": "Segurança da Informação",
+    "slug": "seguranca-da-informacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguranca-da-informacao/"
+  },
+  {
+    "id": 355,
+    "name": "segurança da tecnologia",
+    "slug": "seguranca-da-tecnologia",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguranca-da-tecnologia/"
+  },
+  {
+    "id": 348,
+    "name": "Segurança de API",
+    "slug": "seguranca-de-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguranca-de-api/"
+  },
+  {
+    "id": 384,
+    "name": "Segurança Digital",
+    "slug": "seguranca-digital",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguranca-digital/"
+  },
+  {
+    "id": 204,
+    "name": "segurança monetária",
+    "slug": "seguranca-monetaria",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguranca-monetaria/"
+  },
+  {
+    "id": 327,
+    "name": "seguros",
+    "slug": "seguros",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seguros/"
+  },
+  {
+    "id": 350,
+    "name": "SEO",
+    "slug": "seo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/seo/"
+  },
+  {
+    "id": 343,
+    "name": "serverless",
+    "slug": "serverless",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/serverless/"
+  },
+  {
+    "id": 231,
+    "name": "serverless container",
+    "slug": "serverless-container",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/serverless-container/"
+  },
+  {
+    "id": 232,
+    "name": "serverless conteiner",
+    "slug": "serverless-conteiner",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/serverless-conteiner/"
+  },
+  {
+    "id": 233,
+    "name": "serverless Faas",
+    "slug": "serverless-faas",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/serverless-faas/"
+  },
+  {
+    "id": 338,
+    "name": "Service Mesh",
+    "slug": "service-mesh",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/service-mesh/"
+  },
+  {
+    "id": 401,
+    "name": "Setor de Seguros",
+    "slug": "setor-de-seguros",
+    "description": "",
+    "count": 14,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/setor-de-seguros/"
+  },
+  {
+    "id": 396,
+    "name": "setor financeiro",
+    "slug": "setor-financeiro",
+    "description": "",
+    "count": 22,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/setor-financeiro/"
+  },
+  {
+    "id": 382,
+    "name": "Setor Público",
+    "slug": "setor-publico",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/setor-publico/"
+  },
+  {
+    "id": 200,
+    "name": "significado de devops",
+    "slug": "significado-de-devops",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/significado-de-devops/"
+  },
+  {
+    "id": 342,
+    "name": "SLO",
+    "slug": "slo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/slo/"
+  },
+  {
+    "id": 143,
+    "name": "Smart Bot",
+    "slug": "smart-bot",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/smart-bot/"
+  },
+  {
+    "id": 85,
+    "name": "smart citizen",
+    "slug": "smart-citizen",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/smart-citizen/"
+  },
+  {
+    "id": 86,
+    "name": "Smart City",
+    "slug": "smart-city",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/smart-city/"
+  },
+  {
+    "id": 257,
+    "name": "Smartphone",
+    "slug": "smartphone",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/smartphone/"
+  },
+  {
+    "id": 49,
+    "name": "SOA",
+    "slug": "soa",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/soa/"
+  },
+  {
+    "id": 196,
+    "name": "substituir erp",
+    "slug": "substituir-erp",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/substituir-erp/"
+  },
+  {
+    "id": 22,
+    "name": "suporte",
+    "slug": "suporte",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/suporte/"
+  },
+  {
+    "id": 367,
+    "name": "Take Blip",
+    "slug": "take-blip",
+    "description": "",
+    "count": 6,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/take-blip/"
+  },
+  {
+    "id": 23,
+    "name": "TCO",
+    "slug": "tco",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/tco/"
+  },
+  {
+    "id": 418,
+    "name": "Team Topologies",
+    "slug": "team-topologies",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/team-topologies/"
+  },
+  {
+    "id": 12,
+    "name": "tendencias de ti 2018",
+    "slug": "tendencias-de-ti-2018",
+    "description": "",
+    "count": 0,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/tendencias-de-ti-2018/"
+  },
+  {
+    "id": 375,
+    "name": "Terraform",
+    "slug": "terraform",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/terraform/"
+  },
+  {
+    "id": 314,
+    "name": "TI moderna",
+    "slug": "ti-moderna",
+    "description": "",
+    "count": 9,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ti-moderna/"
+  },
+  {
+    "id": 311,
+    "name": "TI tradicional",
+    "slug": "ti-tradicional",
+    "description": "",
+    "count": 7,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/ti-tradicional/"
+  },
+  {
+    "id": 16,
+    "name": "Transformação Cloud Native",
+    "slug": "transformacao-cloud-native",
+    "description": "",
+    "count": 17,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/transformacao-cloud-native/"
+  },
+  {
+    "id": 161,
+    "name": "Transformação Digital",
+    "slug": "transformacao-digital",
+    "description": "",
+    "count": 40,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/transformacao-digital/"
+  },
+  {
+    "id": 172,
+    "name": "Transparência",
+    "slug": "transparencia",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/transparencia/"
+  },
+  {
+    "id": 177,
+    "name": "Trello",
+    "slug": "trello",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/trello/"
+  },
+  {
+    "id": 197,
+    "name": "trocar erp",
+    "slug": "trocar-erp",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/trocar-erp/"
+  },
+  {
+    "id": 145,
+    "name": "UEM",
+    "slug": "uem",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/uem/"
+  },
+  {
+    "id": 62,
+    "name": "UOL API",
+    "slug": "uol-api",
+    "description": "",
+    "count": 2,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/uol-api/"
+  },
+  {
+    "id": 152,
+    "name": "Usabilidade",
+    "slug": "usabilidade",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/usabilidade/"
+  },
+  {
+    "id": 324,
+    "name": "Varejo",
+    "slug": "varejo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/varejo/"
+  },
+  {
+    "id": 328,
+    "name": "Vault",
+    "slug": "vault",
+    "description": "",
+    "count": 5,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/vault/"
+  },
+  {
+    "id": 402,
+    "name": "VeeCode",
+    "slug": "veecode",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/veecode/"
+  },
+  {
+    "id": 148,
+    "name": "Verigo",
+    "slug": "verigo",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/verigo/"
+  },
+  {
+    "id": 24,
+    "name": "Vertigo",
+    "slug": "vertigo",
+    "description": "",
+    "count": 14,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/vertigo/"
+  },
+  {
+    "id": 29,
+    "name": "Vertigo Tecnologia",
+    "slug": "vertigo-tecnologia",
+    "description": "",
+    "count": 34,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/vertigo-tecnologia/"
+  },
+  {
+    "id": 114,
+    "name": "Virtualização",
+    "slug": "virtualizacao",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/virtualizacao/"
+  },
+  {
+    "id": 30,
+    "name": "Visão única do Cliente",
+    "slug": "visao-unica-do-cliente",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/visao-unica-do-cliente/"
+  },
+  {
+    "id": 336,
+    "name": "Weave Kubernetes",
+    "slug": "weave-kubernetes",
+    "description": "",
+    "count": 4,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/weave-kubernetes/"
+  },
+  {
+    "id": 337,
+    "name": "WeaveWorks",
+    "slug": "weaveworks",
+    "description": "",
+    "count": 3,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/weaveworks/"
+  },
+  {
+    "id": 269,
+    "name": "Web API",
+    "slug": "web-api",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/web-api/"
+  },
+  {
+    "id": 420,
+    "name": "White Label",
+    "slug": "white-label",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/white-label/"
+  },
+  {
+    "id": 344,
+    "name": "WKP",
+    "slug": "wkp",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/wkp/"
+  },
+  {
+    "id": 72,
+    "name": "WordPress",
+    "slug": "wordpress",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/wordpress/"
+  },
+  {
+    "id": 352,
+    "name": "WPK",
+    "slug": "wpk",
+    "description": "",
+    "count": 1,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/wpk/"
+  },
+  {
+    "id": 31,
+    "name": "WSO2",
+    "slug": "wso2",
+    "description": "",
+    "count": 19,
+    "parent": null,
+    "link": "https://vertigo.com.br/tag/wso2/"
+  }
+]

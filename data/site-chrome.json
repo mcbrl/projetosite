@@ -1,0 +1,268 @@
+{
+  "header": {
+    "links": [
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "AI Journey",
+        "href": "/ai-journey/"
+      },
+      {
+        "text": "Nossas Soluções",
+        "href": "/solucoes/"
+      },
+      {
+        "text": "Strategy Tier",
+        "href": "#"
+      },
+      {
+        "text": "Technology Strategy",
+        "href": "/strategy-tier-technology-strategy/"
+      },
+      {
+        "text": "AI Strategy & Operations",
+        "href": "/strategy-tier-ai-strategy-operations/"
+      },
+      {
+        "text": "Go to Cloud",
+        "href": "/strategy-tier-go-to-cloud/"
+      },
+      {
+        "text": "Business Tier",
+        "href": "#"
+      },
+      {
+        "text": "Serviços Financeiros & Seguradoras",
+        "href": "/business-tier-servicos-financeiros-seguradoras/"
+      },
+      {
+        "text": "Governo & Judiciário",
+        "href": "/business-tier-governo-judiciario/"
+      },
+      {
+        "text": "Business Digital Acceleration",
+        "href": "/business-tier-business-digital-acceleration/"
+      },
+      {
+        "text": "Tech Tier",
+        "href": "#"
+      },
+      {
+        "text": "Platform Engineering",
+        "href": "/tech-tier-platform-engineering/"
+      },
+      {
+        "text": "Data, Intelligence & AI",
+        "href": "/tech-tier-data-intelligence-ai/"
+      },
+      {
+        "text": "API & Integration",
+        "href": "/tech-tier-api-integration/"
+      },
+      {
+        "text": "Parceiros",
+        "href": "/parceiros/"
+      },
+      {
+        "text": "Carreiras",
+        "href": "/carreiras/"
+      },
+      {
+        "text": "Materiais",
+        "href": "/materiais/"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "AI Journey",
+        "href": "/ai-journey/"
+      },
+      {
+        "text": "Nossas Soluções",
+        "href": "/solucoes/"
+      },
+      {
+        "text": "Strategy Tier",
+        "href": "#"
+      },
+      {
+        "text": "Technology Strategy",
+        "href": "/strategy-tier-technology-strategy/"
+      },
+      {
+        "text": "AI Strategy & Operations",
+        "href": "/strategy-tier-ai-strategy-operations/"
+      },
+      {
+        "text": "Go to Cloud",
+        "href": "/strategy-tier-go-to-cloud/"
+      },
+      {
+        "text": "Business Tier",
+        "href": "#"
+      },
+      {
+        "text": "Serviços Financeiros & Seguradoras",
+        "href": "/business-tier-servicos-financeiros-seguradoras/"
+      },
+      {
+        "text": "Governo & Judiciário",
+        "href": "/business-tier-governo-judiciario/"
+      },
+      {
+        "text": "Business Digital Acceleration",
+        "href": "/business-tier-business-digital-acceleration/"
+      },
+      {
+        "text": "Tech Tier",
+        "href": "#"
+      },
+      {
+        "text": "Platform Engineering",
+        "href": "/tech-tier-platform-engineering/"
+      },
+      {
+        "text": "Data, Intelligence & AI",
+        "href": "/tech-tier-data-intelligence-ai/"
+      },
+      {
+        "text": "API & Integration",
+        "href": "/tech-tier-api-integration/"
+      },
+      {
+        "text": "Parceiros",
+        "href": "/parceiros/"
+      },
+      {
+        "text": "Carreiras",
+        "href": "/carreiras/"
+      },
+      {
+        "text": "Materiais",
+        "href": "/materiais/"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/"
+      },
+      {
+        "text": "Converse com um Consultor",
+        "href": "/contato"
+      }
+    ],
+    "images": [
+      "/wp-content/uploads/2025/12/Vertigo_Version_Color_Tagline_Light_Backgrounds-scaled.png"
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "text": "",
+        "href": "/"
+      },
+      {
+        "text": "Instagram",
+        "href": "https://www.instagram.com/vertigo.tech"
+      },
+      {
+        "text": "Linkedin-in",
+        "href": "https://www.linkedin.com/company/vertigotech/"
+      },
+      {
+        "text": "Facebook-f",
+        "href": "https://www.facebook.com/vertigo.tech"
+      },
+      {
+        "text": "Youtube",
+        "href": "https://www.youtube.com/user/brvertigo"
+      },
+      {
+        "text": "Home",
+        "href": "/"
+      },
+      {
+        "text": "Soluções",
+        "href": "/solucoes/"
+      },
+      {
+        "text": "Materiais",
+        "href": "/materiais/"
+      },
+      {
+        "text": "Blog",
+        "href": "/blog/"
+      },
+      {
+        "text": "Carreiras",
+        "href": "/carreiras"
+      },
+      {
+        "text": "Contato",
+        "href": "/contato/"
+      },
+      {
+        "text": "Ouvidoria",
+        "href": "/ouvidoria/"
+      },
+      {
+        "text": "Denúncias",
+        "href": "/canal-de-denuncias/"
+      },
+      {
+        "text": "Política de Privacidade",
+        "href": "/politica-de-privacidade/"
+      },
+      {
+        "text": "Rua Visconde de Inhaúma, nº 134, Sala 2001, Parte. Centro, Rio de Janeiro-RJ - CEP 20.091-901",
+        "href": "/"
+      },
+      {
+        "text": "Desenvolvido por:",
+        "href": "https://mov4.com.br/?utm_source=site-vertigo"
+      }
+    ],
+    "images": [
+      "/wp-content/uploads/2025/11/Vertigo_Version_Color_Dark_Backgrounds-scaled.png",
+      null,
+      "/wp-content/uploads/2025/11/Logo-Mov4-Preto-2-copiar-scaled.webp"
+    ]
+  },
+  "popup": {
+    "links": [
+      {
+        "text": "Aplicar filtros",
+        "href": "#elementor-action%3Aaction%3Dpopup%3Aclose%26settings%3DeyJkb19ub3Rfc2hvd19hZ2FpbiI6IiJ9"
+      }
+    ],
+    "images": []
+  },
+  "icons": [
+    {
+      "rel": "icon",
+      "href": "/wp-content/uploads/2025/12/cropped-FavIcon-32x32.png",
+      "sizes": "32x32"
+    },
+    {
+      "rel": "icon",
+      "href": "/wp-content/uploads/2025/12/cropped-FavIcon-192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "/wp-content/uploads/2025/12/cropped-FavIcon-180x180.png",
+      "sizes": null
+    }
+  ]
+}

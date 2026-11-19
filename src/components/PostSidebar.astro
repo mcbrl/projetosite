@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import HubSpotForm from "./HubSpotForm.astro";
+import { formatDate, pathOf, sortPosts } from "../lib/routes";
+import { hubspot } from "../data/site";
+interface Props { exclude?: string }
+const latest = sortPosts(await getCollection("blog")).filter((p) => p.id !== Astro.props.exclude).slice(0, 5);
+---
+<aside class="sidebar">
+  <div class="box dark">
+    <h2>Não perca os materiais, estudos de caso e inovações mais recentes da Vertigo.</h2>
+    <HubSpotForm formId={hubspot.forms.newsletter} dark square />
+  </div>
+  <div class="box gray">
+    <h2>Últimos artigos</h2>
+    <ul>
+      {latest.map((p) => (
+        <li>
+          <a href={pathOf(p)} class="item">
+            {p.data.featuredImage && <img src={p.data.featuredImage} alt="" width="76" height="76" loading="lazy" />}
+            <span><strong>{p.data.title}</strong><small>{formatDate(p.data.date)}</small></span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</aside>
+
+<style>
+  .sidebar { display: grid; gap: 20px; align-content: start; }
+  .box { padding: 32px; border-radius: 8px; }
+  .dark { background: var(--vt-ink); color: var(--vt-white); }
+  .gray { background: var(--vt-line); }
+  h2 { font-size: 22px; font-weight: 400; line-height: 1.4; letter-spacing: 0; margin: 0 0 24px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
+  .item { display: grid; grid-template-columns: 76px 1fr; gap: 16px; color: var(--vt-text); }
+  .item:hover { text-decoration: none; color: var(--vt-blue); }
+  .item img { width: 76px; height: 76px; object-fit: cover; border-radius: 4px; }
+  strong { display: block; font-weight: 400; font-size: 14px; line-height: 1.4; }
+  small { display: block; font-size: 13px; color: #5f6368; margin-top: 4px; }
+</style>

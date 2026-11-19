@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
+import { site } from "../data/site";
+import chrome from "../../data/site-chrome.json";
+
+export interface Seo { title?: string; description?: string; canonical?: string; ogImage?: string; robots?: string }
+interface Props { title: string; seo?: Seo; type?: "website" | "article"; publishedTime?: Date; modifiedTime?: Date }
+
+const { title, seo = {}, type = "website", publishedTime, modifiedTime } = Astro.props;
+const pageTitle = seo.title ?? `${title} - ${site.name}`;
+const canonical = seo.canonical ?? new URL(Astro.url.pathname, site.url).href;
+const ogImage = seo.ogImage ? new URL(seo.ogImage, site.url).href : undefined;
+const icons = (chrome as { icons?: { rel: string; href: string; sizes?: string | null }[] }).icons ?? [];
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    {seo.description && <meta name="description" content={seo.description} />}
+    <meta name="robots" content={seo.robots ?? "index, follow"} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    {seo.description && <meta property="og:description" content={seo.description} />}
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    {icons.map((i) => <link rel={i.rel} href={i.href} sizes={i.sizes ?? undefined} />)}
+    <link rel="preload" href="/theme/fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/theme/fonts/GoogleSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    {import.meta.env.PROD && (
+      <script is:inline define:vars={{ gtm: site.gtm }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtm);
+      </script>
+    )}
+    <slot name="head" />
+  </head>
+  <body>
+    {import.meta.env.PROD && (
+      <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${site.gtm}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    )}
+    <a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
+    <Header />
+    <main id="conteudo">
+      <slot />
+    </main>
+    <Footer />
+    <WhatsAppButton />
+  </body>
+</html>

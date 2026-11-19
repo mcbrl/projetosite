@@ -1,0 +1,43 @@
+---
+import home from "../../data/home.json";
+const { intro, stats } = home;
+---
+<section class="intro">
+  <div class="container grid">
+    <h2 class="headline">{intro.headline.map((w) => <span>{w}</span>)}</h2>
+    <div class="text" set:html={intro.html} />
+  </div>
+</section>
+<section class="stats" aria-label="Números da Vertigo">
+  <div class="container row">
+    {stats.map((s) => (
+      <div class="stat"><strong>{s.value}</strong><span>{s.label}</span></div>
+    ))}
+  </div>
+</section>
+<style>
+  .intro { padding: 112px 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: center; }
+  .headline { display: flex; flex-direction: column; align-items: flex-end; color: var(--vt-blue); font-size: 60px; font-weight: 600; line-height: 1.1; letter-spacing: -1px; margin: 0; }
+  .text { font-size: 18px; line-height: 1.35; }
+  .text :global(p) { margin: 0 0 16px; }
+  .text :global(b) { font-weight: 600; }
+  .stats { background: var(--vt-blue); color: var(--vt-white); padding: 32px 0; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .stat { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 0 16px; text-align: center; }
+  .stat + .stat { border-left: 1px dashed var(--vt-white-60); }
+  strong { font-size: 48px; font-weight: 600; line-height: 1; }
+  .stat span { font-size: 14px; font-weight: 500; text-transform: uppercase; }
+  @media (max-width: 900px) {
+    .intro { padding: 48px 0; }
+    .grid { grid-template-columns: 1fr; gap: 40px; }
+    .headline { align-items: flex-start; font-size: 40px; }
+    .stats { padding: 0; }
+    .row { grid-template-columns: 1fr 1fr; padding: 0; }
+    .stat { padding: 24px 8px; }
+    .stat + .stat { border-left: 0; }
+    .stat:nth-child(even) { border-left: 1px dashed var(--vt-white-60); }
+    .stat:nth-child(n+3) { border-top: 1px dashed var(--vt-white-60); }
+    strong { font-size: 32px; } .stat span { font-size: 13px; }
+  }
+</style>

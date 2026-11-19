@@ -1,0 +1,14 @@
+.git
+node_modules
+.venv
+dist
+.astro
+raw-html
+docs
+tools/.cache
+**/__pycache__
+.DS_Store
+# não referenciados pelo site
+public/wp-content/plugins
+public/wp-content/cache
+public/wp-content/themes
