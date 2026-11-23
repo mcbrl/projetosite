@@ -23,7 +23,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter: fm } = await render(entry);
-const meta = metaOf(pathOf(entry));
+const path = pathOf(entry);
+const meta = metaOf(path);
+const motion = /^\/(strategy|business|tech)-tier-/.test(path) ? "tier"
+  : ["/canal-de-denuncias/", "/ouvidoria/"].includes(path) ? "left"
+  : undefined;
 ---
 {entry.collection === "blog" ? (
   <PostLayout post={entry}><Content /></PostLayout>
@@ -35,6 +39,7 @@ const meta = metaOf(pathOf(entry));
     seo={entry.data.seo}
     formId={meta.hubspotForm}
     formTitle={fm.formTitle}
+    motion={motion}
   >
     <Content />
   </PageLayout>

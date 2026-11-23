@@ -47,14 +47,15 @@ const year = new Date().getFullYear();
   .brand { display: flex; flex-direction: column; align-items: center; gap: 28px; }
   .brand img { width: 214px; }
   .social { display: flex; gap: 6px; list-style: none; padding: 0; margin: 0; }
-  .social a { width: 30px; height: 30px; border-radius: 50%; background: var(--vt-white); color: var(--vt-blue); display: grid; place-items: center; transition: transform .2s; }
-  .social a:hover { transform: translateY(-3px); }
-  .f-title { font-size: 22px; font-weight: 400; letter-spacing: 0; margin: 0 0 20px; }
+  .social a { width: 30px; height: 30px; border-radius: 50%; background: var(--vt-white); color: var(--vt-blue); display: grid; place-items: center; transition: transform .3s; }
+  .social a:hover { transform: translateY(-8px); } /* elementor-animation-float */
+  .f-title { font-size: var(--fs-h4); font-weight: 500; line-height: 1.4; letter-spacing: 0; margin: 0 0 20px; }
   .links { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-  .links a, .address { color: var(--vt-white); display: flex; gap: 10px; align-items: center; font-size: 16px; }
+  .links a, .address { color: var(--vt-white); display: flex; gap: 10px; align-items: center; font-size: var(--fs-text); }
   .address { align-items: flex-start; }
   .address :global(svg) { margin-top: 5px; flex: none; }
-  .bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid #ffffff40; padding-top: 28px; padding-bottom: 28px; font-size: 13px; }
+  .bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid #ffffff40; padding-top: 28px; padding-bottom: 28px; font-size: 13px; line-height: 1.5; }
+  @media (max-width: 767px) { .bottom { font-size: 12px; } }
   .bottom p { margin: 0; }
   .credits { color: var(--vt-white); display: inline-flex; align-items: center; gap: 6px; }
   .credits img { width: 54px; }

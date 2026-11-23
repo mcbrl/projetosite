@@ -36,9 +36,9 @@ const eyebrow = categoryNames(post.data.categories, { keepBlog: true }).join(", 
 
 <style>
   .layout { display: grid; grid-template-columns: minmax(0, 1fr) 368px; gap: 48px; align-items: start; }
-  .prose :global(h1) { font-size: clamp(32px, 3.4vw, 48px); }
+  .prose :global(h1) { font-size: var(--fs-h1); }
   .share { display: flex; align-items: center; gap: 6px; margin-top: 48px; padding: 20px 0; border-top: 1px solid #90a4ae; border-bottom: 1px solid #90a4ae; }
-  .share span { font-weight: 500; margin-right: 14px; }
+  .share span { font-weight: 600; margin-right: 14px; }
   .share a { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; color: var(--vt-white); text-decoration: none; }
   .share .fb { background: #3b5998; } .share .tw { background: #1da1f2; } .share .li { background: #0077b5; }
   @media (max-width: 1024px) { .layout { grid-template-columns: 1fr; } }

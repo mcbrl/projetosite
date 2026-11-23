@@ -4,7 +4,7 @@ import Icon from "../Icon.astro";
 import home from "../../data/home.json";
 ---
 <section class="head section-dark">
-  <h2 class="t-section">Nossas Soluções</h2>
+  <h2 class="t-section" data-anim="fadeInUp" data-delay="300">Nossas Soluções</h2>
 </section>
 <section class="tabs" data-tabs>
   <div class="tablist" role="tablist" aria-label="Tiers de soluções">
@@ -49,11 +49,11 @@ import home from "../../data/home.json";
   .head { padding: 128px 0 124px; }
   .head .t-section { margin: 0; }
   .tablist { display: flex; justify-content: center; background: var(--vt-navy); }
-  [role=tab] { display: inline-flex; align-items: center; gap: 24px; padding: 24px 56px; border: 0; background: none; color: var(--vt-white); font: 400 22px var(--vt-font); cursor: pointer; }
+  [role=tab] { display: inline-flex; align-items: center; gap: 24px; padding: 28px 56px; border: 0; background: none; color: var(--vt-white); font: 500 22px/21px var(--vt-font); cursor: pointer; transition: background-color .3s; }
   [role=tab][aria-selected=true] { background: var(--vt-blue); }
   [role=tab]:hover { background: rgb(7 108 254 / .5); }
   .panels { background: var(--vt-line); padding: 40px 0 176px; }
-  .desc { font-size: 18px; margin: 0 0 20px; }
+  .desc { font-size: var(--fs-lead); margin: 0 0 20px; }
   @media (max-width: 767px) {
     .head { padding: 64px 0; }
     .tablist { flex-direction: column; }

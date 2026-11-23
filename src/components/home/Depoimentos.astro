@@ -6,7 +6,7 @@ import home from "../../data/home.json";
   <div class="container">
     <div class="head">
       <div>
-        <span class="chip chip-blue">Feedbacks</span>
+        <span class="chip chip-blue" data-anim="fadeInUp" data-delay="200">Feedbacks</span>
         <h2 class="t-h2">O que dizem sobre a Vertigo</h2>
       </div>
       <svg class="quote" viewBox="0 0 150 130" aria-hidden="true"><path fill="currentColor" d="M0 14C0 6 6 0 14 0h42c8 0 14 6 14 14v44c0 40-18 64-54 72-6 1-10-5-7-10 9-14 13-26 13-38H14C6 82 0 76 0 68V14zm80 0c0-8 6-14 14-14h42c8 0 14 6 14 14v44c0 40-18 64-54 72-6 1-10-5-7-10 9-14 13-26 13-38H94c-8 0-14-6-14-14V14z"/></svg>
@@ -29,8 +29,11 @@ import home from "../../data/home.json";
   .depo :global(.carousel) { padding: 0; }
   .depo :global(.carousel .nav) { margin: 0 -44px; }
   .card { margin: 0; background: var(--vt-blue); color: var(--vt-white); padding: 32px 36px 24px; border-bottom-right-radius: var(--vt-radius-card); display: flex; flex-direction: column; justify-content: space-between; gap: 24px; min-height: 248px; }
-  blockquote { margin: 0; font-size: 16px; line-height: 1.5; }
-  strong { display: block; font-weight: 600; }
-  em { font-size: 13px; }
-  @media (max-width: 767px) { .quote { width: 72px; } .depo :global(.carousel .nav) { display: none; } }
+  blockquote { margin: 0; font-size: 17px; line-height: 1.4; }
+  strong { display: block; font-size: 16px; font-weight: 600; }
+  em { font-size: 13px; line-height: 1.5; }
+  @media (max-width: 767px) {
+    .quote { width: 72px; } .depo :global(.carousel .nav) { display: none; }
+    blockquote { font-size: 16px; } strong { font-size: 14px; } em { font-size: 11px; }
+  }
 </style>

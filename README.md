@@ -59,6 +59,19 @@ O Markdown perde tabs, carrosséis, contadores e imagens de fundo definidas no C
 Em `src/styles/global.css`, copiados do Elementor Kit (post-48): azul `#076CFE`, navy `#0C1557`,
 ink `#101820` nas seções escuras, cinza `#E0E0E0`, fonte **Google Sans** (woff2 em `public/theme/fonts/`).
 
+Os tamanhos de fonte seguem a escala do Kit nos mesmos breakpoints do Elementor (≤1024px e ≤767px), como
+variáveis `--fs-*` em `global.css` (ex.: `--fs-section` 45/56/36px, `--fs-display` 59/56/36px).
+
+## Animações
+
+Reproduzem os Motion Effects do original (`src/lib/motion.ts`, carregado no `BaseLayout`):
+
+- Entrada: `data-anim="fadeInUp|fadeInRight|fadeInLeft"` + `data-delay` (ms), 1,25s ao entrar na tela.
+  Em Markdown, `data-anim-children="seletor|animação|atraso;…"` aplica a filhos (páginas de Tier).
+- Contador: `data-count-to="25"` sobe de 0 em 2s (números da home e do AI Journey).
+- Flip box dos cards de materiais (`CaseCard`), botões "float" no hover e tremida do WhatsApp (10s).
+- Sem JS ou com `prefers-reduced-motion`, o conteúdo aparece sem animação.
+
 ## Formulários (HubSpot, portal 48576194 / na1)
 
 `<HubSpotForm formId=… dark square lazy />`, com IDs em `src/data/site.ts`: newsletter (rodapé e sidebar

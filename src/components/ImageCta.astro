@@ -16,9 +16,9 @@ const external = /^https?:/.test(cta.href);
   <div class="container grid">
     <img src={image} alt={imageAlt} loading="lazy" width="627" height="470" />
     <div>
-      {eyebrow && <span class="chip chip-blue">{eyebrow}</span>}
+      {eyebrow && <span class="chip chip-blue" data-anim="fadeInUp" data-delay="200">{eyebrow}</span>}
       <h2 class="t-h2">{title}</h2>
-      {text && <p>{text}</p>}
+      {text && <p data-anim="fadeInUp" data-delay="350">{text}</p>}
       <a class="btn btn-primary" href={cta.href} {...(external ? { target: "_blank", rel: "noopener" } : {})}>{cta.label}</a>
     </div>
   </div>
@@ -28,6 +28,6 @@ const external = /^https?:/.test(cta.href);
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; align-items: center; }
   img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom-right-radius: var(--vt-radius-card); }
   h2 { margin: 20px 0 20px; color: var(--vt-black); }
-  p { font-size: 18px; margin-bottom: 32px; }
+  p { font-size: var(--fs-large); line-height: 1.4; margin-bottom: 32px; }
   @media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 32px; } }
 </style>

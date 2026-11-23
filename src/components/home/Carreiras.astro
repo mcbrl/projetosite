@@ -4,13 +4,13 @@ const c = home.carreiras;
 ---
 <section class="car" style={`--bg:url('${c.background}')`}>
   <div class="container">
-    <h2 class="t-section">{c.title}</h2>
+    <h2 class="t-section" data-anim="fadeInUp" data-delay="300">{c.title}</h2>
     <div class="grid">
       <img src={c.image} alt="Vertigo Driven" loading="lazy" width="627" height="470" />
       <div>
-        <span class="chip">{c.eyebrow}</span>
+        <span class="chip" data-anim="fadeInUp" data-delay="200">{c.eyebrow}</span>
         <h3>{c.heading}</h3>
-        {c.paragraphs.map((p) => <p>{p}</p>)}
+        {c.paragraphs.map((p) => <p data-anim="fadeInUp" data-delay="350">{p}</p>)}
         <a class="btn btn-primary" href={c.href}>Saiba mais</a>
       </div>
     </div>
@@ -22,8 +22,8 @@ const c = home.carreiras;
   .t-section { margin-bottom: 48px; }
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
   img { width: 100%; border-bottom-right-radius: var(--vt-radius-card); }
-  h3 { font-size: 36px; line-height: 1.2; margin: 24px 0 32px; }
-  p { font-size: 20px; line-height: 1.55; margin: 0; }
+  h3 { font-size: var(--fs-h2); font-weight: 600; letter-spacing: -1px; line-height: 1.2; margin: 24px 0 32px; }
+  p { font-size: var(--fs-large); line-height: 1.4; margin: 0; }
   .btn { margin-top: 56px; }
-  @media (max-width: 900px) { .car { padding: 64px 0; } .grid { grid-template-columns: 1fr; gap: 32px; } h3 { font-size: 28px; } p { font-size: 17px; } .btn { margin-top: 32px; } }
+  @media (max-width: 900px) { .car { padding: 64px 0; } .grid { grid-template-columns: 1fr; gap: 32px; } .btn { margin-top: 32px; } }
 </style>

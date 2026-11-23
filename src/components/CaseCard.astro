@@ -1,21 +1,38 @@
 ---
+// Card de case/ebook. Reproduz o flip box do Elementor (efeito "slide", direção "down"):
+// no hover/foco, a camada escura com a descrição e o botão desce sobre a frente em .6s.
 import type { CollectionEntry } from "astro:content";
 interface Props { item: CollectionEntry<"cases"> }
 const { item } = Astro.props;
 const href = item.data.externalUrl ?? `/cases/${item.id}/`;
 const external = !!item.data.externalUrl;
+const description = (item.data.description ?? item.data.excerpt ?? "").replace(/\s*\[…\]$/, "…");
 ---
 <a class="case" href={href} target={external ? "_blank" : undefined} rel={external ? "noopener" : undefined} data-cats={item.data.caseCategories.join(" ")}>
-  {item.data.featuredImage && <img src={item.data.featuredImage} alt="" loading="lazy" width="847" height="1024" />}
-  <span class="title">{item.data.title}</span>
+  <span class="front">
+    {item.data.featuredImage && <img src={item.data.featuredImage} alt="" loading="lazy" width="847" height="1024" />}
+    <span class="title">{item.data.title}</span>
+  </span>
+  <span class="back" aria-hidden="true">
+    {description && <span class="desc">{description}</span>}
+    <span class="more">Saiba mais</span>
+  </span>
 </a>
 
 <style>
   .case { position: relative; display: block; aspect-ratio: 311 / 450; border-top-left-radius: 60px; overflow: hidden; background: var(--vt-navy); color: var(--vt-white); }
-  .case img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
-  .case::after { content: ""; position: absolute; inset: 0; background: rgb(0 0 0 / .45); transition: background-color .3s; } /* overlay escuro do card original */
-  .case:hover::after { background: rgb(0 0 0 / .3); }
   .case:hover { text-decoration: none; }
-  .case:hover img { transform: scale(1.04); }
-  .title { position: absolute; left: 24px; right: 24px; bottom: 36px; z-index: 1; text-align: center; font-size: 22px; line-height: 1.4; text-transform: capitalize; }
+  .front, .back { position: absolute; inset: 0; }
+  .front img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .front::after { content: ""; position: absolute; inset: 0; background: rgb(0 0 0 / .45); } /* overlay escuro do card original */
+  .title { position: absolute; left: 24px; right: 24px; bottom: 36px; z-index: 1; text-align: center; font-size: var(--fs-h4); font-weight: 500; line-height: 1.4; }
+  .back {
+    z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px;
+    padding: 32px; text-align: center; background: rgb(16 24 32 / .92);
+    transform: translateY(-100%); transition: transform .6s ease-in-out;
+  }
+  .case:hover .back, .case:focus-visible .back { transform: none; }
+  .desc { font-size: 16px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 9; -webkit-box-orient: vertical; overflow: hidden; }
+  .more { background: var(--vt-white); color: var(--vt-black); border-radius: 8px; padding: 10px 20px; font-size: 15px; font-weight: 500; line-height: 1; }
+  @media (prefers-reduced-motion: reduce) { .back { transition: none; } }
 </style>

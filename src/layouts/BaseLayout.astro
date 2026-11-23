@@ -35,6 +35,7 @@ const icons = (chrome as { icons?: { rel: string; href: string; sizes?: string |
     {modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
     <meta name="twitter:card" content="summary_large_image" />
     {icons.map((i) => <link rel={i.rel} href={i.href} sizes={i.sizes ?? undefined} />)}
+    <script is:inline>document.documentElement.classList.add("js")</script>
     <link rel="preload" href="/theme/fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/theme/fonts/GoogleSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
     {import.meta.env.PROD && (
@@ -55,5 +56,6 @@ const icons = (chrome as { icons?: { rel: string; href: string; sizes?: string |
     </main>
     <Footer />
     <WhatsAppButton />
+    <script>import "../lib/motion";</script>
   </body>
 </html>

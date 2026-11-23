@@ -29,9 +29,11 @@ const excerpt = (post.data.excerpt ?? "").replace(/\s*\[…\]$/, "…");
   .card:hover .thumb img { transform: scale(1.04); }
   .body { display: flex; flex-direction: column; flex: 1; padding: 40px 30px 44px; }
   .cats { font-size: 15px; font-weight: 500; color: var(--vt-text); margin: 0 0 12px; }
-  .title { font-size: 24px; font-weight: 400; line-height: 1.2; letter-spacing: -0.5px; margin: 0 0 24px; }
+  .title { font-size: 26px; font-weight: 400; line-height: 1.1; letter-spacing: -0.5px; margin: 0 0 24px; }
   .title a { color: var(--vt-black); }
-  .excerpt { color: #5f6368; font-size: 16px; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 32px; }
-  .more { margin-top: auto; display: inline-flex; align-items: center; gap: 24px; text-transform: uppercase; color: var(--vt-black); font-size: 17px; }
+  .excerpt { color: #5f6368; font-size: var(--fs-text); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 32px; }
+  .more { margin-top: auto; display: inline-flex; align-items: center; gap: 24px; text-transform: uppercase; color: var(--vt-black); font-size: 18px; line-height: 1; }
   .more:hover { color: var(--vt-blue); text-decoration: none; }
+  .cats { line-height: 1.2; }
+  @media (max-width: 767px) { .title { font-size: 20px; } .more { font-size: 13px; } .cats { font-size: 14px; } }
 </style>

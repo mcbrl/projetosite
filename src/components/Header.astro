@@ -83,10 +83,10 @@ const isActive = (href: string, children?: unknown[]) =>
   .logo img { width: 258px; height: auto; }
   .nav { margin-left: auto; }
   .nav > ul { display: flex; align-items: center; gap: 20px; list-style: none; margin: 0; padding: 0; }
-  .nav a { color: var(--vt-black); font-weight: 500; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .nav a { color: var(--vt-black); font-weight: 600; font-size: 16px; line-height: 1.5; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
   .nav a:hover, .nav a.active { color: var(--vt-blue); }
   .nav > ul > li { position: relative; padding: 32px 0; }
-  .cta { margin-left: 28px; white-space: nowrap; }
+  .cta { margin-left: 28px; white-space: nowrap; font-size: 13px; font-weight: 500; line-height: 1; padding: 12px 24px; }
   .nav .cta-mobile { display: none; }
 
   /* mega menu de soluções */
@@ -98,9 +98,9 @@ const isActive = (href: string, children?: unknown[]) =>
     transition: opacity .18s ease, transform .18s ease; width: max-content;
   }
   .has-sub:hover .mega, .has-sub:focus-within .mega { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
-  .mega-title { display: block; font-weight: 600; color: var(--vt-navy); margin-bottom: 12px; }
+  .mega-title { display: block; font-size: 15px; line-height: 20px; font-weight: 600; color: var(--vt-navy); margin-bottom: 12px; }
   .mega ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-  .mega a { font-weight: 400; font-size: 15px; }
+  .mega a { font-weight: 600; font-size: 15px; line-height: 20px; }
 
   .burger { display: none; margin-left: auto; width: 38px; height: 38px; border: 0; border-radius: 6px; background: var(--vt-black); color: var(--vt-white); cursor: pointer; align-items: center; justify-content: center; }
   .burger :global(.i-close) { display: none; }
@@ -126,5 +126,5 @@ const isActive = (href: string, children?: unknown[]) =>
     .has-sub:hover .mega { transform: none; }
     .nav .cta-mobile { display: inline-flex; margin: 24px 0 0; color: var(--vt-white); }
   }
-  @media (max-width: 767px) { .logo img { width: 228px; } }
+  @media (max-width: 767px) { .logo img { width: 228px; } .nav a, .mega a, .mega-title { font-size: 14px; } }
 </style>

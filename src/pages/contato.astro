@@ -12,7 +12,7 @@ const page = await pageAt("/contato/");
   <PageHero eyebrow="Fale Conosco" title="Pronto para acelerar com a Vertigo?" image={metaOf("/contato/").heroImage} />
   <section class="section">
     <div class="container split">
-      <div>
+      <div data-anim="fadeInLeft" data-delay="200">
         <h2 class="lead">Preencha o formulário para receber o contato de um de nossos especialistas.</h2>
         <div class="social">
           <span>Siga nas redes sociais:</span>
@@ -21,18 +21,19 @@ const page = await pageAt("/contato/");
           </ul>
         </div>
       </div>
-      <div class="form-panel"><HubSpotForm formId={hubspot.forms.contato} dark load="eager" /></div>
+      <div class="form-panel" data-anim="fadeInUp" data-delay="200"><HubSpotForm formId={hubspot.forms.contato} dark load="eager" /></div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
   .split { display: grid; grid-template-columns: 560px 1fr; gap: 80px; align-items: start; }
-  .lead { color: var(--vt-blue); font-size: 26px; font-weight: 600; line-height: 1.55; letter-spacing: 0; padding-bottom: 20px; border-bottom: 1px solid #999; margin-bottom: 20px; }
-  .social { display: flex; align-items: center; gap: 20px; font-size: 22px; flex-wrap: wrap; }
+  .lead { color: var(--vt-blue); font-size: 27px; font-weight: 700; line-height: 1.5; letter-spacing: 0; padding-bottom: 20px; border-bottom: 1px solid #999; margin-bottom: 20px; }
+  .social { display: flex; align-items: center; gap: 20px; font-size: var(--fs-h4); font-weight: 500; line-height: 1.4; flex-wrap: wrap; }
+  @media (max-width: 767px) { .lead { font-size: 14px; } }
   .social ul { display: flex; gap: 5px; list-style: none; margin: 0; padding: 0; }
-  .social a { width: 44px; height: 44px; border-radius: 50%; background: var(--vt-blue); color: var(--vt-white); display: grid; place-items: center; transition: transform .2s; }
-  .social a:hover { transform: translateY(-3px); }
+  .social a { width: 44px; height: 44px; border-radius: 50%; background: var(--vt-blue); color: var(--vt-white); display: grid; place-items: center; transition: transform .3s; }
+  .social a:hover { transform: translateY(-8px); } /* elementor-animation-float */
   .form-panel { background: var(--vt-ink); padding: 48px; border-radius: 4px; box-shadow: 0 10px 40px rgb(0 0 0 / .12); }
   @media (max-width: 1024px) { .split { grid-template-columns: 1fr; gap: 40px; } .form-panel { padding: 32px 24px; } }
 </style>

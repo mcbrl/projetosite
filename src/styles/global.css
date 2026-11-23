@@ -29,6 +29,32 @@
   --vt-header-h: 112px;
   --vt-radius-pill: 999px;
   --vt-radius-card: 120px;     /* cantos "asa" dos cards */
+
+  /* escala tipográfica do Elementor Kit (post-48.css), com os mesmos breakpoints */
+  --fs-text: 16px;      /* text */
+  --fs-btn: 16px;       /* botões (widget button) */
+  --fs-h1: 48px;        /* primary / h1 */
+  --fs-h2: 36px;        /* secondary / h2 */
+  --fs-h3: 28px;        /* h3 */
+  --fs-h4: 22px;        /* h4 (títulos de rodapé, cards) */
+  --fs-h5: 17px;        /* h5 */
+  --fs-chip: 14px;      /* h6 (chips/eyebrows) */
+  --fs-lead: 18px;      /* parágrafos de abertura das seções */
+  --fs-large: 22px;     /* parágrafos grandes (hero, VeeCode, Carreiras) */
+  --fs-display: 59px;   /* "Fly your business" */
+  --fs-section: 45px;   /* títulos de seção em caixa alta ("NOSSOS DIFERENCIAIS") */
+}
+@media (max-width: 1024px) {
+  :root {
+    --fs-text: 15px; --fs-btn: 15px; --fs-h1: 40px; --fs-h2: 30px; --fs-h3: 24px; --fs-h4: 20px; --fs-chip: 13px;
+    --fs-display: 56px; --fs-section: 56px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --fs-text: 14px; --fs-btn: 14px; --fs-h1: 30px; --fs-h2: 24px; --fs-h3: 20px; --fs-h4: 18px; --fs-h5: 16px; --fs-chip: 12px;
+    --fs-lead: 16px; --fs-large: 18px; --fs-display: 36px; --fs-section: 36px;
+  }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -40,7 +66,7 @@ body {
   background: var(--vt-white);
   color: var(--vt-text);
   font-family: var(--vt-font);
-  font-size: 16px;
+  font-size: var(--fs-text);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -63,32 +89,33 @@ p { margin: 0 0 1em; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- tipografia utilitária (tokens do kit) ---------- */
-.t-display { font-size: clamp(40px, 5vw, 64px); font-weight: 700; line-height: 1.1; letter-spacing: -1px; }
-.t-h1 { font-size: clamp(32px, 4vw, 48px); font-weight: 600; line-height: 1.1; letter-spacing: -1px; }
-.t-h2 { font-size: clamp(28px, 3vw, 36px); font-weight: 600; line-height: 1.2; letter-spacing: -1px; }
-.t-h3 { font-size: clamp(22px, 2.2vw, 28px); font-weight: 600; line-height: 1.3; }
+.t-display { font-size: var(--fs-display); font-weight: 700; line-height: 1; letter-spacing: -1px; }
+.t-h1 { font-size: var(--fs-h1); font-weight: 600; line-height: 1.1; letter-spacing: -1px; }
+.t-h2 { font-size: var(--fs-h2); font-weight: 600; line-height: 1.2; letter-spacing: -1px; }
+.t-h3 { font-size: var(--fs-h3); font-weight: 600; line-height: 1.3; }
+.t-h4 { font-size: var(--fs-h4); font-weight: 500; line-height: 1.4; letter-spacing: 0; }
 .t-section { /* "NOSSAS SOLUÇÕES", "CLIENTES"… */
-  font-size: clamp(36px, 4.4vw, 48px); font-weight: 700; text-transform: uppercase;
+  font-size: var(--fs-section); font-weight: 700; text-transform: uppercase;
   line-height: 1; letter-spacing: -1px; color: var(--vt-blue); text-align: center; margin: 0 0 16px;
 }
 
 /* ---------- botões ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  padding: 14px 24px; border-radius: var(--vt-radius-pill); border: 1px solid transparent;
-  font: 500 16px/1 var(--vt-font); cursor: pointer; text-decoration: none !important;
-  transition: transform .2s ease, background-color .2s ease, color .2s ease;
+  padding: 12px 24px; border-radius: var(--vt-radius-pill); border: 0;
+  font: 600 var(--fs-btn)/1.5 var(--vt-font); cursor: pointer; text-decoration: none !important;
+  transition: transform .3s ease, background-color .3s ease, color .3s ease;
 }
-.btn:hover { transform: translateY(-3px); } /* e-animation-float */
+.btn:hover, .btn:focus-visible { transform: translateY(-8px); } /* elementor-animation-float */
 .btn-primary { background: var(--vt-blue); color: var(--vt-white); }
 .btn-primary:hover { background: #0558d0; }
-.btn-light { background: var(--vt-white); color: var(--vt-navy); border-color: var(--vt-navy); }
+.btn-light { background: var(--vt-white); color: var(--vt-navy); box-shadow: inset 0 0 0 1px var(--vt-navy); }
 .btn-sm { padding: 10px 24px; font-size: 14px; }
 
-/* chip com contorno ("TECH TIER", "BLOG", "FEEDBACKS") */
+/* chip com contorno ("TECH TIER", "BLOG", "FEEDBACKS") — tipografia h6 do kit */
 .chip {
-  display: inline-block; padding: 6px 8px; border: 1px solid currentColor; border-radius: 4px;
-  font-size: 14px; font-weight: 500; text-transform: uppercase; line-height: 1.2;
+  display: inline-block; padding: 4px 8px; border: 1px solid currentColor; border-radius: 4px;
+  font-size: var(--fs-chip); font-weight: 500; text-transform: uppercase; line-height: 1.5;
 }
 .chip-blue { color: var(--vt-blue); padding: 6px 16px; }
 
@@ -98,20 +125,36 @@ p { margin: 0 0 1em; }
 .section-gray { background: var(--vt-line); }
 .section-light { background: var(--vt-surface); }
 .section-blue { background: var(--vt-blue); color: var(--vt-white); }
-.section-lead { text-align: center; max-width: 1180px; margin: 0 auto 48px; font-size: 18px; }
+.section-lead { text-align: center; max-width: 1180px; margin: 0 auto 48px; font-size: var(--fs-lead); font-weight: 500; }
 
 @media (max-width: 767px) {
   :root { --vt-header-h: 88px; }
   .section { padding: 64px 0; }
 }
 
+/* ---------- animações de entrada (Motion Effects do Elementor) ----------
+   Uso: <h2 data-anim="fadeInUp" data-delay="300">. O elemento fica invisível até entrar
+   na tela e então roda a animação (1,25s, duração "normal" do Elementor) após o atraso.
+   Sem JS (.js ausente) ou com movimento reduzido, tudo aparece direto. */
+@keyframes vt-fadeInUp { from { opacity: 0; transform: translate3d(0, 100%, 0); } to { opacity: 1; transform: none; } }
+@keyframes vt-fadeInRight { from { opacity: 0; transform: translate3d(100%, 0, 0); } to { opacity: 1; transform: none; } }
+@keyframes vt-fadeInLeft { from { opacity: 0; transform: translate3d(-100%, 0, 0); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-anim]:not(.is-in) { opacity: 0; }
+  .js [data-anim].is-in { animation: var(--vt-anim) 1.25s both; animation-delay: var(--vt-delay, 0ms); }
+  [data-anim="fadeInUp"] { --vt-anim: vt-fadeInUp; }
+  [data-anim="fadeInRight"] { --vt-anim: vt-fadeInRight; }
+  [data-anim="fadeInLeft"] { --vt-anim: vt-fadeInLeft; }
+}
+
 /* ---------- conteúdo Markdown (posts e páginas) ---------- */
-.prose { font-size: 16px; line-height: 1.5; color: var(--vt-text); }
+.prose { font-size: var(--fs-text); line-height: 1.5; color: var(--vt-text); }
 .prose > * + * { margin-top: 0; }
-.prose h1 { font-size: clamp(32px, 3.4vw, 42px); margin: 0 0 .6em; }
-.prose h2 { font-size: clamp(26px, 2.6vw, 34px); margin: 1.2em 0 .5em; }
-.prose h3 { font-size: 22px; font-weight: 500; margin: 1.2em 0 .5em; }
-.prose h4, .prose h5, .prose h6 { font-size: 18px; margin: 1.2em 0 .5em; }
+.prose h1 { font-size: var(--fs-h1); line-height: 1.1; letter-spacing: -1px; margin: 0 0 .6em; }
+.prose h2 { font-size: var(--fs-h2); line-height: 1.2; letter-spacing: -1px; margin: 1.2em 0 .5em; }
+.prose h3 { font-size: var(--fs-h4); font-weight: 500; line-height: 1.4; letter-spacing: 0; margin: 1.2em 0 .5em; }
+.prose h4, .prose h5, .prose h6 { font-size: var(--fs-h5); line-height: 1.4; letter-spacing: 0; margin: 1.2em 0 .5em; }
+.prose strong, .prose b { font-weight: 700; }
 .prose img { margin: 24px auto; border-radius: 4px; }
 /* ícones SVG vindos de widgets Elementor (icon-box) ficam em tamanho de ícone */
 .prose img[src$=".svg"] { width: 72px; margin: 32px 0 12px; border-radius: 0; }

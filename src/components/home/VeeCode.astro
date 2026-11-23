@@ -6,9 +6,9 @@ const v = home.veecode;
   <div class="container grid">
     {v.image && <img src={v.image} alt="VeeCode Platform" loading="lazy" width="607" height="434" />}
     <div>
-      <span class="chip chip-blue">{v.eyebrow}</span>
-      <h2 class="t-h3">{v.title}</h2>
-      <p>{v.text}</p>
+      <span class="chip chip-blue" data-anim="fadeInUp" data-delay="200">{v.eyebrow}</span>
+      <h2 class="t-h2">{v.title}</h2>
+      <p data-anim="fadeInUp" data-delay="350">{v.text}</p>
     </div>
   </div>
   <p class="cta"><a class="btn btn-primary" href={v.href} target="_blank" rel="noopener">{v.cta}</a></p>
@@ -16,8 +16,8 @@ const v = home.veecode;
 <style>
   .vee { padding: 110px 0 100px; }
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 110px; align-items: center; padding: 0 12px; }
-  h2 { font-size: 36px; margin: 24px 0 16px; line-height: 1.2; }
-  p { font-size: 20px; line-height: 1.55; }
+  h2 { margin: 24px 0 16px; }
+  p { font-size: var(--fs-large); line-height: 1.4; }
   .cta { text-align: center; margin: 100px 0 0; }
-  @media (max-width: 900px) { .vee { padding: 64px 0; } .grid { grid-template-columns: 1fr; gap: 32px; } h2 { font-size: 28px; } p { font-size: 17px; } .cta { margin-top: 32px; } }
+  @media (max-width: 900px) { .vee { padding: 64px 0; } .grid { grid-template-columns: 1fr; gap: 32px; } .cta { margin-top: 32px; } }
 </style>

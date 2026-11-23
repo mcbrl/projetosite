@@ -4,9 +4,9 @@ const { hero } = home;
 ---
 <section class="hero" style={`--img:url('${hero.image}')`}>
   <div class="container inner">
-    <h1 class="t-display">{hero.title}</h1>
-    <p>{hero.subtitle}</p>
-    <a class="btn btn-primary" href={hero.cta.href}>{hero.cta.label}</a>
+    <h1 class="t-display" data-anim="fadeInUp" data-delay="300">{hero.title}</h1>
+    <p data-anim="fadeInUp" data-delay="350">{hero.subtitle}</p>
+    <div data-anim="fadeInUp" data-delay="375"><a class="btn btn-primary" href={hero.cta.href}>{hero.cta.label}</a></div>
   </div>
 </section>
 <style>
@@ -14,12 +14,9 @@ const { hero } = home;
   .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: rgb(16 24 32 / .5); } /* overlay do Elementor */
   .inner { padding-left: 24px; }
   h1 { margin: 0 0 20px; }
-  p { font-size: 22px; line-height: 1.4; max-width: 440px; margin: 0 0 24px; }
-  .btn { font-size: 17px; padding: 16px 24px; }
+  p { font-size: var(--fs-large); line-height: 1.4; max-width: 440px; margin: 0 0 24px; }
   @media (max-width: 767px) {
     .hero { min-height: 548px; background-position: 60% center; text-align: center; }
     .inner { padding-left: var(--vt-gutter); display: flex; flex-direction: column; align-items: center; }
-    h1 { font-size: 36px; } p { font-size: 17px; }
-    .btn { font-size: 15px; padding: 10px 24px; }
   }
 </style>

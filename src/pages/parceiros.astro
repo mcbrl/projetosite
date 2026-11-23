@@ -28,7 +28,7 @@ const parceiros = [
 
   <section class="section">
     <div class="container">
-      <p class="section-lead">Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos.</p>
+      <p class="section-lead" data-anim="fadeInUp" data-delay="350">Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos.</p>
       <div class="grid">
         {parceiros.map((p) => (
           <article class="card">
@@ -56,7 +56,9 @@ const parceiros = [
   .card { background: var(--vt-surface); border: 1px solid var(--vt-line); border-radius: 12px; padding: 32px; box-shadow: 0 6px 24px rgb(12 21 87 / .06); }
   .logo { height: 110px; display: flex; align-items: center; margin-bottom: 16px; }
   .logo img { max-height: 90px; max-width: 220px; width: auto; object-fit: contain; }
-  .card p { margin: 0; color: #444; }
+  .card p { margin: 0; color: #444; font-size: 18px; line-height: 1.33; }
+  .section-lead { font-size: var(--fs-large); line-height: 1.4; }
+  @media (max-width: 767px) { .card p { line-height: 1.17; } }
   .more { text-align: center; margin: 48px 0 0; }
   @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }

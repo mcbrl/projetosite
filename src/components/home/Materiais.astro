@@ -8,7 +8,7 @@ const items = (await getCollection("cases")).filter(isPublished).sort((a, b) => 
 ---
 <section class="mat">
   <div class="container">
-    <p class="eyebrow"><span class="chip chip-blue">Materiais</span></p>
+    <p class="eyebrow"><span class="chip chip-blue" data-anim="fadeInUp" data-delay="200">Materiais</span></p>
     <h2 class="t-h2">Aplicações práticas e resultados reais</h2>
     <Carousel label="Materiais" tone="light" perView={3} perViewTablet={2} perViewMobile={1} gap={2}>
       {items.map((item) => <CaseCard item={item} />)}
