@@ -1,0 +1,154 @@
+---
+// /carreiras/ — template próprio (o Markdown do Elementor perde os cards e as colunas).
+// Textos de src/content/pages/carreiras.md (snapshot do WordPress).
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ImageCta from "../components/ImageCta.astro";
+import Icon from "../components/Icon.astro";
+import { metaOf, pageAt } from "../lib/routes";
+
+const page = await pageAt("/carreiras/");
+const up = "/wp-content/uploads/2026/02";
+
+const motivos = [
+  { icon: `${up}/www.flaticon.com-11.svg`, title: "Cultura que cuida e desafia", text: "Você é apoiado como pessoa e provocado como profissional." },
+  { icon: `${up}/b.svg`, title: "Projetos que elevam sua carreira", text: "Problemas complexos que aceleram seu aprendizado." },
+  { icon: `${up}/www.flaticon.com-11-1.svg`, title: "Equipes de alto nível", text: "Pessoas inteligentes, colaborativas e autônomas ao seu lado." },
+  { icon: `${up}/www.flaticon.com-11-2.svg`, title: "Ambiente de crescimento contínuo", text: "Aprender, experimentar e evoluir faz parte do dia a dia." },
+];
+
+const valores = [
+  {
+    icon: `${up}/www.flaticon.com-11-3.svg`, title: "Protagonismo",
+    text: "Agimos com visão crítica e pensamento estratégico. Questionamos, propomos e assumimos responsabilidade por criar novos caminhos e estratégias.",
+    items: [
+      "Pensar no impacto gerado, não apenas na entrega da tarefa ou no cumprimento do prazo.",
+      "Questionar, sugerir e provocar para gerar valor, propondo soluções e caminhos melhores.",
+      "Se antecipar às necessidades: identificar oportunidades e agir antes de ser solicitado.",
+    ],
+  },
+  {
+    icon: `${up}/www.flaticon.com-11-4.svg`, title: "Colaboração",
+    text: "Construímos juntos, com respeito, troca e envolvimento real. Colaborar é somar talentos para entregar a melhor experiência para o cliente de dentro ou de fora.",
+    items: [
+      "Agir com respeito às pessoas, às diferenças e às ideias.",
+      "Compartilhar o conhecimento, experiências e aprendizados para fortalecer o todo.",
+      "Buscar alinhamento, construir consensos e tomar decisões com base no melhor para o time.",
+    ],
+  },
+  {
+    icon: `${up}/www.flaticon.com-11-6.svg`, title: "Eficiência",
+    text: "Ser eficiente é saber priorizar, usar IA e dados com propósito e transformar inteligência em impacto.",
+    items: [
+      "Não decidir por impulso: usar análise, tecnologia e contexto.",
+      "Eliminar a complexidade desnecessária e entregar o essencial com excelência.",
+      "Usar IA, automação e ferramentas digitais para escalar resultados não tarefas.",
+    ],
+  },
+  {
+    icon: `${up}/www.flaticon.com-11-5.svg`, title: "Evolução",
+    text: "Errar faz parte, corrigir rápido também. É assim que evoluímos. Transformamos o desconforto em combustível para avançar.",
+    items: [
+      "Experimentar, prototipar e aplicar aprendizados com agilidade e coragem.",
+      "Usar PDI, feedbacks, avaliações de desempenho e conversas diárias como ferramentas reais de crescimento.",
+      "Assumir responsabilidade pela própria evolução, buscando aprendizado e colocando em prática de forma contínua.",
+    ],
+  },
+];
+
+const beneficios = [
+  { title: "Capacitação Continuada", items: ["Incentivo e investimento em capacitação continuada e certificação profissional", "Benefício Educação Personalizada | Unico Skill", "Feedbacks frequentes e estruturados"] },
+  { title: "Saúde e Bem-Estar", items: ["Plano de Saúde Nacional", "Plano Odontológico", "Seguro de Vida", "TotalPass"] },
+  { title: "Suporte ao Trabalho", items: ["Equipamento de ponta para Home Office", "Vale Alimentação", "Vale Refeição", "Auxílio Creche"] },
+];
+---
+<BaseLayout title="Carreiras" seo={page?.data.seo}>
+  <PageHero eyebrow="Carreiras" title="Por que trabalhar na Vertigo?" image={metaOf("/carreiras/").heroImage} />
+
+  <section class="section">
+    <div class="container">
+      <h2 class="lead">Cresça, gere impacto e construa uma carreira na velocidade da transformação</h2>
+      <div class="cards two">
+        {motivos.map((m) => (
+          <article class="card">
+            <img class="icon" src={m.icon} alt="" width="48" height="48" loading="lazy" />
+            <h3>{m.title}</h3>
+            <p>{m.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="driven">
+        <img src={`${up}/vertigo-driven-pg-carreiras.jpeg`} alt="Vertigo Driven" loading="lazy" width="627" height="470" />
+        <div>
+          <span class="chip chip-blue">Mentalidade</span>
+          <h2 class="t-h2">Mentalidade Vertigo Driven</h2>
+          <p>Mentalidade Vertigo Driven é assumir que toda transformação é incômoda e isso faz parte do jogo.</p>
+          <p>É operar com clareza, inteligência e velocidade em cenários de alta complexidade.</p>
+          <p>Não buscamos conforto. Somos preparados para evoluir continuamente, tomar decisões conscientes e transformar desafios em progresso real.</p>
+          <p>Aqui, atitude vale mais que intenção. E cultura só faz sentido se nos levar para frente e para o lugar certo.</p>
+        </div>
+      </div>
+      <div class="cards two values">
+        {valores.map((v) => (
+          <article class="card">
+            <img class="icon" src={v.icon} alt="" width="48" height="48" loading="lazy" />
+            <h3>{v.title}</h3>
+            <p>{v.text}</p>
+            <ul>{v.items.map((i) => <li>{i}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="t-section">Nossos Benefícios</h2>
+      <div class="cards three">
+        {beneficios.map((b) => (
+          <article class="card">
+            <h3>{b.title}</h3>
+            <ul class="checks">{b.items.map((i) => <li><Icon name="check" size={16} />{i}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ImageCta
+    tone="gray"
+    image={`${up}/vertigo-carreiras.jpeg`}
+    eyebrow="Trabalhe Conosco"
+    title="Vem pra Vertigo!"
+    text="Ative a Mentalidade Vertigo Driven e construa seu futuro aqui com a gente."
+    cta={{ label: "Confira nossas vagas", href: "https://vertigo.inhire.app/vagas" }}
+  />
+</BaseLayout>
+
+<style>
+  .lead { color: var(--vt-blue); text-align: center; font-size: clamp(26px, 3vw, 36px); max-width: 860px; margin: 0 auto 56px; }
+  .cards { display: grid; gap: 32px; }
+  .two { grid-template-columns: repeat(2, 1fr); }
+  .three { grid-template-columns: repeat(3, 1fr); margin-top: 48px; }
+  .card { background: var(--vt-surface); border: 1px solid var(--vt-line); border-radius: 12px; padding: 32px; box-shadow: 0 6px 24px rgb(12 21 87 / .06); }
+  .section-light .card { background: var(--vt-white); }
+  .icon { width: 48px; height: 48px; margin-bottom: 20px; }
+  h3 { color: var(--vt-blue); font-size: 22px; font-weight: 500; margin: 0 0 10px; }
+  .card p { margin: 0; color: #444; }
+  .card ul { margin: 16px 0 0; padding-left: 1.1em; color: #444; }
+  .card li { margin: 10px 0; }
+  .checks { list-style: none; padding: 0 !important; }
+  .checks li { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; color: var(--vt-text); }
+  .checks :global(svg) { color: var(--vt-blue); flex: none; margin-top: 4px; }
+  .driven { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-bottom: 64px; }
+  .driven img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-bottom-right-radius: var(--vt-radius-card); }
+  .driven h2 { margin: 20px 0; color: var(--vt-black); }
+  .driven p { font-size: 17px; }
+  @media (max-width: 1024px) { .three { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) { .two, .driven { grid-template-columns: 1fr; } .driven { gap: 32px; } }
+</style>

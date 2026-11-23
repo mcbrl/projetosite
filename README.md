@@ -27,8 +27,9 @@ O tema só lê o que o dump produz, então os dois podem evoluir em paralelo.
   `src/content.config.ts` define `generateId` pelo nome do arquivo.
 - `src/pages/[...slug].astro` atende páginas e posts, que ficam na raiz (`/a-mulher-na-ti/`), e falha
   o build se dois conteúdos caírem no mesmo caminho.
-- Páginas com template próprio (`CUSTOM_ROUTES`): `/`, `/blog/`, `/materiais/`, `/solucoes/`, `/contato/`.
+- Páginas com template próprio (`CUSTOM_ROUTES`): `/`, `/blog/`, `/materiais/`, `/solucoes/`, `/contato/`, `/carreiras/`, `/ai-journey/`, `/parceiros/`.
 - `/blog/page/N/` para a paginação (no WP era AJAX, sem URL) e `/cases/<slug>/`.
+- Arquivos de taxonomia: `/category/<slug>/` e `/tag/<slug>/` (com `/page/N/`), gerados de `data/categories.json` e `data/tags.json` só para termos com posts publicados (`src/lib/taxonomy.ts`).
 - `trailingSlash: "always"`.
 
 ## Layouts
@@ -68,6 +69,4 @@ na tela.
 
 - Versão EN (gtranslate, bandeiras no header) e banner de cookies (CookieYes).
 - Popup de inscrição do blog e filtros por categoria/tag (existe só a busca por texto).
-- Arquivos de categoria/tag (`/category/…`).
-- Templates dedicados para `/carreiras/`, `/ai-journey/` e `/parceiros/`, hoje renderizadas pelo `PageLayout` genérico.
 - `/sobre/` está publicada no WP com lorem ipsum de um tema de exemplo ("Printa").

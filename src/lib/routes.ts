@@ -5,7 +5,10 @@ import pageMeta from "../data/pages.json";
 type Entry = CollectionEntry<"pages" | "blog" | "cases">;
 
 /** Rotas com template próprio em src/pages (não passam pelo catch-all). */
-export const CUSTOM_ROUTES = new Set(["/", "/blog/", "/materiais/", "/solucoes/", "/contato/"]);
+export const CUSTOM_ROUTES = new Set([
+  "/", "/blog/", "/materiais/", "/solucoes/", "/contato/",
+  "/carreiras/", "/ai-journey/", "/parceiros/",
+]);
 
 /** Caminho público da entrada, idêntico ao WordPress (ex.: "/a-mulher-na-ti/"). */
 export function pathOf(entry: Entry): string {

@@ -1,0 +1,63 @@
+---
+// /parceiros/ — template próprio: cards de parceiros, carrossel de clientes e CTA.
+// Textos de src/content/pages/parceiros.md (snapshot do WordPress).
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import LogoStrip from "../components/home/LogoStrip.astro";
+import ImageCta from "../components/ImageCta.astro";
+import home from "../data/home.json";
+import { metaOf, pageAt } from "../lib/routes";
+
+const page = await pageAt("/parceiros/");
+const logo = (n: string) => `/wp-content/uploads/2026/02/vertigo-parceiro-${n}.png`;
+
+const parceiros = [
+  { name: "AWS", logo: logo("aws"), text: "Com a AWS, a Vertigo provê suporte a computação em nuvem baseada em melhores práticas de arquitetura e operação." },
+  { name: "Blip", logo: logo("blip"), text: "Com a Blip, a Vertigo auxilia a automação e personalização do seu atendimento ao cliente com conversas inteligentes baseadas em IA." },
+  { name: "Digibee", logo: logo("digibee"), text: "Com a Digibee, a Vertigo apoia a integração de sistemas por meio de uma plataforma iPaaS que reduz a complexidade e aumenta a velocidade." },
+  { name: "HashiCorp", logo: logo("hashcorp"), text: "Com a HashiCorp, a Vertigo ajuda na automação e proteção da sua infraestrutura em ambientes de nuvem e data centers." },
+  { name: "Kong", logo: logo("kong"), text: "Com a Kong, a Vertigo orienta o seu gerenciamento de APIs e microsserviços em ambientes híbridos e multicloud com foco em segurança e desempenho." },
+  { name: "Liferay", logo: logo("liferay"), text: "Com a Liferay, a Vertigo cria experiências digitais relevantes e melhora a jornada do seu cliente." },
+  { name: "Mirantis", logo: logo("mirantis"), text: "Com a Mirantis, a Vertigo auxilia a execução de aplicações nativamente em qualquer ambiente e acelera a entrega em nuvem." },
+  { name: "Neo4j", logo: logo("neo4j"), text: "Com a Neo4j, a Vertigo orienta a modelagem de relacionamentos e geração de insights complexos através do armazenamento e processamento de dados em grafos." },
+  { name: "VeeCode", logo: logo("vee-code"), text: "Com a VeeCode, a Vertigo auxilia a orquestração e governança de ambientes em nuvem com uma plataforma low-code para modernizar a TI." },
+];
+---
+<BaseLayout title="Parceiros" seo={page?.data.seo}>
+  <PageHero eyebrow="Parceiros" title="Quem apoia nossas soluções" image={metaOf("/parceiros/").heroImage} />
+
+  <section class="section">
+    <div class="container">
+      <p class="section-lead">Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos.</p>
+      <div class="grid">
+        {parceiros.map((p) => (
+          <article class="card">
+            <div class="logo"><img src={p.logo} alt={p.name} loading="lazy" /></div>
+            <p>{p.text}</p>
+          </article>
+        ))}
+      </div>
+      <p class="more"><a class="btn btn-primary" href="/contato/">Converse com um Consultor</a></p>
+    </div>
+  </section>
+
+  <LogoStrip title="Clientes" lead="Faça parte das organizações que estão acelerando seus negócios com a Vertigo." logos={home.clientes} />
+
+  <ImageCta
+    image="/wp-content/uploads/2026/02/vertigo-parceiros.jpeg"
+    eyebrow="Contato"
+    title="Pronto para acelerar com a Vertigo?"
+    cta={{ label: "Converse com um Consultor", href: "/contato/" }}
+  />
+</BaseLayout>
+
+<style>
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .card { background: var(--vt-surface); border: 1px solid var(--vt-line); border-radius: 12px; padding: 32px; box-shadow: 0 6px 24px rgb(12 21 87 / .06); }
+  .logo { height: 110px; display: flex; align-items: center; margin-bottom: 16px; }
+  .logo img { max-height: 90px; max-width: 220px; width: auto; object-fit: contain; }
+  .card p { margin: 0; color: #444; }
+  .more { text-align: center; margin: 48px 0 0; }
+  @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>

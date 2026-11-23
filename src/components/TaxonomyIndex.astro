@@ -1,0 +1,40 @@
+---
+// Arquivo de categoria/tag do blog: hero com o termo, grade de posts e paginação.
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "./PageHero.astro";
+import PostCard from "./PostCard.astro";
+import Pagination from "./Pagination.astro";
+import { metaOf } from "../lib/routes";
+import { TAX_LABEL, termPath, type TaxKind } from "../lib/taxonomy";
+
+interface Props { kind: TaxKind; slug: string; name: string; posts: CollectionEntry<"blog">[]; current: number; last: number; total: number }
+const { kind, slug, name, posts, current, last, total } = Astro.props;
+const base = termPath(kind, slug);
+const title = `${name}${current > 1 ? ` - Página ${current}` : ""} - Vertigo`;
+const seo = {
+  title,
+  description: `Artigos da Vertigo sobre ${name}.`,
+  canonical: current > 1 ? undefined : `https://vertigo.com.br${base}`,
+  robots: "index, follow",
+};
+---
+<BaseLayout title={name} seo={seo}>
+  <PageHero eyebrow={TAX_LABEL[kind]} title={name} image={metaOf("/blog/").heroImage} />
+  <section class="section">
+    <div class="container">
+      <p class="count">{total} {total === 1 ? "artigo" : "artigos"} · <a href="/blog/">Ver todos os artigos</a></p>
+      <div class="grid">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+      <Pagination current={current} last={last} base={base} />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .count { color: #5f6368; margin: 0 0 40px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 24px; } }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>

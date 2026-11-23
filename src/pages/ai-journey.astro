@@ -1,0 +1,140 @@
+---
+// /ai-journey/ — template próprio: hero, números, cinco fases, diagnóstico VAIM e CTA.
+// Textos de src/content/pages/ai-journey.md (snapshot do WordPress).
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { metaOf, pageAt } from "../lib/routes";
+
+const page = await pageAt("/ai-journey/");
+const heroImage = metaOf("/ai-journey/").heroImage;
+
+const stats = [
+  { prefix: "", value: "100", suffix: "%", label: "Colaboradores certificados em IA" },
+  { prefix: "+", value: "45", suffix: "", label: "Agentes em produção" },
+  { prefix: "", value: "4", suffix: "K", label: "Horas economizadas" },
+  { prefix: "R$", value: "480", suffix: "K", label: "Savings em 6 meses" },
+];
+
+// Ícones de linha (24x24) no lugar dos ícones do Elementor
+const icons: Record<string, string> = {
+  discover: '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+  empower: '<path d="M3 5h6a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H3zM21 5h-6a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h7z"/>',
+  deploy: '<rect x="7" y="7" width="10" height="10" rx="1"/><path d="M10 10h4v4h-4zM9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/>',
+  sustain: '<path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>',
+  intelligence: '<path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 0V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 0"/><path d="M12 9h2M12 14h3M9 9H7M9 14H6"/>',
+};
+
+const fases = [
+  { key: "discover", name: "Discover", items: ["Diagnóstico VAIM", "Programa de IA: Fundação, Capacidade e Direção"] },
+  { key: "empower", name: "Empower", items: ["Masterclass Team Topologies", "AI Fluency: Capacitação em IA"] },
+  { key: "deploy", name: "Deploy", items: ["Driven by Claude", "Agentes de IA", "Vertigo Software Lifecycle", "Modernização de Legados com IA"] },
+  { key: "sustain", name: "Sustain", items: ["Governança de IA", "FDE as a Service"] },
+  { key: "intelligence", name: "Intelligence", items: ["Knowledge Intelligence", "Dados & Machine Learning"] },
+];
+---
+<BaseLayout title="AI Journey" seo={page?.data.seo}>
+  <section class="hero" style={heroImage ? `--hero-img:url('${encodeURI(heroImage)}')` : undefined}>
+    <div class="container">
+      <h1 class="t-display">Vertigo AI Journey</h1>
+      <p class="sub">Vá além do hype. Implante, governe e escale com método.</p>
+      <img class="claude" src="/wp-content/uploads/2026/07/claude-ai-logo-300x65.png" alt="Claude" width="150" height="33" />
+      <p class="badge">Registrada no Claude Partner Network</p>
+    </div>
+  </section>
+
+  <section class="stats section-blue">
+    <div class="container">
+      <h2 class="stats-title">Tudo o que oferecemos ao mercado, aplicamos primeiro dentro de casa. Os números provam nossos resultados.</h2>
+      <dl class="stats-grid">
+        {stats.map((s) => (
+          <div>
+            <dt>{s.prefix}{s.value}{s.suffix}</dt>
+            <dd>{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="phases-title">Cinco fases. Você começa por onde faz sentido para o seu momento.</h2>
+      <ol class="phases">
+        {fases.map((f) => (
+          <li class="phase">
+            <svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={icons[f.key]} />
+            <h3>{f.name}</h3>
+            <ul>{f.items.map((i) => <li>{i}</li>)}</ul>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="vaim">
+    <div class="container vaim-grid">
+      <div>
+        <h2 class="t-h1">Diagnóstico gratuito. Resultado imediato.</h2>
+        <p class="vaim-lead">Antes de tudo, saiba onde você está.</p>
+        <p>O Vertigo AI Maturity Model é o diagnóstico gratuito que mapeia o nível de maturidade da sua organização em IA, identifica os principais gaps e aponta os caminhos mais eficientes para avançar com segurança.</p>
+        <p>Em poucos minutos, você sai com uma visão clara do que já funciona, do que precisa evoluir e por onde começar.</p>
+        <a class="btn btn-light" href="https://diagnosticoai.vertigo.com.br" target="_blank" rel="noopener">Faça seu diagnóstico gratuito</a>
+      </div>
+      <img src="/wp-content/uploads/2026/07/Diagnostico-VAIM.jpg" alt="Tela do diagnóstico de maturidade em IA" loading="lazy" width="627" height="518" />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <h2 class="t-h2">Pronto para escalar IA e ir além do hype?</h2>
+        <a class="btn btn-light" href="/contato/">Converse com um consultor</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { position: relative; isolation: isolate; color: var(--vt-white); padding: 140px 0 120px; background: var(--vt-ink) var(--hero-img, none) center / cover no-repeat; }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(16 24 32 / .85), rgb(16 24 32 / .35)); }
+  .hero h1 { margin: 0 0 12px; }
+  .sub { font-size: 22px; margin: 0 0 32px; }
+  .claude { width: 150px; filter: brightness(0) invert(1); margin-bottom: 8px; }
+  .badge { font-size: 15px; margin: 0; opacity: .9; }
+
+  .stats { padding: 72px 0; }
+  .stats-title { text-align: center; font-size: clamp(24px, 2.6vw, 34px); font-weight: 500; max-width: 980px; margin: 0 auto 48px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; border-top: 1px solid rgb(255 255 255 / .35); padding-top: 40px; }
+  .stats-grid > div { text-align: center; padding: 0 16px; }
+  .stats-grid > div + div { border-left: 1px solid rgb(255 255 255 / .35); }
+  dt { font-size: clamp(40px, 4.4vw, 56px); font-weight: 700; line-height: 1; margin-bottom: 10px; }
+  dd { margin: 0; font-size: 14px; text-transform: uppercase; letter-spacing: .3px; }
+
+  .phases-title { text-align: center; color: var(--vt-navy); font-size: clamp(24px, 2.6vw, 34px); margin: 0 0 48px; }
+  .phases { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 32px; counter-reset: f; }
+  .phase { position: relative; background: linear-gradient(160deg, var(--vt-blue), var(--vt-navy)); color: var(--vt-white); border-radius: 6px; padding: 32px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .phase + .phase::before { content: "→"; position: absolute; left: -26px; top: 50%; transform: translateY(-50%); color: var(--vt-navy); font-size: 22px; }
+  .phase h3 { text-transform: uppercase; font-size: 22px; font-weight: 500; margin: 16px 0 16px; padding-bottom: 16px; border-bottom: 1px solid rgb(255 255 255 / .35); width: 100%; }
+  .phase ul { list-style: none; padding: 0; margin: 0; font-size: 14px; display: grid; gap: 12px; }
+
+  .vaim { background: linear-gradient(140deg, var(--vt-navy) 0%, var(--vt-blue) 100%); color: var(--vt-white); padding: 88px 0; }
+  .vaim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .vaim h2 { margin: 0 0 12px; }
+  .vaim-lead { font-size: 22px; }
+  .vaim p { font-size: 17px; }
+  .vaim .btn { margin-top: 16px; }
+  .vaim img { width: 100%; border-radius: 8px; box-shadow: 0 20px 60px rgb(0 0 0 / .3); }
+
+  .cta { background: linear-gradient(304deg, var(--vt-navy), var(--vt-blue), var(--vt-navy)); color: var(--vt-white); border-radius: 48px; padding: 72px 24px; text-align: center; }
+  .cta h2 { margin: 0 0 28px; }
+
+  @media (max-width: 1100px) {
+    .phases { grid-template-columns: repeat(2, 1fr); }
+    .phase + .phase::before { display: none; }
+  }
+  @media (max-width: 900px) {
+    .vaim-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+    .stats-grid > div:nth-child(3) { border-left: 0; }
+  }
+  @media (max-width: 560px) { .phases { grid-template-columns: 1fr; } .hero { padding: 96px 0 80px; } .cta { border-radius: 24px; } }
+</style>
