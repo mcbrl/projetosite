@@ -12,6 +12,8 @@ const page = await pageAt("/parceiros/");
 const logo = (n: string) => `/wp-content/uploads/2026/02/vertigo-parceiro-${n}.png`;
 
 const parceiros = [
+  { name: "GitLab", logo: "/theme/parceiros/gitlab.png", text: "Com a GitLab, a Vertigo leva DevSecOps com IA aos processos de engenharia, com pipelines, qualidade de código e entrega de software em uma única plataforma." },
+  { name: "Claude Partner Network — Certified Partner", logo: "/theme/parceiros/claude-certified-partner.svg", badge: true, text: "Como Certified Partner da Claude Partner Network, a Vertigo leva o Claude para produção em ambientes críticos, com times certificados." },
   { name: "AWS", logo: logo("aws"), text: "Com a AWS, a Vertigo provê suporte a computação em nuvem baseada em melhores práticas de arquitetura e operação." },
   { name: "Blip", logo: logo("blip"), text: "Com a Blip, a Vertigo auxilia a automação e personalização do seu atendimento ao cliente com conversas inteligentes baseadas em IA." },
   { name: "Digibee", logo: logo("digibee"), text: "Com a Digibee, a Vertigo apoia a integração de sistemas por meio de uma plataforma iPaaS que reduz a complexidade e aumenta a velocidade." },
@@ -32,7 +34,7 @@ const parceiros = [
       <div class="grid">
         {parceiros.map((p) => (
           <article class="card">
-            <div class="logo"><img src={p.logo} alt={p.name} loading="lazy" /></div>
+            <div class="logo"><img class:list={{ badge: p.badge }} src={p.logo} alt={p.name} loading="lazy" /></div>
             <p>{p.text}</p>
           </article>
         ))}
@@ -56,6 +58,7 @@ const parceiros = [
   .card { background: var(--vt-surface); border: 1px solid var(--vt-line); border-radius: 12px; padding: 32px; box-shadow: 0 6px 24px rgb(12 21 87 / .06); }
   .logo { height: 110px; display: flex; align-items: center; margin-bottom: 16px; }
   .logo img { max-height: 90px; max-width: 220px; width: auto; object-fit: contain; }
+  .logo img.badge { height: 90px; width: 90px; }
   .card p { margin: 0; color: #444; font-size: 18px; line-height: 1.33; }
   .section-lead { font-size: var(--fs-large); line-height: 1.4; }
   @media (max-width: 767px) { .card p { line-height: 1.17; } }
