@@ -1,29 +1,33 @@
 ---
-import Icon from "./Icon.astro";
+// Paginação no estilo do JetSmartFilters do original: "1 2 3 … 40 41 Próximo"
+// (2 páginas em cada ponta, 2 em volta da atual, links de texto).
 interface Props { current: number; last: number; base: string }
 const { current, last, base } = Astro.props;
 const href = (n: number) => (n === 1 ? base : `${base}page/${n}/`);
-// janela de páginas: 1 … c-1 c c+1 … last
-const nums = [...new Set([1, current - 1, current, current + 1, last])].filter((n) => n >= 1 && n <= last).sort((a, b) => a - b);
+const show = (n: number) => n <= 2 || n > last - 2 || Math.abs(n - current) <= 2;
+const items: (number | "…")[] = [];
+for (let n = 1; n <= last; n++) {
+  if (show(n)) items.push(n);
+  else if (items.at(-1) !== "…") items.push("…");
+}
+// um "…" que esconderia uma página só vira o número
+const final = items.map((it, i) => (it === "…" && typeof items[i - 1] === "number" && items[i + 1] === (items[i - 1] as number) + 2 ? (items[i - 1] as number) + 1 : it));
 ---
 {last > 1 && (
   <nav class="pager" aria-label="Paginação">
-    {current > 1 && <a href={href(current - 1)} aria-label="Página anterior"><Icon name="chevron-left" size={16} /></a>}
-    {nums.map((n, i) => (
-      <>
-        {i > 0 && n - nums[i - 1] > 1 && <span class="dots">…</span>}
-        {n === current ? <span class="cur" aria-current="page">{n}</span> : <a href={href(n)}>{n}</a>}
-      </>
-    ))}
-    {current < last && <a href={href(current + 1)} aria-label="Próxima página"><Icon name="chevron-right" size={16} /></a>}
+    {current > 1 && <a href={href(current - 1)} rel="prev">Anterior</a>}
+    {final.map((n) =>
+      n === "…" ? <span class="dots">…</span>
+      : n === current ? <span class="cur" aria-current="page">{n}</span>
+      : <a href={href(n)}>{n}</a>,
+    )}
+    {current < last && <a href={href(current + 1)} rel="next">Próximo</a>}
   </nav>
 )}
 
 <style>
-  .pager { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 56px; flex-wrap: wrap; }
-  .pager a, .pager span { min-width: 42px; height: 42px; display: inline-grid; place-items: center; border-radius: 4px; padding: 0 10px; font-size: 16px; }
-  .pager a { color: var(--vt-text); background: var(--vt-surface); }
-  .pager a:hover { background: var(--vt-blue); color: var(--vt-white); text-decoration: none; }
-  .cur { background: var(--vt-blue); color: var(--vt-white); }
-  .dots { color: var(--vt-muted); }
+  .pager { display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 56px; flex-wrap: wrap; }
+  .pager a, .pager span { display: inline-block; padding: 10px; border-radius: 5px; font-size: 16px; line-height: 24px; color: var(--vt-text); }
+  .pager a:hover { color: var(--vt-blue); text-decoration: none; }
+  .cur { background: rgb(22 29 38 / .49); color: var(--vt-white) !important; }
 </style>
