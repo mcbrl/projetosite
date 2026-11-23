@@ -1,14 +1,30 @@
 ---
-// Carrossel leve (scroll-snap) no lugar do Swiper do Elementor.
+// Carrossel leve no lugar do Swiper do Elementor.
+// - loop: infinito (clona os slides dos dois lados e "teleporta" ao passar do fim).
+// - marquee: rolagem contínua, `speed` ms por slide (logos: autoplay_speed 0 + speed 5000 no original).
+// - autoplay: avança um slide a cada N ms (depoimentos: 5000), com transição de `speed` ms.
 import Icon from "./Icon.astro";
-interface Props { perView?: number; perViewTablet?: number; perViewMobile?: number; gap?: number; autoplay?: number; label: string; tone?: "light" | "dark" }
-const { perView = 5, perViewTablet = 3, perViewMobile = 1, gap = 24, autoplay = 0, label, tone = "dark" } = Astro.props;
+interface Props {
+  perView?: number; perViewTablet?: number; perViewMobile?: number;
+  gap?: number; gapTablet?: number; gapMobile?: number;
+  autoplay?: number; speed?: number; loop?: boolean; marquee?: boolean;
+  label: string; tone?: "light" | "dark";
+}
+const {
+  perView = 5, perViewTablet = 3, perViewMobile = 1,
+  gap = 24, gapTablet = gap, gapMobile = gapTablet,
+  autoplay = 0, speed = 500, loop = false, marquee = false,
+  label, tone = "dark",
+} = Astro.props;
 ---
 <div
   class:list={["carousel", `tone-${tone}`]}
-  style={`--pv:${perView};--pvt:${perViewTablet};--pvm:${perViewMobile};--gap:${gap}px`}
+  style={`--pv:${perView};--pvt:${perViewTablet};--pvm:${perViewMobile};--gap-d:${gap}px;--gap-t:${gapTablet}px;--gap-m:${gapMobile}px`}
   data-carousel
   data-autoplay={autoplay || undefined}
+  data-speed={speed}
+  data-loop={loop || marquee || undefined}
+  data-marquee={marquee || undefined}
   role="region"
   aria-roledescription="carrossel"
   aria-label={label}
@@ -19,39 +35,165 @@ const { perView = 5, perViewTablet = 3, perViewMobile = 1, gap = 24, autoplay = 
 </div>
 
 <script>
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ease = (t: number) => (t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2);
+
   document.querySelectorAll<HTMLElement>("[data-carousel]").forEach((root) => {
     const track = root.querySelector<HTMLElement>("[data-track]")!;
-    const step = () => (track.firstElementChild as HTMLElement | null)?.getBoundingClientRect().width ?? track.clientWidth;
-    const go = (dir: number) => {
-      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
-      if (dir > 0 && atEnd) track.scrollTo({ left: 0, behavior: "smooth" });
-      else if (dir < 0 && track.scrollLeft <= 4) track.scrollTo({ left: track.scrollWidth, behavior: "smooth" });
-      else track.scrollBy({ left: dir * (step() + parseFloat(getComputedStyle(track).columnGap || "0")), behavior: "smooth" });
-    };
-    root.querySelector("[data-prev]")!.addEventListener("click", () => go(-1));
-    root.querySelector("[data-next]")!.addEventListener("click", () => go(1));
-    const ms = Number(root.dataset.autoplay);
-    if (ms && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      let t = setInterval(() => go(1), ms);
-      root.addEventListener("pointerenter", () => clearInterval(t));
-      root.addEventListener("pointerleave", () => (t = setInterval(() => go(1), ms)));
+    const loop = "loop" in root.dataset;
+    const marquee = "marquee" in root.dataset && !reduce;
+    const autoplay = reduce ? 0 : Number(root.dataset.autoplay || 0);
+    const speed = Number(root.dataset.speed || 500);
+    const gapOf = () => parseFloat(getComputedStyle(track).columnGap || "0");
+    const step = () => ((track.firstElementChild as HTMLElement | null)?.getBoundingClientRect().width ?? track.clientWidth) + gapOf();
+
+    if (!loop) {
+      // carrossel simples: volta ao início no fim
+      const go = (dir: number) => {
+        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+        if (dir > 0 && atEnd) track.scrollTo({ left: 0, behavior: "smooth" });
+        else if (dir < 0 && track.scrollLeft <= 4) track.scrollTo({ left: track.scrollWidth, behavior: "smooth" });
+        else track.scrollBy({ left: dir * step(), behavior: "smooth" });
+      };
+      root.querySelector("[data-prev]")!.addEventListener("click", () => go(-1));
+      root.querySelector("[data-next]")!.addEventListener("click", () => go(1));
+      return;
     }
+
+    // --- loop infinito: [clones][reais][clones] ---
+    const real = [...track.children] as HTMLElement[];
+    const n = real.length;
+    if (n < 2) return;
+    const clone = (el: HTMLElement) => {
+      const c = el.cloneNode(true) as HTMLElement;
+      c.setAttribute("aria-hidden", "true");
+      c.inert = true;
+      c.querySelectorAll("[data-anim]").forEach((a) => a.classList.add("is-in"));
+      return c;
+    };
+    track.prepend(...real.map(clone));
+    track.append(...real.map(clone));
+    const all = () => track.children as HTMLCollectionOf<HTMLElement>;
+    root.classList.add("is-loop");
+
+    let period = 0; // largura de um conjunto completo de slides
+    let pos = 0; // posição "lógica" (float), sempre dentro de [period, 2*period)
+    const measure = () => {
+      const c = all();
+      period = c[n].offsetLeft - c[0].offsetLeft;
+    };
+    const wrap = (x: number) => {
+      if (period <= 0) return x;
+      while (x < period) x += period;
+      while (x >= 2 * period) x -= period;
+      return x;
+    };
+    const apply = () => { track.scrollLeft = pos; };
+
+    measure();
+    pos = period;
+    apply();
+
+    // animação própria (scroll-snap desligado durante ela, senão o navegador "puxa" a cada frame)
+    let anim: { from: number; to: number; t0: number; dur: number } | null = null;
+    let paused = false; // hover / toque
+    let visible = false;
+    let last = 0;
+    let raf = 0;
+
+    const animateBy = (dx: number, dur = speed) => {
+      // parte de uma posição alinhada para não acumular desvio
+      const s = step();
+      const base = anim ? anim.to : Math.round((pos - period) / s) * s + period;
+      anim = { from: pos, to: base + dx, t0: performance.now(), dur: reduce ? 0 : dur };
+      root.classList.add("is-moving");
+      kick();
+    };
+
+    const frame = (now: number) => {
+      raf = 0;
+      const dt = Math.min(now - (last || now), 250);
+      last = now;
+      if (anim) {
+        const p = anim.dur ? Math.min((now - anim.t0) / anim.dur, 1) : 1;
+        pos = anim.from + (anim.to - anim.from) * ease(p);
+        if (p >= 1) {
+          const shift = wrap(anim.to) - anim.to;
+          pos = anim.to + shift;
+          anim = null;
+          if (!marquee) root.classList.remove("is-moving");
+        }
+        const w = wrap(pos);
+        if (anim && w !== pos) { anim.from += w - pos; anim.to += w - pos; }
+        pos = w;
+        apply();
+      } else if (marquee && !paused && visible) {
+        pos = wrap(pos + (dt * step()) / speed);
+        apply();
+      }
+      if (anim || (marquee && !paused && visible)) kick();
+      else last = 0;
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(frame); };
+    if (marquee) root.classList.add("is-moving");
+
+    root.querySelector("[data-prev]")!.addEventListener("click", () => animateBy(-step()));
+    root.querySelector("[data-next]")!.addEventListener("click", () => animateBy(step()));
+
+    // rolagem manual (arrastar no celular, trackpad): sincroniza e reposiciona no fim
+    let idle = 0;
+    track.addEventListener("scroll", () => {
+      if (Math.abs(track.scrollLeft - pos) <= 1 || anim) return;
+      pos = track.scrollLeft;
+      clearTimeout(idle);
+      idle = window.setTimeout(() => {
+        const w = wrap(track.scrollLeft);
+        if (Math.abs(w - track.scrollLeft) > 1) { pos = w; apply(); }
+        else pos = track.scrollLeft;
+      }, 120);
+    }, { passive: true });
+
+    // pausa no hover (mouse) e durante o toque
+    root.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") paused = true; });
+    root.addEventListener("pointerleave", () => { paused = false; kick(); });
+    track.addEventListener("touchstart", () => { paused = true; }, { passive: true });
+    track.addEventListener("touchend", () => { setTimeout(() => { paused = false; kick(); }, 1500); }, { passive: true });
+
+    // só anima quando está na tela
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible) kick(); }).observe(root);
+
+    if (autoplay && !marquee) {
+      setInterval(() => { if (!paused && visible && !document.hidden) animateBy(step()); }, autoplay);
+    }
+
+    let w0 = track.clientWidth;
+    new ResizeObserver(() => {
+      if (track.clientWidth === w0) return;
+      w0 = track.clientWidth;
+      const ratio = period ? (pos - period) / period : 0;
+      measure();
+      anim = null;
+      pos = wrap(period + ratio * period);
+      apply();
+    }).observe(track);
   });
 </script>
 
 <style>
-  .carousel { position: relative; padding: 0 48px; }
+  .carousel { position: relative; padding: 0 48px; --gap: var(--gap-d); }
   .track {
+    position: relative;
     display: grid; grid-auto-flow: column; gap: var(--gap);
     grid-auto-columns: calc((100% - (var(--pv) - 1) * var(--gap)) / var(--pv));
     overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain;
   }
+  .is-moving .track { scroll-snap-type: none; }
   .track::-webkit-scrollbar { display: none; }
   .track > :global(*) { scroll-snap-align: start; min-width: 0; }
-  .nav { position: absolute; top: 50%; transform: translateY(-50%); background: none; border: 0; cursor: pointer; padding: 8px; }
+  .nav { position: absolute; z-index: 1; top: 50%; transform: translateY(-50%); background: none; border: 0; cursor: pointer; padding: 8px; }
   .prev { left: 0; } .next { right: 0; }
   .tone-dark .nav { color: var(--vt-white); }
   .tone-light .nav { color: var(--vt-navy); }
-  @media (max-width: 1024px) { .track { grid-auto-columns: calc((100% - (var(--pvt) - 1) * var(--gap)) / var(--pvt)); } }
-  @media (max-width: 767px) { .carousel { padding: 0 36px; } .track { grid-auto-columns: calc((100% - (var(--pvm) - 1) * var(--gap)) / var(--pvm)); } }
+  @media (max-width: 1024px) { .carousel { --gap: var(--gap-t); } .track { grid-auto-columns: calc((100% - (var(--pvt) - 1) * var(--gap)) / var(--pvt)); } }
+  @media (max-width: 767px) { .carousel { padding: 0 36px; --gap: var(--gap-m); } .track { grid-auto-columns: calc((100% - (var(--pvm) - 1) * var(--gap)) / var(--pvm)); } }
 </style>

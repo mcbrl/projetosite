@@ -69,6 +69,8 @@ Reproduzem os Motion Effects do original (`src/lib/motion.ts`, carregado no `Bas
 - Entrada: `data-anim="fadeInUp|fadeInRight|fadeInLeft"` + `data-delay` (ms), 1,25s ao entrar na tela.
   Em Markdown, `data-anim-children="seletor|animação|atraso;…"` aplica a filhos (páginas de Tier).
 - Contador: `data-count-to="25"` sobe de 0 em 2s (números da home e do AI Journey).
+- Carrosséis em loop infinito (`Carousel.astro`): logos (Clientes, Parceiros, Certificações) rolam sem parar
+  (`marquee`, 5s por logo); depoimentos avançam um card a cada 5s (`loop autoplay`). Pausam no hover/toque.
 - Flip box dos cards de materiais (`CaseCard`), botões "float" no hover e tremida do WhatsApp (10s).
 - Sem JS ou com `prefers-reduced-motion`, o conteúdo aparece sem animação.
 

@@ -8,7 +8,7 @@ const { title, lead, logos, tone = "dark", cta, logoHeight = 80 } = Astro.props;
   <div class="container">
     <h2 class="t-section" data-anim="fadeInUp" data-delay="300">{title}</h2>
     {lead && <p class="section-lead">{lead}</p>}
-    <Carousel label={title} tone={tone} perView={5} perViewTablet={3} perViewMobile={2} gap={40} autoplay={3500}>
+    <Carousel label={title} tone={tone} perView={5} perViewTablet={4} perViewMobile={3} gap={100} gapTablet={66} gapMobile={15} marquee speed={5000}>
       {logos.map((l) => (
         <div class="logo" style={`--h:${logoHeight}px`}><img src={l.src} alt={l.alt.replace(/^vertigo-cliente-/, "").replace(/-/g, " ")} loading="lazy" /></div>
       ))}
