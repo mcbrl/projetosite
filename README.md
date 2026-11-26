@@ -54,6 +54,12 @@ O Markdown perde tabs, carrosséis, contadores e imagens de fundo definidas no C
   página. As imagens de fundo vêm do CSS gerado pelo Elementor, que o dump **não** espelha; o script
   as baixa para `public/theme/bg/`.
 
+## Materiais
+
+`/materiais/` e o carrossel da home usam `src/lib/materiais.ts`: os 10 cases publicados depois do dump
+(`src/data/materiais-novos.json`, imagens servidas direto de vertigo.com.br) + a coleção `cases`.
+A página filtra por busca/categoria (checkbox) e pagina 6 por vez, como o JetEngine do original.
+
 ## Design tokens
 
 Em `src/styles/global.css`, copiados do Elementor Kit (post-48): azul `#076CFE`, navy `#0C1557`,

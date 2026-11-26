@@ -1,17 +1,19 @@
 ---
-import { getCollection } from "astro:content";
+// /materiais/ — como o JetEngine do original: filtro (busca + categorias em checkbox) e grade de
+// flip boxes com 6 por página e paginação "1 2 3 Próximo" (no WP é AJAX; aqui é client-side).
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import CaseCard from "../components/CaseCard.astro";
 import categorias from "../../data/case-categorias.json";
-import { isPublished, metaOf, pageAt } from "../lib/routes";
+import { metaOf, pageAt } from "../lib/routes";
+import { materiais } from "../lib/materiais";
 
 const page = await pageAt("/materiais/");
-const items = (await getCollection("cases")).filter(isPublished).sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+const items = await materiais();
 ---
 <BaseLayout title="Materiais" seo={page?.data.seo}>
   <PageHero eyebrow="Materiais" title="Nossos Cases e Ebooks" image={metaOf("/materiais/").heroImage} />
-  <section class="section">
+  <section class="section list">
     <div class="container layout">
       <form class="filters" data-filters>
         <p>Filtre abaixo as opções.</p>
@@ -20,46 +22,82 @@ const items = (await getCollection("cases")).filter(isPublished).sort((a, b) => 
         <fieldset>
           <legend>Categoria</legend>
           {categorias.map((c) => (
-            <label><input type="radio" name="cat" value={c.slug} /> {c.name}</label>
+            <label><input type="checkbox" name="cat" value={c.slug} /> <span>{c.name}</span></label>
           ))}
         </fieldset>
       </form>
-      <div class="grid" data-cases>
-        {items.map((item) => <CaseCard item={item} />)}
+      <div>
+        <div class="grid" data-cases>
+          {items.map((item) => <CaseCard item={item} />)}
+        </div>
+        <p class="empty" data-empty hidden>Nenhum material encontrado.</p>
+        <nav class="pager" aria-label="Paginação" data-pager></nav>
       </div>
     </div>
   </section>
 </BaseLayout>
 
 <script>
+  const PER_PAGE = 6;
   const form = document.querySelector<HTMLFormElement>("[data-filters]")!;
-  const cards = [...document.querySelectorAll<HTMLElement>("[data-cases] > a")];
+  const grid = document.querySelector<HTMLElement>("[data-cases]")!;
+  const cards = [...grid.querySelectorAll<HTMLElement>(":scope > a")];
+  const pager = document.querySelector<HTMLElement>("[data-pager]")!;
+  const empty = document.querySelector<HTMLElement>("[data-empty]")!;
   const norm = (s: string) => s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
-  const apply = () => {
+  let current = 1;
+
+  const render = (scroll = false) => {
     const data = new FormData(form);
     const q = norm(String(data.get("q") ?? ""));
-    const cat = String(data.get("cat") ?? "");
-    cards.forEach((c) => { c.hidden = !((!cat || c.dataset.cats!.split(" ").includes(cat)) && norm(c.textContent ?? "").includes(q)); });
+    const cats = data.getAll("cat").map(String);
+    const matches = cards.filter((c) =>
+      (!cats.length || c.dataset.cats!.split(" ").some((x) => cats.includes(x))) && norm(c.textContent ?? "").includes(q));
+    const last = Math.max(1, Math.ceil(matches.length / PER_PAGE));
+    current = Math.min(current, last);
+    const visible = new Set(matches.slice((current - 1) * PER_PAGE, current * PER_PAGE));
+    cards.forEach((c) => (c.hidden = !visible.has(c)));
+    empty.hidden = matches.length > 0;
+
+    pager.replaceChildren();
+    if (last > 1) {
+      const add = (label: string, n: number | null, cur = false) => {
+        const el = document.createElement(n && !cur ? "a" : "span");
+        el.textContent = label;
+        if (cur) { el.className = "cur"; el.setAttribute("aria-current", "page"); }
+        if (n && !cur) { (el as HTMLAnchorElement).href = `#pagina-${n}`; el.addEventListener("click", (e) => { e.preventDefault(); current = n; render(true); }); }
+        pager.append(el);
+      };
+      if (current > 1) add("Anterior", current - 1);
+      for (let n = 1; n <= last; n++) add(String(n), n, n === current);
+      if (current < last) add("Próximo", current + 1);
+    }
+    if (scroll) grid.scrollIntoView({ behavior: "smooth", block: "start" });
   };
-  form.addEventListener("input", apply);
+
+  form.addEventListener("input", () => { current = 1; render(); });
   form.addEventListener("submit", (e) => e.preventDefault());
-  // clicar de novo no rádio selecionado limpa o filtro
-  form.querySelectorAll<HTMLInputElement>("input[type=radio]").forEach((r) =>
-    r.addEventListener("click", () => { if (r.dataset.was === "1") { r.checked = false; apply(); } form.querySelectorAll<HTMLInputElement>("input[type=radio]").forEach((x) => (x.dataset.was = x.checked ? "1" : "")); }),
-  );
+  render();
 </script>
 
 <style>
-  .layout { display: grid; grid-template-columns: 255px 1fr; gap: 20px; align-items: start; }
-  .filters { background: var(--vt-ink); color: var(--vt-white); padding: 32px 20px; border-radius: 2px; font-size: 16px; }
-  .filters p { margin: 0 0 24px; }
-  .filters input[type=search] { width: 100%; padding: 10px; border: 0; border-radius: 2px; font: 13px var(--vt-font); margin-bottom: 24px; }
-  fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 14px; }
-  legend { font-size: 18px; line-height: 1.5; margin-bottom: 12px; padding: 0; }
-  @media (max-width: 767px) { legend { font-size: 14px; } .filters p { font-size: 15px; } }
-  fieldset label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .list { padding-top: 67px; }
+  .layout { display: grid; grid-template-columns: 256px 1fr; gap: 20px; align-items: start; }
+  .filters { background: var(--vt-ink); color: var(--vt-white); padding: 30px 20px; border-radius: 5px; }
+  .filters p { margin: 0 0 34px; font-size: 16px; line-height: 14px; }
+  .filters input[type=search] { width: 100%; height: 37px; padding: 8px 10px; border: 0; border-radius: 5px; background: #f7f7f7; color: var(--vt-text); font: 13px var(--vt-font); margin-bottom: 21px; }
+  fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; }
+  legend { font-size: 18px; line-height: 27px; margin: 0; padding: 0 0 10px; }
+  fieldset label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; line-height: 24px; }
+  fieldset input { width: 15px; height: 15px; margin: 0; accent-color: var(--vt-blue); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px 21px; }
   .grid :global([hidden]) { display: none; }
+  .empty { color: var(--vt-muted); }
+  .pager { display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 30px; flex-wrap: wrap; }
+  .pager :global(a), .pager :global(span) { display: inline-block; padding: 10px; border-radius: 5px; font-size: 16px; line-height: 24px; color: var(--vt-text); }
+  .pager :global(a:hover) { color: var(--vt-blue); text-decoration: none; }
+  .pager :global(.cur) { background: rgb(22 29 38 / .49); color: var(--vt-white); }
+  @media (max-width: 767px) { legend { font-size: 14px; } .filters p { font-size: 15px; } }
   @media (max-width: 1024px) { .layout { grid-template-columns: 1fr; } .grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
 </style>

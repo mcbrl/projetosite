@@ -1,10 +1,9 @@
 ---
-import { getCollection } from "astro:content";
 import Carousel from "../Carousel.astro";
 import CaseCard from "../CaseCard.astro";
-import { isPublished } from "../../lib/routes";
+import { materiais } from "../../lib/materiais";
 import { site } from "../../data/site";
-const items = (await getCollection("cases")).filter(isPublished).sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+const items = await materiais();
 ---
 <section class="mat">
   <div class="container">

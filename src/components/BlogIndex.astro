@@ -13,7 +13,7 @@ const seo = current === 1 ? page?.data.seo : { ...page?.data.seo, title: `Blog -
 ---
 <BaseLayout title="Blog" seo={seo}>
   <PageHero eyebrow="Blog" title="Conteúdos exclusivos" image={metaOf("/blog/").heroImage} />
-  <section class="section">
+  <section class="section list">
     <div class="container">
       <div class="intro">
         <p>Fique por dentro de conteúdos sobre tecnologia e tendências sobre transformação digital para empresas.</p>
@@ -61,6 +61,7 @@ const seo = current === 1 ? page?.data.seo : { ...page?.data.seo, title: `Blog -
 </script>
 
 <style>
+  .list { padding-top: 64px; }
   .intro { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin: 0 0 40px; }
   .intro p { max-width: 573px; margin: 0; font-size: 17px; font-weight: 500; line-height: 24px; color: var(--vt-text); }
   .search { flex: 0 1 473px; }
