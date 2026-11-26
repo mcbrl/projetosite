@@ -106,10 +106,13 @@ const flags = [
   .cta { margin-left: 28px; white-space: nowrap; font-size: 13px; font-weight: 500; line-height: 1; padding: 12px 24px; }
   .nav .cta-mobile { display: none; }
   /* bandeiras do GTranslate (24x16, lado a lado depois do Blog) */
-  .nav > ul > li.langs { display: flex; gap: 12px; padding: 0; }
-  .flag { display: block; line-height: 0; opacity: .85; transition: opacity .2s; }
+  .nav > ul > li.langs { display: flex; flex: none; gap: 12px; padding: 0; }
+  .flag { display: block; flex: none; line-height: 0; opacity: .85; transition: opacity .2s; }
   .flag:hover, .flag.current { opacity: 1; }
-  .flag img { width: 24px; height: 16px; box-shadow: 0 0 0 1px rgb(0 0 0 / .08); }
+  /* tamanho fixo como no GTranslate (24x18); max-width: none evita que o img global encolha */
+  .flag img { width: 24px; height: 18px; max-width: none; object-fit: cover; box-shadow: 0 0 0 1px rgb(0 0 0 / .08); }
+  .nav > ul > li > a { white-space: nowrap; }
+  .nav > ul > li > a :global(svg) { flex: none; }
 
   /* mega menu de soluções */
   .mega {
@@ -133,6 +136,13 @@ const flags = [
   .burger :global(.i-close) { display: none; }
 
   @media (max-width: 1240px) { .nav > ul { gap: 14px; } .nav a { font-size: 15px; } .cta { margin-left: 8px; } }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .bar { gap: 16px; }
+    .logo img { width: 200px; }
+    .nav > ul { gap: 12px; }
+    .nav a { font-size: 14px; }
+    .cta { padding: 10px 16px; font-size: 12px; margin-left: 0; }
+  }
 
   @media (max-width: 1024px) {
     .logo img { width: 230px; }
