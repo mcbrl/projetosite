@@ -1,0 +1,7 @@
+---
+import Page from "../../cases/[slug].astro";
+import { casePaths } from "../../../lib/paths";
+
+export const getStaticPaths = () => casePaths("en");
+---
+<Page {...Astro.props} />

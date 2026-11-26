@@ -3,6 +3,8 @@
 // (2 páginas em cada ponta, 2 em volta da atual, links de texto).
 interface Props { current: number; last: number; base: string }
 const { current, last, base } = Astro.props;
+import { langOf, ui } from "../lib/i18n";
+const t = ui(langOf(Astro.url));
 const href = (n: number) => (n === 1 ? base : `${base}page/${n}/`);
 const show = (n: number) => n <= 2 || n > last - 2 || Math.abs(n - current) <= 2;
 const items: (number | "…")[] = [];
@@ -14,14 +16,14 @@ for (let n = 1; n <= last; n++) {
 const final = items.map((it, i) => (it === "…" && typeof items[i - 1] === "number" && items[i + 1] === (items[i - 1] as number) + 2 ? (items[i - 1] as number) + 1 : it));
 ---
 {last > 1 && (
-  <nav class="pager" aria-label="Paginação">
-    {current > 1 && <a href={href(current - 1)} rel="prev">Anterior</a>}
+  <nav class="pager" aria-label={t.pagination}>
+    {current > 1 && <a href={href(current - 1)} rel="prev">{t.prev}</a>}
     {final.map((n) =>
       n === "…" ? <span class="dots">…</span>
       : n === current ? <span class="cur" aria-current="page">{n}</span>
       : <a href={href(n)}>{n}</a>,
     )}
-    {current < last && <a href={href(current + 1)} rel="next">Próximo</a>}
+    {current < last && <a href={href(current + 1)} rel="next">{t.next}</a>}
   </nav>
 )}
 

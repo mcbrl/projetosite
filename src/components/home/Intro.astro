@@ -1,5 +1,8 @@
 ---
-import home from "../../data/home.json";
+import { homeOf } from "../../lib/home";
+import { langOf } from "../../lib/i18n";
+const lang = langOf(Astro.url);
+const home = homeOf(lang);
 const { intro, stats } = home;
 ---
 <section class="intro">
@@ -8,7 +11,7 @@ const { intro, stats } = home;
     <div class="text" set:html={intro.html} />
   </div>
 </section>
-<section class="stats" aria-label="Números da Vertigo">
+<section class="stats" aria-label={lang === "en" ? "Vertigo in numbers" : "Números da Vertigo"}>
   <div class="container row">
     {stats.map((s) => {
       // "25+" -> contador 0→25 com sufixo "+" (widget Counter do Elementor)

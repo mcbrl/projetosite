@@ -3,13 +3,15 @@
 interface Column { title: string; items: string[]; href: string | null }
 interface Props { columns: Column[]; tone?: "light" | "dark" }
 const { columns, tone = "light" } = Astro.props;
+import { langOf, ui } from "../lib/i18n";
+const more = ui(langOf(Astro.url)).learnMore;
 ---
 <div class:list={["cols", `tone-${tone}`]}>
   {columns.map((c) => (
     <div class="col">
       <h3>{c.title}</h3>
       <ul>{c.items.map((i) => <li>{i}</li>)}</ul>
-      {c.href && <a class="btn btn-primary" href={c.href}>Saiba mais</a>}
+      {c.href && <a class="btn btn-primary" href={c.href}>{more}</a>}
     </div>
   ))}
 </div>

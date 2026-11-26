@@ -2,13 +2,17 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import TierColumns from "../components/TierColumns.astro";
-import home from "../data/home.json";
+import { homeOf } from "../lib/home";
 import { metaOf, pageAt } from "../lib/routes";
+import { langOf } from "../lib/i18n";
 
-const page = await pageAt("/solucoes/");
+const lang = langOf(Astro.url);
+const en = lang === "en";
+const home = homeOf(lang);
+const page = await pageAt("/solucoes/", lang);
 ---
-<BaseLayout title="Nossas Soluções" seo={page?.data.seo}>
-  <PageHero eyebrow="Nossas Soluções" title="Acelere o seu negócio" image={metaOf("/solucoes/").heroImage} />
+<BaseLayout title={en ? "Our Solutions" : "Nossas Soluções"} seo={page?.data.seo}>
+  <PageHero eyebrow={en ? "Our Solutions" : "Nossas Soluções"} title={en ? "Accelerate your business." : "Acelere o seu negócio"} image={metaOf("/solucoes/").heroImage} />
   {home.tiers.map((tier, i) => (
     <section class:list={["section", { "section-dark": i % 2 === 1 }]}>
       <div class="container">

@@ -1,24 +1,30 @@
 ---
 // Os cases no WP não têm corpo: o conteúdo real é o material em materiais.vertigo.com.br.
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/PageHero.astro";
-import { isPublished, pathOf, toParam } from "../../lib/routes";
+import { casePaths } from "../../lib/paths";
+import { langOf, ui } from "../../lib/i18n";
+import en from "../../data/materiais-en.json";
 
-export async function getStaticPaths() {
-  return (await getCollection("cases")).filter(isPublished).map((entry) => ({
-    params: { slug: toParam(pathOf(entry)).replace(/^cases\//, "") },
-    props: { entry },
-  }));
-}
+export const getStaticPaths = () => casePaths("pt");
 const { entry } = Astro.props;
+const lang = langOf(Astro.url);
 const { Content } = await render(entry);
+const tr = lang === "en" ? (en as Record<string, { title: string; description: string }>)[String(entry.data.wpId)] : undefined;
+const title = tr?.title ?? entry.data.title;
+const url = entry.data.externalUrl;
 ---
-<BaseLayout title={entry.data.title} seo={entry.data.seo}>
-  <PageHero eyebrow={entry.data.caseCategories.join(", ") || "Materiais"} title={entry.data.title} image={entry.data.featuredImage} />
+<BaseLayout title={title} seo={entry.data.seo}>
+  <PageHero eyebrow={entry.data.caseCategories.join(", ") || (lang === "en" ? "Materials" : "Materiais")} title={title} image={entry.data.featuredImage} />
   <section class="section">
     <div class="container prose" style="max-width: 900px">
-      <Content />
+      {tr ? (
+        <>
+          <p>{tr.description}</p>
+          {url && <p><a href={url}>{ui(lang).learnMore}</a></p>}
+        </>
+      ) : <Content />}
     </div>
   </section>
 </BaseLayout>

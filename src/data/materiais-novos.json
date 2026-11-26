@@ -1,5 +1,6 @@
 [
   {
+    "id": "170112",
     "title": "Transformação Digital em Multinacional do Segmento de Gás Natural",
     "description": "A Vertigo modernizou portais de uma multinacional de gás natural com a Liferay, criando Plataformas de Experiência Digital inovadoras. Baixe o case grátis.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_gas_natural.jpg",
@@ -7,6 +8,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170110",
     "title": "Chatbot Automatiza 5 Mil Atendimentos Mensais Parceria Vertigo e Blip",
     "description": "Chatbot da Blip automatiza 5 mil atendimentos mensais na Secretaria de Saúde da Prefeitura de Franca, oferecendo acessibilidade e agilidade aos cidadãos.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_saude_prefeitura_franca.jpg",
@@ -14,6 +16,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170108",
     "title": "Transformação Digital em Multinacional de Seguros de Vida",
     "description": "Case gratuito, confira como a Vertigo otimizou processos entre as equipes da seguradora implementando um assessment para introduzir soluções cloud native.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_multinacional_seguros.jpg",
@@ -21,6 +24,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170106",
     "title": "Transformação Digital em multinacional tabagista",
     "description": "Obtenha agora o case gratuitamente e entenda o processo de Transformação Digital realizado pela Vertigo em uma multinacional tabagista.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_setor_tabagista.jpg",
@@ -28,6 +32,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170104",
     "title": "Cultura DevOps em instituição financeira nacional",
     "description": "Obtenha o case gratuito e entenda como a Vertigo melhorou a eficiência dos serviços financeiros de uma instituição bancária, através da prática DevOps.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/Cultura-Devops_INsituicao-Financeira.jpg",
@@ -35,6 +40,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170102",
     "title": "Transformação Digital em multinacional de saúde e higiene pessoal",
     "description": "Obtenha agora o case gratuitamente e entenda o processo de Transformação Digital em uma multinacional do ramo da saúde e higiene pessoal.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_higiene_saude.jpg",
@@ -42,6 +48,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170100",
     "title": "Como a Araguaia aumentou a geração de leads com o uso de chatbot",
     "description": "Obtenha o case gratuito e entenda como a Vertigo, em parceria com a Blip, aumentou a taxa de conversão de leads da Araguaia com a implementação de chatbot.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_araguaia.jpg",
@@ -49,6 +56,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170098",
     "title": "Transformação Digital em Instituição Pública do Rio de Janeiro",
     "description": "Obtenha agora o case gratuitamente e entenda o processo de Transformação Digital em instituição pública do Rio de Janeiro.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_transformacao_instituicao_rj.jpg",
@@ -56,6 +64,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170096",
     "title": "Trasnformação Digital em órgão público do Rio de Janeiro",
     "description": "A Vertigo modernizou a presença digital de uma instituição pública no RJ, gerando uma economia de R$ 2,7 milhões com a Liferay DXP. Conheça o case.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/instituicao-publica-do-RJ.jpg",
@@ -63,6 +72,7 @@
     "categories": ["cases"]
   },
   {
+    "id": "170094",
     "title": "A Vertigo teve papel chave na integração de sistemas em multinacional do segmento de materiais de construção",
     "description": "Obtenha o case gratuitamente e confira como a Vertigo ajudou a multinacional de materiais de construção no desafio de gerar mais agilidade nos processos.",
     "image": "https://vertigo.com.br/wp-content/uploads/2026/11/case_material-de-construcao.jpg",

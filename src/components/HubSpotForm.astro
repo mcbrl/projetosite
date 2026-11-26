@@ -1,8 +1,10 @@
 ---
 import { hubspot } from "../data/site";
+import { langOf, ui } from "../lib/i18n";
 // load: "visible" (ao entrar na tela), "eager" (imediato) ou "manual" (via window.vtRenderHsForm)
 interface Props { formId: string; dark?: boolean; square?: boolean; load?: "visible" | "eager" | "manual" }
 const { formId, dark = false, square = false, load = "visible" } = Astro.props;
+const t = ui(langOf(Astro.url));
 const id = `hs-${formId.slice(0, 8)}-${Math.random().toString(36).slice(2, 7)}`;
 ---
 <div
@@ -13,7 +15,7 @@ const id = `hs-${formId.slice(0, 8)}-${Math.random().toString(36).slice(2, 7)}`;
   data-hs-region={hubspot.region}
   data-hs-load={load}
 >
-  <noscript>Ative o JavaScript para ver o formulário.</noscript>
+  <noscript>{t.enableJs}</noscript>
 </div>
 
 <script>

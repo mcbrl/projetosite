@@ -3,15 +3,19 @@
 // Textos de src/content/pages/ai-journey.md (snapshot do WordPress).
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { metaOf, pageAt } from "../lib/routes";
+import { href, langOf } from "../lib/i18n";
 
-const page = await pageAt("/ai-journey/");
+const lang = langOf(Astro.url);
+const en = lang === "en";
+const T = <A,>(pt: A, e: A) => (en ? e : pt);
+const page = await pageAt("/ai-journey/", lang);
 const heroImage = metaOf("/ai-journey/").heroImage;
 
 const stats = [
-  { prefix: "", value: "100", suffix: "%", label: "Colaboradores certificados em IA" },
-  { prefix: "+", value: "45", suffix: "", label: "Agentes em produção" },
-  { prefix: "", value: "4", suffix: "K", label: "Horas economizadas" },
-  { prefix: "R$", value: "480", suffix: "K", label: "Savings em 6 meses" },
+  { prefix: "", value: "100", suffix: "%", label: T("Colaboradores certificados em IA", "Employees certified in AI") },
+  { prefix: "+", value: "45", suffix: "", label: T("Agentes em produção", "Agents in production") },
+  { prefix: "", value: "4", suffix: "K", label: T("Horas economizadas", "Hours saved") },
+  { prefix: "R$", value: "480", suffix: "K", label: T("Savings em 6 meses", "Savings in 6 months") },
 ];
 
 // Ícones de linha (24x24) no lugar dos ícones do Elementor
@@ -24,26 +28,26 @@ const icons: Record<string, string> = {
 };
 
 const fases = [
-  { key: "discover", name: "Discover", items: ["Diagnóstico VAIM", "Programa de IA: Fundação, Capacidade e Direção"] },
-  { key: "empower", name: "Empower", items: ["Masterclass Team Topologies", "AI Fluency: Capacitação em IA"] },
-  { key: "deploy", name: "Deploy", items: ["Driven by Claude", "Agentes de IA", "Vertigo Software Lifecycle", "Modernização de Legados com IA"] },
-  { key: "sustain", name: "Sustain", items: ["Governança de IA", "FDE as a Service"] },
-  { key: "intelligence", name: "Intelligence", items: ["Knowledge Intelligence", "Dados & Machine Learning"] },
+  { key: "discover", name: "Discover", items: T(["Diagnóstico VAIM", "Programa de IA: Fundação, Capacidade e Direção"], ["VAIM Diagnosis", "AI Program: Foundation, Capability, and Direction"]) },
+  { key: "empower", name: "Empower", items: T(["Masterclass Team Topologies", "AI Fluency: Capacitação em IA"], ["Masterclass Team Topologies", "AI Fluency: AI Training"]) },
+  { key: "deploy", name: "Deploy", items: T(["Driven by Claude", "Agentes de IA", "Vertigo Software Lifecycle", "Modernização de Legados com IA"], ["Driven by Claude", "AI Agents", "Vertigo Software Lifecycle", "Modernizing Legacy Systems with AI"]) },
+  { key: "sustain", name: "Sustain", items: T(["Governança de IA", "FDE as a Service"], ["AI Governance", "FDE as a Service"]) },
+  { key: "intelligence", name: "Intelligence", items: T(["Knowledge Intelligence", "Dados & Machine Learning"], ["Knowledge Intelligence", "Data & Machine Learning"]) },
 ];
 ---
 <BaseLayout title="AI Journey" seo={page?.data.seo}>
   <section class="hero" style={heroImage ? `--hero-img:url('${encodeURI(heroImage)}')` : undefined}>
     <div class="container">
       <h1 class="t-display" data-anim="fadeInUp" data-delay="300">Vertigo AI Journey</h1>
-      <p class="sub" data-anim="fadeInUp" data-delay="350">Vá além do hype. Implante, governe e escale com método.</p>
+      <p class="sub" data-anim="fadeInUp" data-delay="350">{T("Vá além do hype. Implante, governe e escale com método.", "Go beyond the hype. Implement, govern, and scale with method.")}</p>
       <img class="claude" src="/wp-content/uploads/2026/07/claude-ai-logo-300x65.png" alt="Claude" width="150" height="33" />
-      <p class="badge" data-anim="fadeInUp" data-delay="350">Registrada no Claude Partner Network</p>
+      <p class="badge" data-anim="fadeInUp" data-delay="350">{T("Registrada no Claude Partner Network", "Registered with the Claude Partner Network")}</p>
     </div>
   </section>
 
   <section class="stats section-blue">
     <div class="container">
-      <h2 class="stats-title" data-anim="fadeInUp" data-delay="300">Tudo o que oferecemos ao mercado, aplicamos primeiro dentro de casa. Os números provam nossos resultados.</h2>
+      <h2 class="stats-title" data-anim="fadeInUp" data-delay="300">{T("Tudo o que oferecemos ao mercado, aplicamos primeiro dentro de casa. Os números provam nossos resultados.", "Everything we offer to the market, we first apply internally. The numbers prove our results.")}</h2>
       <dl class="stats-grid">
         {stats.map((s) => (
           <div>
@@ -57,7 +61,7 @@ const fases = [
 
   <section class="section section-light">
     <div class="container">
-      <h2 class="phases-title" data-anim="fadeInUp" data-delay="300">Cinco fases. Você começa por onde faz sentido para o seu momento.</h2>
+      <h2 class="phases-title" data-anim="fadeInUp" data-delay="300">{T("Cinco fases. Você começa por onde faz sentido para o seu momento.", "Five phases. You start where it makes sense for you right now.")}</h2>
       <ol class="phases">
         {fases.map((f) => (
           <li class="phase">
@@ -73,21 +77,21 @@ const fases = [
   <section class="vaim">
     <div class="container vaim-grid">
       <div>
-        <h2 class="t-h1" data-anim="fadeInUp" data-delay="300">Diagnóstico gratuito. Resultado imediato.</h2>
-        <p class="vaim-lead" data-anim="fadeInUp" data-delay="350">Antes de tudo, saiba onde você está.</p>
-        <p>O Vertigo AI Maturity Model é o diagnóstico gratuito que mapeia o nível de maturidade da sua organização em IA, identifica os principais gaps e aponta os caminhos mais eficientes para avançar com segurança.</p>
-        <p>Em poucos minutos, você sai com uma visão clara do que já funciona, do que precisa evoluir e por onde começar.</p>
-        <a class="btn btn-light" href="https://diagnosticoai.vertigo.com.br" target="_blank" rel="noopener">Faça seu diagnóstico gratuito</a>
+        <h2 class="t-h1" data-anim="fadeInUp" data-delay="300">{T("Diagnóstico gratuito. Resultado imediato.", "Free diagnosis. Immediate result.")}</h2>
+        <p class="vaim-lead" data-anim="fadeInUp" data-delay="350">{T("Antes de tudo, saiba onde você está.", "First of all, know where you are.")}</p>
+        <p>{T("O Vertigo AI Maturity Model é o diagnóstico gratuito que mapeia o nível de maturidade da sua organização em IA, identifica os principais gaps e aponta os caminhos mais eficientes para avançar com segurança.", "The Vertigo AI Maturity Model is a free diagnostic tool that maps your organization's AI maturity level, identifies key gaps, and points out the most efficient paths to move forward safely.")}</p>
+        <p>{T("Em poucos minutos, você sai com uma visão clara do que já funciona, do que precisa evoluir e por onde começar.", "In just a few minutes, you'll leave with a clear vision of what already works, what needs improvement, and where to begin.")}</p>
+        <a class="btn btn-light" href="https://diagnosticoai.vertigo.com.br" target="_blank" rel="noopener">{T("Faça seu diagnóstico gratuito", "Get your free diagnosis")}</a>
       </div>
-      <img src="/wp-content/uploads/2026/07/Diagnostico-VAIM.jpg" alt="Tela do diagnóstico de maturidade em IA" loading="lazy" width="627" height="518" />
+      <img src="/wp-content/uploads/2026/07/Diagnostico-VAIM.jpg" alt={T("Tela do diagnóstico de maturidade em IA", "AI maturity diagnosis screen")} loading="lazy" width="627" height="518" />
     </div>
   </section>
 
   <section class="section">
     <div class="container">
       <div class="cta">
-        <h2 class="t-h2" data-anim="fadeInUp" data-delay="300">Pronto para escalar IA e ir além do hype?</h2>
-        <a class="btn btn-light" href="/contato/">Converse com um consultor</a>
+        <h2 class="t-h2" data-anim="fadeInUp" data-delay="300">{T("Pronto para escalar IA e ir além do hype?", "Ready to scale AI and go beyond the hype?")}</h2>
+        <a class="btn btn-light" href={href(lang, "/contato/")}>{T("Converse com um consultor", "Talk to a consultant")}</a>
       </div>
     </div>
   </section>

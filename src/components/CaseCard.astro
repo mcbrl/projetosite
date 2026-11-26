@@ -2,8 +2,10 @@
 // Card de case/ebook. Reproduz o flip box do Elementor (efeito "slide", direção "down"):
 // no hover/foco, a camada escura com a descrição e o botão desce sobre a frente em .6s.
 import type { Material } from "../lib/materiais";
+import { langOf } from "../lib/i18n";
 interface Props { item: Material }
 const { item } = Astro.props;
+const more = langOf(Astro.url) === "en" ? "Read more" : "Saiba mais";
 ---
 <a class="case" href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener" : undefined} data-cats={item.categories.join(" ")}>
   <span class="front">
@@ -13,7 +15,7 @@ const { item } = Astro.props;
   <span class="back" aria-hidden="true">
     {item.image && <img src={item.image} alt="" loading="lazy" width="847" height="1024" />}
     {item.description && <span class="desc">{item.description}</span>}
-    <span class="more">Saiba mais</span>
+    <span class="more">{more}</span>
   </span>
 </a>
 

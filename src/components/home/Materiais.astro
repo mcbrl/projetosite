@@ -3,16 +3,18 @@ import Carousel from "../Carousel.astro";
 import CaseCard from "../CaseCard.astro";
 import { materiais } from "../../lib/materiais";
 import { site } from "../../data/site";
-const items = await materiais();
+import { href, langOf, ui } from "../../lib/i18n";
+const lang = langOf(Astro.url);
+const items = await materiais(lang);
 ---
 <section class="mat">
   <div class="container">
-    <p class="eyebrow"><span class="chip chip-blue" data-anim="fadeInUp" data-delay="200">Materiais</span></p>
-    <h2 class="t-h2">Aplicações práticas e resultados reais</h2>
-    <Carousel label="Materiais" tone="light" perView={3} perViewTablet={2} perViewMobile={1} gap={2}>
+    <p class="eyebrow"><span class="chip chip-blue" data-anim="fadeInUp" data-delay="200">{ui(lang).materials}</span></p>
+    <h2 class="t-h2">{lang === "en" ? "Practical applications and real-world results" : "Aplicações práticas e resultados reais"}</h2>
+    <Carousel label={ui(lang).materials} tone="light" perView={3} perViewTablet={2} perViewMobile={1} gap={2}>
       {items.map((item) => <CaseCard item={item} />)}
     </Carousel>
-    <p class="cta"><a class="btn btn-primary" href={site.cta.href}>{site.cta.label}</a></p>
+    <p class="cta"><a class="btn btn-primary" href={href(lang, site.cta.href)}>{ui(lang).cta}</a></p>
   </div>
 </section>
 <style>

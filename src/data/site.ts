@@ -31,55 +31,67 @@ export const hubspot = {
   },
 } as const;
 
+
+import { href, type Lang } from "../lib/i18n";
+
 export type NavItem = { label: string; href: string; children?: { label: string; items: { label: string; href: string }[] }[] };
 
-export const mainNav: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "AI Journey", href: "/ai-journey/" },
-  {
-    label: "Nossas Soluções",
-    href: "/solucoes/",
-    children: [
-      {
-        label: "Strategy Tier",
-        items: [
-          { label: "Technology Strategy", href: "/strategy-tier-technology-strategy/" },
-          { label: "AI Strategy & Operations", href: "/strategy-tier-ai-strategy-operations/" },
-          { label: "Go to Cloud", href: "/strategy-tier-go-to-cloud/" },
-        ],
-      },
-      {
-        label: "Business Tier",
-        items: [
-          { label: "Serviços Financeiros & Seguradoras", href: "/business-tier-servicos-financeiros-seguradoras/" },
-          { label: "Governo & Judiciário", href: "/business-tier-governo-judiciario/" },
-          { label: "Business Digital Acceleration", href: "/business-tier-business-digital-acceleration/" },
-        ],
-      },
-      {
-        label: "Tech Tier",
-        items: [
-          { label: "Platform Engineering", href: "/tech-tier-platform-engineering/" },
-          { label: "Data, Intelligence & AI", href: "/tech-tier-data-intelligence-ai/" },
-          { label: "API & Integration", href: "/tech-tier-api-integration/" },
-        ],
-      },
-    ],
-  },
-  { label: "Parceiros", href: "/parceiros/" },
-  { label: "Carreiras", href: "/carreiras/" },
-  { label: "Materiais", href: "/materiais/" },
-  { label: "Blog", href: "/blog/" },
-];
+/** Menu principal no idioma (rótulos do header do Elementor / GTranslate). */
+export function mainNav(lang: Lang): NavItem[] {
+  const en = lang === "en";
+  const h = (p: string) => href(lang, p);
+  return [
+    { label: "Home", href: h("/") },
+    { label: "AI Journey", href: h("/ai-journey/") },
+    {
+      label: en ? "Our Solutions" : "Nossas Soluções",
+      href: h("/solucoes/"),
+      children: [
+        {
+          label: "Strategy Tier",
+          items: [
+            { label: "Technology Strategy", href: h("/strategy-tier-technology-strategy/") },
+            { label: "AI Strategy & Operations", href: h("/strategy-tier-ai-strategy-operations/") },
+            { label: "Go to Cloud", href: h("/strategy-tier-go-to-cloud/") },
+          ],
+        },
+        {
+          label: "Business Tier",
+          items: [
+            { label: en ? "Financial Services & Insurance Companies" : "Serviços Financeiros & Seguradoras", href: h("/business-tier-servicos-financeiros-seguradoras/") },
+            { label: en ? "Government & Public Sector" : "Governo & Judiciário", href: h("/business-tier-governo-judiciario/") },
+            { label: "Business Digital Acceleration", href: h("/business-tier-business-digital-acceleration/") },
+          ],
+        },
+        {
+          label: "Tech Tier",
+          items: [
+            { label: "Platform Engineering", href: h("/tech-tier-platform-engineering/") },
+            { label: "Data, Intelligence & AI", href: h("/tech-tier-data-intelligence-ai/") },
+            { label: "API & Integration", href: h("/tech-tier-api-integration/") },
+          ],
+        },
+      ],
+    },
+    { label: en ? "Partners" : "Parceiros", href: h("/parceiros/") },
+    { label: en ? "Careers" : "Carreiras", href: h("/carreiras/") },
+    { label: en ? "Materials" : "Materiais", href: h("/materiais/") },
+    { label: "Blog", href: h("/blog/") },
+  ];
+}
 
-export const footerNav = [
-  { label: "Home", href: "/" },
-  { label: "Soluções", href: "/solucoes/" },
-  { label: "Materiais", href: "/materiais/" },
-  { label: "Blog", href: "/blog/" },
-  { label: "Carreiras", href: "/carreiras/" },
-  { label: "Contato", href: "/contato/" },
-  { label: "Ouvidoria", href: "/ouvidoria/" },
-  { label: "Denúncias", href: "/canal-de-denuncias/" },
-  { label: "Política de Privacidade", href: "/politica-de-privacidade/" },
-];
+export function footerNav(lang: Lang) {
+  const en = lang === "en";
+  const h = (p: string) => href(lang, p);
+  return [
+    { label: "Home", href: h("/") },
+    { label: en ? "Solutions" : "Soluções", href: h("/solucoes/") },
+    { label: en ? "Materials" : "Materiais", href: h("/materiais/") },
+    { label: "Blog", href: h("/blog/") },
+    { label: en ? "Careers" : "Carreiras", href: h("/carreiras/") },
+    { label: en ? "Contact" : "Contato", href: h("/contato/") },
+    { label: en ? "Ombudsman Office" : "Ouvidoria", href: h("/ouvidoria/") },
+    { label: en ? "Allegations" : "Denúncias", href: h("/canal-de-denuncias/") },
+    { label: en ? "Privacy Policy" : "Política de Privacidade", href: h("/politica-de-privacidade/") },
+  ];
+}

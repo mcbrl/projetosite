@@ -1,20 +1,30 @@
 ---
 import Icon from "./Icon.astro";
 import { mainNav, site } from "../data/site";
+import { href, langOf, pathIn, ui } from "../lib/i18n";
 
 const current = Astro.url.pathname;
+const lang = langOf(Astro.url);
+const t = ui(lang);
+const nav = mainNav(lang);
+const home = href(lang, "/");
+const cta = href(lang, site.cta.href);
 const isActive = (href: string, children?: unknown[]) =>
-  href === "/" ? current === "/" : current.startsWith(href) || (!!children && /-tier-/.test(current));
+  href === home ? current === home : current.startsWith(href) || (!!children && /-tier-/.test(current));
+const flags = [
+  { lang: "en", label: t.langEn, src: "/theme/flags/en-us.svg", href: pathIn("en", current) },
+  { lang: "pt", label: t.langPt, src: "/theme/flags/pt-br.svg", href: pathIn("pt", current) },
+] as const;
 ---
 <header class="site-header" data-header>
   <div class="container bar">
-    <a class="logo" href="/" aria-label={`${site.name} — início`}>
+    <a class="logo" href={home} aria-label={`${site.name} — ${t.home}`}>
       <img src={site.logo.light} alt={`${site.name} — ${site.tagline}`} width="258" height="56" />
     </a>
 
-    <nav class="nav" aria-label="Menu principal" id="main-nav">
+    <nav class="nav" aria-label={t.mainMenu} id="main-nav">
       <ul>
-        {mainNav.map((item) => (
+        {nav.map((item) => (
           <li class:list={{ "has-sub": !!item.children }}>
             <a href={item.href} class:list={{ active: isActive(item.href, item.children) }} aria-current={isActive(item.href, item.children) ? "page" : undefined}>
               {item.label}
@@ -36,13 +46,20 @@ const isActive = (href: string, children?: unknown[]) =>
             )}
           </li>
         ))}
+        <li class="langs">
+          {flags.map((f) => (
+            <a class:list={["flag", { current: f.lang === lang }]} href={f.href} hreflang={f.lang === "en" ? "en-US" : "pt-BR"} lang={f.lang === "en" ? "en" : "pt-BR"} title={f.label} aria-label={f.label} aria-current={f.lang === lang ? "true" : undefined}>
+              <img src={f.src} alt="" width="24" height="16" />
+            </a>
+          ))}
+        </li>
       </ul>
-      <a class="btn btn-primary btn-sm cta cta-mobile" href={site.cta.href}>{site.cta.label}</a>
+      <a class="btn btn-primary btn-sm cta cta-mobile" href={cta}>{t.cta}</a>
     </nav>
 
-    <a class="btn btn-primary btn-sm cta" href={site.cta.href}>{site.cta.label}</a>
+    <a class="btn btn-primary btn-sm cta" href={cta}>{t.cta}</a>
 
-    <button class="burger" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu" data-burger>
+    <button class="burger" type="button" aria-controls="main-nav" aria-expanded="false" aria-label={t.menuOpen} data-burger data-open={t.menuOpen} data-close={t.menuClose}>
       <Icon name="menu" size={22} class="i-open" />
       <Icon name="close" size={22} class="i-close" />
     </button>
@@ -55,7 +72,7 @@ const isActive = (href: string, children?: unknown[]) =>
   burger.addEventListener("click", () => {
     const open = header.classList.toggle("open");
     burger.setAttribute("aria-expanded", String(open));
-    burger.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    burger.setAttribute("aria-label", (open ? burger.dataset.close : burger.dataset.open) ?? "");
     document.body.style.overflow = open ? "hidden" : "";
   });
   // No mobile, o item com submenu abre/fecha em vez de navegar
@@ -88,6 +105,11 @@ const isActive = (href: string, children?: unknown[]) =>
   .nav > ul > li { position: relative; padding: 32px 0; }
   .cta { margin-left: 28px; white-space: nowrap; font-size: 13px; font-weight: 500; line-height: 1; padding: 12px 24px; }
   .nav .cta-mobile { display: none; }
+  /* bandeiras do GTranslate (24x16, lado a lado depois do Blog) */
+  .nav > ul > li.langs { display: flex; gap: 12px; padding: 0; }
+  .flag { display: block; line-height: 0; opacity: .85; transition: opacity .2s; }
+  .flag:hover, .flag.current { opacity: 1; }
+  .flag img { width: 24px; height: 16px; box-shadow: 0 0 0 1px rgb(0 0 0 / .08); }
 
   /* mega menu de soluções */
   .mega {
@@ -126,6 +148,8 @@ const isActive = (href: string, children?: unknown[]) =>
     .nav > ul { flex-direction: column; align-items: stretch; gap: 0; }
     .nav > ul > li { padding: 0; border-bottom: 1px solid var(--vt-line); }
     .nav > ul > li > a { padding: 16px 0; width: 100%; justify-content: space-between; }
+    .nav > ul > li.langs { padding: 16px 0; gap: 16px; }
+    .nav > ul > li.langs > a { width: auto; padding: 0; }
     .mega { position: static; transform: none; opacity: 1; visibility: visible; display: none; box-shadow: none; padding: 0 0 16px 12px; grid-template-columns: 1fr; gap: 16px; width: auto; }
     .has-sub.sub-open .mega { display: grid; }
     .has-sub:hover .mega { transform: none; }

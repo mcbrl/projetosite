@@ -5,17 +5,20 @@ import HubSpotForm from "../components/HubSpotForm.astro";
 import Icon from "../components/Icon.astro";
 import { hubspot, site } from "../data/site";
 import { metaOf, pageAt } from "../lib/routes";
+import { langOf } from "../lib/i18n";
 
-const page = await pageAt("/contato/");
+const lang = langOf(Astro.url);
+const en = lang === "en";
+const page = await pageAt("/contato/", lang);
 ---
-<BaseLayout title="Contato" seo={page?.data.seo}>
-  <PageHero eyebrow="Fale Conosco" title="Pronto para acelerar com a Vertigo?" image={metaOf("/contato/").heroImage} />
+<BaseLayout title={en ? "Contact" : "Contato"} seo={page?.data.seo}>
+  <PageHero eyebrow={en ? "Contact Us" : "Fale Conosco"} title={en ? "Ready to fly your business with Vertigo?" : "Pronto para acelerar com a Vertigo?"} image={metaOf("/contato/").heroImage} />
   <section class="section">
     <div class="container split">
       <div data-anim="fadeInLeft" data-delay="200">
-        <h2 class="lead">Preencha o formulário para receber o contato de um de nossos especialistas.</h2>
+        <h2 class="lead">{en ? "Fill out the form to receive contact from one of our specialists." : "Preencha o formulário para receber o contato de um de nossos especialistas."}</h2>
         <div class="social">
-          <span>Siga nas redes sociais:</span>
+          <span>{en ? "Follow on social media:" : "Siga nas redes sociais:"}</span>
           <ul>
             {site.social.map((s) => <li><a href={s.href} target="_blank" rel="noopener" aria-label={s.name}><Icon name={s.icon} size={20} /></a></li>)}
           </ul>

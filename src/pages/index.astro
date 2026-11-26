@@ -11,34 +11,38 @@ import VeeCode from "../components/home/VeeCode.astro";
 import Diferenciais from "../components/home/Diferenciais.astro";
 import Materiais from "../components/home/Materiais.astro";
 import Carreiras from "../components/home/Carreiras.astro";
-import home from "../data/home.json";
+import { homeOf } from "../lib/home";
 import { pageAt } from "../lib/routes";
+import { href, langOf } from "../lib/i18n";
 
 // Home construída como componentes (o Markdown do Elementor perde tabs/carrosséis);
 // src/content/pages/index.md fornece apenas o SEO. Dados: src/data/home.json.
-const page = await pageAt("/");
+const lang = langOf(Astro.url);
+const en = lang === "en";
+const home = homeOf(lang);
+const page = await pageAt("/", lang);
 ---
 <BaseLayout title="Home" seo={page?.data.seo}>
   <Hero />
   <Intro />
   <Especialistas />
   <Solucoes />
-  <LogoStrip title="Clientes" lead="Faça parte das organizações que estão acelerando seus negócios com a Vertigo." logos={home.clientes} />
+  <LogoStrip title={en ? "Clients" : "Clientes"} lead={en ? "Join the organizations that are accelerating their business with Vertigo." : "Faça parte das organizações que estão acelerando seus negócios com a Vertigo."} logos={home.clientes} />
   <Depoimentos />
   <LogoStrip
-    title="Parceiros"
-    lead="Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos."
+    title={en ? "Partners" : "Parceiros"}
+    lead={en ? "Our technology partnerships strengthen the architecture of the solutions we deliver, ensuring interoperability, security, and scalability in critical environments." : "Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos."}
     logos={home.parceiros}
     logoHeight={60}
-    cta={{ label: "Saiba mais", href: "/parceiros/" }}
+    cta={{ label: en ? "Learn more" : "Saiba mais", href: href(lang, "/parceiros/") }}
   />
   <AiJourney />
   <VeeCode />
   <Diferenciais />
   <Materiais />
   <LogoStrip
-    title="Certificações"
-    lead="Nossas certificações refletem experiência técnica, conformidade com padrões de mercado e capacidade de atuar em ambientes complexos com segurança e escala."
+    title={en ? "Certifications" : "Certificações"}
+    lead={en ? "Our certifications reflect technical expertise, compliance with market standards, and the ability to operate safely and scalably in complex environments." : "Nossas certificações refletem experiência técnica, conformidade com padrões de mercado e capacidade de atuar em ambientes complexos com segurança e escala."}
     logos={home.certificacoes}
     tone="light"
     logoHeight={150}

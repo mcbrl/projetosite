@@ -1,11 +1,13 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import Icon from "./Icon.astro";
-import { categoryNames, pathOf } from "../lib/routes";
-interface Props { post: CollectionEntry<"blog"> }
+import { categoryNames, entryLang, pathOf, type PostEntry } from "../lib/routes";
+import { ui } from "../lib/i18n";
+interface Props { post: PostEntry }
 const { post } = Astro.props;
 const href = pathOf(post);
-const cats = categoryNames(post.data.categories).join(", ");
+const lang = entryLang(post);
+const t = ui(lang);
+const cats = categoryNames(post.data.categories, { lang }).join(", ");
 const excerpt = (post.data.excerpt ?? "").replace(/\s*\[…\]$/, "…");
 ---
 <article class="card">
@@ -18,7 +20,7 @@ const excerpt = (post.data.excerpt ?? "").replace(/\s*\[…\]$/, "…");
     {cats && <p class="cats">{cats}</p>}
     <h2 class="title"><a href={href}>{post.data.title}</a></h2>
     {excerpt && <p class="excerpt">{excerpt}</p>}
-    <a class="more" href={href} aria-label={`Saiba mais: ${post.data.title}`}>Saiba mais <Icon name="arrow-right" size={18} /></a>
+    <a class="more" href={href} aria-label={`${t.learnMore}: ${post.data.title}`}>{t.learnMore} <Icon name="arrow-right" size={18} /></a>
   </div>
 </article>
 

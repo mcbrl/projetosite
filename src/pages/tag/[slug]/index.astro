@@ -2,6 +2,6 @@
 import TaxonomyIndex from "../../../components/TaxonomyIndex.astro";
 import { taxonomyPaths } from "../../../lib/taxonomy";
 
-export const getStaticPaths = () => taxonomyPaths("tag", { paged: false });
+export const getStaticPaths = () => taxonomyPaths("tag", { paged: false, lang: "pt" });
 ---
 <TaxonomyIndex {...Astro.props} />

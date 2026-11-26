@@ -4,6 +4,7 @@
 // - marquee: rolagem contínua, `speed` ms por slide (logos: autoplay_speed 0 + speed 5000 no original).
 // - autoplay: avança um slide a cada N ms (depoimentos: 5000), com transição de `speed` ms.
 import Icon from "./Icon.astro";
+import { langOf, ui } from "../lib/i18n";
 interface Props {
   perView?: number; perViewTablet?: number; perViewMobile?: number;
   gap?: number; gapTablet?: number; gapMobile?: number;
@@ -16,6 +17,7 @@ const {
   autoplay = 0, speed = 500, loop = false, marquee = false,
   label, tone = "dark",
 } = Astro.props;
+const t = ui(langOf(Astro.url));
 ---
 <div
   class:list={["carousel", `tone-${tone}`]}
@@ -26,12 +28,12 @@ const {
   data-loop={loop || marquee || undefined}
   data-marquee={marquee || undefined}
   role="region"
-  aria-roledescription="carrossel"
+  aria-roledescription={t.carousel}
   aria-label={label}
 >
-  <button class="nav prev" type="button" aria-label="Anterior" data-prev><Icon name="chevron-left" size={22} /></button>
+  <button class="nav prev" type="button" aria-label={t.carouselPrev} data-prev><Icon name="chevron-left" size={22} /></button>
   <div class="track" data-track tabindex="0"><slot /></div>
-  <button class="nav next" type="button" aria-label="Próximo" data-next><Icon name="chevron-right" size={22} /></button>
+  <button class="nav next" type="button" aria-label={t.carouselNext} data-next><Icon name="chevron-right" size={22} /></button>
 </div>
 
 <script>

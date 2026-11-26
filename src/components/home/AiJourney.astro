@@ -1,5 +1,8 @@
 ---
-import home from "../../data/home.json";
+import { homeOf } from "../../lib/home";
+import { langOf } from "../../lib/i18n";
+const lang = langOf(Astro.url);
+const home = homeOf(lang);
 const ai = home.aiJourney;
 ---
 <section class="ai">
@@ -10,9 +13,9 @@ const ai = home.aiJourney;
       {ai.logo && <img class="logo" src={ai.logo} alt="Claude" width="150" height="36" loading="lazy" />}
       <p class="badge" data-anim="fadeInUp" data-delay="350">{ai.badge}</p>
       {ai.paragraphs.map((p) => <p>{p}</p>)}
-      <a class="btn btn-light" href={ai.href}>Saiba Mais</a>
+      <a class="btn btn-light" href={ai.href}>{lang === "en" ? "Learn more" : "Saiba Mais"}</a>
     </div>
-    {ai.image && <img class="shot" src={ai.image} alt="Diagnóstico de maturidade em IA" loading="lazy" width="627" height="518" />}
+    {ai.image && <img class="shot" src={ai.image} alt={lang === "en" ? "AI maturity diagnosis" : "Diagnóstico de maturidade em IA"} loading="lazy" width="627" height="518" />}
   </div>
 </section>
 <style>

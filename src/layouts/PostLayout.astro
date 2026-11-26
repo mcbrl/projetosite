@@ -1,20 +1,22 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import PostSidebar from "../components/PostSidebar.astro";
 import Icon from "../components/Icon.astro";
-import { categoryNames, formatDate } from "../lib/routes";
+import { categoryNames, entryLang, formatDate, type PostEntry } from "../lib/routes";
+import { ui } from "../lib/i18n";
 
-interface Props { post: CollectionEntry<"blog"> }
+interface Props { post: PostEntry }
 const { post } = Astro.props;
 const { title, date, modified, featuredImage, seo } = post.data;
 // O hero mostra todas as categorias, como o original ("A VERTIGO, BLOG")
 const url = new URL(Astro.url.pathname, Astro.site).href;
-const eyebrow = categoryNames(post.data.categories, { keepBlog: true }).join(", ");
+const lang = entryLang(post);
+const t = ui(lang);
+const eyebrow = categoryNames(post.data.categories, { keepBlog: true, lang }).join(", ");
 ---
 <BaseLayout title={title} seo={seo} type="article" publishedTime={date} modifiedTime={modified}>
-  <PageHero title={title} eyebrow={eyebrow || "Blog"} image={featuredImage} meta={formatDate(date)}>
+  <PageHero title={title} eyebrow={eyebrow || "Blog"} image={featuredImage} meta={formatDate(date, lang)}>
     <Icon slot="meta-icon" name="calendar" size={14} />
   </PageHero>
   <section class="section">
@@ -23,10 +25,10 @@ const eyebrow = categoryNames(post.data.categories, { keepBlog: true }).join(", 
         <h1>{title}</h1>
         <slot />
         <div class="share">
-          <span>Compartilhe:</span>
-          <a class="fb" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`} target="_blank" rel="noopener" aria-label="Compartilhar no Facebook"><Icon name="facebook" size={16} /></a>
-          <a class="tw" href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`} target="_blank" rel="noopener" aria-label="Compartilhar no X/Twitter"><Icon name="twitter" size={16} /></a>
-          <a class="li" href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener" aria-label="Compartilhar no LinkedIn"><Icon name="linkedin" size={16} /></a>
+          <span>{t.share}:</span>
+          <a class="fb" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`} target="_blank" rel="noopener" aria-label={`${t.shareOn} Facebook`}><Icon name="facebook" size={16} /></a>
+          <a class="tw" href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`} target="_blank" rel="noopener" aria-label={`${t.shareOn} X/Twitter`}><Icon name="twitter" size={16} /></a>
+          <a class="li" href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener" aria-label={`${t.shareOn} LinkedIn`}><Icon name="linkedin" size={16} /></a>
         </div>
       </article>
       <PostSidebar exclude={post.id} />

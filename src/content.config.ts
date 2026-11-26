@@ -64,4 +64,11 @@ const cases = defineCollection({
   }),
 });
 
-export const collections = { pages, blog, cases };
+// Versão em inglês (tools/fetch_en.mjs): mesmos arquivos/frontmatter, textos do en.vertigo.com.br.
+const en = <T extends { loader: unknown; schema?: unknown }>(c: T, dir: string) =>
+  defineCollection({ ...c, loader: glob({ pattern: "*.md", base: `./src/content/en/${dir}`, generateId: idFromFile }) } as T);
+const pagesEn = en(pages, "pages");
+const blogEn = en(blog, "blog");
+const casesEn = en(cases, "cases");
+
+export const collections = { pages, blog, cases, pagesEn, blogEn, casesEn };

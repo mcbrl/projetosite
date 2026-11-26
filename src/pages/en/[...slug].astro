@@ -1,0 +1,8 @@
+---
+// Páginas e posts em inglês (src/content/en): mesmo template do catch-all em português.
+import Page from "../[...slug].astro";
+import { contentPaths } from "../../lib/paths";
+
+export const getStaticPaths = () => contentPaths("en");
+---
+<Page {...Astro.props} />

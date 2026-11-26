@@ -1,5 +1,8 @@
 ---
-import home from "../../data/home.json";
+import { homeOf } from "../../lib/home";
+import { langOf, ui } from "../../lib/i18n";
+const lang = langOf(Astro.url);
+const home = homeOf(lang);
 const c = home.carreiras;
 ---
 <section class="car" style={`--bg:url('${c.background}')`}>
@@ -11,7 +14,7 @@ const c = home.carreiras;
         <span class="chip" data-anim="fadeInUp" data-delay="200">{c.eyebrow}</span>
         <h3>{c.heading}</h3>
         {c.paragraphs.map((p) => <p data-anim="fadeInUp" data-delay="350">{p}</p>)}
-        <a class="btn btn-primary" href={c.href}>Saiba mais</a>
+        <a class="btn btn-primary" href={c.href}>{ui(lang).learnMore}</a>
       </div>
     </div>
   </div>

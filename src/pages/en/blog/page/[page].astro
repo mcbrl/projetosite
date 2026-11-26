@@ -1,0 +1,8 @@
+---
+import BlogIndex from "../../../../components/BlogIndex.astro";
+import { blogPagePaths } from "../../../../lib/paths";
+
+export const getStaticPaths = () => blogPagePaths("en");
+const { posts, current, last } = Astro.props;
+---
+<BlogIndex posts={posts} current={current} last={last} />

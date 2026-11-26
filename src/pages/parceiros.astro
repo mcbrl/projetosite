@@ -7,30 +7,34 @@ import LogoStrip from "../components/home/LogoStrip.astro";
 import ImageCta from "../components/ImageCta.astro";
 import home from "../data/home.json";
 import { metaOf, pageAt } from "../lib/routes";
+import { href, langOf } from "../lib/i18n";
 
-const page = await pageAt("/parceiros/");
+const lang = langOf(Astro.url);
+const en = lang === "en";
+const T = <A,>(pt: A, e: A) => (en ? e : pt);
+const page = await pageAt("/parceiros/", lang);
 const logo = (n: string) => `/wp-content/uploads/2026/02/vertigo-parceiro-${n}.png`;
 
 const parceiros = [
-  { name: "GitLab", logo: "/theme/parceiros/gitlab.png", text: "Com a GitLab, a Vertigo leva DevSecOps com IA aos processos de engenharia, com pipelines, qualidade de código e entrega de software em uma única plataforma." },
-  { name: "Claude Partner Network — Certified Partner", logo: "/theme/parceiros/claude-certified-partner.svg", badge: true, text: "Como Certified Partner da Claude Partner Network, a Vertigo leva o Claude para produção em ambientes críticos, com times certificados." },
-  { name: "AWS", logo: logo("aws"), text: "Com a AWS, a Vertigo provê suporte a computação em nuvem baseada em melhores práticas de arquitetura e operação." },
-  { name: "Blip", logo: logo("blip"), text: "Com a Blip, a Vertigo auxilia a automação e personalização do seu atendimento ao cliente com conversas inteligentes baseadas em IA." },
-  { name: "Digibee", logo: logo("digibee"), text: "Com a Digibee, a Vertigo apoia a integração de sistemas por meio de uma plataforma iPaaS que reduz a complexidade e aumenta a velocidade." },
-  { name: "HashiCorp", logo: logo("hashcorp"), text: "Com a HashiCorp, a Vertigo ajuda na automação e proteção da sua infraestrutura em ambientes de nuvem e data centers." },
-  { name: "Kong", logo: logo("kong"), text: "Com a Kong, a Vertigo orienta o seu gerenciamento de APIs e microsserviços em ambientes híbridos e multicloud com foco em segurança e desempenho." },
-  { name: "Liferay", logo: logo("liferay"), text: "Com a Liferay, a Vertigo cria experiências digitais relevantes e melhora a jornada do seu cliente." },
-  { name: "Mirantis", logo: logo("mirantis"), text: "Com a Mirantis, a Vertigo auxilia a execução de aplicações nativamente em qualquer ambiente e acelera a entrega em nuvem." },
-  { name: "Neo4j", logo: logo("neo4j"), text: "Com a Neo4j, a Vertigo orienta a modelagem de relacionamentos e geração de insights complexos através do armazenamento e processamento de dados em grafos." },
-  { name: "VeeCode", logo: logo("vee-code"), text: "Com a VeeCode, a Vertigo auxilia a orquestração e governança de ambientes em nuvem com uma plataforma low-code para modernizar a TI." },
+  { name: "GitLab", logo: "/theme/parceiros/gitlab.png", text: T("Com a GitLab, a Vertigo leva DevSecOps com IA aos processos de engenharia, com pipelines, qualidade de código e entrega de software em uma única plataforma.", "With GitLab, Vertigo brings AI-powered DevSecOps to engineering processes, with pipelines, code quality, and software delivery all on a single platform.") },
+  { name: "Claude Partner Network — Certified Partner", logo: "/theme/parceiros/claude-certified-partner.svg", badge: true, text: T("Como Certified Partner da Claude Partner Network, a Vertigo leva o Claude para produção em ambientes críticos, com times certificados.", "As a Certified Partner of the Claude Partner Network, Vertigo brings Claude to production in mission-critical environments with certified teams.") },
+  { name: "AWS", logo: logo("aws"), text: T("Com a AWS, a Vertigo provê suporte a computação em nuvem baseada em melhores práticas de arquitetura e operação.", "With AWS, Vertigo provides cloud computing support based on best architectural and operational practices.") },
+  { name: "Blip", logo: logo("blip"), text: T("Com a Blip, a Vertigo auxilia a automação e personalização do seu atendimento ao cliente com conversas inteligentes baseadas em IA.", "With Blip, Vertigo helps automate and personalize your customer service with intelligent, AI-powered conversations.") },
+  { name: "Digibee", logo: logo("digibee"), text: T("Com a Digibee, a Vertigo apoia a integração de sistemas por meio de uma plataforma iPaaS que reduz a complexidade e aumenta a velocidade.", "With Digibee, Vertigo supports systems integration through an iPaaS platform that reduces complexity and increases speed.") },
+  { name: "HashiCorp", logo: logo("hashcorp"), text: T("Com a HashiCorp, a Vertigo ajuda na automação e proteção da sua infraestrutura em ambientes de nuvem e data centers.", "With HashiCorp, Vertigo helps automate and protect your infrastructure in cloud and data center environments.") },
+  { name: "Kong", logo: logo("kong"), text: T("Com a Kong, a Vertigo orienta o seu gerenciamento de APIs e microsserviços em ambientes híbridos e multicloud com foco em segurança e desempenho.", "With Kong, Vertigo guides your API and microservice management in hybrid and multicloud environments with a focus on security and performance.") },
+  { name: "Liferay", logo: logo("liferay"), text: T("Com a Liferay, a Vertigo cria experiências digitais relevantes e melhora a jornada do seu cliente.", "With Liferay, Vertigo creates relevant digital experiences and improves your customer journey.") },
+  { name: "Mirantis", logo: logo("mirantis"), text: T("Com a Mirantis, a Vertigo auxilia a execução de aplicações nativamente em qualquer ambiente e acelera a entrega em nuvem.", "With Mirantis, Vertigo helps run applications natively in any environment and accelerates cloud delivery.") },
+  { name: "Neo4j", logo: logo("neo4j"), text: T("Com a Neo4j, a Vertigo orienta a modelagem de relacionamentos e geração de insights complexos através do armazenamento e processamento de dados em grafos.", "With Neo4j, Vertigo guides the modeling of relationships and the generation of complex insights through the storage and processing of data in graphs.") },
+  { name: "VeeCode", logo: logo("vee-code"), text: T("Com a VeeCode, a Vertigo auxilia a orquestração e governança de ambientes em nuvem com uma plataforma low-code para modernizar a TI.", "With VeeCode, Vertigo helps orchestrate and govern cloud environments with a low-code platform to modernize IT.") },
 ];
 ---
-<BaseLayout title="Parceiros" seo={page?.data.seo}>
-  <PageHero eyebrow="Parceiros" title="Quem apoia nossas soluções" image={metaOf("/parceiros/").heroImage} />
+<BaseLayout title={T("Parceiros", "Partners")} seo={page?.data.seo}>
+  <PageHero eyebrow={T("Parceiros", "Partners")} title={T("Quem apoia nossas soluções", "Who supports our solutions?")} image={metaOf("/parceiros/").heroImage} />
 
   <section class="section">
     <div class="container">
-      <p class="section-lead" data-anim="fadeInUp" data-delay="350">Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos.</p>
+      <p class="section-lead" data-anim="fadeInUp" data-delay="350">{T("Nossas parcerias tecnológicas fortalecem a arquitetura das soluções que entregamos, garantindo interoperabilidade, segurança e escala em ambientes críticos.", "Our technology partnerships strengthen the architecture of the solutions we deliver, ensuring interoperability, security, and scalability in critical environments.")}</p>
       <div class="grid">
         {parceiros.map((p) => (
           <article class="card">
@@ -39,17 +43,17 @@ const parceiros = [
           </article>
         ))}
       </div>
-      <p class="more"><a class="btn btn-primary" href="/contato/">Converse com um Consultor</a></p>
+      <p class="more"><a class="btn btn-primary" href={href(lang, "/contato/")}>{T("Converse com um Consultor", "Talk to a Consultant")}</a></p>
     </div>
   </section>
 
-  <LogoStrip title="Clientes" lead="Faça parte das organizações que estão acelerando seus negócios com a Vertigo." logos={home.clientes} />
+  <LogoStrip title={T("Clientes", "Clients")} lead={T("Faça parte das organizações que estão acelerando seus negócios com a Vertigo.", "Join the organizations that are accelerating their business with Vertigo.")} logos={home.clientes} />
 
   <ImageCta
     image="/wp-content/uploads/2026/02/vertigo-parceiros.jpeg"
-    eyebrow="Contato"
-    title="Pronto para acelerar com a Vertigo?"
-    cta={{ label: "Converse com um Consultor", href: "/contato/" }}
+    eyebrow={T("Contato", "Contact")}
+    title={T("Pronto para acelerar com a Vertigo?", "Ready to fly your business with Vertigo?")}
+    cta={{ label: T("Converse com um Consultor", "Talk to a Consultant"), href: href(lang, "/contato/") }}
   />
 </BaseLayout>
 

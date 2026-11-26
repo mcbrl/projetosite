@@ -1,13 +1,16 @@
 ---
 import TierColumns from "../TierColumns.astro";
 import Icon from "../Icon.astro";
-import home from "../../data/home.json";
+import { homeOf } from "../../lib/home";
+import { langOf } from "../../lib/i18n";
+const lang = langOf(Astro.url);
+const home = homeOf(lang);
 ---
 <section class="head section-dark">
-  <h2 class="t-section" data-anim="fadeInUp" data-delay="300">Nossas Soluções</h2>
+  <h2 class="t-section" data-anim="fadeInUp" data-delay="300">{lang === "en" ? "Our Solutions" : "Nossas Soluções"}</h2>
 </section>
 <section class="tabs" data-tabs>
-  <div class="tablist" role="tablist" aria-label="Tiers de soluções">
+  <div class="tablist" role="tablist" aria-label={lang === "en" ? "Solution tiers" : "Tiers de soluções"}>
     {home.tiers.map((t, i) => (
       <button role="tab" id={`tier-tab-${i}`} aria-controls={`tier-panel-${i}`} aria-selected={i === 0 ? "true" : "false"} tabindex={i === 0 ? 0 : -1}>
         {t.title} <Icon name="chevron-down" size={16} />

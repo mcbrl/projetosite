@@ -1,5 +1,7 @@
 ---
-import home from "../../data/home.json";
+import { homeOf } from "../../lib/home";
+import { langOf } from "../../lib/i18n";
+const home = homeOf(langOf(Astro.url));
 const { hero } = home;
 ---
 <section class="hero" style={`--img:url('${hero.image}')`}>

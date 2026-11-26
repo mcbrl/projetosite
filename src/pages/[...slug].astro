@@ -1,35 +1,23 @@
 ---
 // Catch-all: páginas do WordPress e posts do blog vivem na raiz (/slug/).
-import { getCollection, render } from "astro:content";
+import { render } from "astro:content";
 import PageLayout from "../layouts/PageLayout.astro";
 import PostLayout from "../layouts/PostLayout.astro";
-import { CUSTOM_ROUTES, isPublished, metaOf, pathOf, toParam } from "../lib/routes";
+import { metaOf, pathOf } from "../lib/routes";
+import { contentPaths } from "../lib/paths";
+import { stripLang } from "../lib/i18n";
 
-export async function getStaticPaths() {
-  const pages = (await getCollection("pages")).filter(isPublished);
-  const posts = (await getCollection("blog")).filter(isPublished);
-  const seen = new Map<string, string>();
-  const routes = [];
-  for (const entry of [...pages, ...posts]) {
-    const path = pathOf(entry);
-    if (CUSTOM_ROUTES.has(path)) continue;
-    const key = `${entry.collection}/${entry.id}`;
-    if (seen.has(path)) throw new Error(`Caminho duplicado ${path}: ${seen.get(path)} e ${key}`);
-    seen.set(path, key);
-    routes.push({ params: { slug: toParam(path) }, props: { entry } });
-  }
-  return routes;
-}
+export const getStaticPaths = () => contentPaths("pt");
 
 const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter: fm } = await render(entry);
-const path = pathOf(entry);
+const path = stripLang(pathOf(entry));
 const meta = metaOf(path);
 const motion = /^\/(strategy|business|tech)-tier-/.test(path) ? "tier"
   : ["/canal-de-denuncias/", "/ouvidoria/"].includes(path) ? "left"
   : undefined;
 ---
-{entry.collection === "blog" ? (
+{entry.collection.startsWith("blog") ? (
   <PostLayout post={entry}><Content /></PostLayout>
 ) : (
   <PageLayout

@@ -32,6 +32,18 @@ O tema só lê o que o dump produz, então os dois podem evoluir em paralelo.
 - Arquivos de taxonomia: `/category/<slug>/` e `/tag/<slug>/` (com `/page/N/`), gerados de `data/categories.json` e `data/tags.json` só para termos com posts publicados (`src/lib/taxonomy.ts`).
 - `trailingSlash: "always"`.
 
+## Inglês (/en/)
+
+- Toda página existe também em `/en/` + o mesmo caminho (ex.: `/en/solucoes/`, `/en/a-mulher-na-ti/`).
+  As bandeiras no header (`public/theme/flags/`) levam ao mesmo caminho no outro idioma; o `<head>` tem `hreflang`.
+- O idioma sai da URL (`src/lib/i18n.ts`: `langOf`, `href`, `ui`). Textos fixos do tema ficam em `ui()`/nos
+  componentes; os da home em `src/lib/home.ts`; os dos materiais em `src/data/materiais-en.json`.
+- O conteúdo (páginas, posts, cases) em inglês fica em `src/content/en/`, copiado do GTranslate de
+  en.vertigo.com.br por `node tools/fetch_en.mjs` (`--force` refaz; aceita `pages`, `blog`, `cases`).
+- As rotas em `src/pages/en/` reaproveitam os templates em português; `src/lib/paths.ts` tem os
+  `getStaticPaths` por idioma.
+- Os formulários HubSpot continuam em português (são os mesmos formulários do original).
+
 ## Layouts
 
 | Layout | Uso |

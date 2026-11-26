@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import WhatsAppButton from "../components/WhatsAppButton.astro";
 import { site } from "../data/site";
 import chrome from "../../data/site-chrome.json";
+import { langOf, pathIn, ui } from "../lib/i18n";
 
 export interface Seo { title?: string; description?: string; canonical?: string; ogImage?: string; robots?: string }
 interface Props { title: string; seo?: Seo; type?: "website" | "article"; publishedTime?: Date; modifiedTime?: Date }
@@ -13,10 +14,17 @@ const { title, seo = {}, type = "website", publishedTime, modifiedTime } = Astro
 const pageTitle = seo.title ?? `${title} - ${site.name}`;
 const canonical = seo.canonical ?? new URL(Astro.url.pathname, site.url).href;
 const ogImage = seo.ogImage ? new URL(seo.ogImage, site.url).href : undefined;
+const lang = langOf(Astro.url);
+const t = ui(lang);
+const alternates = [
+  { hreflang: "pt-BR", href: new URL(pathIn("pt", Astro.url.pathname), site.url).href },
+  { hreflang: "en-US", href: new URL(pathIn("en", Astro.url.pathname), site.url).href },
+  { hreflang: "x-default", href: new URL(pathIn("pt", Astro.url.pathname), site.url).href },
+];
 const icons = (chrome as { icons?: { rel: string; href: string; sizes?: string | null }[] }).icons ?? [];
 ---
 <!doctype html>
-<html lang="pt-BR">
+<html lang={t.htmlLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,7 +32,8 @@ const icons = (chrome as { icons?: { rel: string; href: string; sizes?: string |
     {seo.description && <meta name="description" content={seo.description} />}
     <meta name="robots" content={seo.robots ?? "index, follow"} />
     <link rel="canonical" href={canonical} />
-    <meta property="og:locale" content="pt_BR" />
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <meta property="og:locale" content={t.ogLocale} />
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={pageTitle} />
@@ -49,7 +58,7 @@ const icons = (chrome as { icons?: { rel: string; href: string; sizes?: string |
     {import.meta.env.PROD && (
       <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${site.gtm}`} height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     )}
-    <a class="sr-only" href="#conteudo">Pular para o conteúdo</a>
+    <a class="sr-only" href="#conteudo">{t.skip}</a>
     <Header />
     <main id="conteudo">
       <slot />

@@ -1,32 +1,34 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "./PageHero.astro";
 import PostCard from "./PostCard.astro";
 import Pagination from "./Pagination.astro";
-import { metaOf, pageAt } from "../lib/routes";
+import { metaOf, pageAt, type PostEntry } from "../lib/routes";
+import { href, langOf, ui } from "../lib/i18n";
 
-interface Props { posts: CollectionEntry<"blog">[]; current: number; last: number }
+interface Props { posts: PostEntry[]; current: number; last: number }
 const { posts, current, last } = Astro.props;
-const page = await pageAt("/blog/");
-const seo = current === 1 ? page?.data.seo : { ...page?.data.seo, title: `Blog - Página ${current} - Vertigo`, canonical: undefined };
+const lang = langOf(Astro.url);
+const t = ui(lang);
+const page = await pageAt("/blog/", lang);
+const seo = current === 1 ? page?.data.seo : { ...page?.data.seo, title: t.blogPageTitle(current), canonical: undefined };
 ---
 <BaseLayout title="Blog" seo={seo}>
-  <PageHero eyebrow="Blog" title="Conteúdos exclusivos" image={metaOf("/blog/").heroImage} />
+  <PageHero eyebrow="Blog" title={t.blogTitle} image={metaOf("/blog/").heroImage} />
   <section class="section list">
     <div class="container">
       <div class="intro">
-        <p>Fique por dentro de conteúdos sobre tecnologia e tendências sobre transformação digital para empresas.</p>
-        <form class="search" role="search" data-search>
-          <label class="sr-only" for="q">Buscar no blog</label>
-          <input id="q" name="q" type="search" placeholder="Buscar" autocomplete="off" />
+        <p>{t.blogIntro}</p>
+        <form class="search" role="search" data-search data-index={href(lang, "/blog/busca.json")}>
+          <label class="sr-only" for="q">{t.searchBlog}</label>
+          <input id="q" name="q" type="search" placeholder={t.search} autocomplete="off" />
         </form>
       </div>
       <div class="grid" data-grid>
         {posts.map((post) => <PostCard post={post} />)}
       </div>
-      <p class="empty" data-empty hidden>Nenhum artigo encontrado.</p>
-      <div data-pager><Pagination current={current} last={last} base="/blog/" /></div>
+      <p class="empty" data-empty hidden>{t.noPosts}</p>
+      <div data-pager><Pagination current={current} last={last} base={href(lang, "/blog/")} /></div>
     </div>
   </section>
 </BaseLayout>
@@ -48,7 +50,7 @@ const seo = current === 1 ? page?.data.seo : { ...page?.data.seo, title: `Blog -
   const run = async () => {
     const q = norm(input.value.trim());
     if (!q) { grid.innerHTML = original; pager.hidden = false; empty.hidden = true; return; }
-    index ??= await fetch("/blog/busca.json").then((r) => r.json());
+    index ??= await fetch(form.dataset.index!).then((r) => r.json());
     const terms = q.split(/\s+/);
     const hits = index!.filter((h) => { const hay = norm(`${h.t} ${h.e} ${h.c}`); return terms.every((t) => hay.includes(t)); }).slice(0, 30);
     grid.innerHTML = hits.map(card).join("");

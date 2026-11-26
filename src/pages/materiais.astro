@@ -7,20 +7,23 @@ import CaseCard from "../components/CaseCard.astro";
 import categorias from "../../data/case-categorias.json";
 import { metaOf, pageAt } from "../lib/routes";
 import { materiais } from "../lib/materiais";
+import { langOf, ui } from "../lib/i18n";
 
-const page = await pageAt("/materiais/");
-const items = await materiais();
+const lang = langOf(Astro.url);
+const t = ui(lang);
+const page = await pageAt("/materiais/", lang);
+const items = await materiais(lang);
 ---
-<BaseLayout title="Materiais" seo={page?.data.seo}>
-  <PageHero eyebrow="Materiais" title="Nossos Cases e Ebooks" image={metaOf("/materiais/").heroImage} />
+<BaseLayout title={t.materials} seo={page?.data.seo}>
+  <PageHero eyebrow={t.materials} title={lang === "en" ? "Our Case Studies and Ebooks" : "Nossos Cases e Ebooks"} image={metaOf("/materiais/").heroImage} />
   <section class="section list">
     <div class="container layout">
       <form class="filters" data-filters>
-        <p>Filtre abaixo as opções.</p>
-        <label class="sr-only" for="mq">Buscar</label>
-        <input id="mq" type="search" name="q" placeholder="Buscar" />
+        <p>{t.filterHint}</p>
+        <label class="sr-only" for="mq">{t.search}</label>
+        <input id="mq" type="search" name="q" placeholder={t.search} />
         <fieldset>
-          <legend>Categoria</legend>
+          <legend>{t.category}</legend>
           {categorias.map((c) => (
             <label><input type="checkbox" name="cat" value={c.slug} /> <span>{c.name}</span></label>
           ))}
@@ -30,8 +33,8 @@ const items = await materiais();
         <div class="grid" data-cases>
           {items.map((item) => <CaseCard item={item} />)}
         </div>
-        <p class="empty" data-empty hidden>Nenhum material encontrado.</p>
-        <nav class="pager" aria-label="Paginação" data-pager></nav>
+        <p class="empty" data-empty hidden>{t.noMaterials}</p>
+        <nav class="pager" aria-label={t.pagination} data-pager data-prev={t.prev} data-next={t.next}></nav>
       </div>
     </div>
   </section>
@@ -68,9 +71,9 @@ const items = await materiais();
         if (n && !cur) { (el as HTMLAnchorElement).href = `#pagina-${n}`; el.addEventListener("click", (e) => { e.preventDefault(); current = n; render(true); }); }
         pager.append(el);
       };
-      if (current > 1) add("Anterior", current - 1);
+      if (current > 1) add(pager.dataset.prev!, current - 1);
       for (let n = 1; n <= last; n++) add(String(n), n, n === current);
-      if (current < last) add("Próximo", current + 1);
+      if (current < last) add(pager.dataset.next!, current + 1);
     }
     if (scroll) grid.scrollIntoView({ behavior: "smooth", block: "start" });
   };

@@ -1,9 +1,12 @@
 ---
-import home from "../../data/home.json";
+import { homeOf } from "../../lib/home";
+import { langOf } from "../../lib/i18n";
+const lang = langOf(Astro.url);
+const home = homeOf(lang);
 ---
 <section class="dif">
   <div class="container">
-    <h2 class="t-section" data-anim="fadeInUp" data-delay="300">Nossos Diferenciais</h2>
+    <h2 class="t-section" data-anim="fadeInUp" data-delay="300">{lang === "en" ? "Our Competitive Advantages" : "Nossos Diferenciais"}</h2>
     <ul class="grid">
       {home.diferenciais.map((d) => <li><h3>{d.title}</h3><p>{d.text}</p></li>)}
     </ul>
