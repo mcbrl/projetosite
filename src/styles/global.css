@@ -192,5 +192,6 @@ p { margin: 0 0 1em; }
   padding: 12px 24px; font: 600 16px/1 var(--vt-font); cursor: pointer;
 }
 .hs-form .hs-error-msgs { list-style: none; padding: 0; margin: 4px 0 0; color: #f2545b; font-size: 13px; }
-.hs-form .legal-consent-container, .hs-dark .hs-richtext { color: var(--vt-white); font-size: 13px; }
+.hs-form .legal-consent-container { font-size: 13px; }
+.hs-dark .hs-form .legal-consent-container, .hs-dark .hs-richtext { color: var(--vt-white); }
 .hs-form ul.inputs-list { list-style: none; padding: 0; margin: 0; }
