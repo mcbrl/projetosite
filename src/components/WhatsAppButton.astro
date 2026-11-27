@@ -2,7 +2,9 @@
 import HubSpotForm from "./HubSpotForm.astro";
 import { hubspot } from "../data/site";
 import { langOf, ui } from "../lib/i18n";
-const t = ui(langOf(Astro.url));
+const lang = langOf(Astro.url);
+const t = ui(lang);
+const formId = lang === "en" ? hubspot.forms.whatsappEn : hubspot.forms.whatsapp;
 ---
 <section class="wa" aria-label="WhatsApp" data-wa>
   <button class="wa-btn" type="button" aria-label={t.whatsappOpen} aria-controls="wa-panel" aria-expanded="false" data-wa-open>
@@ -12,7 +14,7 @@ const t = ui(langOf(Astro.url));
   <div class="wa-panel" id="wa-panel" role="dialog" aria-modal="true" aria-labelledby="wa-title" hidden>
     <button class="wa-close" type="button" aria-label={t.close} data-wa-close>×</button>
     <p class="wa-copy" id="wa-title">{t.whatsappHello}</p>
-    <div class="wa-form"><HubSpotForm formId={hubspot.forms.whatsapp} load="manual" /></div>
+    <div class="wa-form"><HubSpotForm formId={formId} load="manual" /></div>
   </div>
 </section>
 

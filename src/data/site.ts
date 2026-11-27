@@ -28,6 +28,7 @@ export const hubspot = {
     contato: "2a8fba74-efe6-4f77-a262-9363161fb257",
     solucao: "b0b4484a-d610-41de-a886-4f18b3d57d3b", // páginas de tier
     whatsapp: "2eecb970-17c0-4918-8d57-eb3552c49c56",
+    whatsappEn: "2d0b0656-0f2b-460b-bc3a-cf99796d39a8", // botão do WhatsApp em /en/
   },
 } as const;
 

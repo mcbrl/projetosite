@@ -42,7 +42,7 @@ O tema só lê o que o dump produz, então os dois podem evoluir em paralelo.
   en.vertigo.com.br por `node tools/fetch_en.mjs` (`--force` refaz; aceita `pages`, `blog`, `cases`).
 - As rotas em `src/pages/en/` reaproveitam os templates em português; `src/lib/paths.ts` tem os
   `getStaticPaths` por idioma.
-- Os formulários HubSpot continuam em português (são os mesmos formulários do original).
+- Os formulários HubSpot continuam em português, exceto o do botão do WhatsApp, que em /en/ usa o formulário em inglês (`hubspot.forms.whatsappEn`).
 
 ## Layouts
 
