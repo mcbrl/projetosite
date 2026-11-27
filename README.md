@@ -69,7 +69,7 @@ O Markdown perde tabs, carrosséis, contadores e imagens de fundo definidas no C
 ## Materiais
 
 `/materiais/` e o carrossel da home usam `src/lib/materiais.ts`: os 10 cases publicados depois do dump
-(`src/data/materiais-novos.json`, imagens servidas direto de vertigo.com.br) + a coleção `cases`.
+(`src/data/materiais-novos.json`, imagens baixadas para `public/wp-content/uploads/2026/11/`) + a coleção `cases`.
 A página filtra por busca/categoria (checkbox) e pagina 6 por vez, como o JetEngine do original.
 
 ## Design tokens

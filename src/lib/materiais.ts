@@ -1,6 +1,6 @@
 // Lista de materiais (cases e ebooks) na ordem do site atual.
-// Os 10 cases publicados depois do dump vêm de src/data/materiais-novos.json (imagens servidas de
-// vertigo.com.br); os demais vêm da coleção "cases" do dump.
+// Os 10 cases publicados depois do dump vêm de src/data/materiais-novos.json (imagens em public/wp-content/uploads/2026/11/,
+// baixadas de vertigo.com.br); os demais vêm da coleção "cases" do dump.
 import { getCollection } from "astro:content";
 import novos from "../data/materiais-novos.json";
 import en from "../data/materiais-en.json";
